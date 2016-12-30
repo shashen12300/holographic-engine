@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Fri Dec 30 17:28:01 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Fri Dec 30 19:55:27 2016
 <BR><P>
 <H3>Maximum Stack Usage =         80 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -421,7 +421,7 @@ Global Symbols
 
 <P><STRONG><a name="[e8]"></a>CAN_CancelTransmit</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, stm32f10x_can.o(.text), UNUSED)
 
-<P><STRONG><a name="[7b]"></a>CAN_Receive</STRONG> (Thumb, 240 bytes, Stack size 8 bytes, stm32f10x_can.o(.text))
+<P><STRONG><a name="[7d]"></a>CAN_Receive</STRONG> (Thumb, 240 bytes, Stack size 8 bytes, stm32f10x_can.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CAN_Receive
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_LP_CAN1_RX0_IRQHandler
@@ -467,7 +467,7 @@ Global Symbols
 
 <P><STRONG><a name="[fa]"></a>EXTI_ClearFlag</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text), UNUSED)
 
-<P><STRONG><a name="[7c]"></a>EXTI_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
+<P><STRONG><a name="[7e]"></a>EXTI_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_5_IRQHandler
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_IRQHandler
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_IRQHandler
@@ -476,7 +476,7 @@ Global Symbols
 <LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[7d]"></a>EXTI_ClearITPendingBit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
+<P><STRONG><a name="[7f]"></a>EXTI_ClearITPendingBit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI9_5_IRQHandler
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_IRQHandler
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_IRQHandler
@@ -491,8 +491,8 @@ Global Symbols
 
 <P><STRONG><a name="[fd]"></a>FSMC_PCCARDDeInit</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, stm32f10x_fsmc.o(.text), UNUSED)
 
-<P><STRONG><a name="[85]"></a>FSMC_NORSRAMInit</STRONG> (Thumb, 230 bytes, Stack size 0 bytes, stm32f10x_fsmc.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_FSMC_Config
+<P><STRONG><a name="[87]"></a>FSMC_NORSRAMInit</STRONG> (Thumb, 230 bytes, Stack size 0 bytes, stm32f10x_fsmc.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_FSMC_Config
 </UL>
 
 <P><STRONG><a name="[fe]"></a>FSMC_NANDInit</STRONG> (Thumb, 132 bytes, Stack size 12 bytes, stm32f10x_fsmc.o(.text), UNUSED)
@@ -505,8 +505,8 @@ Global Symbols
 
 <P><STRONG><a name="[102]"></a>FSMC_PCCARDStructInit</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, stm32f10x_fsmc.o(.text), UNUSED)
 
-<P><STRONG><a name="[86]"></a>FSMC_NORSRAMCmd</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, stm32f10x_fsmc.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_FSMC_Config
+<P><STRONG><a name="[88]"></a>FSMC_NORSRAMCmd</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, stm32f10x_fsmc.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_FSMC_Config
 </UL>
 
 <P><STRONG><a name="[103]"></a>FSMC_NANDCmd</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, stm32f10x_fsmc.o(.text), UNUSED)
@@ -535,18 +535,18 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
 </UL>
 
-<P><STRONG><a name="[81]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(.text))
+<P><STRONG><a name="[83]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Config
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOC_output
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOC_input
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOC_output
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOC_input
 </UL>
 
 <P><STRONG><a name="[10c]"></a>GPIO_StructInit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
 
-<P><STRONG><a name="[98]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<P><STRONG><a name="[9a]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
 </UL>
 
 <P><STRONG><a name="[10d]"></a>GPIO_ReadInputData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
@@ -555,13 +555,13 @@ Global Symbols
 
 <P><STRONG><a name="[10f]"></a>GPIO_ReadOutputData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
 
-<P><STRONG><a name="[8a]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rst
+<P><STRONG><a name="[8c]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rst
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
 </UL>
 
-<P><STRONG><a name="[88]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rst
+<P><STRONG><a name="[8a]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rst
 </UL>
 
 <P><STRONG><a name="[110]"></a>GPIO_WriteBit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
@@ -628,7 +628,7 @@ Global Symbols
 
 <P><STRONG><a name="[12b]"></a>RCC_AHBPeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text), UNUSED)
 
-<P><STRONG><a name="[83]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
+<P><STRONG><a name="[85]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Config
 </UL>
 
@@ -870,13 +870,13 @@ Global Symbols
 
 <P><STRONG><a name="[17a]"></a>TIM_ClearFlag</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text), UNUSED)
 
-<P><STRONG><a name="[7e]"></a>TIM_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32f10x_tim.o(.text))
+<P><STRONG><a name="[80]"></a>TIM_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32f10x_tim.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_GetITStatus
 </UL>
 <BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
 
-<P><STRONG><a name="[7f]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
+<P><STRONG><a name="[81]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
 
@@ -891,13 +891,15 @@ Global Symbols
 
 <P><STRONG><a name="[17c]"></a>User_delay</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, main.o(.text), UNUSED)
 
-<P><STRONG><a name="[54]"></a>main</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, main.o(.text))
+<P><STRONG><a name="[54]"></a>main</STRONG> (Thumb, 88 bytes, Stack size 0 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = main &rArr; display_word &rArr; LCD_Text &rArr; noclearsnow &rArr; LCD_CmdRead &rArr; LCD_GPIOC_output &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softrst
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_inital
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
@@ -906,63 +908,63 @@ Global Symbols
 <P><STRONG><a name="[21]"></a>USB_LP_CAN1_RX0_IRQHandler</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = USB_LP_CAN1_RX0_IRQHandler &rArr; CAN_Receive
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_Receive
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_Receive
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[13]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EXTI0_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[14]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EXTI1_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[15]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EXTI2_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[16]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EXTI3_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[17]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EXTI4_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[24]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EXTI9_5_IRQHandler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_GetITStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[29]"></a>TIM2_IRQHandler</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM2_IRQHandler &rArr; TIM_GetITStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
@@ -993,90 +995,90 @@ Global Symbols
 <P><STRONG><a name="[c]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[80]"></a>LCD_GPIOC_input</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, lcd_driver.o(.text))
+<P><STRONG><a name="[82]"></a>LCD_GPIOC_input</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, lcd_driver.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LCD_GPIOC_input &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
-<P><STRONG><a name="[82]"></a>LCD_GPIOC_output</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, lcd_driver.o(.text))
+<P><STRONG><a name="[84]"></a>LCD_GPIOC_output</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, lcd_driver.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LCD_GPIOC_output &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
 <P><STRONG><a name="[76]"></a>LCD_GPIO_Config</STRONG> (Thumb, 252 bytes, Stack size 8 bytes, lcd_driver.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LCD_GPIO_Config &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
 </UL>
 
-<P><STRONG><a name="[89]"></a>LCD_delay</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rst
+<P><STRONG><a name="[8b]"></a>LCD_delay</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rst
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
 </UL>
 
 <P><STRONG><a name="[17d]"></a>LCD_WriteReg</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, lcd_driver.o(.text), UNUSED)
 
 <P><STRONG><a name="[17e]"></a>LCD_ReadReg</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, lcd_driver.o(.text), UNUSED)
 
-<P><STRONG><a name="[8b]"></a>LCD_SetCursor</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteCmd
+<P><STRONG><a name="[8d]"></a>LCD_SetCursor</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_wr_point
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_get_point
-</UL>
-
-<P><STRONG><a name="[8e]"></a>set_position</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteCmd
-</UL>
-<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_ColorBox
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_image
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_wr_point
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_get_point
 </UL>
 
-<P><STRONG><a name="[8f]"></a>lcd_wr_point</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
+<P><STRONG><a name="[90]"></a>set_position</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_test
-</UL>
-
-<P><STRONG><a name="[90]"></a>lcd_get_point</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
-</UL>
-<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_test
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_image
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_ColorBox
 </UL>
 
-<P><STRONG><a name="[91]"></a>Lcd_ColorBox</STRONG> (Thumb, 60 bytes, Stack size 32 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_position
+<P><STRONG><a name="[91]"></a>lcd_wr_point</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_test
 </UL>
 
-<P><STRONG><a name="[92]"></a>Dis_image</STRONG> (Thumb, 118 bytes, Stack size 40 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_position
+<P><STRONG><a name="[92]"></a>lcd_get_point</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_test
 </UL>
 
-<P><STRONG><a name="[93]"></a>LCD_test</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_wr_point
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_get_point
+<P><STRONG><a name="[93]"></a>Lcd_ColorBox</STRONG> (Thumb, 60 bytes, Stack size 32 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_position
 </UL>
 
-<P><STRONG><a name="[94]"></a>LCD_Setup</STRONG> (Thumb, 384 bytes, Stack size 8 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<P><STRONG><a name="[94]"></a>Dis_image</STRONG> (Thumb, 118 bytes, Stack size 40 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_position
+</UL>
+
+<P><STRONG><a name="[95]"></a>LCD_test</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_wr_point
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_get_point
+</UL>
+
+<P><STRONG><a name="[96]"></a>LCD_Setup</STRONG> (Thumb, 384 bytes, Stack size 8 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Config
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_delay
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteCmd
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rst
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_FSMC_Config
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_delay
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteCmd
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rst
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_FSMC_Config
 </UL>
 
 <P><STRONG><a name="[77]"></a>delay_nms</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
@@ -1084,7 +1086,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softrst
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_inital
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_test
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_test_auto
@@ -1092,10 +1095,9 @@ Global Symbols
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowStr
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_ziku
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_all
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
 <P><STRONG><a name="[17f]"></a>delay_us</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
@@ -1108,40 +1110,41 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[95]"></a>LCD_CmdRead</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text))
+<P><STRONG><a name="[97]"></a>LCD_CmdRead</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = LCD_CmdRead &rArr; LCD_GPIOC_output &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOC_output
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOC_input
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOC_output
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIOC_input
 </UL>
-<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_inital
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_test_auto
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_test_auto
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;no_bold_word
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bold_word
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_NoInv
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Inv
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;normal_data
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reverse_data
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page1
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OR_Two_Layer
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_Two_Layer
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page2
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page1
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearsnow
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page1
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OR_Two_Layer
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_Two_Layer
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page2
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page1
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearsnow
 </UL>
 
-<P><STRONG><a name="[96]"></a>LCD_CmdWrite</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
+<P><STRONG><a name="[98]"></a>LCD_CmdWrite</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LCD_CmdWrite &rArr; delay_nms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
 </UL>
 <BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_inital
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_test_auto
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disp_Graphic2
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_test
@@ -1158,29 +1161,29 @@ Global Symbols
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_kuang
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_snows
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_all
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displays
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page1
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OR_Two_Layer
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_Two_Layer
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page2
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page1
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearsnow
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displays
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page1
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OR_Two_Layer
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_Two_Layer
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page2
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page1
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearsnow
 </UL>
 
-<P><STRONG><a name="[97]"></a>LCD_DataWrite</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
+<P><STRONG><a name="[99]"></a>LCD_DataWrite</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = LCD_DataWrite &rArr; delay_nms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
 </UL>
 <BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_inital
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_test_auto
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Hex
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disp_Graphic2
@@ -1198,296 +1201,303 @@ Global Symbols
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_kuang
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_snows
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_all
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displays
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page1
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OR_Two_Layer
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_Two_Layer
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page2
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page1
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearsnow
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displays
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page1
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OR_Two_Layer
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Show_Two_Layer
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page2
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page1
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearsnow
 </UL>
 
-<P><STRONG><a name="[99]"></a>clearsnow</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<P><STRONG><a name="[9b]"></a>clearsnow</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = clearsnow &rArr; LCD_CmdRead &rArr; LCD_GPIOC_output &rArr; GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
 </UL>
 
-<P><STRONG><a name="[9a]"></a>noclearsnow</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
+<P><STRONG><a name="[9c]"></a>noclearsnow</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = noclearsnow &rArr; LCD_CmdRead &rArr; LCD_GPIOC_output &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_all
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_all
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
 </UL>
 
-<P><STRONG><a name="[9b]"></a>LCD_GotoXY</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<P><STRONG><a name="[7b]"></a>LCD_GotoXY</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LCD_GotoXY &rArr; LCD_DataWrite &rArr; delay_nms
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_test_auto
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_test_auto
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disp_Graphic2
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_test
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_biao
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_kuang
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_snows
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displays
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displays
 </UL>
 
-<P><STRONG><a name="[9c]"></a>LCD_Graphic</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearsnow
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<P><STRONG><a name="[9d]"></a>LCD_Graphic</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LCD_Graphic &rArr; clearsnow &rArr; LCD_CmdRead &rArr; LCD_GPIOC_output &rArr; GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disp_Graphic2
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clearsnow
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disp_Graphic2
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_test
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_biao
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_kuang
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_snows
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_all
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displays
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;displays
 </UL>
 
-<P><STRONG><a name="[9d]"></a>LCD_Text</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
+<P><STRONG><a name="[9e]"></a>LCD_Text</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LCD_Text &rArr; noclearsnow &rArr; LCD_CmdRead &rArr; LCD_GPIOC_output &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_word
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_test_auto
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowStr
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_ziku
 </UL>
 
-<P><STRONG><a name="[9e]"></a>Only_Show_Page1</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<P><STRONG><a name="[9f]"></a>Only_Show_Page1</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_kuang
 </UL>
 
-<P><STRONG><a name="[9f]"></a>Only_Show_Page2</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<P><STRONG><a name="[a0]"></a>Only_Show_Page2</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disp_Graphic2
 </UL>
 
-<P><STRONG><a name="[a0]"></a>Show_Two_Layer</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<P><STRONG><a name="[a1]"></a>Show_Two_Layer</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
-<P><STRONG><a name="[a1]"></a>OR_Two_Layer</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<P><STRONG><a name="[a2]"></a>OR_Two_Layer</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
-<P><STRONG><a name="[a2]"></a>Access_Page1</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<P><STRONG><a name="[a3]"></a>Access_Page1</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_kuang
 </UL>
 
-<P><STRONG><a name="[a3]"></a>Access_Page2</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<P><STRONG><a name="[a4]"></a>Access_Page2</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disp_Graphic2
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_ziku
 </UL>
 
-<P><STRONG><a name="[a4]"></a>displays</STRONG> (Thumb, 70 bytes, Stack size 32 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<P><STRONG><a name="[a5]"></a>displays</STRONG> (Thumb, 70 bytes, Stack size 32 bytes, lcd_driverconfig.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 
-<P><STRONG><a name="[79]"></a>lcd_inital</STRONG> (Thumb, 336 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = lcd_inital &rArr; LCD_CmdRead &rArr; LCD_GPIOC_output &rArr; GPIO_Init
+<P><STRONG><a name="[79]"></a>lcd_inital</STRONG> (Thumb, 322 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = lcd_inital &rArr; LCD_DataWrite &rArr; delay_nms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a5]"></a>clear</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<P><STRONG><a name="[7a]"></a>clear</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = clear &rArr; LCD_Graphic &rArr; clearsnow &rArr; LCD_CmdRead &rArr; LCD_GPIOC_output &rArr; GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_test
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_test
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_ziku
 </UL>
 
 <P><STRONG><a name="[a6]"></a>display_all</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;noclearsnow
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 
 <P><STRONG><a name="[a7]"></a>display_snows</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 
 <P><STRONG><a name="[a8]"></a>display_kuang</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page1
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page1
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page1
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page1
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 
 <P><STRONG><a name="[a9]"></a>display_biao</STRONG> (Thumb, 166 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 
 <P><STRONG><a name="[aa]"></a>display_ziku</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 
-<P><STRONG><a name="[7a]"></a>display_word</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text))
+<P><STRONG><a name="[7c]"></a>display_word</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = display_word &rArr; LCD_Text &rArr; noclearsnow &rArr; LCD_CmdRead &rArr; LCD_GPIOC_output &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[ab]"></a>LCD_ShowStr</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 
 <P><STRONG><a name="[ac]"></a>reverse_data</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
 <P><STRONG><a name="[ad]"></a>normal_data</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
 <P><STRONG><a name="[ae]"></a>LCD_Inv</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
 <P><STRONG><a name="[af]"></a>LCD_NoInv</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
 <P><STRONG><a name="[b0]"></a>bold_word</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
 <P><STRONG><a name="[b1]"></a>no_bold_word</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
 <P><STRONG><a name="[b2]"></a>enlarge</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 
 <P><STRONG><a name="[b3]"></a>display_test</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_test
 </UL>
 
 <P><STRONG><a name="[b4]"></a>disp_Graphic2</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page2
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Access_Page2
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Only_Show_Page2
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Graphic
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
 </UL>
 
 <P><STRONG><a name="[b5]"></a>Print_Hex</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, lcd_driverconfig.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tp_test_auto
 </UL>
 
 <P><STRONG><a name="[b6]"></a>tp_test_auto</STRONG> (Thumb, 308 bytes, Stack size 40 bytes, lcd_driverconfig.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Hex
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GotoXY
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Text
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DataWrite
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdWrite
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_CmdRead
 </UL>
 
 <P><STRONG><a name="[b7]"></a>lcd_test</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, lcd_driverconfig.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_nms
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;display_test
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
 </UL>
 
 <P><STRONG><a name="[180]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
@@ -1574,31 +1584,31 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[84]"></a>LCD_FSMC_Config</STRONG> (Thumb, 92 bytes, Stack size 96 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_NORSRAMCmd
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_NORSRAMInit
+<P><STRONG><a name="[86]"></a>LCD_FSMC_Config</STRONG> (Thumb, 92 bytes, Stack size 96 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_NORSRAMCmd
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSMC_NORSRAMInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
-</UL>
-
-<P><STRONG><a name="[87]"></a>LCD_Rst</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_delay
-</UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
 </UL>
 
-<P><STRONG><a name="[8c]"></a>WriteCmd</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_position
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
+<P><STRONG><a name="[89]"></a>LCD_Rst</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
 </UL>
 
-<P><STRONG><a name="[8d]"></a>WriteData</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lcd_driver.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_position
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
+<P><STRONG><a name="[8e]"></a>WriteCmd</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_position
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
+</UL>
+
+<P><STRONG><a name="[8f]"></a>WriteData</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lcd_driver.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_position
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Setup
 </UL>
 <P>
 <H3>

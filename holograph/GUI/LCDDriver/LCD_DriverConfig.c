@@ -578,8 +578,8 @@ void lcd_inital(void)
 	LCD_CmdWrite(FVHT);		//[F1H] , Default --> 0x00
 	LCD_DataWrite(0x00);
 	delay_nms(10);
-		datas =	LCD_CmdRead(DWWR);
-		delay_nms(10);
+//		datas =	LCD_CmdRead(DWWR);
+//		delay_nms(10);
 		
 }
     

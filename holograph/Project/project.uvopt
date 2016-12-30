@@ -171,34 +171,18 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>39</LineNumber>
+          <LineNumber>90</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134228664</Address>
+          <Address>134229272</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\LCD_CAN2.0(瑙ｅ喅鍒峰睆鎱紝鍒朵綔绐楀彛OK)\User\main.c</Filename>
+          <Filename>C:\Users\SCC\Desktop\LCD_CAN2.0(瑙ｅ喅鍒峰睆鎱紝鍒朵綔绐楀彛OK)\GUI\LCDDriver\LCD_Driver.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/main.c\39</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>41</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134228680</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\LCD_CAN2.0(瑙ｅ喅鍒峰睆鎱紝鍒朵綔绐楀彛OK)\User\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/main.c\41</Expression>
+          <Expression>\\project\../GUI/LCDDriver/LCD_Driver.c\90</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>

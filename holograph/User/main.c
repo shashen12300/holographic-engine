@@ -25,8 +25,8 @@ int main(void)
   delay_nms(10);   
   softrst();
   lcd_inital();  
-//  clear();
-// LCD_GotoXY(0x00,0x02);
+  clear();
+ LCD_GotoXY(0x00,0x02);
 while(1)
 {
    //ÆÁÄ»ÏÔÊ¾¿ªÆô  disp_offÊä³öhigh	

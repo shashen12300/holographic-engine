@@ -333,7 +333,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
 F (..\Libraries\CMSIS\CM3\system_stm32f10x.h)(0x4D783CAA)()
-F (..\User\main.c)(0x5866289B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+F (..\User\main.c)(0x58664B2C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
 I (..\Common\user_include.h)(0x55DDD5ED)
 I (..\User\stm32f10x_it.h)(0x4D99A426)
 I (..\Libraries\CMSIS\CM3\stm32f10x.h)(0x4D783CB4)
@@ -3627,7 +3627,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
 I (..\GUI\LCDDriver\LCD_Driver.h)(0x5860DF53)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB2B78)
-F (..\GUI\LCDDriver\LCD_DriverConfig.c)(0x585DF76E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\lcd_driverconfig.o --omf_browse .\obj\lcd_driverconfig.crf --depend .\obj\lcd_driverconfig.d)
+F (..\GUI\LCDDriver\LCD_DriverConfig.c)(0x58664A6B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\lcd_driverconfig.o --omf_browse .\obj\lcd_driverconfig.crf --depend .\obj\lcd_driverconfig.d)
 I (..\GUI\LCDDriver\LCD_Driver.h)(0x5860DF53)
 I (..\GUI\LCDDriver\LCD_DriverConfig.h)(0x585B9781)
 I (..\GUI\LCDDriver\ra8806reg.h)(0x479842F2)
