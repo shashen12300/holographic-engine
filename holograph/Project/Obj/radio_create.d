@@ -1,0 +1,9 @@
+.\obj\radio_create.o: ..\GUI\Widget\RADIO_Create.c
+.\obj\radio_create.o: ..\GUI\Widget\RADIO.h
+.\obj\radio_create.o: ..\GUI\WM\WM.h
+.\obj\radio_create.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\radio_create.o: ..\GUI\Config\GUIConf.h
+.\obj\radio_create.o: ..\GUI\Core\GUIType.h
+.\obj\radio_create.o: ..\GUI\Core\LCD.h
+.\obj\radio_create.o: ..\GUI\WM\WM_GUI.h
+.\obj\radio_create.o: ..\GUI\Widget\DIALOG_Intern.h

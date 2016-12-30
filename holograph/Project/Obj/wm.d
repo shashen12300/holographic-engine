@@ -1,0 +1,17 @@
+.\obj\wm.o: ..\GUI\WM\WM.c
+.\obj\wm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\obj\wm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\wm.o: ..\GUI\WM\WM_Intern_ConfDep.h
+.\obj\wm.o: ..\GUI\WM\WM_Intern.h
+.\obj\wm.o: ..\GUI\WM\WM.h
+.\obj\wm.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\wm.o: ..\GUI\Config\GUIConf.h
+.\obj\wm.o: ..\GUI\Core\GUIType.h
+.\obj\wm.o: ..\GUI\Core\LCD.h
+.\obj\wm.o: ..\GUI\WM\WM_GUI.h
+.\obj\wm.o: ..\GUI\Core\GUI_Protected.h
+.\obj\wm.o: ..\GUI\Core\GUI.h
+.\obj\wm.o: ..\GUI\Core\GUIVersion.h
+.\obj\wm.o: ..\GUI\Core\LCD_Protected.h
+.\obj\wm.o: ..\GUI\Core\GUIDebug.h
+.\obj\wm.o: ..\GUI\Core\GUI_X.h

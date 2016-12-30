@@ -1,0 +1,14 @@
+.\obj\gui__settext.o: ..\GUI\Core\GUI__SetText.c
+.\obj\gui__settext.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\gui__settext.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\gui__settext.o: ..\GUI\Core\GUI_Protected.h
+.\obj\gui__settext.o: ..\GUI\Core\GUI.h
+.\obj\gui__settext.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\gui__settext.o: ..\GUI\Config\GUIConf.h
+.\obj\gui__settext.o: ..\GUI\Core\GUIType.h
+.\obj\gui__settext.o: ..\GUI\Core\LCD.h
+.\obj\gui__settext.o: ..\GUI\Core\GUIVersion.h
+.\obj\gui__settext.o: ..\GUI\Core\LCD_Protected.h
+.\obj\gui__settext.o: ..\GUI\Core\GUIDebug.h
+.\obj\gui__settext.o: ..\GUI\Core\GUI_X.h
+.\obj\gui__settext.o: ..\GUI\WM\WM_GUI.h
