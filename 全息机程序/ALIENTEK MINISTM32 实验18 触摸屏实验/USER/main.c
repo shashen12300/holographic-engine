@@ -40,6 +40,7 @@ extern unsigned char tab1[];
 		delay_n_ms(2000);
 		disp_lattice(0xff,0xff);
 		delay_n_ms(2000);
+		//ฤใบร ฮารว
 		
 
 		
