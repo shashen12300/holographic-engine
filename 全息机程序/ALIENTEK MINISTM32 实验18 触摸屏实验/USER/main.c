@@ -13,7 +13,7 @@
 //正点原子@ALIENTEK
 //技术论坛:www.openedv.com 
 
-char data[300];
+char data[300]="串口测试数据\r\n",length;
 int i;
 extern unsigned char tab1[];
  int main(void)
@@ -32,15 +32,17 @@ extern unsigned char tab1[];
 	NVIC_Configuration();
 	LED_Init();
 	KEY_Init();
+	E11_init();
 	fnRTC_Init();
- uart_init(9600); 
+  uart_init(9600); 
 	delay_ms(50);
-	 LCD_RST_0;
-	 delay_ms(50);
-	 LCD_RST_1;
-	 delay_ms(50);
+	LCD_RST_0;
+	delay_ms(50);
+	LCD_RST_1;
+	delay_ms(50);
 	lcm_init();
 	fnRTC_Init();
+	E17_uart_init(9600);
 	//	fnRTC_SetTime(time);
 	while(1)
 	{
@@ -51,7 +53,8 @@ extern unsigned char tab1[];
 		if(key !=0)//KEY0按下,则执行校准程序
 		{
 			LED0=!LED0;	
-			printf("%d-%02d-%02d %02d:%02d:%02d    按键: KEY=%d 被按下\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second,key);
+			E17_sendString(data);
+			printf("%d-%02d-%02d %02d:%02d:%02d  按键: KEY=%d 被按下\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second,key);
 	//		E17_sendString("打印机串口测试");
 //			LCD_Clear(WHITE);//清屏
 //		    Touch_Adjust();  //屏幕校准 

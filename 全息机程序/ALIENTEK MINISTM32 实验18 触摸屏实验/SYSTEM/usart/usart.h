@@ -1,6 +1,8 @@
 #ifndef __USART_H
 #define __USART_H
 #include "stdio.h"
+
+#include "stm32f10x.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //Mini STM32开发板
@@ -23,5 +25,7 @@ extern u8 USART_RX_BUF[64];     //接收缓冲,最大63个字节.末字节为换行符
 extern u8 USART_RX_STA;         //接收状态标记	
 
 void uart_init(u32 bound);
-
+void E17_uart_init(u32 bound);
+void E17_sendString(char *data);
+void fnUSART3_SendByte(u8 Data);
 #endif

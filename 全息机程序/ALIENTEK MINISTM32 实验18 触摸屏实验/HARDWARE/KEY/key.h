@@ -2,6 +2,7 @@
 #define __KEY_H	
 
 #include "stm32f10x.h"
+#include "sys.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //Mini STM32开发板
@@ -34,7 +35,12 @@ typedef struct
 #define KEY1 PAin(2)	//PA2 
 #define KEY2 PAin(3)	//PA3  
 #define KEY3 PAin(4)	//PA4
+#define KEY4 PAin(15)	//PA15
+
+#define KEY_A PAin(11)	//PA11
+#define KEY_B PAin(12)	//PA12
 	 
 void KEY_Init(void);//IO初始化
-u8 KEY_Scan(void);  //按键扫描函数					    
+u8 KEY_Scan(void);  //按键扫描函数		
+void E11_init();//旋转编码器
 #endif

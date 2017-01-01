@@ -73,7 +73,7 @@ void LcdChar(unsigned char x, unsigned char y, unsigned char *pdata, unsigned ch
 void LcdPoint( unsigned int x, unsigned int y, unsigned char flag); 
 //-----------flag = 0 ??(?), bf=1 ??(?), bf=2 ????(??)-----------
 void LcdLine(unsigned int x0, unsigned int y0, unsigned int x1, unsigned int y1, unsigned char flag);
-void LcdInit(void); 
+void lcm_init(void);
 void LcdCsrW ( unsigned char x, unsigned char y);
 void Delay_ns(); 
 

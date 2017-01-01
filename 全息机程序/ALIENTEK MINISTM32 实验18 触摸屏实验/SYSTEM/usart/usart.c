@@ -1,5 +1,6 @@
 #include "sys.h"
 #include "usart.h"
+#include "stdio.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK Mini STM32开发板
@@ -142,3 +143,51 @@ void USART1_IRQHandler(void)                	//串口1中断服务程序
 			}   		 
      } 
 } 
+	
+void E17_uart_init(u32 bound){
+    //GPIO端口设置
+    GPIO_InitTypeDef GPIO_InitStructure;
+	USART_InitTypeDef USART_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB|RCC_APB2Periph_AFIO, ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
+     //USART3_TX   PB.10
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+    GPIO_Init(GPIOB, &GPIO_InitStructure);
+   
+    //USART3_RX	  PB.11
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+    GPIO_Init(GPIOB, &GPIO_InitStructure);  
+ //USART 初始化设置 
+	USART_InitStructure.USART_BaudRate = bound;//一般设置为9600;
+	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+	USART_InitStructure.USART_StopBits = USART_StopBits_1;
+	USART_InitStructure.USART_Parity = USART_Parity_No;
+	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+
+  USART_Init(USART3, &USART_InitStructure);
+  USART_Cmd(USART3, ENABLE);                    //使能串口 
+}
+
+
+void E17_sendString(char *data) {
+	char temp[50],i;
+	unsigned int size;
+	sprintf(temp,"%s",data);
+	size = strlen(temp);
+	for(i=0;i<size;i++) {
+			fnUSART3_SendByte(temp[i]);
+	}	 
+}
+/*******************************************************************
+??:USART1????8???
+*******************************************************************/
+void fnUSART3_SendByte(u8 Data)
+{ 
+	while (!(USART3->SR & USART_FLAG_TXE));
+	USART_SendData(USART3, Data);	 
+}

@@ -29,3 +29,8 @@
 .\stm32f10x_it.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
 .\stm32f10x_it.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
 .\stm32f10x_it.o: ..\STM32F10x_FWLib\inc\misc.h
+.\stm32f10x_it.o: ..\HARDWARE\KEY\key.h
+.\stm32f10x_it.o: ..\SYSTEM\sys\sys.h
+.\stm32f10x_it.o: ..\SYSTEM\delay\delay.h
+.\stm32f10x_it.o: ..\SYSTEM\usart\usart.h
+.\stm32f10x_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

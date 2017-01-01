@@ -31,3 +31,5 @@
 .\key.o: ..\HARDWARE\KEY\key.h
 .\key.o: ..\SYSTEM\sys\sys.h
 .\key.o: ..\SYSTEM\delay\delay.h
+.\key.o: ..\SYSTEM\usart\usart.h
+.\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
