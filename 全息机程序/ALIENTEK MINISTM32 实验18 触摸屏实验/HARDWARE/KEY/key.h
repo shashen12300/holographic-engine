@@ -1,5 +1,7 @@
 #ifndef __KEY_H
-#define __KEY_H	 
+#define __KEY_H	
+
+#include "stm32f10x.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //Mini STM32开发板
@@ -28,9 +30,10 @@ typedef struct
     GPIOMode_TypeDef    BUTTON_MODE;
 }Button_PinModeDef;	
 
-#define KEY0 PAin(13)   //PA13
-#define KEY1 PAin(15)	//PA15 
-#define KEY2 PAin(0)	//PA0  WK_UP
+#define KEY0 PAin(1)  //PA1
+#define KEY1 PAin(2)	//PA2 
+#define KEY2 PAin(3)	//PA3  
+#define KEY3 PAin(4)	//PA4
 	 
 void KEY_Init(void);//IO初始化
 u8 KEY_Scan(void);  //按键扫描函数					    

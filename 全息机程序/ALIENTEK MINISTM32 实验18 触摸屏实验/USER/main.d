@@ -39,3 +39,4 @@
 .\main.o: ..\HARDWARE\SPI\spi.h
 .\main.o: ..\HARDWARE\FLASH\flash.h
 .\main.o: ..\HARDWARE\TOUCH\touch.h
+.\main.o: ..\HARDWARE\RTC_PCF8563T\rtc.h

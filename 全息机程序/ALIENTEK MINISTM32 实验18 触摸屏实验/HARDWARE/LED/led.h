@@ -12,5 +12,6 @@
 
 void LED_Init(void);//≥ı ºªØ
 
+#define LED0 PCout(9)// PC9
 		 				    
 #endif

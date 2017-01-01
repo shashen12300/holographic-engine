@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: μVision V5.17.0.0
 Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 1 1, 1, LIC=IK130-BL9E3-R98G6-D9I68-1CVL8-PDJFY
+License Information: s c, c, LIC=ATTRA-1G5KB-GKCBG-V6IW8-6WJZH-RG28F
  
 Tool Versions:
 Toolchain:       MDK-ARM Standard  Version: 5.17
@@ -21,13 +21,28 @@ Target DLL:      Segger\JL2CM3.dll V2.99.16.0
 Dialog DLL:      TARMSTM.DLL V1.64.0.0
  
 <h2>Project:</h2>
-C:\Users\zhaozhi\OneDrive\外包\中瑞科诺\全息一体机\设计\源码\ALIENTEK MINISTM32 实验18 触摸屏实验\USER\TOUCH.uvproj
-Project File Date:  12/28/2016
+C:\Users\SCC\Desktop\holographic-engine\全息机程序\ALIENTEK MINISTM32 实验18 触摸屏实验\USER\TOUCH.uvproj
+Project File Date:  01/01/2017
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\TOUCH.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\HARDWARE\LED\led.h(15): warning:  #47-D: incompatible redefinition of macro "LED0" (declared at line 10)
+  #define LED0 PCout(9)// PC9
+..\HARDWARE\LCD\lcd.h(78): warning:  #1295-D: Deprecated declaration Delay_ns - give arg types
+  void Delay_ns(); 
+main.c(42): warning:  #223-D: function "lcm_init" declared implicitly
+  	lcm_init();
+main.c(22): warning:  #177-D: variable "i" was declared but never referenced
+  	u8 i=0;	
+main.c(23): warning:  #550-D: variable "time" was set but never used
+  	Stru_Time time,getTime;
+main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=13454 RO-data=286 RW-data=9992 ZI-data=1848  
+FromELF: creating hex file...
+".\TOUCH.axf" - 0 Error(s), 5 Warning(s).
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

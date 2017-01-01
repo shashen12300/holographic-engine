@@ -371,7 +371,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\HARDWARE\LED;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\STM32F10x_FWLib\inc;..\CORE;..\HARDWARE\KEY;..\HARDWARE\EXTI;..\HARDWARE\WDG;..\HARDWARE\TIMER;..\HARDWARE\PWM;..\HARDWARE\LCD;..\HARDWARE\WKUP;..\HARDWARE\ADC;..\HARDWARE\TSensor;..\HARDWARE\IIC;..\HARDWARE\24CXX;..\HARDWARE\SPI;..\HARDWARE\FLASH;..\HARDWARE\TOUCH</IncludePath>
+              <IncludePath>..\HARDWARE\LED;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\STM32F10x_FWLib\inc;..\CORE;..\HARDWARE\KEY;..\HARDWARE\EXTI;..\HARDWARE\WDG;..\HARDWARE\TIMER;..\HARDWARE\PWM;..\HARDWARE\LCD;..\HARDWARE\WKUP;..\HARDWARE\ADC;..\HARDWARE\TSensor;..\HARDWARE\IIC;..\HARDWARE\24CXX;..\HARDWARE\SPI;..\HARDWARE\FLASH;..\HARDWARE\TOUCH;..\HARDWARE\RTC_PCF8563T</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -503,6 +503,11 @@
               <FileName>touch.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\TOUCH\touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\RTC_PCF8563T\rtc.c</FilePath>
             </File>
           </Files>
         </Group>

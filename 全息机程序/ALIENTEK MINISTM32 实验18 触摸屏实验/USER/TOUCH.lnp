@@ -16,6 +16,7 @@
 ".\spi.o"
 ".\flash.o"
 ".\touch.o"
+".\rtc.o"
 ".\delay.o"
 ".\sys.o"
 ".\usart.o"
