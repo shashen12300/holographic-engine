@@ -1,0 +1,16 @@
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\LCD_UpdateColorIndices.c
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\LCD_Private.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\LCD_ConfDefaults.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Config\LCDConf.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Config\GUIConf.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\LCD_Protected.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\LCD.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\GUI.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\GUIType.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\GUIVersion.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\GUI_Private.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\GUI_Protected.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\GUIDebug.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\Core\GUI_X.h
+.\obj\lcd_updatecolorindices.o: ..\GUI\WM\WM_GUI.h

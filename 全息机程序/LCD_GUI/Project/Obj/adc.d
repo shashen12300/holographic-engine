@@ -1,0 +1,17 @@
+.\obj\adc.o: ..\User\ADC\adc.c
+.\obj\adc.o: ..\User\ADC\adc.h
+.\obj\adc.o: ..\Libraries\CMSIS\CM3\stm32f10x.h
+.\obj\adc.o: ..\Libraries\CMSIS\CM3\core_cm3.h
+.\obj\adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\adc.o: ..\Libraries\CMSIS\CM3\system_stm32f10x.h
+.\obj\adc.o: ..\Common\stm32f10x_conf.h
+.\obj\adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
+.\obj\adc.o: ..\Libraries\CMSIS\CM3\stm32f10x.h
+.\obj\adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h
+.\obj\adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h
+.\obj\adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h
+.\obj\adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
+.\obj\adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+.\obj\adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h

@@ -1,0 +1,12 @@
+.\obj\gui__getfontsizey.o: ..\GUI\Core\GUI__GetFontSizeY.c
+.\obj\gui__getfontsizey.o: ..\GUI\Core\GUI_Protected.h
+.\obj\gui__getfontsizey.o: ..\GUI\Core\GUI.h
+.\obj\gui__getfontsizey.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\gui__getfontsizey.o: ..\GUI\Config\GUIConf.h
+.\obj\gui__getfontsizey.o: ..\GUI\Core\GUIType.h
+.\obj\gui__getfontsizey.o: ..\GUI\Core\LCD.h
+.\obj\gui__getfontsizey.o: ..\GUI\Core\GUIVersion.h
+.\obj\gui__getfontsizey.o: ..\GUI\Core\LCD_Protected.h
+.\obj\gui__getfontsizey.o: ..\GUI\Core\GUIDebug.h
+.\obj\gui__getfontsizey.o: ..\GUI\Core\GUI_X.h
+.\obj\gui__getfontsizey.o: ..\GUI\WM\WM_GUI.h
