@@ -39,7 +39,7 @@ int main(void)
 	SEI();        //¿ª×ÜÖÐ¶Ï
 	//Dis_image(0,0,480,320,gImage_Logo);
 	User_delay(2);
-//	MainTask();
+	MainTask();
 //GUI_Init(); //GUI 
 //GUI_Clear();
 //GUI_SetBkColor(0x001f); //À¶
