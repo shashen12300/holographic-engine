@@ -5,7 +5,8 @@
 #include "GUI.h"
 //#include "logo.h"
 #include "LCD_Driver.h"
-#include "User_win.h"
+//#include "User_win.h"
+#include "my_win.h"
 #include "RA8835.h"
 #include "led.h"
 #include "delay.h"
@@ -15,7 +16,7 @@
 #include "rtc.h" 
 #include "adc.h"
 #include "myFont16_21.h"
-#include "fengshi2.h"
+
 #include "feegnshi1.h"
 #include "inputWindow.h"
 #include "WM.h"
@@ -205,7 +206,7 @@ int main(void)
 //	MainTask();
 	GUI_SetFont(&GUI_FontHZ_SimSun_1414);
 //	DrawAreaBitmap(0,0,320,240,my_image,1);
-	GUI_DrawBitmap(&bmfengshi2,0,0);
+	
 //		GUI_DrawBitmap(&bmfengshi2,50,100);
 //		GUI_InvertRect(10,100,10,10);
 //	GUI_ClearRect(10,100,30,30);
@@ -221,23 +222,22 @@ printf("开始测试\r\n");
 //	readDataByAddress(0x5000,0x2800,mydata); 
 //	UART1_Tx(mydata,0x2800);
 	while(1) {
-//		MainTask();
-		fnRTC_GetTime(&getTime); 	
-		sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
-		GUI_DispStringAt(displayTime,180,4);	
+		//MainTask();
+
 	 	key=KEY_Scan();
 		adcValue = Get_Adc(0);
 		if(key !=0)//KEY0按下,则执行校准程序
 		{
 			if(key == 1) {
-						MainTask();
-
+				MainTask();
+			}else if (key == 2) {
+				WM_Paint(timeForm_hWin);
 			}else {
-				
+			
 			}
-			LED0=!LED0;	
-			E17_sendString(data);
-			printf("%d-%02d-%02d %02d:%02d:%02d  按键: KEY=%d 被按下  adc = %d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second,key,adcValue);
+				LED0=!LED0;	
+				E17_sendString(data);
+				printf("%d-%02d-%02d %02d:%02d:%02d  按键: KEY=%d 被按下  adc = %d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second,key,adcValue);
 		}
 	}
 }

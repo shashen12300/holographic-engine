@@ -193,6 +193,8 @@ The following is the list of windows messages.
 #define WM_WIDGET                   0x0300  /* 256 messages reserved for Widget messages */
 #define WM_USER                     0x0400  /* Reserved for user messages ... (Keep the same as WIN32) */
 
+#define MY_MESSAGE_KEY       WM_USER+1
+#define MY_MESSAGE_ENCODER   WM_USER+2
 
 /*********************************************************************
 *

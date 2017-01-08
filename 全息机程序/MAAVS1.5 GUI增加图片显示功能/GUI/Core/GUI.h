@@ -206,8 +206,12 @@ Note that we have chosen the values to be close to existing
 #define GUI_ID_PROGBAR2   0x212
 #define GUI_ID_PROGBAR3   0x213
 
-#define GUI_ID_USER     0x800
-
+#define GUI_ID_USER     	0x800
+#define MY_MESSAGE_ID_KEY1   GUI_ID_USER + 0
+#define MY_MESSAGE_ID_KEY2   GUI_ID_USER + 1
+#define MY_MESSAGE_ID_KEY3   GUI_ID_USER + 2
+#define MY_MESSAGE_ID_KEY4   GUI_ID_USER + 3
+#define MY_MESSAGE_ID_ENCODER0  GUI_ID_USER + 4
 /*********************************************************************
 *
 *               Constants  needed for GL

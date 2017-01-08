@@ -3,5 +3,6 @@
 #include "GUI.h"
 
 extern GUI_CONST_STORAGE GUI_BITMAP bmfengshi2;
-
+extern GUI_CONST_STORAGE GUI_BITMAP bmshijian;
 #endif
+

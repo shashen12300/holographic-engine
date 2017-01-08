@@ -33,3 +33,4 @@
 .\obj\user_win.o: ..\GUI\Widget\LISTVIEW.h
 .\obj\user_win.o: ..\GUI\Widget\HEADER.h
 .\obj\user_win.o: ..\User\myFont16_21.h
+.\obj\user_win.o: ..\User\User_win.h

@@ -5,6 +5,10 @@
 #include "key.h"
 #include "delay.h"
 #include "usart.h"
+#include "WM.h"
+#include "GUI.h"
+#include "my_win.h"
+
 int logoCount=0;
 unsigned char CAN_LCD_buffer[480];
 void USB_LP_CAN1_RX0_IRQHandler(void)   
@@ -98,8 +102,11 @@ void TIM2_IRQHandler(void)
 
 void EXTI15_10_IRQHandler(void)
 {	
-	static int lastCount=0;
 	EXTI_InitTypeDef EXTI_InitStructure;
+	static int lastCount=0;
+	WM_MESSAGE* pMsg;
+	pMsg->MsgId = MY_MESSAGE_ENCODER;
+	pMsg->hWinSrc = MY_MESSAGE_ID_ENCODER0;
       if(EXTI_GetITStatus(EXTI_Line11) != RESET)
     {
 			EXTI_ClearITPendingBit(EXTI_Line11);     //清除中断标志位
@@ -128,18 +135,21 @@ void EXTI15_10_IRQHandler(void)
 							}
 
 						}
-			
-					}
-			selectLogoCount(lastCount);	
-			selectLogoCount(logoCount);	
+			pMsg->Data.v = logoCount;
+//			selectLogoCount(lastCount);	
+//			selectLogoCount(logoCount);	
 			lastCount = logoCount;
+			WM_SendMessage(timeForm_hWin,pMsg);
+					}
+
+
 			GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource11); 
 			EXTI_InitStructure.EXTI_Line = EXTI_Line11;
 			EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
 			EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
 			EXTI_InitStructure.EXTI_LineCmd = ENABLE;
 			EXTI_Init(&EXTI_InitStructure); 			
-    }
+				}
 }
 
 /**

@@ -28,6 +28,8 @@
 #include "LISTVIEW.h"
 
 #include "myFont16_21.h"
+//#include "fengshi2.h"
+#include "User_win.h"
 
 #ifndef GUI_FLASH 
 	#define GUI_FLASH 
@@ -56,9 +58,9 @@ extern GUI_FLASH const GUI_FONT GUI_FontHZ_SimSun_1616;
 */
 
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
-    { FRAMEWIN_CreateIndirect,  "Caption",           0,                       100,  43,  120,180,FRAMEWIN_CF_MOVEABLE,0},
-    { LISTBOX_CreateIndirect,    NULL,               GUI_ID_LISTBOX0,         0,  155,314,79, 0,0},
-    { TEXT_CreateIndirect,      "hello world!",      GUI_ID_TEXT0,            38, 29, 86, 27, 0,0}
+    { FRAMEWIN_CreateIndirect,  "Caption",           0,                       100,  43,  120,160,FRAMEWIN_CF_MOVEABLE,0},
+    { TEXT_CreateIndirect,      "hello world!",      GUI_ID_TEXT0,            1, 1, 118, 30, 0,0},
+		{ TEXT_CreateIndirect,      "ÐÔ±ð",      GUI_ID_TEXT1,            1, 128, 118, 30, 0,0}
 };
 
 
@@ -73,7 +75,7 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 void PaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
-
+		//GUI_DrawBitmap(&bmfengshi2,0,0);
 }
 
 
@@ -94,18 +96,17 @@ void InitDialog(WM_MESSAGE * pMsg)
     FRAMEWIN_SetClientColor(hWin,0x000000);
     FRAMEWIN_SetTitleVis(hWin,0);
     //
-    //GUI_ID_LISTBOX0
-    //
-    LISTBOX_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_LISTBOX0),0,0x000000);
-    LISTBOX_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_LISTBOX0),0,0xffffff);
-    LISTBOX_SetAutoScrollV(WM_GetDialogItem(hWin,GUI_ID_LISTBOX0),1);
-    LISTBOX_SetAutoScrollH(WM_GetDialogItem(hWin,GUI_ID_LISTBOX0),1);
-    //
     //GUI_ID_TEXT0
     //
-    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0xffffff);
+    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0x000000);
+		TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0xffffff);
     TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0),GUI_TA_VCENTER|GUI_TA_CENTER);
-
+		 //
+    //GUI_ID_TEXT1
+    //
+    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0x000000);
+		TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0xffffff);
+    TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT1),GUI_TA_VCENTER|GUI_TA_CENTER);
 }
 
 
@@ -115,7 +116,7 @@ void InitDialog(WM_MESSAGE * pMsg)
 *
 *       Dialog callback routine
 */
-static void _cbCallback(WM_MESSAGE * pMsg) 
+void _dialogCallback(WM_MESSAGE * pMsg) 
 {
     int NCode, Id;
     WM_HWIN hWin = pMsg->hWin;
@@ -166,29 +167,29 @@ static void _cbCallback(WM_MESSAGE * pMsg)
 *
 **********************************************************************
 */
-void MainTask(void) 
-{ 
-////    GUI_Init();
-//    WM_SetDesktopColor(GUI_WHITE);      /* Automacally update desktop window */
-//    WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
-    //PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
-    //FRAMEWIN_SetDefaultSkin(FRAMEWIN_SKIN_FLEX);
-    //PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
-    //BUTTON_SetDefaultSkin(BUTTON_SKIN_FLEX);
-    //CHECKBOX_SetDefaultSkin(CHECKBOX_SKIN_FLEX);
-    //DROPDOWN_SetDefaultSkin(DROPDOWN_SKIN_FLEX);
-    //SCROLLBAR_SetDefaultSkin(SCROLLBAR_SKIN_FLEX);
-    //SLIDER_SetDefaultSkin(SLIDER_SKIN_FLEX);
-    //HEADER_SetDefaultSkin(HEADER_SKIN_FLEX);
-    //RADIO_SetDefaultSkin(RADIO_SKIN_FLEX);
-//	while(1)
-//	{
-    GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbCallback, 0, 0, 0);
+//void DialogTask(void) 
+//{ 
+//////    GUI_Init();
+////    WM_SetDesktopColor(GUI_WHITE);      /* Automacally update desktop window */
+////    WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
+//    //PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
+//    //FRAMEWIN_SetDefaultSkin(FRAMEWIN_SKIN_FLEX);
+//    //PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
+//    //BUTTON_SetDefaultSkin(BUTTON_SKIN_FLEX);
+//    //CHECKBOX_SetDefaultSkin(CHECKBOX_SKIN_FLEX);
+//    //DROPDOWN_SetDefaultSkin(DROPDOWN_SKIN_FLEX);
+//    //SCROLLBAR_SetDefaultSkin(SCROLLBAR_SKIN_FLEX);
+//    //SLIDER_SetDefaultSkin(SLIDER_SKIN_FLEX);
+//    //HEADER_SetDefaultSkin(HEADER_SKIN_FLEX);
+//    //RADIO_SetDefaultSkin(RADIO_SKIN_FLEX);
+////	while(1)
+////	{
+//    GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbCallback, 0, 0, 0);
 
-//		GUI_SetFont(&GUI_FontHZ_SimSun_1414);
-//		GUI_DispString("Hello world");
-//		while(1);
+////		GUI_SetFont(&GUI_FontHZ_SimSun_1414);
+////		GUI_DispString("Hello world");
+////		while(1);
 
-//	}
-}
+////	}
+//}
 

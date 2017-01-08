@@ -29,7 +29,9 @@
 .\obj\main.o: ..\GUI\Core\GUIType.h
 .\obj\main.o: ..\GUI\Core\LCD.h
 .\obj\main.o: ..\GUI\Core\GUIVersion.h
-.\obj\main.o: ..\User\User_win.h
+.\obj\main.o: ..\User\my_win.h
+.\obj\main.o: ..\GUI\WM\WM.h
+.\obj\main.o: ..\GUI\WM\WM_GUI.h
 .\obj\main.o: ..\User\RA8835.h
 .\obj\main.o: ..\User\LED\led.h
 .\obj\main.o: ..\SYSTEM\delay\delay.h
@@ -40,8 +42,5 @@
 .\obj\main.o: ..\User\RTC_PCF8563T\rtc.h
 .\obj\main.o: ..\User\ADC\adc.h
 .\obj\main.o: ..\User\myFont16_21.h
-.\obj\main.o: ..\User\fengshi2.h
 .\obj\main.o: ..\User\feegnshi1.h
 .\obj\main.o: ..\User\inputWindow.h
-.\obj\main.o: ..\GUI\WM\WM.h
-.\obj\main.o: ..\GUI\WM\WM_GUI.h
