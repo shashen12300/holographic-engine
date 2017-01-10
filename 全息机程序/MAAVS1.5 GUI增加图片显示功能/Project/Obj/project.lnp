@@ -631,7 +631,7 @@
 ".\obj\widget_setwidth.o"
 ".\obj\window.o"
 ".\obj\window_default.o"
---strict --scatter ".\Obj\project.sct"
+--library_type=microlib --strict --scatter ".\Obj\project.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\List\project.map" -o .\Obj\project.axf

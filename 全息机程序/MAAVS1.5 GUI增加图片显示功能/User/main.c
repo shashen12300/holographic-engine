@@ -175,6 +175,7 @@ const unsigned char logo2[12]={
 }
 int main(void)
 {
+	GUI_RECT rect;
 	u8 key;
 	u16 i1=0,j1;
 	char displayTime[20];
@@ -202,11 +203,11 @@ int main(void)
 	delay_ms(50);
 	fnRTC_Init();
 	E17_uart_init(9600);
+	printf("开始测试\r\n");
 	GUI_Init();
-//	MainTask();
+	MainTask();
 	GUI_SetFont(&GUI_FontHZ_SimSun_1414);
 //	DrawAreaBitmap(0,0,320,240,my_image,1);
-	
 //		GUI_DrawBitmap(&bmfengshi2,50,100);
 //		GUI_InvertRect(10,100,10,10);
 //	GUI_ClearRect(10,100,30,30);
@@ -229,11 +230,19 @@ printf("开始测试\r\n");
 		if(key !=0)//KEY0按下,则执行校准程序
 		{
 			if(key == 1) {
-				MainTask();
-			}else if (key == 2) {
+//				MainTask();
 				WM_Paint(timeForm_hWin);
-			}else {
+				WM_Exec();
+
+			}else if (key == 2) {
+					WM_GetClientRect(&rect);
+					printf("活动窗口的rect：x1=%d,y1=%d,x2=%d,y2=%d  句柄:%d\r\n",rect.x0,rect.y0,rect.x1,rect.y1,WM_GetActiveWindow());
+			}else if (key == 3) {
+				
+			}else if (key == 4) {
 			
+			}else {
+				printf("错误按键按下\r\n");
 			}
 				LED0=!LED0;	
 				E17_sendString(data);

@@ -170,20 +170,19 @@ static void _cbCallback(WM_MESSAGE * pMsg)
 	unsigned short int value;
 	Stru_Time time,getTime;
     int NCode, Id;
-		WM_HWIN mainForm_hWin;
-		WM_HWIN dialog_hWin;
-    WM_HWIN hWin = pMsg->hWin;
     switch (pMsg->MsgId) 
     {
 				case WM_PAINT:
+				{
 						//GUI_SetBkColor(GUI_BLACK);
 						//PaintMyDialog(pMsg);
 //						mainForm_hWin=WM_CreateWindowAsChild(0,0,320,240,hWin,WM_CF_SHOW,_mainFormCallback,0); //主界面
 //						dialog_hWin=WM_CreateWindowAsChild(100,43,120,160,hWin,WM_CF_SHOW/*WM_CF_HIDE*/,_dialogCallback,0); //弹窗
-		fnRTC_GetTime(&getTime); 	
-		sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
-		GUI_DispStringAt(displayTime,160,5);
-		GUI_DrawBitmap(&bmshijian,0,0);
+							fnRTC_GetTime(&getTime); 	
+							sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
+							GUI_DispStringAt(displayTime,160,5);
+							GUI_DrawBitmap(&bmshijian,0,0);
+				}
 					break;
         case WM_CREATE:
 //						FRAMEWIN_SetClientColor(hWin,0x000000);
@@ -237,8 +236,8 @@ void MainTask(void)
 
     //GUI_Init();
 	
-    //WM_SetDesktopColor(GUI_WHITE);      /* Automacally update desktop window */
-    //WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
+			WM_SetDesktopColor(GUI_WHITE);      /* Automacally update desktop window */
+			WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
 		
     //PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
     //FRAMEWIN_SetDefaultSkin(FRAMEWIN_SKIN_FLEX);
@@ -250,24 +249,12 @@ void MainTask(void)
     //SLIDER_SetDefaultSkin(SLIDER_SKIN_FLEX);
     //HEADER_SetDefaultSkin(HEADER_SKIN_FLEX);
     //RADIO_SetDefaultSkin(RADIO_SKIN_FLEX);
-	while(1)
-	{
+//	while(1)
+//	{
 				//GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbCallback, 0, 0, 0);
 				hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,NULL,0);//根窗口
 				timeForm_hWin = WM_CreateWindowAsChild(0,0,320,37,hWin,WM_CF_SHOW,_cbCallback,0); //时间窗口
 				mainForm_hWin=WM_CreateWindowAsChild(0,37,320,203,hWin,WM_CF_SHOW,_mainFormCallback,0); //菜单窗口
 //				dialog_hWin=WM_CreateWindowAsChild(100,43,120,160,hWin,WM_CF_HIDE,_dialogCallback,0); //弹窗
-				//WM_Exec();
-				
-				//FRAMEWIN_Handle hFrame = FRAMEWIN_Create("Frame window",NULL,WM_CF_SHOW,0,0,320,240);
-//				FRAMEWIN_SetFont(hFrame,&GUI_Font16B_ASCII);
-//				FRAMEWIN_SetTextColor(hFrame,GUI_RED);
-//				FRAMEWIN_SetBarColor(hFrame,0,GUI_GREEN);
-//				FRAMEWIN_SetTextAlign(hFrame,GUI_TA_HCENTER);
-//				hWin=WM_GetDesktopWindow();
-//				mainForm_hWin=WM_CreateWindowAsChild(0,0,320,240,hWin,WM_CF_SHOW,_mainFormCallback,0); //主界面
-//				dialog_hWin=WM_CreateWindowAsChild(100,43,120,160,hWin,WM_CF_HIDE/*WM_CF_HIDE*/,_dialogCallback,0); //弹窗
-				
-	}
-}
 
+}
