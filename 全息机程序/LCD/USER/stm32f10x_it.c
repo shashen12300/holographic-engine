@@ -83,22 +83,22 @@ void SysTick_Handler(void)
 void EXTI15_10_IRQHandler(void)
 {
 
-      if(EXTI_GetITStatus(EXTI_Line11) != RESET)
+      if(EXTI_GetITStatus(EXTI_Line14) != RESET)
     {
-			EXTI_ClearITPendingBit(EXTI_Line11);     //清除中断标志位
+			EXTI_ClearITPendingBit(EXTI_Line14);     //清除中断标志位
 			delay_us(10);
-			if(KEY_A == 0) {
-            if(KEY_B == 1)
-            {
-							 printf("正传\r\n");
-            }else {
-								delay_us(1);
-							if(KEY_B == 0) {
-								printf("反传\r\n");
-							}
+//			if(KEY_A == 0) {
+//            if(KEY_B == 1)
+//            {
+//							 printf("正传\r\n");
+//            }else {
+//								delay_us(1);
+//							if(KEY_B == 0) {
+//								printf("反传\r\n");
+//							}
 
-						}	
-			}						
+//						}	
+//			}						
     }
 }
 

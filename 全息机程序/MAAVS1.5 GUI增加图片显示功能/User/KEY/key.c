@@ -20,10 +20,10 @@ void KEY_Init(void) //IO初始化
 {
  	GPIO_InitTypeDef GPIO_InitStructure;
 	//init GPIOA  上拉输入
- 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
-	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4;//PA.1 .2 .3 .4
+ 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC,ENABLE);
+	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_13|GPIO_Pin_14;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
-	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_Init(GPIOC, &GPIO_InitStructure);
 		
 }
 
@@ -32,63 +32,58 @@ u8 KEY_Scan(void)
 {	 
 	static u8 key_up=1;//按键按松开标志	
  
- 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_Disable, ENABLE);
 	if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==0||KEY4==0))
 	{
 		delay_ms(10);//去抖动 
 		key_up=0;
 		if(KEY0==0)
 		{
-	 
-			 GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
+			
 			return 1;
 		}
 		else if(KEY1==0)
 		{
 	 	 
-	     	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
+	  
 			return 2;
 		}
 		else if(KEY2==0)
 		{
 	 
-	    	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
+	
 			return 3;
 		}
 		else if(KEY3==0)
 		{
 	 
-	    	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
+
 			return 4;
 		}
 		else if(KEY4==0) //旋转编码器按下
 		{
 	 
-	    	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 			return 5;
 		}
 	}else if(KEY0==1&&KEY1==1&&KEY2==1&&KEY3==1&&KEY4==1)key_up=1; 	    
  
- 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 	return 0;// 无按键按下
 }
-
-
 
 void E11_init() {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	EXTI_InitTypeDef EXTI_InitStructure;
 	NVIC_InitTypeDef NVIC_InitStructure;
 
-	//init GPIOA  上拉输入
- 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
-	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_11|GPIO_Pin_12;//PA.11 .12
+	//init GPIOC  上拉输入
+ 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC,ENABLE);
+	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_15;//PA.11 .12
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
-	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_Init(GPIOC, &GPIO_InitStructure);
 	
-		/* EXTI line(PB0) mode config */
-	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource11); 
-  EXTI_InitStructure.EXTI_Line = EXTI_Line11;
+		/* EXTI line mode config */
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOC,GPIO_PinSource14); 
+  EXTI_InitStructure.EXTI_Line =EXTI_Line14;
   EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
   EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
   EXTI_InitStructure.EXTI_LineCmd = ENABLE;
@@ -99,7 +94,7 @@ void E11_init() {
   
   /* 配置P[A|B|C|D|E]0为中断源 */
   NVIC_InitStructure.NVIC_IRQChannel = EXTI15_10_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 15;
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);

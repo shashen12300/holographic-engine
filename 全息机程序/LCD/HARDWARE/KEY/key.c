@@ -79,14 +79,14 @@ void E11_init() {
 	NVIC_InitTypeDef NVIC_InitStructure;
 
 	//init GPIOA  上拉输入
- 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
-	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_11|GPIO_Pin_12;//PA.11 .12
+ 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC,ENABLE);
+	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_14|GPIO_Pin_12;//PA.11 .12
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
-	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_Init(GPIOC, &GPIO_InitStructure);
 	
 		/* EXTI line(PB0) mode config */
-	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource11); 
-  EXTI_InitStructure.EXTI_Line = EXTI_Line11;
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOC, GPIO_PinSource14); 
+  EXTI_InitStructure.EXTI_Line = EXTI_Line14;
   EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
   EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
   EXTI_InitStructure.EXTI_LineCmd = ENABLE;

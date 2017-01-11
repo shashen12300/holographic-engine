@@ -31,14 +31,14 @@ typedef struct
     GPIOMode_TypeDef    BUTTON_MODE;
 }Button_PinModeDef;	
 
-#define KEY0 PAin(1)  //PA1
-#define KEY1 PAin(2)	//PA2 
-#define KEY2 PAin(3)	//PA3  
-#define KEY3 PAin(4)	//PA4
-#define KEY4 PAin(15)	//PA15
+#define KEY0 PCin(3)  //PC3
+#define KEY1 PCin(2)	//PC2 
+#define KEY2 PCin(1)	//PC1 
+#define KEY3 PCin(0)	//PC0
+#define KEY4 PCin(13)	//PC13
 
-#define KEY_A PAin(11)	//PA11
-#define KEY_B PAin(12)	//PA12
+#define KEY_A PCin(15)	//PC15
+#define KEY_B PCin(14)	//PC14
 	 
 void KEY_Init(void);//IO初始化
 u8 KEY_Scan(void);  //按键扫描函数		

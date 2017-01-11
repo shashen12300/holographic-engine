@@ -27,8 +27,23 @@ Project File Date:  01/02/2017
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\TOUCH.axf" - 0 Error(s), 0 Warning(s).
-Build Time Elapsed:  00:00:01
+compiling main.c...
+..\HARDWARE\KEY\key.h(45): warning:  #1295-D: Deprecated declaration E11_init - give arg types
+  void E11_init();//??ת??????
+main.c(22): warning:  #177-D: variable "key" was declared but never referenced
+  		u8 key;
+main.c(23): warning:  #177-D: variable "i" was declared but never referenced
+  	u8 i=0;	
+main.c(24): warning:  #550-D: variable "time" was set but never used
+  	Stru_Time time,getTime;
+main.c(24): warning:  #177-D: variable "getTime" was declared but never referenced
+  	Stru_Time time,getTime;
+main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=10336 RO-data=268 RW-data=56 ZI-data=1696  
+FromELF: creating hex file...
+".\TOUCH.axf" - 0 Error(s), 5 Warning(s).
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

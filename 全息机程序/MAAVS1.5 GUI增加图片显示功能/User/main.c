@@ -183,30 +183,30 @@ int main(void)
 	Stru_Time time,getTime;
 	char data[300]="串口测试数据\r\n";
 	User_delay(2);
-	lcm_init();
-	clr_ram();
+//	lcm_init();
+//	clr_ram();
 	time.Year = 16;
 	time.Month = 12;
 	time.Day = 31;
 	time.Hour = 17;
 	time.Minutes = 7;
 	time.Second = 30;
+//	GPIO_PinRemapConfig(GPIO_Remap_SWJ_NoJTRST, ENABLE);
 	SystemInit();
 	delay_init(72);	     //延时初始化
-	NVIC_Configuration();
-	LED_Init();
-	KEY_Init();
+//	LED_Init();
+//	KEY_Init();
 	E11_init();
-	fnRTC_Init();
-	Adc_Init();
+
+//	fnRTC_Init();
+//	Adc_Init();
   uart_init(9600); 
-	delay_ms(50);
-	fnRTC_Init();
-	E17_uart_init(9600);
-	printf("开始测试\r\n");
-	GUI_Init();
-	MainTask();
-	GUI_SetFont(&GUI_FontHZ_SimSun_1414);
+//	delay_ms(50);
+//	E17_uart_init(9600);
+//	printf("开始测试\r\n");
+//	GUI_Init();
+//	MainTask();
+//	GUI_SetFont(&GUI_FontHZ_SimSun_1414);
 //	DrawAreaBitmap(0,0,320,240,my_image,1);
 //		GUI_DrawBitmap(&bmfengshi2,50,100);
 //		GUI_InvertRect(10,100,10,10);
@@ -224,18 +224,20 @@ printf("开始测试\r\n");
 //	UART1_Tx(mydata,0x2800);
 	while(1) {
 		//MainTask();
-
+	if(KEY_A == 0) {
+		printf("key_A:按键被按下\r\n");
+	}
 	 	key=KEY_Scan();
-		adcValue = Get_Adc(0);
+//		adcValue = Get_Adc(0);
 		if(key !=0)//KEY0按下,则执行校准程序
 		{
 			if(key == 1) {
 //				MainTask();
-				WM_Paint(timeForm_hWin);
-				WM_Exec();
+//				WM_Paint(timeForm_hWin);
+//				WM_Exec();
 
 			}else if (key == 2) {
-					WM_GetClientRect(&rect);
+//					WM_GetClientRect(&rect);
 					printf("活动窗口的rect：x1=%d,y1=%d,x2=%d,y2=%d  句柄:%d\r\n",rect.x0,rect.y0,rect.x1,rect.y1,WM_GetActiveWindow());
 			}else if (key == 3) {
 				
@@ -244,8 +246,8 @@ printf("开始测试\r\n");
 			}else {
 				printf("错误按键按下\r\n");
 			}
-				LED0=!LED0;	
-				E17_sendString(data);
+//				LED0=!LED0;	
+//				E17_sendString(data);
 				printf("%d-%02d-%02d %02d:%02d:%02d  按键: KEY=%d 被按下  adc = %d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second,key,adcValue);
 		}
 	}

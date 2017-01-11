@@ -30,34 +30,34 @@ extern unsigned char tab1[];
 	 time.Second = 30;
 	SystemInit();
 	delay_init(72);	     //延时初始化
-	NVIC_Configuration();
-	LED_Init();
-	KEY_Init();
+//	NVIC_Configuration();
+//	LED_Init();
+//	KEY_Init();
 	E11_init();
-	fnRTC_Init();
-	Adc_Init();
-  uart_init(9600); 
-	delay_ms(50);
+//	fnRTC_Init();
+//	Adc_Init();
+//  uart_init(9600); 
+//	delay_ms(50);
 //	LCD_RST_0;
 //	delay_ms(50);
 //	LCD_RST_1;
 //	delay_ms(50);
 //	lcm_init();
-	fnRTC_Init();
-	E17_uart_init(9600);
+//	fnRTC_Init();
+//	E17_uart_init(9600);
 	//	fnRTC_SetTime(time);
 	while(1)
 	{
 		
-		fnRTC_GetTime(&getTime); 			
-	 	key=KEY_Scan();
-		adcValue = Get_Adc(0);
-		if(key !=0)//KEY0按下,则执行校准程序
-		{
-			LED0=!LED0;	
-			E17_sendString(data);
-			printf("%d-%02d-%02d %02d:%02d:%02d  按键: KEY=%d 被按下  adc = %d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second,key,adcValue);
-		}
+//		fnRTC_GetTime(&getTime); 			
+////	 	key=KEY_Scan();
+//		adcValue = Get_Adc(0);
+//		if(key !=0)//KEY0按下,则执行校准程序
+//		{
+//			LED0=!LED0;	
+//			E17_sendString(data);
+//			printf("%d-%02d-%02d %02d:%02d:%02d  按键: KEY=%d 被按下  adc = %d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second,key,adcValue);
+//		}
 		//屏幕显示
 //		clr_ram();
 //		DrawHLine(5,5,100,0x000000);
