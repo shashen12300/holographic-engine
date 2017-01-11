@@ -27,12 +27,3 @@
 .\obj\stm32f10x_it.o: ..\SYSTEM\delay\delay.h
 .\obj\stm32f10x_it.o: ..\SYSTEM\usart\usart.h
 .\obj\stm32f10x_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\obj\stm32f10x_it.o: ..\GUI\WM\WM.h
-.\obj\stm32f10x_it.o: ..\GUI\Core\GUI_ConfDefaults.h
-.\obj\stm32f10x_it.o: ..\GUI\Config\GUIConf.h
-.\obj\stm32f10x_it.o: ..\GUI\Core\GUIType.h
-.\obj\stm32f10x_it.o: ..\GUI\Core\LCD.h
-.\obj\stm32f10x_it.o: ..\GUI\WM\WM_GUI.h
-.\obj\stm32f10x_it.o: ..\GUI\Core\GUI.h
-.\obj\stm32f10x_it.o: ..\GUI\Core\GUIVersion.h
-.\obj\stm32f10x_it.o: ..\User\my_win.h

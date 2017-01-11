@@ -3,6 +3,9 @@
 #include "sys.h" 
 #include "delay.h"
 #include "usart.h"
+#include "WM.h"
+#include "GUI.h"
+#include "my_win.h"
 
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
@@ -17,6 +20,7 @@
 //********************************************************************************
  extern int rotate_flag;
  int logoCount =0;
+ int selectEnd = 1;
 void KEY_Init(void) //IO初始化
 {
  	GPIO_InitTypeDef GPIO_InitStructure;
@@ -39,8 +43,7 @@ u8 KEY_Scan(void)
 		key_up=0;
 		if(KEY0==0)
 		{
-	 
-			 GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
+				
 			return 1;
 		}
 		else if(KEY1==0)
@@ -120,7 +123,6 @@ void rotate(void) {
 	static int lastCount=0;
 			//旋转编码器
 		if(rotate_flag == 1) {
-				delay_ms(1);
 			if(KEY_A == 0) {
             if(KEY_B == 1)
             {
@@ -128,21 +130,38 @@ void rotate(void) {
 							if(logoCount==25) {
 								logoCount = 0;
 							}
-							 printf("正传\r\n");
+							 printf("right\r\n");
             }else {
 							if(KEY_B == 0) {
 								logoCount--;
 								if(logoCount == -1) {
 									logoCount = 24;
 								}
-								printf("反传\r\n");
+								printf("left\r\n");
 							}
 
 						}
 						selectLogoCount(lastCount);
 						selectLogoCount(logoCount);
 						lastCount = logoCount;
+						rotate_flag = 0;
 					}
+		}
+		selectEnd = 1;
+
+}
+
+void send_rotate_message(void) {
+	WM_HWIN activeHwin;
+			//旋转编码器
+		if(rotate_flag == 1) {
+				selectEnd = 0;
+//			WM_SelectWindow(mainForm_hWin);
+			WM_SetFocus(mainForm_hWin);
+//			GUI_StoreKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
+			GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
+//			WM_SetFocus(mainForm_hWin);
+//			GUI_Clear();
 		}
 }
 

@@ -19,3 +19,12 @@
 .\obj\key.o: ..\SYSTEM\delay\delay.h
 .\obj\key.o: ..\SYSTEM\usart\usart.h
 .\obj\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\key.o: ..\GUI\WM\WM.h
+.\obj\key.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\key.o: ..\GUI\Config\GUIConf.h
+.\obj\key.o: ..\GUI\Core\GUIType.h
+.\obj\key.o: ..\GUI\Core\LCD.h
+.\obj\key.o: ..\GUI\WM\WM_GUI.h
+.\obj\key.o: ..\GUI\Core\GUI.h
+.\obj\key.o: ..\GUI\Core\GUIVersion.h
+.\obj\key.o: ..\User\my_win.h

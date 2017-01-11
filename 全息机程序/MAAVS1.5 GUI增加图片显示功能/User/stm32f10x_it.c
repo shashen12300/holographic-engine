@@ -5,12 +5,11 @@
 #include "key.h"
 #include "delay.h"
 #include "usart.h"
-#include "WM.h"
-#include "GUI.h"
-#include "my_win.h"
+
 
 int rotate_flag=0;  //1表示旋转
 unsigned char CAN_LCD_buffer[480];
+extern int time_flag;
 void USB_LP_CAN1_RX0_IRQHandler(void)   
 {   
 	unsigned int i;
@@ -95,6 +94,7 @@ void TIM2_IRQHandler(void)
 	if ( TIM_GetITStatus(TIM2 , TIM_IT_Update) != RESET ) 
 	{	
 		TIM_ClearITPendingBit(TIM2 , TIM_FLAG_Update);  
+		time_flag++;
 		
 	}		 	
 	 	
@@ -102,36 +102,11 @@ void TIM2_IRQHandler(void)
 
 void EXTI15_10_IRQHandler(void)
 {	
-//	WM_MESSAGE* pMsg;
-//	pMsg->MsgId = MY_MESSAGE_ENCODER;
-//	pMsg->hWinSrc = MY_MESSAGE_ID_ENCODER0;
       if(EXTI_GetITStatus(EXTI_Line11) != RESET)
     {
 			EXTI_ClearITPendingBit(EXTI_Line11);     //清除中断标志位
 			rotate_flag = 1;
-//			delay_us(10);
-//			if(KEY_A == 0) {
-//            if(KEY_B == 1)
-//            {
-//							logoCount++;
-//							if(logoCount==25) {
-//								logoCount = 0;
-//							}
-//							 printf("正传\r\n");
-//            }else {
-//							if(KEY_B == 0) {
-//								logoCount--;
-//								if(logoCount == -1) {
-//									logoCount = 24;
-//								}
-//								printf("反传\r\n");
-//							}
-
-//						}
-////			pMsg->Data.v = logoCount;
-////			WM_SendMessage(timeForm_hWin,pMsg);
-//					}
-				}
+		}
 }
 
 

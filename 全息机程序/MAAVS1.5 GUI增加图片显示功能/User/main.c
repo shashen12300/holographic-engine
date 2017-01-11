@@ -16,13 +16,13 @@
 #include "rtc.h" 
 #include "adc.h"
 #include "myFont16_21.h"
-
+#include "fengshi2.h"
 #include "feegnshi1.h"
 #include "inputWindow.h"
 #include "WM.h"
 
 unsigned char status_flag=0;
-int adcValue;
+int adcValue,time_flag;
 extern int rotate_flag;
 const unsigned char gImage_fegnshi[192] = { /* 0X00,0X01,0X30,0X00,0X20,0X00, */
 0XFF,0XFF,0XFF,0XFF,0X00,0X00,0X80,0X00,0X00,0X01,0X1F,0XF8,0X80,0X00,0X00,0X01,
@@ -172,16 +172,25 @@ const unsigned char logo2[12]={
 	  while(j--)
     for(i=6000000;i>0;i--);
 }
+
+//刷新时间
+void refresh_time(void) {
+		char displayTime[20];
+		Stru_Time time,getTime;
+		fnRTC_GetTime(&getTime); 
+	if (time_flag > 1000) {
+		time_flag = 0;
+		sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
+		GUI_DispStringAt(displayTime,175,4);
+	}
+}
 int main(void)
 {
 	GUI_RECT rect;
 	u8 key;
-	u16 i1=0,j1;
-	char displayTime[20];
 	unsigned short int value;
 	Stru_Time time,getTime;
 	char data[300]="串口测试数据\r\n";
-	User_delay(2);
 	time.Year = 16;
 	time.Month = 12;
 	time.Day = 31;
@@ -196,14 +205,16 @@ int main(void)
 	fnRTC_Init();
 	Adc_Init();
   uart_init(9600); 
-	delay_ms(50);
 	fnRTC_Init();
 	E17_uart_init(9600);
 	printf("开始测试\r\n");
 	GUI_Init();
 	clr_ram();
-	MainTask();
 	GUI_SetFont(&GUI_FontHZ_SimSun_1414);
+	//绘制时间框
+		MainTask();
+	GUI_DrawBitmap(&bmshijian,0,0);
+
 //	DrawAreaBitmap(0,0,320,240,my_image,1);
 //		GUI_DrawBitmap(&bmfengshi2,50,100);
 //		GUI_InvertRect(10,100,10,10);
@@ -220,21 +231,19 @@ printf("开始测试\r\n");
 //	readDataByAddress(0x5000,0x2800,mydata); 
 //	UART1_Tx(mydata,0x2800);
 	while(1) {
-		//MainTask();
-
 	 	key=KEY_Scan();
-		rotate();
+		
+		if(selectEnd == 1) {
+			refresh_time();
+			send_rotate_message();
+		}
 		adcValue = Get_Adc(0);
 		if(key !=0)//KEY0按下,则执行校准程序
 		{
 			if(key == 1) {
-//				MainTask();
-//				WM_Paint(timeForm_hWin);
-//				WM_Exec();
 
 			}else if (key == 2) {
-//					WM_GetClientRect(&rect);
-//					printf("活动窗口的rect：x1=%d,y1=%d,x2=%d,y2=%d  句柄:%d\r\n",rect.x0,rect.y0,rect.x1,rect.y1,WM_GetActiveWindow());
+
 			}else if (key == 3) {
 				
 			}else if (key == 4) {

@@ -39,9 +39,12 @@ typedef struct
 
 #define KEY_A PAin(11)	//PA11
 #define KEY_B PAin(12)	//PA12
-	 
+	
+extern int logoCount;
+extern int selectEnd;
 void KEY_Init(void);//IO初始化
 u8 KEY_Scan(void);  //按键扫描函数		
-void E11_init();//旋转编码器
+void E11_init(void);//旋转编码器
 void rotate(void);//选择图标
+void send_rotate_message(void);
 #endif

@@ -42,5 +42,6 @@
 .\obj\main.o: ..\User\RTC_PCF8563T\rtc.h
 .\obj\main.o: ..\User\ADC\adc.h
 .\obj\main.o: ..\User\myFont16_21.h
+.\obj\main.o: ..\User\fengshi2.h
 .\obj\main.o: ..\User\feegnshi1.h
 .\obj\main.o: ..\User\inputWindow.h
