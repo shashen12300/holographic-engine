@@ -43,5 +43,5 @@ typedef struct
 void KEY_Init(void);//IO初始化
 u8 KEY_Scan(void);  //按键扫描函数		
 void E11_init();//旋转编码器
-void selectLogoCount(int count);//选择图标
+void rotate(void);//选择图标
 #endif

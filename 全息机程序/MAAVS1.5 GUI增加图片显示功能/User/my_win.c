@@ -147,10 +147,7 @@ void _mainFormCallback(WM_MESSAGE * pMsg)
 					{
 						case MY_MESSAGE_ID_ENCODER0:
 						{
-								static int lastCount = 0;
-								selectLogoCount(lastCount);	
-								selectLogoCount(NCode);	
-							lastCount = NCode; 
+									printf("GUI测试\r\n");
 						}
 						break;
 									
@@ -233,24 +230,10 @@ static void _cbCallback(WM_MESSAGE * pMsg)
 */
 void MainTask(void) 
 { 
-
-    //GUI_Init();
 	
 			WM_SetDesktopColor(GUI_WHITE);      /* Automacally update desktop window */
 			WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
-		
-    //PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
-    //FRAMEWIN_SetDefaultSkin(FRAMEWIN_SKIN_FLEX);
-    //PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);
-    //BUTTON_SetDefaultSkin(BUTTON_SKIN_FLEX);
-    //CHECKBOX_SetDefaultSkin(CHECKBOX_SKIN_FLEX);
-    //DROPDOWN_SetDefaultSkin(DROPDOWN_SKIN_FLEX);
-    //SCROLLBAR_SetDefaultSkin(SCROLLBAR_SKIN_FLEX);
-    //SLIDER_SetDefaultSkin(SLIDER_SKIN_FLEX);
-    //HEADER_SetDefaultSkin(HEADER_SKIN_FLEX);
-    //RADIO_SetDefaultSkin(RADIO_SKIN_FLEX);
-//	while(1)
-//	{
+
 				//GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbCallback, 0, 0, 0);
 				hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,NULL,0);//根窗口
 				timeForm_hWin = WM_CreateWindowAsChild(0,0,320,37,hWin,WM_CF_SHOW,_cbCallback,0); //时间窗口

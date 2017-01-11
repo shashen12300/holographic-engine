@@ -15,7 +15,8 @@
 //Copyright(C) ALIENTEK  2009-2019
 //All rights reserved
 //********************************************************************************
- 
+ extern int rotate_flag;
+ int logoCount =0;
 void KEY_Init(void) //IO初始化
 {
  	GPIO_InitTypeDef GPIO_InitStructure;
@@ -32,7 +33,6 @@ u8 KEY_Scan(void)
 {	 
 	static u8 key_up=1;//按键按松开标志	
  
- 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_Disable, ENABLE);
 	if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==0||KEY4==0))
 	{
 		delay_ms(10);//去抖动 
@@ -46,30 +46,25 @@ u8 KEY_Scan(void)
 		else if(KEY1==0)
 		{
 	 	 
-	     	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 			return 2;
 		}
 		else if(KEY2==0)
 		{
 	 
-	    	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 			return 3;
 		}
 		else if(KEY3==0)
 		{
 	 
-	    	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 			return 4;
 		}
 		else if(KEY4==0) //旋转编码器按下
 		{
 	 
-	    	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 			return 5;
 		}
 	}else if(KEY0==1&&KEY1==1&&KEY2==1&&KEY3==1&&KEY4==1)key_up=1; 	    
  
- 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 	return 0;// 无按键按下
 }
 
@@ -115,9 +110,40 @@ void selectLogoCount(int count) {   //32
 						LCD_L0_XorPixel(j,i-1);
 					else
 						LCD_L0_XorPixel(j,i);
+
 					
 				}
 			}
+}
+
+void rotate(void) {
+	static int lastCount=0;
+			//旋转编码器
+		if(rotate_flag == 1) {
+				delay_ms(1);
+			if(KEY_A == 0) {
+            if(KEY_B == 1)
+            {
+							logoCount++;
+							if(logoCount==25) {
+								logoCount = 0;
+							}
+							 printf("正传\r\n");
+            }else {
+							if(KEY_B == 0) {
+								logoCount--;
+								if(logoCount == -1) {
+									logoCount = 24;
+								}
+								printf("反传\r\n");
+							}
+
+						}
+						selectLogoCount(lastCount);
+						selectLogoCount(logoCount);
+						lastCount = logoCount;
+					}
+		}
 }
 
 

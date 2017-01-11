@@ -22,18 +22,24 @@ Dialog DLL:      TCM.DLL V1.14.6.0
  
 <h2>Project:</h2>
 C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\project.uvprojx
-Project File Date:  01/09/2017
+Project File Date:  01/11/2017
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
+compiling key.c...
+..\User\KEY\key.h(45): warning:  #1295-D: Deprecated declaration E11_init - give arg types
+  void E11_init();//??转??????
+..\User\KEY\key.c(110): warning:  #223-D: function "LCD_L0_XorPixel" declared implicitly
+  						LCD_L0_XorPixel(j,i-1);
+..\User\KEY\key.c: 2 warnings, 0 errors
 compiling LCDDummy.c...
 linking...
 .\Obj\project.axf: Warning: L6304W: Duplicate input file .\obj\lcddummy_1.o ignored.
-Program Size: Code=42080 RO-data=26064 RW-data=232 ZI-data=27320  
+Program Size: Code=42572 RO-data=26084 RW-data=236 ZI-data=27924  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-".\Obj\project.axf" - 0 Error(s), 1 Warning(s).
+".\Obj\project.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -51,7 +57,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:06
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

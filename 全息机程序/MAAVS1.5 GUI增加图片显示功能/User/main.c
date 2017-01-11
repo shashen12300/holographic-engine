@@ -23,8 +23,7 @@
 
 unsigned char status_flag=0;
 int adcValue;
-extern int logoCount;
-int lastCount=0;
+extern int rotate_flag;
 const unsigned char gImage_fegnshi[192] = { /* 0X00,0X01,0X30,0X00,0X20,0X00, */
 0XFF,0XFF,0XFF,0XFF,0X00,0X00,0X80,0X00,0X00,0X01,0X1F,0XF8,0X80,0X00,0X00,0X01,
 0X10,0X08,0X80,0X00,0X00,0X01,0X10,0X08,0X80,0X00,0X00,0X01,0X14,0X28,0X80,0X0B,
@@ -183,8 +182,6 @@ int main(void)
 	Stru_Time time,getTime;
 	char data[300]="串口测试数据\r\n";
 	User_delay(2);
-	lcm_init();
-	clr_ram();
 	time.Year = 16;
 	time.Month = 12;
 	time.Day = 31;
@@ -193,7 +190,6 @@ int main(void)
 	time.Second = 30;
 	SystemInit();
 	delay_init(72);	     //延时初始化
-	NVIC_Configuration();
 	LED_Init();
 	KEY_Init();
 	E11_init();
@@ -205,6 +201,7 @@ int main(void)
 	E17_uart_init(9600);
 	printf("开始测试\r\n");
 	GUI_Init();
+	clr_ram();
 	MainTask();
 	GUI_SetFont(&GUI_FontHZ_SimSun_1414);
 //	DrawAreaBitmap(0,0,320,240,my_image,1);
@@ -226,17 +223,18 @@ printf("开始测试\r\n");
 		//MainTask();
 
 	 	key=KEY_Scan();
+		rotate();
 		adcValue = Get_Adc(0);
 		if(key !=0)//KEY0按下,则执行校准程序
 		{
 			if(key == 1) {
 //				MainTask();
-				WM_Paint(timeForm_hWin);
-				WM_Exec();
+//				WM_Paint(timeForm_hWin);
+//				WM_Exec();
 
 			}else if (key == 2) {
-					WM_GetClientRect(&rect);
-					printf("活动窗口的rect：x1=%d,y1=%d,x2=%d,y2=%d  句柄:%d\r\n",rect.x0,rect.y0,rect.x1,rect.y1,WM_GetActiveWindow());
+//					WM_GetClientRect(&rect);
+//					printf("活动窗口的rect：x1=%d,y1=%d,x2=%d,y2=%d  句柄:%d\r\n",rect.x0,rect.y0,rect.x1,rect.y1,WM_GetActiveWindow());
 			}else if (key == 3) {
 				
 			}else if (key == 4) {
@@ -248,45 +246,10 @@ printf("开始测试\r\n");
 				E17_sendString(data);
 				printf("%d-%02d-%02d %02d:%02d:%02d  按键: KEY=%d 被按下  adc = %d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second,key,adcValue);
 		}
+
 	}
 }
 
-//	for(i=0;i<480;i++)
-//	{
-//     LCD_display[i]=0x00;
-//  }
-//	for(i=0;i<12;i++)
-//	{
-//      LCD_line_font_color[i]=0xf800;
-//  }
-//	for(i=0;i<12;i++)
-//	{
-//      LCD_line_back_cloor[i]=0x001f;
-//  }
-//	LCD_back_color=0x001f;
-//	
-//	//log_display(0,0,480,320);//logo显示
-//	
-//	for(i=0;i<480;i++)
-//	{
-//     LCD_display[i]=0x00;
-//  }
-	//Lcd_write_char(300,100,q,0xf800,0xffff);	
-	//LCD_fresh();
-//  while (1)
-// {		
-//		if(status_flag==0)
-//		{
-//			LED1_ON();
-//		}
-//		else 
-//			LED1_OFF();
-	//	for(i=0;i<8;i++)
-//		{ 
-			//Lcd_write_char(400,100,(unsigned char)*("abcde"),0xf800, 0xffff);
-			
-//		}
- // }
 }
 
 
