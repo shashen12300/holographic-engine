@@ -20,6 +20,7 @@
 #include "feegnshi1.h"
 #include "inputWindow.h"
 #include "WM.h"
+#include "user_Dialog.h"
 
 unsigned char status_flag=0;
 int adcValue,time_flag;
@@ -180,8 +181,8 @@ void refresh_time(void) {
 		fnRTC_GetTime(&getTime); 
 	if (time_flag > 1000) {
 		time_flag = 0;
-		sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
-		GUI_DispStringAt(displayTime,175,4);
+			WM_SetFocus(time_hWin);
+			GUI_SendKeyMsg(MY_MESSAGE_ID_TIME,1);
 	}
 }
 int main(void)
@@ -210,7 +211,7 @@ int main(void)
 	printf("开始测试\r\n");
 	GUI_Init();
 	clr_ram();
-	GUI_SetFont(&GUI_FontHZ_SimSun_1414);
+	GUI_SetFont(&GUI_FontHZ_SimSun_1515);
 	//绘制时间框
 		MainTask();
 	GUI_DrawBitmap(&bmshijian,0,0);
@@ -240,15 +241,15 @@ printf("开始测试\r\n");
 		adcValue = Get_Adc(0);
 		if(key !=0)//KEY0按下,则执行校准程序
 		{
-			if(key == 1) {
+			if(key == 1) { //信息设定
+				dialogTask();
+			}else if (key == 2) {  //进入检测
 
-			}else if (key == 2) {
+			}else if (key == 3) {   //待定
 
-			}else if (key == 3) {
-				
-			}else if (key == 4) {
+			}else if (key == 4) {   //系统菜单
 			
-			}else {
+			}else {  //确认按键，或进入检测
 				printf("错误按键按下\r\n");
 			}
 				LED0=!LED0;	

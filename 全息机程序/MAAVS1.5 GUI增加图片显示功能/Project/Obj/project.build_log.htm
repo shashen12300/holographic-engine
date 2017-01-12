@@ -28,12 +28,30 @@ Project File Date:  01/11/2017
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling LCDDummy.c...
+compiling main.c...
+..\User\feegnshi1.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\inputWindow.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\user_Dialog.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\main.c(179): warning:  #177-D: variable "displayTime" was declared but never referenced
+  		char displayTime[20];
+..\User\main.c(180): warning:  #177-D: variable "time" was declared but never referenced
+  		Stru_Time time,getTime;
+..\User\main.c(190): warning:  #177-D: variable "rect" was declared but never referenced
+  	GUI_RECT rect;
+..\User\main.c(192): warning:  #177-D: variable "value" was declared but never referenced
+  	unsigned short int value;
+..\User\main.c(193): warning:  #550-D: variable "time" was set but never used
+  	Stru_Time time,getTime;
+..\User\main.c: 8 warnings, 0 errors
 linking...
 .\Obj\project.axf: Warning: L6304W: Duplicate input file .\obj\lcddummy_1.o ignored.
-Program Size: Code=42996 RO-data=26084 RW-data=240 ZI-data=27928  
+Program Size: Code=49852 RO-data=35056 RW-data=292 ZI-data=27924  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-".\Obj\project.axf" - 0 Error(s), 1 Warning(s).
+".\Obj\project.axf" - 0 Error(s), 9 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -51,7 +69,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:05
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

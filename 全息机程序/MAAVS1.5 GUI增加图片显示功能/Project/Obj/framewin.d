@@ -22,3 +22,4 @@
 .\obj\framewin.o: ..\GUI\Widget\WIDGET.h
 .\obj\framewin.o: ..\GUI\Widget\GUI_HOOK.h
 .\obj\framewin.o: ..\GUI\Core\GUI_Protected.h
+.\obj\framewin.o: ..\User\myFont16_21.h

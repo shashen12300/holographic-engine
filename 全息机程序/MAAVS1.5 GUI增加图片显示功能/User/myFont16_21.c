@@ -16,45 +16,12 @@
 //#endif 
 //extern GUI_FLASH const GUI_FONT GUI_FontHZ_SimSun_1414;
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0020[14] = {	/*   0x2000*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0020[15] = {	/*   0x2000*/
 ________,
 ________,
 ________,
 ________,
 ________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0021[14] = {	/* ! 0x2100*/
-________,
-________,
-__X_____,
-__X_____,
-__X_____,
-__X_____,
-__X_____,
-__X_____,
-________,
-________,
-__X_____,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0022[14] = {	/* " 0x2200*/
-________,
-__X_X___,
-__X_X___,
-_X_X____,
 ________,
 ________,
 ________,
@@ -67,77 +34,118 @@ ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0023[14] = {	/* # 0x2300*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0021[15] = {	/* ! 0x2100*/
 ________,
 ________,
-__X__X__,
-__X__X__,
-XXXXXX__,
-__X__X__,
-_X__X___,
-_X__X___,
-XXXXXX__,
-_X__X___,
-_X__X___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0024[14] = {	/* $ 0x2400*/
 ________,
 ___X____,
-__XXX___,
-_X_X_X__,
-_X_X____,
-__XX____,
-___XX___,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+________,
+___X____,
+___X____,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0022[15] = {	/* " 0x2200*/
+________,
 ___X_X__,
-_X_X_X__,
-_X_X_X__,
-__XXX___,
-___X____,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0025[14] = {	/* % 0x2500*/
-________,
-________,
-_X__X___,
-X_X_X___,
-X_XX____,
-X_XX____,
-_XX_X___,
-__XX_X__,
-__XX_X__,
-_X_X_X__,
-_X__X___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0026[14] = {	/* & 0x2600*/
-________,
-________,
-__X_____,
+__X_X___,
+__X_X___,
 _X_X____,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0023[15] = {	/* # 0x2300*/
+________,
+________,
+________,
+___X__X_,
+___X__X_,
+_XXXXXX_,
+__X__X__,
+__X__X__,
+__X__X__,
+_XXXXXX_,
+__X__X__,
+__X__X__,
+__X__X__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0024[15] = {	/* $ 0x2400*/
+________,
+________,
+____X___,
+__XXXX__,
+_X__X_X_,
+_X__X_X_,
+__X_X___,
+___XX___,
+____XX__,
+____X_X_,
+_X__X_X_,
+_X__X_X_,
+__XXXX__,
+____X___,
+____X___,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0025[15] = {	/* % 0x2500*/
+________,
+________,
+________,
+_X___X__,
+X_X__X__,
+X_X_X___,
+X_X_X___,
+X_XX_X__,
+_X_XX_X_,
+__X_X_X_,
+__X_X_X_,
+_X__X_X_,
+_X___X__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0026[15] = {	/* & 0x2600*/
+________,
+________,
+________,
+__XX____,
+_X__X___,
+_X__X___,
 _X_X____,
-_XX_____,
-_X__XX__,
-X_X_X___,
-X_X_X___,
-X__X__X_,
-_XX_XX__,
-________,
+_XX__XX_,
+X_X__X__,
+X_X__X__,
+X__X_X__,
+X___X___,
+_XXX_XX_,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0027[14] = {	/* ' 0x2700*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0027[15] = {	/* ' 0x2700*/
 ________,
 _XX_____,
+__X_____,
 __X_____,
 _X______,
 ________,
@@ -152,8 +160,9 @@ ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0028[14] = {	/* ( 0x2800*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0028[15] = {	/* ( 0x2800*/
 ________,
+______X_,
 _____X__,
 ____X___,
 ____X___,
@@ -165,12 +174,13 @@ ___X____,
 ____X___,
 ____X___,
 _____X__,
-________,
+______X_,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0029[14] = {	/* ) 0x2900*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0029[15] = {	/* ) 0x2900*/
 ________,
+X_______,
 _X______,
 __X_____,
 __X_____,
@@ -181,403 +191,427 @@ ___X____,
 ___X____,
 __X_____,
 __X_____,
-_X______,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_002a[14] = {	/* * 0x2a00*/
-________,
-________,
-________,
-___X____,
-_X_X_X__,
-__XXX___,
-__XXX___,
-_X_X_X__,
-___X____,
-________,
-________,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_002b[14] = {	/* + 0x2b00*/
-________,
-________,
-________,
-___X____,
-___X____,
-___X____,
-XXXXXXX_,
-___X____,
-___X____,
-___X____,
-________,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_002c[14] = {	/* , 0x2c00*/
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-_XX_____,
-__X_____,
-_X______,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_002d[14] = {	/* - 0x2d00*/
-________,
-________,
-________,
-________,
-________,
-________,
-XXXXXX__,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_002e[14] = {	/* . 0x2e00*/
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-_XX_____,
-_XX_____,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_002f[14] = {	/* / 0x2f00*/
-________,
-_____X__,
-____X___,
-____X___,
-___X____,
-___X____,
-__X_____,
-__X_____,
-__X_____,
-_X______,
 _X______,
 X_______,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0030[14] = {	/* 0 0x3000*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_002a[15] = {	/* * 0x2a00*/
 ________,
 ________,
+________,
+________,
+___X____,
+___X____,
+XX_X_XX_,
 __XXX___,
-_X___X__,
-_X___X__,
-_X___X__,
-_X___X__,
-_X___X__,
-_X___X__,
-_X___X__,
 __XXX___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0031[14] = {	/* 1 0x3100*/
-________,
-________,
-___X____,
-__XX____,
+XX_X_XX_,
 ___X____,
 ___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-__XXX___,
 ________,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0032[14] = {	/* 2 0x3200*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_002b[15] = {	/* + 0x2b00*/
 ________,
 ________,
-__XXX___,
-_X___X__,
-_X___X__,
+________,
+________,
+____X___,
+____X___,
+____X___,
+_XXXXXX_,
+____X___,
+____X___,
+____X___,
+________,
+________,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_002c[15] = {	/* , 0x2c00*/
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+_XX_____,
+__X_____,
+__X_____,
+_X______,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_002d[15] = {	/* - 0x2d00*/
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+XXXXXXX_,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_002e[15] = {	/* . 0x2e00*/
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+_XX_____,
+_XX_____,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_002f[15] = {	/* / 0x2f00*/
+________,
+______X_,
+_____X__,
+_____X__,
 _____X__,
 ____X___,
+____X___,
+___X____,
+___X____,
 ___X____,
 __X_____,
-_X___X__,
-_XXXXX__,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0033[14] = {	/* 3 0x3300*/
-________,
-________,
-__XXX___,
-_X___X__,
-_____X__,
-_____X__,
-___XX___,
-_____X__,
-_____X__,
-_X___X__,
-__XXX___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0034[14] = {	/* 4 0x3400*/
-________,
-________,
-____X___,
-____X___,
-___XX___,
-__X_X___,
-__X_X___,
-_X__X___,
-_XXXXX__,
-____X___,
-___XXX__,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0035[14] = {	/* 5 0x3500*/
-________,
-________,
-_XXXXX__,
+__X_____,
 _X______,
 _X______,
-_XXXX___,
-_X___X__,
-_____X__,
-_X___X__,
-_X___X__,
-__XXX___,
-________,
-________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0036[14] = {	/* 6 0x3600*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0030[15] = {	/* 0 0x3000*/
+________,
 ________,
 ________,
 ___XX___,
 __X__X__,
-_X______,
-_X_XX___,
-_XX__X__,
-_X___X__,
-_X___X__,
-_X___X__,
-__XXX___,
-________,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+__X__X__,
+___XX___,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0037[14] = {	/* 7 0x3700*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0031[15] = {	/* 1 0x3100*/
 ________,
 ________,
+________,
+___X____,
+_XXX____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
 _XXXXX__,
-_X___X__,
-____X___,
-____X___,
-____X___,
-___X____,
-___X____,
-___X____,
-___X____,
-________,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0038[14] = {	/* 8 0x3800*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0032[15] = {	/* 2 0x3200*/
 ________,
-________,
-__XXX___,
-_X___X__,
-_X___X__,
-_X___X__,
-__XXX___,
-_X___X__,
-_X___X__,
-_X___X__,
-__XXX___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0039[14] = {	/* 9 0x3900*/
-________,
-________,
-__XXX___,
-_X___X__,
-_X___X__,
-_X___X__,
-_X__XX__,
-__XX_X__,
-_____X__,
-_X__X___,
-__XX____,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_003a[14] = {	/* : 0x3a00*/
-________,
-________,
-________,
-________,
-________,
-__X_____,
-________,
-________,
-________,
-________,
-__X_____,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_003b[14] = {	/* ; 0x3b00*/
-________,
-________,
-________,
-________,
-________,
-___X____,
-________,
-________,
-________,
-________,
-___X____,
-___X____,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_003c[14] = {	/* < 0x3c00*/
-________,
-________,
-_____X__,
-____X___,
-___X____,
-__X_____,
-_X______,
-__X_____,
-___X____,
-____X___,
-_____X__,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_003d[14] = {	/* = 0x3d00*/
-________,
-________,
-________,
-________,
-________,
-XXXXXX__,
-________,
-XXXXXX__,
-________,
-________,
-________,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_003e[14] = {	/* > 0x3e00*/
-________,
-________,
-_X______,
-__X_____,
-___X____,
-____X___,
-_____X__,
-____X___,
-___X____,
-__X_____,
-_X______,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_003f[14] = {	/* ? 0x3f00*/
-________,
-________,
-__XXX___,
-_X___X__,
-_X___X__,
-_____X__,
-____X___,
-___X____,
-___X____,
-________,
-___X____,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0040[14] = {	/* @ 0x4000*/
 ________,
 ________,
 __XXXX__,
 _X____X_,
+_X____X_,
+______X_,
+_____X__,
+____X___,
+___X____,
+__X_____,
+_X____X_,
+_XXXXXX_,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0033[15] = {	/* 3 0x3300*/
+________,
+________,
+________,
+__XXXX__,
+_X____X_,
+_X____X_,
+_____X__,
+___XX___,
+_____X__,
+______X_,
+_X____X_,
+_X____X_,
+__XXXX__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0034[15] = {	/* 4 0x3400*/
+________,
+________,
+________,
+_____X__,
+____XX__,
+____XX__,
+___X_X__,
+__X__X__,
+_X___X__,
+_XXXXXX_,
+_____X__,
+_____X__,
+___XXXX_,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0035[15] = {	/* 5 0x3500*/
+________,
+________,
+________,
+_XXXXXX_,
+_X______,
+_X______,
+_XXXXX__,
+_X____X_,
+______X_,
+______X_,
+_X____X_,
+_X____X_,
+__XXXX__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0036[15] = {	/* 6 0x3600*/
+________,
+________,
+________,
+___XX___,
+__X__X__,
+_X______,
+_X_XXX__,
+_XX___X_,
+_X____X_,
+_X____X_,
+_X____X_,
+__X___X_,
+___XXX__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0037[15] = {	/* 7 0x3700*/
+________,
+________,
+________,
+_XXXXXX_,
+_X____X_,
+_____X__,
+____X___,
+____X___,
+____X___,
+___X____,
+___X____,
+___X____,
+___X____,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0038[15] = {	/* 8 0x3800*/
+________,
+________,
+________,
+__XXXX__,
+_X____X_,
+_X____X_,
+_X____X_,
+__XXXX__,
+__X__X__,
+_X____X_,
+_X____X_,
+_X____X_,
+__XXXX__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0039[15] = {	/* 9 0x3900*/
+________,
+________,
+________,
+__XXX___,
+_X___X__,
+_X____X_,
+_X____X_,
+_X___XX_,
+__XXX_X_,
+______X_,
+______X_,
+__X__X__,
+___XX___,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_003a[15] = {	/* : 0x3a00*/
+________,
+________,
+________,
+________,
+________,
+________,
+___XX___,
+___XX___,
+________,
+________,
+________,
+___XX___,
+___XX___,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_003b[15] = {	/* ; 0x3b00*/
+________,
+________,
+________,
+________,
+________,
+________,
+___X____,
+________,
+________,
+________,
+________,
+________,
+___X____,
+___X____,
+___X____,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_003c[15] = {	/* < 0x3c00*/
+________,
+________,
+________,
+_____X__,
+____X___,
+___X____,
+__X_____,
+_X______,
+_X______,
+__X_____,
+___X____,
+____X___,
+_____X__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_003d[15] = {	/* = 0x3d00*/
+________,
+________,
+________,
+________,
+________,
+________,
+XXXXXXX_,
+________,
+________,
+XXXXXXX_,
+________,
+________,
+________,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_003e[15] = {	/* > 0x3e00*/
+________,
+________,
+________,
+__X_____,
+___X____,
+____X___,
+_____X__,
+______X_,
+______X_,
+_____X__,
+____X___,
+___X____,
+__X_____,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_003f[15] = {	/* ? 0x3f00*/
+________,
+________,
+________,
+__XXXX__,
+_X____X_,
+_X____X_,
+_X____X_,
+_____X__,
+____X___,
+____X___,
+________,
+___XX___,
+___XX___,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0040[15] = {	/* @ 0x4000*/
+________,
+________,
+________,
+__XXX___,
+_X___X__,
 X__XX_X_,
 X_X_X_X_,
 X_X_X_X_,
 X_X_X_X_,
+X_X_X_X_,
 X__XXX__,
 _X____X_,
 __XXXX__,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0041[14] = {	/* A 0x4100*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0041[15] = {	/* A 0x4100*/
+________,
 ________,
 ________,
 ___X____,
@@ -585,186 +619,197 @@ ___X____,
 __X_X___,
 __X_X___,
 __X_X___,
-__XXX___,
+__X_X___,
+_XXXXX__,
 _X___X__,
 _X___X__,
 XXX_XXX_,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0042[14] = {	/* B 0x4200*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0042[15] = {	/* B 0x4200*/
 ________,
 ________,
-XXXXX___,
-_X___X__,
-_X___X__,
+________,
+XXXXXX__,
+_X____X_,
+_X____X_,
 _X___X__,
 _XXXX___,
 _X___X__,
-_X___X__,
-_X___X__,
-XXXXX___,
-________,
+_X____X_,
+_X____X_,
+_X____X_,
+XXXXXX__,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0043[14] = {	/* C 0x4300*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0043[15] = {	/* C 0x4300*/
+________,
+________,
+________,
+__XXXXX_,
+_X____X_,
+X_____X_,
+X_______,
+X_______,
+X_______,
+X_______,
+X_____X_,
+_X___X__,
+__XXX___,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0044[15] = {	/* D 0x4400*/
+________,
+________,
+________,
+XXXXX___,
+_X___X__,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X___X__,
+XXXXX___,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0045[15] = {	/* E 0x4500*/
+________,
+________,
+________,
+XXXXXX__,
+_X____X_,
+_X__X___,
+_X__X___,
+_XXXX___,
+_X__X___,
+_X__X___,
+_X______,
+_X____X_,
+XXXXXX__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0046[15] = {	/* F 0x4600*/
+________,
+________,
+________,
+XXXXXX__,
+_X____X_,
+_X__X___,
+_X__X___,
+_XXXX___,
+_X__X___,
+_X__X___,
+_X______,
+_X______,
+XXX_____,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0047[15] = {	/* G 0x4700*/
+________,
 ________,
 ________,
 __XXXX__,
 _X___X__,
+X____X__,
 X_______,
 X_______,
 X_______,
-X_______,
-X_______,
+X___XXX_,
+X____X__,
 _X___X__,
 __XXX___,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0044[14] = {	/* D 0x4400*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0048[15] = {	/* H 0x4800*/
 ________,
 ________,
-XXXX____,
-_X__X___,
+________,
+XXX_XXX_,
+_X___X__,
+_X___X__,
+_X___X__,
+_XXXXX__,
 _X___X__,
 _X___X__,
 _X___X__,
 _X___X__,
-_X___X__,
-_X__X___,
-XXXX____,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0045[14] = {	/* E 0x4500*/
-________,
-________,
-XXXXXX__,
-_X___X__,
-_X______,
-_X__X___,
-_XXXX___,
-_X__X___,
-_X______,
-_X___X__,
-XXXXXX__,
-________,
+XXX_XXX_,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0046[14] = {	/* F 0x4600*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0049[15] = {	/* I 0x4900*/
 ________,
 ________,
-XXXXXX__,
-_X___X__,
-_X______,
-_X__X___,
-_XXXX___,
-_X__X___,
-_X______,
-_X______,
-XXX_____,
 ________,
+_XXXXX__,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+_XXXXX__,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0047[14] = {	/* G 0x4700*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_004a[15] = {	/* J 0x4a00*/
 ________,
 ________,
-__XXX___,
-_X__X___,
-X_______,
-X_______,
-X_______,
-X__XXX__,
+________,
+__XXXXX_,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
 X___X___,
-_X__X___,
-__XX____,
-________,
-________,
-________,
+XXXX____,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0048[14] = {	/* H 0x4800*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_004b[15] = {	/* K 0x4b00*/
+________,
 ________,
 ________,
 XXX_XXX_,
 _X___X__,
-_X___X__,
-_X___X__,
-_XXXXX__,
-_X___X__,
-_X___X__,
-_X___X__,
-XXX_XXX_,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0049[14] = {	/* I 0x4900*/
-________,
-________,
-_XXXXX__,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-_XXXXX__,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_004a[14] = {	/* J 0x4a00*/
-________,
-________,
-_XXXXX__,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-X__X____,
-XXX_____,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_004b[14] = {	/* K 0x4b00*/
-________,
-________,
-XXX_XX__,
 _X__X___,
 _X_X____,
-_XX_____,
 _XXX____,
 _X_X____,
 _X__X___,
 _X__X___,
-XXX_XX__,
-________,
+_X___X__,
+XXX_XXX_,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_004c[14] = {	/* L 0x4c00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_004c[15] = {	/* L 0x4c00*/
+________,
 ________,
 ________,
 XXX_____,
@@ -774,17 +819,19 @@ _X______,
 _X______,
 _X______,
 _X______,
-_X___X__,
-XXXXXX__,
-________,
+_X______,
+_X____X_,
+XXXXXXX_,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_004d[14] = {	/* M 0x4d00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_004d[15] = {	/* M 0x4d00*/
+________,
 ________,
 ________,
 XXX_XXX_,
+_XX_XX__,
 _XX_XX__,
 _XX_XX__,
 _XX_XX__,
@@ -795,10 +842,10 @@ _X_X_X__,
 XX_X_XX_,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_004e[14] = {	/* N 0x4e00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_004e[15] = {	/* N 0x4e00*/
+________,
 ________,
 ________,
 XXX_XXX_,
@@ -809,67 +856,72 @@ _X_X_X__,
 _X_X_X__,
 _X__XX__,
 _X__XX__,
+_X__XX__,
 XXX__X__,
 ________,
 ________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_004f[15] = {	/* O 0x4f00*/
+________,
+________,
+________,
+__XXX___,
+_X___X__,
+X_____X_,
+X_____X_,
+X_____X_,
+X_____X_,
+X_____X_,
+X_____X_,
+_X___X__,
+__XXX___,
+________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_004f[14] = {	/* O 0x4f00*/
-________,
-________,
-__XX____,
-_X__X___,
-X____X__,
-X____X__,
-X____X__,
-X____X__,
-X____X__,
-_X__X___,
-__XX____,
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0050[15] = {	/* P 0x5000*/
 ________,
 ________,
 ________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0050[14] = {	/* P 0x5000*/
-________,
-________,
-XXXXX___,
-_X___X__,
-_X___X__,
-_X___X__,
-_XXXX___,
+XXXXXX__,
+_X____X_,
+_X____X_,
+_X____X_,
+_XXXXX__,
+_X______,
 _X______,
 _X______,
 _X______,
 XXX_____,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0051[14] = {	/* Q 0x5100*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0051[15] = {	/* Q 0x5100*/
 ________,
 ________,
-__XX____,
-_X__X___,
-X____X__,
-X____X__,
-X____X__,
-X____X__,
-X_XX_X__,
-_X__X___,
+________,
 __XXX___,
-____XX__,
-________,
+_X___X__,
+X_____X_,
+X_____X_,
+X_____X_,
+X_____X_,
+X_____X_,
+X_XX__X_,
+_X__XX__,
+__XXX___,
+_____XX_,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0052[14] = {	/* R 0x5200*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0052[15] = {	/* R 0x5200*/
+________,
 ________,
 ________,
 XXXXX___,
+_X___X__,
 _X___X__,
 _X___X__,
 _XXXX___,
@@ -880,31 +932,33 @@ _X___X__,
 XXX__XX_,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0053[14] = {	/* S 0x5300*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0053[15] = {	/* S 0x5300*/
 ________,
 ________,
-__XXXX__,
-_X___X__,
+________,
+__XXXXX_,
+_X____X_,
+_X____X_,
 _X______,
-__X_____,
-___XX___,
-_____X__,
-_____X__,
-_X___X__,
-_XXXX___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0054[14] = {	/* T 0x5400*/
-________,
-________,
+__XX____,
+____XX__,
+______X_,
+_X____X_,
+_X____X_,
 _XXXXX__,
-_X_X_X__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0054[15] = {	/* T 0x5400*/
+________,
+________,
+________,
+XXXXXXX_,
+X__X__X_,
+___X____,
 ___X____,
 ___X____,
 ___X____,
@@ -914,10 +968,10 @@ ___X____,
 __XXX___,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0055[14] = {	/* U 0x5500*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0055[15] = {	/* U 0x5500*/
+________,
 ________,
 ________,
 XXX_XXX_,
@@ -928,30 +982,32 @@ _X___X__,
 _X___X__,
 _X___X__,
 _X___X__,
+_X___X__,
 __XXX___,
-________,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0056[14] = {	/* V 0x5600*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0056[15] = {	/* V 0x5600*/
+________,
 ________,
 ________,
 XXX_XXX_,
 _X___X__,
 _X___X__,
+_X___X__,
 __X_X___,
 __X_X___,
 __X_X___,
 __X_X___,
 ___X____,
 ___X____,
-________,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0057[14] = {	/* W 0x5700*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0057[15] = {	/* W 0x5700*/
+________,
 ________,
 ________,
 XX_X_XX_,
@@ -963,32 +1019,35 @@ _XX_XX__,
 __X_X___,
 __X_X___,
 __X_X___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0058[14] = {	/* X 0x5800*/
-________,
-________,
-XX__XX__,
-_X__X___,
-_X__X___,
-__XX____,
-__XX____,
-__XX____,
-_X__X___,
-_X__X___,
-XX__XX__,
-________,
+__X_X___,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0059[14] = {	/* Y 0x5900*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0058[15] = {	/* X 0x5800*/
+________,
 ________,
 ________,
 XXX_XXX_,
+_X___X__,
+__X_X___,
+__X_X___,
+___X____,
+___X____,
+__X_X___,
+__X_X___,
+_X___X__,
+XXX_XXX_,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0059[15] = {	/* Y 0x5900*/
+________,
+________,
+________,
+XXX_XXX_,
+_X___X__,
 _X___X__,
 __X_X___,
 __X_X___,
@@ -999,80 +1058,84 @@ ___X____,
 __XXX___,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_005a[14] = {	/* Z 0x5a00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_005a[15] = {	/* Z 0x5a00*/
 ________,
 ________,
-_XXXXX__,
-_X__X___,
+________,
+__XXXXX_,
+_X___X__,
+_____X__,
+____X___,
 ____X___,
 ___X____,
 ___X____,
-___X____,
 __X_____,
+__X___X_,
+_XXXXXX_,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_005b[15] = {	/* [ 0x5b00*/
+________,
+___XXX__,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+___XXX__,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_005c[15] = {	/* \ 0x5c00*/
+________,
+________,
+_X______,
+_X______,
+__X_____,
+__X_____,
+___X____,
+___X____,
+___X____,
+____X___,
+____X___,
+_____X__,
+_____X__,
+_____X__,
+______X_,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_005d[15] = {	/* ] 0x5d00*/
+________,
+_XXXX___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+_XXXX___,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_005e[15] = {	/* ^ 0x5e00*/
+________,
+___XX___,
 __X__X__,
-_XXXXX__,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_005b[14] = {	/* [ 0x5b00*/
-________,
-___XXX__,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___XXX__,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_005c[14] = {	/* \ 0x5c00*/
-________,
-________,
-_X______,
-_X______,
-__X_____,
-__X_____,
-___X____,
-___X____,
-____X___,
-____X___,
-_____X__,
-_____X__,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_005d[14] = {	/* ] 0x5d00*/
-________,
-_XXX____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-_XXX____,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_005e[14] = {	/* ^ 0x5e00*/
-___X____,
-__X_X___,
 ________,
 ________,
 ________,
@@ -1087,7 +1150,7 @@ ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_005f[14] = {	/* _ 0x5f00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_005f[15] = {	/* _ 0x5f00*/
 ________,
 ________,
 ________,
@@ -1100,11 +1163,12 @@ ________,
 ________,
 ________,
 ________,
-XXXXXX__,
 ________,
+________,
+XXXXXXX_,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0060[14] = {	/* ` 0x6000*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0060[15] = {	/* ` 0x6000*/
 _XX_____,
 ___X____,
 ________,
@@ -1119,9 +1183,11 @@ ________,
 ________,
 ________,
 ________,
+________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0061[14] = {	/* a 0x6100*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0061[15] = {	/* a 0x6100*/
+________,
 ________,
 ________,
 ________,
@@ -1129,189 +1195,201 @@ ________,
 ________,
 __XXX___,
 _X___X__,
-___XXX__,
-__X__X__,
+____XX__,
+__XX_X__,
 _X___X__,
-__XXXXX_,
-________,
+_X__XX__,
+__XX_XX_,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0062[14] = {	/* b 0x6200*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0062[15] = {	/* b 0x6200*/
 ________,
 ________,
 XX______,
 _X______,
 _X______,
-_XXXX___,
-_X___X__,
-_X___X__,
-_X___X__,
-_X___X__,
-_XXXX___,
-________,
+_X______,
+_X_XXX__,
+_XX___X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_XXXXX__,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0063[14] = {	/* c 0x6300*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0063[15] = {	/* c 0x6300*/
+________,
+________,
+________,
+________,
+________,
+________,
+___XXX__,
+__X___X_,
+_X______,
+_X______,
+_X______,
+__X___X_,
+___XXX__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0064[15] = {	/* d 0x6400*/
+________,
+________,
+_____XX_,
+______X_,
+______X_,
+______X_,
+__XXXXX_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X___XX_,
+__XXX_X_,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0065[15] = {	/* e 0x6500*/
+________,
 ________,
 ________,
 ________,
 ________,
 ________,
 __XXXX__,
-_X___X__,
+_X____X_,
+_X____X_,
+_XXXXXX_,
 _X______,
-_X______,
-_X___X__,
-__XXX___,
-________,
+_X____X_,
+__XXXX__,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0064[14] = {	/* d 0x6400*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0066[15] = {	/* f 0x6600*/
 ________,
 ________,
 ____XX__,
-_____X__,
-_____X__,
-__XXXX__,
-_X___X__,
-_X___X__,
-_X___X__,
-_X___X__,
-__XXXXX_,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0065[14] = {	/* e 0x6500*/
-________,
-________,
-________,
-________,
-________,
-__XXX___,
-_X___X__,
+___X__X_,
+___X____,
+___X____,
 _XXXXX__,
-_X______,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+_XXXXX__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0067[15] = {	/* g 0x6700*/
+________,
+________,
+________,
+________,
+________,
+________,
+__XXXXX_,
+_X___X__,
 _X___X__,
 __XXX___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0066[14] = {	/* f 0x6600*/
-________,
-________,
-___XX___,
-__X__X__,
-__X_____,
-XXXXX___,
-__X_____,
-__X_____,
-__X_____,
-__X_____,
-_XXXX___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0067[14] = {	/* g 0x6700*/
-________,
-________,
-________,
-________,
-________,
+_X______,
 __XXXX__,
-_X__X___,
-_X__X___,
-__XX____,
-_X______,
-__XXX___,
-_X___X__,
-__XXX___,
-________,
+_X____X_,
+_X____X_,
+__XXXX__,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0068[14] = {	/* h 0x6800*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0068[15] = {	/* h 0x6800*/
 ________,
 ________,
 XX______,
 _X______,
 _X______,
-_X_XX___,
-_XX__X__,
+_X______,
+_X_XXX__,
+_XX___X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+XXX__XX_,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0069[15] = {	/* i 0x6900*/
+________,
+________,
+__XX____,
+__XX____,
+________,
+________,
+_XXX____,
+___X____,
+___X____,
+___X____,
+___X____,
+___X____,
+_XXXXX__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_006a[15] = {	/* j 0x6a00*/
+________,
+________,
+____XX__,
+____XX__,
+________,
+________,
+___XXX__,
+_____X__,
+_____X__,
+_____X__,
+_____X__,
+_____X__,
+_____X__,
 _X___X__,
-_X___X__,
+_XXXX___,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_006b[15] = {	/* k 0x6b00*/
+________,
+________,
+XX______,
+_X______,
+_X______,
+_X______,
+_X__XXX_,
+_X__X___,
+_X_X____,
+_XX_X___,
+_X__X___,
 _X___X__,
 XXX_XXX_,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0069[14] = {	/* i 0x6900*/
-________,
-________,
-___X____,
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_006c[15] = {	/* l 0x6c00*/
 ________,
 ________,
 _XXX____,
 ___X____,
 ___X____,
-___X____,
-___X____,
-_XXXXX__,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_006a[14] = {	/* j 0x6a00*/
-________,
-________,
-____X___,
-________,
-________,
-__XXX___,
-____X___,
-____X___,
-____X___,
-____X___,
-____X___,
-____X___,
-_XXX____,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_006b[14] = {	/* k 0x6b00*/
-________,
-________,
-XX______,
-_X______,
-_X______,
-_X_XXX__,
-_X__X___,
-_X_X____,
-_XXX____,
-_X__X___,
-XXX_XX__,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_006c[14] = {	/* l 0x6c00*/
-________,
-________,
-_XXX____,
 ___X____,
 ___X____,
 ___X____,
@@ -1322,16 +1400,17 @@ ___X____,
 _XXXXX__,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_006d[14] = {	/* m 0x6d00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_006d[15] = {	/* m 0x6d00*/
+________,
 ________,
 ________,
 ________,
 ________,
 ________,
 XXXXX___,
+_X_X_X__,
 _X_X_X__,
 _X_X_X__,
 _X_X_X__,
@@ -1339,163 +1418,172 @@ _X_X_X__,
 XX_X_XX_,
 ________,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_006e[14] = {	/* n 0x6e00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_006e[15] = {	/* n 0x6e00*/
 ________,
 ________,
 ________,
 ________,
 ________,
-XX_XX___,
-_XX__X__,
-_X___X__,
-_X___X__,
-_X___X__,
-XXX_XXX_,
 ________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_006f[14] = {	/* o 0x6f00*/
-________,
-________,
-________,
-________,
-________,
-__XXX___,
-_X___X__,
-_X___X__,
-_X___X__,
-_X___X__,
-__XXX___,
-________,
+XX_XXX__,
+_XX___X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+XXX__XX_,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0070[14] = {	/* p 0x7000*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_006f[15] = {	/* o 0x6f00*/
 ________,
 ________,
 ________,
 ________,
 ________,
-XXXXX___,
-_X___X__,
-_X___X__,
-_X___X__,
-_X___X__,
-_XXXX___,
-_X______,
-XXX_____,
 ________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0071[14] = {	/* q 0x7100*/
-________,
-________,
-________,
-________,
-________,
-__XXXX__,
-_X___X__,
-_X___X__,
-_X___X__,
-_X___X__,
-__XXXX__,
-_____X__,
-____XXX_,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0072[14] = {	/* r 0x7200*/
-________,
-________,
-________,
-________,
-________,
-_XX_XX__,
-__XX____,
-__X_____,
-__X_____,
-__X_____,
-_XXXX___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0073[14] = {	/* s 0x7300*/
-________,
-________,
-________,
-________,
-________,
-__XXXX__,
-_X___X__,
-__XX____,
-____X___,
-_X___X__,
-_XXXX___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0074[14] = {	/* t 0x7400*/
-________,
-________,
-________,
-__X_____,
-__X_____,
-XXXXX___,
-__X_____,
-__X_____,
-__X_____,
+___XX___,
+__X__X__,
+_X____X_,
+_X____X_,
+_X____X_,
 __X__X__,
 ___XX___,
 ________,
 ________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0070[15] = {	/* p 0x7000*/
+________,
+________,
+________,
+________,
+________,
+________,
+XX_XXX__,
+_XX___X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_XX___X_,
+_X_XXX__,
+_X______,
+XXX_____,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0071[15] = {	/* q 0x7100*/
+________,
+________,
+________,
+________,
+________,
+________,
+__XXX_X_,
+_X___XX_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X___XX_,
+__XXX_X_,
+______X_,
+_____XX_,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0072[15] = {	/* r 0x7200*/
+________,
+________,
+________,
+________,
+________,
+________,
+XXX_XXX_,
+__XX__X_,
+__X_____,
+__X_____,
+__X_____,
+__X_____,
+XXXXX___,
+________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0075[14] = {	/* u 0x7500*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0073[15] = {	/* s 0x7300*/
 ________,
 ________,
 ________,
 ________,
 ________,
-XX__XX__,
+________,
+__XXXX__,
 _X___X__,
+_X______,
+__XXX___,
+_____X__,
 _X___X__,
-_X___X__,
-_X__XX__,
-__XX_XX_,
-________,
+_XXXX___,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0076[14] = {	/* v 0x7600*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0074[15] = {	/* t 0x7400*/
+________,
+________,
+________,
+________,
+___X____,
+___X____,
+_XXXXX__,
+___X____,
+___X____,
+___X____,
+___X____,
+___X__X_,
+____XX__,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0075[15] = {	/* u 0x7500*/
+________,
 ________,
 ________,
 ________,
 ________,
 ________,
 XX___XX_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X____X_,
+_X___XX_,
+__XXX_X_,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0076[15] = {	/* v 0x7600*/
+________,
+________,
+________,
+________,
+________,
+________,
+XXX_XXX_,
 _X___X__,
 _X___X__,
 __X_X___,
 __X_X___,
 ___X____,
-________,
+___X____,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0077[14] = {	/* w 0x7700*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0077[15] = {	/* w 0x7700*/
+________,
 ________,
 ________,
 ________,
@@ -1507,133 +1595,123 @@ _X_X_X__,
 _X_X_X__,
 __X_X___,
 __X_X___,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0078[14] = {	/* x 0x7800*/
-________,
-________,
-________,
-________,
-________,
-XXX_XX__,
-_X__X___,
-__XX____,
-__XX____,
-_X__X___,
-XX_XXX__,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_0079[14] = {	/* y 0x7900*/
-________,
-________,
-________,
-________,
-________,
-XXX_XXX_,
-_X___X__,
 __X_X___,
-__X_X___,
-___X____,
-___X____,
-___X____,
-XXX_____,
+________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_007a[14] = {	/* z 0x7a00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0078[15] = {	/* x 0x7800*/
 ________,
 ________,
 ________,
 ________,
 ________,
-_XXXXX__,
-_X__X___,
-___X____,
-___X____,
+________,
+_XXX_XX_,
 __X__X__,
-_XXXXX__,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_007b[14] = {	/* { 0x7b00*/
-________,
-____XX__,
-____X___,
-____X___,
-____X___,
-____X___,
-___X____,
-____X___,
-____X___,
-____X___,
-____X___,
-____XX__,
+___XX___,
+___XX___,
+___XX___,
+__X__X__,
+_XX_XXX_,
 ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_007c[14] = {	/* | 0x7c00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_0079[15] = {	/* y 0x7900*/
+________,
+________,
+________,
+________,
+________,
+________,
+XXX__XX_,
+_X____X_,
+__X__X__,
+__X__X__,
+___XX___,
+___XX___,
 ___X____,
 ___X____,
+_XX_____,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_007a[15] = {	/* z 0x7a00*/
+________,
+________,
+________,
+________,
+________,
+________,
+_XXXXXX_,
+_X___X__,
+____X___,
 ___X____,
 ___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
-___X____,
+__X___X_,
+_XXXXXX_,
+________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_007d[14] = {	/* } 0x7d00*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_007b[15] = {	/* { 0x7b00*/
+________,
+_____XX_,
+_____X__,
+_____X__,
+_____X__,
+_____X__,
+_____X__,
+____X___,
+_____X__,
+_____X__,
+_____X__,
+_____X__,
+_____X__,
+_____XX_,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_007c[15] = {	/* | 0x7c00*/
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+____X___,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_007d[15] = {	/* } 0x7d00*/
 ________,
 _XX_____,
 __X_____,
 __X_____,
 __X_____,
 __X_____,
+__X_____,
 ___X____,
+__X_____,
 __X_____,
 __X_____,
 __X_____,
 __X_____,
 _XX_____,
 ________,
-________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_007e[14] = {	/* ~ 0x7e00*/
-__XX_X__,
-_X__X___,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_007f[14] = {	/*  0x7f00*/
-________,
-________,
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_007e[15] = {	/* ~ 0x7e00*/
+__X_____,
+_X_XX_X_,
+_____X__,
 ________,
 ________,
 ________,
@@ -1648,414 +1726,1078 @@ ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_b1f0[28] = {	/* ? 0xb1f0*/
-__XXXXXX,___X____,
-__X____X,___X____,
-__X____X,_X_X____,
-__X____X,_X_X____,
-__XXXXXX,_X_X____,
-____X___,_X_X____,
-_XXXXXXX,_X_X____,
-____X__X,_X_X____,
-___X___X,_X_X____,
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_007f[15] = {	/*  0x7f00*/
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b1f0[30] = {	/* ? 0xb1f0*/
+________,_____X__,
+__XXXXXX,_____X__,
+__X____X,_____X__,
+__X____X,__X__X__,
+__XXXXXX,__X__X__,
+____X___,__X__X__,
+____X___,__X__X__,
+_XXXXXXX,X_X__X__,
+____X___,X_X__X__,
+____X___,X_X__X__,
+___X____,X____X__,
+___X____,X____X__,
+__X_____,X____X__,
+_X____XX,___XXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b2cb[30] = {	/* ? 0xb2cb*/
+____X___,__X_____,
+_XXXXXXX,XXXXXX__,
+____X___,__X_____,
+________,_XXXX___,
+__XXXXXX,X__X____,
+___X__X_,___X____,
+____X__X,__X_____,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+______XX,X_______,
+_____X_X,_X______,
+___XX__X,__XX____,
+_XX____X,____XX__,
+_______X,________,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b2e2[30] = {	/* ? 0xb2e2*/
+________,_____X__,
+__X__XXX,XX___X__,
+___X_X__,_X___X__,
+_____X_X,_X_X_X__,
+_X___X_X,_X_X_X__,
+__X__X_X,_X_X_X__,
+_____X_X,_X_X_X__,
+___X_X_X,_X_X_X__,
+___X_X_X,_X_X_X__,
+__X____X,___X_X__,
+__X___X_,X____X__,
+_X____X_,_X___X__,
+_X___X__,_X___X__,
+____X___,___XXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b3a3[30] = {	/* ? 0xb3a3*/
+_______X,________,
 ___X___X,___X____,
-__X____X,___X____,
-_X__XXX_,__XX____,
-________,________,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_b6a8[28] = {	/* ? 0xb6a8*/
-_____X__,________,
-______X_,________,
-_XXXXXXX,XXXX____,
-_X______,___X____,
-________,________,
-_XXXXXXX,XXXX____,
-______X_,________,
-___X__X_,________,
-___X__XX,XXX_____,
-___X__X_,________,
-__X_X_X_,________,
-_X___XXX,XXXX____,
-________,________,
+____X__X,__X_____,
+_XXXXXXX,XXXXXX__,
+_X______,_____X__,
+____XXXX,XXX_____,
+____X___,__X_____,
+____XXXX,XXX_____,
+_______X,________,
+__XXXXXX,XXXXX___,
+__X____X,____X___,
+__X____X,____X___,
+__X____X,__XXX___,
+_______X,________,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_bce4[28] = {	/* ? 0xbce4*/
-__X__XXX,XXXX____,
-___X____,___X____,
-________,___X____,
-__X_XXXX,XX_X____,
-__X_X___,_X_X____,
-__X_X___,_X_X____,
-__X_XXXX,XX_X____,
-__X_X___,_X_X____,
-__X_X___,_X_X____,
-__X_XXXX,XX_X____,
-__X_____,___X____,
-__X_____,_XXX____,
-________,________,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_c1e4[28] = {	/* ? 0xc1e4*/
-___X____,X_______,
-_X_XXX__,X_______,
-_X_X___X,_X______,
-_X_X___X,__X_____,
-_XXXXXX_,X__X____,
-________,_X______,
-_X_X_X_X,XXX_____,
-_X_X_X__,__X_____,
-_XX_XX__,_X______,
-_X___X_X,_X______,
-_XXXXX__,X_______,
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b5a5[30] = {	/* ? 0xb5a5*/
+____X___,__X_____,
 _____X__,_X______,
-________,________,
+___XXXXX,XXXX____,
+___X___X,___X____,
+___X___X,___X____,
+___XXXXX,XXXX____,
+___X___X,___X____,
+___X___X,___X____,
+___XXXXX,XXXX____,
+_______X,________,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+_______X,________,
+_______X,________,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_c3fb[28] = {	/* ? 0xc3fb*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b6a8[30] = {	/* ? 0xb6a8*/
+______X_,________,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+_X______,_____X__,
+________,________,
+___XXXXX,XXXX____,
+_______X,________,
+_______X,________,
+___X___X,________,
+___X___X,XXXX____,
+___X___X,________,
+___X___X,________,
+__X_X__X,________,
+_X___XXX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b6e0[30] = {	/* ? 0xb6e0*/
 _____X__,________,
 _____X__,________,
 ____XXXX,XXX_____,
-___X____,__X_____,
-__X_X___,_X______,
-_____X_X,X_______,
-_____XX_,________,
-___XXXXX,XXXX____,
-_XX_X___,___X____,
-____X___,___X____,
-____XXXX,XXXX____,
-____X___,___X____,
-________,________,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_c4d0[28] = {	/* ? 0xc4d0*/
-__XXXXXX,XXX_____,
-__X___X_,__X_____,
-__X___X_,__X_____,
-__XXXXXX,XXX_____,
-__X___X_,__X_____,
-__X___X_,__X_____,
-__XXXXXX,XXX_____,
-_____X__,________,
-_XXXXXXX,XXXX____,
-____X___,___X____,
-___X____,___X____,
-_XX_____,XXX_____,
-________,________,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_c4ea[28] = {	/* ? 0xc4ea*/
-___X____,________,
-___X____,________,
-___XXXXX,XXXX____,
-__X____X,________,
-_X_____X,________,
-___XXXXX,XXX_____,
-___X___X,________,
-___X___X,________,
-_XXXXXXX,XXXX____,
-_______X,________,
-_______X,________,
-_______X,________,
-________,________,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_c5ae[28] = {	/* ? 0xc5ae*/
-_____X__,________,
-_____X__,________,
-_____X__,________,
-_XXXXXXX,XXXX____,
-____X___,_X______,
-____X___,_X______,
-___X____,X_______,
-____XX_X,________,
-______X_,________,
-_____X_X,X_______,
 ___XX___,_X______,
-_XX_____,__X_____,
-________,________,
+__X__X__,X_______,
+______XX,_X______,
+____XX__,X_______,
+_XXX___X,XXXXX___,
+______X_,___X____,
+____XX__,__X_____,
+__XX__X_,_X______,
+_______X,X_______,
+_____XX_,________,
+_XXXX___,________,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_c8b7[28] = {	/* ? 0xc8b7*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b7f1[30] = {	/* ? 0xb7f1*/
+________,________,
+__XXXXXX,XXXXX___,
 _______X,________,
-_XXXX__X,XXX_____,
-___X__X_,__X_____,
-___X____,_X______,
-__X___XX,XXXX____,
-__XXX_X_,X__X____,
-_XX_X_XX,XXXX____,
-__X_X_X_,X__X____,
-__X_X_XX,XXXX____,
-__XXX_X_,X__X____,
-__X_X_X_,X__X____,
-_____X__,__XX____,
-________,________,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_cab1[28] = {	/* ? 0xcab1*/
-________,__X_____,
-_XXXX___,__X_____,
-_X__X___,__X_____,
-_X__X_XX,XXXX____,
-_X__X___,__X_____,
-_XXXX___,__X_____,
-_X__X__X,__X_____,
-_X__X___,X_X_____,
-_X__X___,X_X_____,
-_XXXX___,__X_____,
-_X__X___,__X_____,
-________,XXX_____,
-________,________,
+______XX,________,
+_____X_X,_XX_____,
+___XX__X,___XX___,
+_XX____X,_____X__,
+_______X,________,
+___XXXXX,XXXX____,
+___X____,___X____,
+___X____,___X____,
+___X____,___X____,
+___XXXXX,XXXX____,
+___X____,___X____,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_d0d4[28] = {	/* ? 0xd0d4*/
-___X____,X_______,
-___X____,X_______,
-___X__X_,X_______,
-_X_XX_XX,XXX_____,
-_X_X__X_,X_______,
-_X_X_X__,X_______,
-_X_X____,X_______,
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_bbe9[30] = {	/* ? 0xbbe9*/
+___X____,__XXX___,
 ___X__XX,XXX_____,
-___X____,X_______,
-___X____,X_______,
-___X____,X_______,
-___X_XXX,XXXX____,
-________,________,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1414_d0d5[28] = {	/* ? 0xd0d5*/
-___X____,X_______,
-___X____,X_______,
-___X__X_,X_______,
-_XXXX_XX,XXX_____,
-__X_X_X_,X_______,
-__X_XX__,X_______,
-__X_X___,X_______,
-_X__X_XX,XXX_____,
-__X_X___,X_______,
-___X____,X_______,
-__X_X___,X_______,
-_X___XXX,XXXX____,
-________,________,
+___X__X_,__X_____,
+_XXXX_XX,XXXXXX__,
+__X_X_X_,__X_____,
+__X_X_X_,X__X_X__,
+__X_X_XX,____XX__,
+__X_X_X_,_____X__,
+_X__X__X,XXXXX___,
+__X_X__X,____X___,
+___X___X,XXXXX___,
+__X_X__X,____X___,
+__X_X__X,XXXXX___,
+_X_____X,____X___,
 ________,________,
 };
 
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_bcec[30] = {	/* ? 0xbcec*/
+___X____,_X______,
+___X____,_X______,
+___X____,X_X_____,
+_XXXX__X,___X____,
+___X__X_,____X___,
+___X_X_X,XXXX_X__,
+__XXX___,________,
+__XX_X__,X___X___,
+_X_X____,_X__X___,
+___X__X_,_X__X___,
+___X___X,___X____,
+___X___X,___X____,
+___X____,__X_____,
+___X_XXX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c3f7[30] = {	/* ? 0xc3f7*/
+________,XXXXXX__,
+_XXXXX__,X____X__,
+_X___X__,X____X__,
+_X___X__,X____X__,
+_X___X__,XXXXXX__,
+_XXXXX__,X____X__,
+_X___X__,X____X__,
+_X___X__,X____X__,
+_X___X__,XXXXXX__,
+_XXXXX__,X____X__,
+_X_____X,_____X__,
+_______X,_____X__,
+______X_,_____X__,
+_____X__,___XXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4a3[30] = {	/* ? 0xc4a3*/
+___X___X,___X____,
+___X___X,___X____,
+___X__XX,XXXXXX__,
+_XXXX__X,___X____,
+___X__XX,XXXXX___,
+___X__X_,____X___,
+__XXX_XX,XXXXX___,
+__XX_XX_,____X___,
+_X_X__XX,XXXXX___,
+___X____,_X______,
+___X_XXX,XXXXXX__,
+___X____,X_X_____,
+___X___X,___X____,
+___X_XX_,____XX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4d0[30] = {	/* ? 0xc4d0*/
+__XXXXXX,XXXXX___,
+__X____X,____X___,
+__X____X,____X___,
+__XXXXXX,XXXXX___,
+__X____X,____X___,
+__X____X,____X___,
+__XXXXXX,XXXXX___,
+______X_,________,
+______X_,________,
+_XXXXXXX,XXXXX___,
+_____X__,____X___,
+____X___,____X___,
+___X____,____X___,
+_XX_____,__XX____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c5ae[30] = {	/* ? 0xc5ae*/
+______X_,________,
+______X_,________,
+______X_,________,
+______X_,________,
+_XXXXXXX,XXXXXX__,
+_____X__,__X_____,
+_____X__,__X_____,
+____X___,_X______,
+___XX___,_X______,
+_____XX_,X_______,
+_______X,X_______,
+______X_,_XX_____,
+____XX__,___X____,
+_XXX____,____X___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c8b7[30] = {	/* ? 0xc8b7*/
+________,X_______,
+________,XXXXX___,
+_XXXXX_X,____X___,
+___X__X_,___X____,
+___X___X,XXXXXX__,
+__X____X,__X__X__,
+__XXXX_X,__X__X__,
+_XX__X_X,XXXXXX__,
+__X__X_X,__X__X__,
+__X__X_X,__X__X__,
+__X__X_X,XXXXXX__,
+__XXXX_X,__X__X__,
+__X____X,__X__X__,
+______X_,____XX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c8cf[30] = {	/* ? 0xc8cf*/
+__X_____,_X______,
+___X____,_X______,
+___X____,_X______,
+________,_X______,
+_XXX____,_X______,
+___X____,_X______,
+___X____,_X______,
+___X____,X_X_____,
+___X____,X_X_____,
+___X_X__,X_X_____,
+___XX__X,___X____,
+___X___X,___X____,
+______X_,____X___,
+_____X__,_____X__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c9e8[30] = {	/* ? 0xc9e8*/
+__X_____,________,
+___X___X,XXXX____,
+___X___X,___X____,
+_______X,___X____,
+_______X,___X____,
+_XXX__X_,____XX__,
+___X_X__,________,
+___X__XX,XXXXX___,
+___X___X,____X___,
+___X___X,___X____,
+___X_X__,X_X_____,
+___XX___,_X______,
+___X___X,X_XX____,
+_____XX_,____XX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cab1[30] = {	/* ? 0xcab1*/
+________,___X____,
+________,___X____,
+_XXXX___,___X____,
+_X__X_XX,XXXXXX__,
+_X__X___,___X____,
+_X__X___,___X____,
+_XXXX__X,___X____,
+_X__X___,X__X____,
+_X__X___,X__X____,
+_X__X___,___X____,
+_XXXX___,___X____,
+_X__X___,___X____,
+________,___X____,
+________,_XXX____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cabd[30] = {	/* ? 0xcabd*/
+________,_X_X____,
+________,_X__X___,
+________,_X______,
+_XXXXXXX,XXXXXX__,
+________,_X______,
+________,_X______,
+__XXXXX_,_X______,
+____X___,_X______,
+____X___,_X______,
+____X___,__X_____,
+____X___,__X__X__,
+____XXXX,___X_X__,
+_XXXX___,____XX__,
+________,_____X__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cbb5[30] = {	/* ? 0xcbb5*/
+__X___X_,___X____,
+___X___X,___X____,
+___X___X,__X_____,
+______XX,XXXXX___,
+_XXX__X_,____X___,
+___X__X_,____X___,
+___X__X_,____X___,
+___X__XX,XXXXX___,
+___X___X,__X_____,
+___X_X_X,__X_____,
+___XX__X,__X_____,
+___X__X_,__X__X__,
+______X_,__X__X__,
+_____X__,___XXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cce5[30] = {	/* ? 0xcce5*/
+____X___,_X______,
+____X___,_X______,
+____X___,_X______,
+___X__XX,XXXXXX__,
+___X____,_X______,
+__XX____,XXX_____,
+_X_X____,XXX_____,
+___X___X,_X_X____,
+___X___X,_X_X____,
+___X__X_,_X__X___,
+___X_X_X,XXXX_X__,
+___X____,_X______,
+___X____,_X______,
+___X____,_X______,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cdb3[30] = {	/* ? 0xcdb3*/
+___X____,X_______,
+___X____,_X______,
+__X_____,________,
+_X__X_XX,XXXXXX__,
+_XXXX___,X_______,
+___X____,X__X____,
+__X____X,____X___,
+_X____XX,XXXXX___,
+_XXXX___,X_X_X___,
+________,X_X_____,
+_______X,__X_____,
+___XX__X,__X__X__,
+_XX___X_,__X__X__,
+_____X__,___XXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_ceb4[30] = {	/* ? 0xceb4*/
+_______X,________,
+_______X,________,
+__XXXXXX,XXXXX___,
+_______X,________,
+_______X,________,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+______XX,X_______,
+_____X_X,_X______,
+____X__X,__X_____,
+___X___X,___X____,
+_XX____X,____XX__,
+_______X,________,
+_______X,________,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cfa2[30] = {	/* ? 0xcfa2*/
+______X_,________,
+_____X__,________,
+___XXXXX,XXXX____,
+___X____,___X____,
+___XXXXX,XXXX____,
+___X____,___X____,
+___XXXXX,XXXX____,
+___X____,___X____,
+___XXXXX,XXXX____,
+_______X,________,
+____X___,X___X___,
+__X_X___,X____X__,
+__X_X___,__X__X__,
+_X___XXX,XXX_____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cfb5[30] = {	/* ? 0xcfb5*/
+________,XXXX____,
+__XXXXXX,________,
+______X_,________,
+_____X__,__X_____,
+____X___,_X______,
+___XXXXX,X_______,
+______X_,__X_____,
+____XX__,___X____,
+__XXXXXX,XXXXX___,
+_______X,____X___,
+____X__X,__X_____,
+___X___X,___X____,
+__X____X,____X___,
+_____XXX,________,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cfee[30] = {	/* ? 0xcfee*/
+________,________,
+______XX,XXXXXX__,
+_XXXX___,_X______,
+___X____,X_______,
+___X__XX,XXXXX___,
+___X__X_,____X___,
+___X__X_,_X__X___,
+___X__X_,_X__X___,
+___X__X_,_X__X___,
+___XX_X_,X___X___,
+_XX_____,X_X_____,
+_______X,___X____,
+______X_,____X___,
+_____X__,____X___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0c2[30] = {	/* ? 0xd0c2*/
+___X____,____XX__,
+____X___,_XXX____,
+_XXXXXXX,_X______,
+__X___X_,_X______,
+___X_X__,_X______,
+_XXXXXXX,_XXXXX__,
+________,_X__X___,
+____X___,_X__X___,
+_XXXXXXX,_X__X___,
+____X___,_X__X___,
+__X_X_X_,_X__X___,
+_X__X__X,_X__X___,
+____X___,X___X___,
+__XXX__X,____X___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0c5[30] = {	/* ? 0xd0c5*/
+____X___,X_______,
+____X___,_X______,
+___X_XXX,XXXXXX__,
+___X____,________,
+__XX__XX,XXXXX___,
+_X_X____,________,
+___X__XX,XXXXX___,
+___X____,________,
+___X__XX,XXXXX___,
+___X__X_,____X___,
+___X__X_,____X___,
+___X__X_,____X___,
+___X__XX,XXXXX___,
+___X__X_,____X___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0cd[30] = {	/* ? 0xd0cd*/
+________,____X___,
+__XXXXXX,_X__X___,
+___X__X_,_X__X___,
+___X__X_,_X__X___,
+_XXXXXXX,XX__X___,
+___X__X_,_X__X___,
+___X__X_,____X___,
+__X___X_,____X___,
+_X_____X,__XXX___,
+_______X,________,
+__XXXXXX,XXXXX___,
+_______X,________,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0d4[30] = {	/* ? 0xd0d4*/
+___X____,__X_____,
+___X____,__X_____,
+___X___X,__X_____,
+___XX__X,__X_____,
+_X_X_X_X,XXXXXX__,
+_X_X___X,__X_____,
+_X_X__X_,__X_____,
+___X____,__X_____,
+___X___X,XXXXX___,
+___X____,__X_____,
+___X____,__X_____,
+___X____,__X_____,
+___X____,__X_____,
+___X__XX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d2d1[30] = {	/* ? 0xd2d1*/
+________,________,
+__XXXXXX,XXXXX___,
+________,____X___,
+________,____X___,
+__X_____,____X___,
+__X_____,____X___,
+__XXXXXX,XXXXX___,
+__X_____,________,
+__X_____,________,
+__X_____,________,
+__X_____,________,
+__X_____,_____X__,
+__X_____,_____X__,
+___XXXXX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d5fd[30] = {	/* ? 0xd5fd*/
+________,________,
+__XXXXXX,XXXXX___,
+_______X,________,
+_______X,________,
+_______X,________,
+___X___X,________,
+___X___X,________,
+___X___X,XXXX____,
+___X___X,________,
+___X___X,________,
+___X___X,________,
+___X___X,________,
+___X___X,________,
+_XXXXXXX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d6d3[30] = {	/* ? 0xd6d3*/
+___X____,__X_____,
+___X____,__X_____,
+___XXX__,__X_____,
+__X____X,XXXXXX__,
+_X_____X,__X__X__,
+__XXXX_X,__X__X__,
+___X___X,__X__X__,
+___X___X,__X__X__,
+_XXXXX_X,XXXXXX__,
+___X___X,__X__X__,
+___X____,__X_____,
+___X_X__,__X_____,
+___XX___,__X_____,
+___X____,__X_____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d6d8[30] = {	/* ? 0xd6d8*/
+________,XXXXX___,
+__XXXXXX,________,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+_______X,________,
+___XXXXX,XXXX____,
+___X___X,___X____,
+___XXXXX,XXXX____,
+___X___X,___X____,
+___XXXXX,XXXX____,
+_______X,________,
+__XXXXXX,XXXXX___,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c1e4[30] = {	/* ? 0xc1e4*/
+____X___,__X_____,
+____X___,__X_____,
+__X_XXX_,_X_X____,
+__X_X___,_X_X____,
+__X_X___,X_X_X___,
+_XXXXXXX,__X__X__,
+________,________,
+_X__X_X_,XXXXX___,
+_X__X_X_,____X___,
+_X_X_XX_,___X____,
+_XX___X_,_X_X____,
+_X____X_,__X_____,
+_XXXXXX_,___X____,
+______X_,___X____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4ea[30] = {	/* ? 0xc4ea*/
+____X___,________,
+____X___,________,
+____XXXX,XXXXX___,
+___X____,X_______,
+__X_____,X_______,
+_X__XXXX,XXXX____,
+____X___,X_______,
+____X___,X_______,
+____X___,X_______,
+_XXXXXXX,XXXXXX__,
+________,X_______,
+________,X_______,
+________,X_______,
+________,X_______,
+________,________,
+};
 
 
+GUI_FLASH const GUI_CHARINFO GUI_FontHZSimSun_1515_CharInfo[] = {
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0020 },  /*   0 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0021 },  /* ! 1 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0022 },  /* " 2 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0023 },  /* # 3 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0024 },  /* $ 4 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0025 },  /* % 5 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0026 },  /* & 6 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0027 },  /* ' 7 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0028 },  /* ( 8 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0029 },  /* ) 9 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_002a },  /* * 10 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_002b },  /* + 11 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_002c },  /* , 12 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_002d },  /* - 13 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_002e },  /* . 14 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_002f },  /* / 15 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0030 },  /* 0 16 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0031 },  /* 1 17 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0032 },  /* 2 18 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0033 },  /* 3 19 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0034 },  /* 4 20 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0035 },  /* 5 21 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0036 },  /* 6 22 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0037 },  /* 7 23 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0038 },  /* 8 24 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0039 },  /* 9 25 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_003a },  /* : 26 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_003b },  /* ; 27 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_003c },  /* < 28 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_003d },  /* = 29 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_003e },  /* > 30 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_003f },  /* ? 31 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0040 },  /* @ 32 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0041 },  /* A 33 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0042 },  /* B 34 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0043 },  /* C 35 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0044 },  /* D 36 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0045 },  /* E 37 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0046 },  /* F 38 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0047 },  /* G 39 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0048 },  /* H 40 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0049 },  /* I 41 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_004a },  /* J 42 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_004b },  /* K 43 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_004c },  /* L 44 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_004d },  /* M 45 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_004e },  /* N 46 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_004f },  /* O 47 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0050 },  /* P 48 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0051 },  /* Q 49 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0052 },  /* R 50 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0053 },  /* S 51 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0054 },  /* T 52 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0055 },  /* U 53 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0056 },  /* V 54 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0057 },  /* W 55 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0058 },  /* X 56 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0059 },  /* Y 57 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_005a },  /* Z 58 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_005b },  /* [ 59 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_005c },  /* \ 60 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_005d },  /* ] 61 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_005e },  /* ^ 62 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_005f },  /* _ 63 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0060 },  /* ` 64 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0061 },  /* a 65 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0062 },  /* b 66 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0063 },  /* c 67 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0064 },  /* d 68 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0065 },  /* e 69 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0066 },  /* f 70 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0067 },  /* g 71 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0068 },  /* h 72 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0069 },  /* i 73 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_006a },  /* j 74 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_006b },  /* k 75 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_006c },  /* l 76 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_006d },  /* m 77 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_006e },  /* n 78 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_006f },  /* o 79 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0070 },  /* p 80 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0071 },  /* q 81 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0072 },  /* r 82 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0073 },  /* s 83 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0074 },  /* t 84 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0075 },  /* u 85 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0076 },  /* v 86 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0077 },  /* w 87 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0078 },  /* x 88 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_0079 },  /* y 89 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_007a },  /* z 90 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_007b },  /* { 91 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_007c },  /* | 92 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_007d },  /* } 93 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_007e },  /* ~ 94 */
+{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_007f },  /*  95 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b1f0 },  /* 别 96 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b2cb },  /* 菜 97 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b2e2 },  /* 测 98 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b3a3 },  /* 常 99 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b5a5 },  /* 单 100 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b6a8 },  /* 定 101 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b6e0 },  /* 多 102 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b7f1 },  /* 否 103 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_bbe9 },  /* 婚 104 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_bcec },  /* 检 105 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c3f7 },  /* 明 106 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4a3 },  /* 模 107 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4d0 },  /* 男 108 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c5ae },  /* 女 109 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c8b7 },  /* 确 110 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c8cf },  /* 认 111 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c9e8 },  /* 设 112 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cab1 },  /* 时 113 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cabd },  /* 式 114 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cbb5 },  /* 说 115 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cce5 },  /* 体 116 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cdb3 },  /* 统 117 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_ceb4 },  /* 未 118 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cfa2 },  /* 息 119 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cfb5 },  /* 系 120 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cfee },  /* 项 121 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0c2 },  /* 新 122 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0c5 },  /* 信 123 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0cd },  /* 型 124 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0d4 },  /* 性 125 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d2d1 },  /* 已 126 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d5fd },  /* 正 127 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d6d3 },  /* 钟 128 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d6d8 },  /* 重 129 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c1e4 },  /* 龄 130 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4ea },  /* 年 131 */
 
-GUI_FLASH const GUI_CHARINFO GUI_FontHZSimSun_1414_CharInfo[] = {
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0020 },  /*   0 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0021 },  /* ! 1 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0022 },  /* " 2 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0023 },  /* # 3 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0024 },  /* $ 4 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0025 },  /* % 5 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0026 },  /* & 6 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0027 },  /* ' 7 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0028 },  /* ( 8 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0029 },  /* ) 9 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_002a },  /* * 10 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_002b },  /* + 11 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_002c },  /* , 12 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_002d },  /* - 13 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_002e },  /* . 14 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_002f },  /* / 15 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0030 },  /* 0 16 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0031 },  /* 1 17 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0032 },  /* 2 18 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0033 },  /* 3 19 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0034 },  /* 4 20 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0035 },  /* 5 21 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0036 },  /* 6 22 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0037 },  /* 7 23 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0038 },  /* 8 24 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0039 },  /* 9 25 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_003a },  /* : 26 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_003b },  /* ; 27 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_003c },  /* < 28 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_003d },  /* = 29 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_003e },  /* > 30 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_003f },  /* ? 31 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0040 },  /* @ 32 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0041 },  /* A 33 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0042 },  /* B 34 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0043 },  /* C 35 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0044 },  /* D 36 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0045 },  /* E 37 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0046 },  /* F 38 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0047 },  /* G 39 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0048 },  /* H 40 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0049 },  /* I 41 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_004a },  /* J 42 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_004b },  /* K 43 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_004c },  /* L 44 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_004d },  /* M 45 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_004e },  /* N 46 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_004f },  /* O 47 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0050 },  /* P 48 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0051 },  /* Q 49 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0052 },  /* R 50 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0053 },  /* S 51 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0054 },  /* T 52 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0055 },  /* U 53 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0056 },  /* V 54 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0057 },  /* W 55 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0058 },  /* X 56 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0059 },  /* Y 57 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_005a },  /* Z 58 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_005b },  /* [ 59 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_005c },  /* \ 60 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_005d },  /* ] 61 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_005e },  /* ^ 62 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_005f },  /* _ 63 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0060 },  /* ` 64 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0061 },  /* a 65 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0062 },  /* b 66 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0063 },  /* c 67 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0064 },  /* d 68 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0065 },  /* e 69 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0066 },  /* f 70 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0067 },  /* g 71 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0068 },  /* h 72 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0069 },  /* i 73 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_006a },  /* j 74 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_006b },  /* k 75 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_006c },  /* l 76 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_006d },  /* m 77 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_006e },  /* n 78 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_006f },  /* o 79 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0070 },  /* p 80 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0071 },  /* q 81 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0072 },  /* r 82 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0073 },  /* s 83 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0074 },  /* t 84 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0075 },  /* u 85 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0076 },  /* v 86 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0077 },  /* w 87 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0078 },  /* x 88 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_0079 },  /* y 89 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_007a },  /* z 90 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_007b },  /* { 91 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_007c },  /* | 92 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_007d },  /* } 93 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_007e },  /* ~ 94 */
-{ 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1414_007f },  /*  95 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_b1f0 },  /* ? 96 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_b6a8 },  /* ? 97 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_bce4 },  /* ? 98 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_c1e4 },  /* ? 99 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_c3fb },  /* ? 100 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_c4d0 },  /* ? 101 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_c4ea },  /* ? 102 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_c5ae },  /* ? 103 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_c8b7 },  /* ? 104 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_cab1 },  /* ? 105 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_d0d4 },  /* ? 106 */
-{ 14, 14, 2, (void GUI_FLASH *)&acFontHZSimSun_1414_d0d5 },  /* ? 107 */
+
+};
+
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc4ea= {
+    0xc4ea,
+    0xc4ea,
+    &GUI_FontHZSimSun_1515_CharInfo[131],
+    (void *)0
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc1e4= {
+    0xc1e4,
+    0xc1e4,
+    &GUI_FontHZSimSun_1515_CharInfo[130],
+    (void *)&GUI_FontHZSimSun_1515_Propc4ea 
 };
 
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propd0d4= {
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd6d8= {
+    0xd6d8,
+    0xd6d8,
+    &GUI_FontHZSimSun_1515_CharInfo[129],
+    (void *)&GUI_FontHZSimSun_1515_Propc1e4 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd6d3= {
+    0xd6d3,
+    0xd6d3,
+    &GUI_FontHZSimSun_1515_CharInfo[128],
+    (void *)&GUI_FontHZSimSun_1515_Propd6d8 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd5fd= {
+    0xd5fd,
+    0xd5fd,
+    &GUI_FontHZSimSun_1515_CharInfo[127],
+    (void *)&GUI_FontHZSimSun_1515_Propd6d3 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd2d1= {
+    0xd2d1,
+    0xd2d1,
+    &GUI_FontHZSimSun_1515_CharInfo[126],
+    (void *)&GUI_FontHZSimSun_1515_Propd5fd 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd0d4= {
     0xd0d4,
-    0xd0d5,
-    &GUI_FontHZSimSun_1414_CharInfo[106],
-    (void *)0 
+    0xd0d4,
+    &GUI_FontHZSimSun_1515_CharInfo[125],
+    (void *)&GUI_FontHZSimSun_1515_Propd2d1 
 };
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propcab1= {
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd0cd= {
+    0xd0cd,
+    0xd0cd,
+    &GUI_FontHZSimSun_1515_CharInfo[124],
+    (void *)&GUI_FontHZSimSun_1515_Propd0d4 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd0c5= {
+    0xd0c5,
+    0xd0c5,
+    &GUI_FontHZSimSun_1515_CharInfo[123],
+    (void *)&GUI_FontHZSimSun_1515_Propd0cd 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd0c2= {
+    0xd0c2,
+    0xd0c2,
+    &GUI_FontHZSimSun_1515_CharInfo[122],
+    (void *)&GUI_FontHZSimSun_1515_Propd0c5 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcfee= {
+    0xcfee,
+    0xcfee,
+    &GUI_FontHZSimSun_1515_CharInfo[121],
+    (void *)&GUI_FontHZSimSun_1515_Propd0c2 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcfb5= {
+    0xcfb5,
+    0xcfb5,
+    &GUI_FontHZSimSun_1515_CharInfo[120],
+    (void *)&GUI_FontHZSimSun_1515_Propcfee 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcfa2= {
+    0xcfa2,
+    0xcfa2,
+    &GUI_FontHZSimSun_1515_CharInfo[119],
+    (void *)&GUI_FontHZSimSun_1515_Propcfb5 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propceb4= {
+    0xceb4,
+    0xceb4,
+    &GUI_FontHZSimSun_1515_CharInfo[118],
+    (void *)&GUI_FontHZSimSun_1515_Propcfa2 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcdb3= {
+    0xcdb3,
+    0xcdb3,
+    &GUI_FontHZSimSun_1515_CharInfo[117],
+    (void *)&GUI_FontHZSimSun_1515_Propceb4 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcce5= {
+    0xcce5,
+    0xcce5,
+    &GUI_FontHZSimSun_1515_CharInfo[116],
+    (void *)&GUI_FontHZSimSun_1515_Propcdb3 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcbb5= {
+    0xcbb5,
+    0xcbb5,
+    &GUI_FontHZSimSun_1515_CharInfo[115],
+    (void *)&GUI_FontHZSimSun_1515_Propcce5 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcabd= {
+    0xcabd,
+    0xcabd,
+    &GUI_FontHZSimSun_1515_CharInfo[114],
+    (void *)&GUI_FontHZSimSun_1515_Propcbb5 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcab1= {
     0xcab1,
     0xcab1,
-    &GUI_FontHZSimSun_1414_CharInfo[105],
-    (void *)&GUI_FontHZSimSun_1414_Propd0d4 
+    &GUI_FontHZSimSun_1515_CharInfo[113],
+    (void *)&GUI_FontHZSimSun_1515_Propcabd 
 };
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propc8b7= {
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc9e8= {
+    0xc9e8,
+    0xc9e8,
+    &GUI_FontHZSimSun_1515_CharInfo[112],
+    (void *)&GUI_FontHZSimSun_1515_Propcab1 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc8cf= {
+    0xc8cf,
+    0xc8cf,
+    &GUI_FontHZSimSun_1515_CharInfo[111],
+    (void *)&GUI_FontHZSimSun_1515_Propc9e8 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc8b7= {
     0xc8b7,
     0xc8b7,
-    &GUI_FontHZSimSun_1414_CharInfo[104],
-    (void *)&GUI_FontHZSimSun_1414_Propcab1 
+    &GUI_FontHZSimSun_1515_CharInfo[110],
+    (void *)&GUI_FontHZSimSun_1515_Propc8cf 
 };
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propc5ae= {
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc5ae= {
     0xc5ae,
     0xc5ae,
-    &GUI_FontHZSimSun_1414_CharInfo[103],
-    (void *)&GUI_FontHZSimSun_1414_Propc8b7 
+    &GUI_FontHZSimSun_1515_CharInfo[109],
+    (void *)&GUI_FontHZSimSun_1515_Propc8b7 
 };
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propc4ea= {
-    0xc4ea,
-    0xc4ea,
-    &GUI_FontHZSimSun_1414_CharInfo[102],
-    (void *)&GUI_FontHZSimSun_1414_Propc5ae 
-};
-/* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propc4d0= {
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc4d0= {
     0xc4d0,
     0xc4d0,
-    &GUI_FontHZSimSun_1414_CharInfo[101],
-    (void *)&GUI_FontHZSimSun_1414_Propc4ea 
+    &GUI_FontHZSimSun_1515_CharInfo[108],
+    (void *)&GUI_FontHZSimSun_1515_Propc5ae 
 };
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propc3fb= {
-    0xc3fb,
-    0xc3fb,
-    &GUI_FontHZSimSun_1414_CharInfo[100],
-    (void *)&GUI_FontHZSimSun_1414_Propc4d0 
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc4a3= {
+    0xc4a3,
+    0xc4a3,
+    &GUI_FontHZSimSun_1515_CharInfo[107],
+    (void *)&GUI_FontHZSimSun_1515_Propc4d0 
 };
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propc1e4= {
-    0xc1e4,
-    0xc1e4,
-    &GUI_FontHZSimSun_1414_CharInfo[99],
-    (void *)&GUI_FontHZSimSun_1414_Propc3fb 
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc3f7= {
+    0xc3f7,
+    0xc3f7,
+    &GUI_FontHZSimSun_1515_CharInfo[106],
+    (void *)&GUI_FontHZSimSun_1515_Propc4a3 
 };
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propbce4= {
-    0xbce4,
-    0xbce4,
-    &GUI_FontHZSimSun_1414_CharInfo[98],
-    (void *)&GUI_FontHZSimSun_1414_Propc1e4 
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propbcec= {
+    0xbcec,
+    0xbcec,
+    &GUI_FontHZSimSun_1515_CharInfo[105],
+    (void *)&GUI_FontHZSimSun_1515_Propc3f7 
 };
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propb6a8= {
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propbbe9= {
+    0xbbe9,
+    0xbbe9,
+    &GUI_FontHZSimSun_1515_CharInfo[104],
+    (void *)&GUI_FontHZSimSun_1515_Propbcec 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb7f1= {
+    0xb7f1,
+    0xb7f1,
+    &GUI_FontHZSimSun_1515_CharInfo[103],
+    (void *)&GUI_FontHZSimSun_1515_Propbbe9 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb6e0= {
+    0xb6e0,
+    0xb6e0,
+    &GUI_FontHZSimSun_1515_CharInfo[102],
+    (void *)&GUI_FontHZSimSun_1515_Propb7f1 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb6a8= {
     0xb6a8,
     0xb6a8,
-    &GUI_FontHZSimSun_1414_CharInfo[97],
-    (void *)&GUI_FontHZSimSun_1414_Propbce4 
+    &GUI_FontHZSimSun_1515_CharInfo[101],
+    (void *)&GUI_FontHZSimSun_1515_Propb6e0 
 };
 /* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Propb1f0= {
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb5a5= {
+    0xb5a5,
+    0xb5a5,
+    &GUI_FontHZSimSun_1515_CharInfo[100],
+    (void *)&GUI_FontHZSimSun_1515_Propb6a8 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb3a3= {
+    0xb3a3,
+    0xb3a3,
+    &GUI_FontHZSimSun_1515_CharInfo[99],
+    (void *)&GUI_FontHZSimSun_1515_Propb5a5 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb2e2= {
+    0xb2e2,
+    0xb2e2,
+    &GUI_FontHZSimSun_1515_CharInfo[98],
+    (void *)&GUI_FontHZSimSun_1515_Propb3a3 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb2cb= {
+    0xb2cb,
+    0xb2cb,
+    &GUI_FontHZSimSun_1515_CharInfo[97],
+    (void *)&GUI_FontHZSimSun_1515_Propb2e2 
+};
+/* ? -- ? */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb1f0= {
     0xb1f0,
     0xb1f0,
-    &GUI_FontHZSimSun_1414_CharInfo[96],
-    (void *)&GUI_FontHZSimSun_1414_Propb6a8 
+    &GUI_FontHZSimSun_1515_CharInfo[96],
+    (void *)&GUI_FontHZSimSun_1515_Propb2cb 
 };
 /*   --  */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1414_Prop0020= {
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Prop0020= {
     0x0020,
     0x007f,
-    &GUI_FontHZSimSun_1414_CharInfo[0],
-    (void *)&GUI_FontHZSimSun_1414_Propb1f0 
+    &GUI_FontHZSimSun_1515_CharInfo[0],
+    (void *)&GUI_FontHZSimSun_1515_Propb1f0 
 };
-GUI_FLASH const GUI_FONT GUI_FontHZ_SimSun_1414 = {
+/* ? -- ? */
+/* ? -- ? */
+
+GUI_FLASH const GUI_FONT GUI_FontHZ_SimSun_1515 = {
     GUI_FONTTYPE_PROP_SJIS,
-    14,
-    14,
+    15,
+    15,
     1,
     1,
-    (void GUI_FLASH *)&GUI_FontHZSimSun_1414_Prop0020
+    (void GUI_FLASH *)&GUI_FontHZSimSun_1515_Prop0020
 };
 

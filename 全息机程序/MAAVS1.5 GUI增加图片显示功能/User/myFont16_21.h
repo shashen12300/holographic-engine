@@ -7,7 +7,7 @@
 	#define GUI_FLASH 
 #endif 
 
-extern GUI_FLASH const GUI_FONT GUI_FontHZ_SimSun_1414;
+extern GUI_FLASH const GUI_FONT GUI_FontHZ_SimSun_1515;
 
 #endif
 

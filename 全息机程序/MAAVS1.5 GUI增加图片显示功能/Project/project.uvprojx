@@ -677,11 +677,6 @@
               <FilePath>..\User\inputWindow.c</FilePath>
             </File>
             <File>
-              <FileName>User_win.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\User_win.c</FilePath>
-            </File>
-            <File>
               <FileName>my_win.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\my_win.c</FilePath>
@@ -690,6 +685,16 @@
               <FileName>fengshi2.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\User\fengshi2.h</FilePath>
+            </File>
+            <File>
+              <FileName>User_LinehWin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\User_LinehWin.c</FilePath>
+            </File>
+            <File>
+              <FileName>user_Dialog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\user_Dialog.c</FilePath>
             </File>
           </Files>
         </Group>

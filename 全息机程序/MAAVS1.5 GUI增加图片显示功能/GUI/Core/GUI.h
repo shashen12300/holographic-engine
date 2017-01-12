@@ -207,12 +207,19 @@ Note that we have chosen the values to be close to existing
 #define GUI_ID_PROGBAR3   0x213
 
 #define GUI_ID_USER     	0x800
-#define MY_MESSAGE_ID_KEY1   GUI_ID_USER + 0
-#define MY_MESSAGE_ID_KEY2   GUI_ID_USER + 1
-#define MY_MESSAGE_ID_KEY3   GUI_ID_USER + 2
-#define MY_MESSAGE_ID_KEY4   GUI_ID_USER + 3
-#define MY_MESSAGE_ID_ENCODER0  GUI_ID_USER + 4
-#define MY_MESSAGE_ID_TIME  GUI_ID_USER + 5
+#define MY_MESSAGE_ID_KEY1      GUI_ID_USER + 0   //按键1
+#define MY_MESSAGE_ID_KEY2      GUI_ID_USER + 1   //按键2
+#define MY_MESSAGE_ID_KEY3      GUI_ID_USER + 2   //按键3
+#define MY_MESSAGE_ID_KEY4      GUI_ID_USER + 3   //按键4
+#define MY_MESSAGE_ID_ENCODER0  GUI_ID_USER + 4   //编码器，选择logo
+#define MY_MESSAGE_ID_TIME      GUI_ID_USER + 5   //时间
+#define MY_MESSAGE_ID_LINE      GUI_ID_USER + 6   //曲线图
+#define MY_MESSAGE_ID_SEX       GUI_ID_USER + 7   //性别
+#define MY_MESSAGE_ID_AGE       GUI_ID_USER + 8   //年龄
+#define MY_MESSAGE_ID_MARRY     GUI_ID_USER + 9   //婚姻
+#define MY_MESSAGE_ID_TYPE      GUI_ID_USER + 10  //体型
+#define MY_MESSAGE_ID_MODE      GUI_ID_USER + 11  //模式
+#define MY_MESSAGE_ID_ENTER     GUI_ID_USER + 12  //确认
 /*********************************************************************
 *
 *               Constants  needed for GL

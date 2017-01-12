@@ -22,6 +22,7 @@ Purpose     : Implementation of framewindow widget
 #include "FRAMEWIN_Private.h"
 #include "GUI_Protected.h"
 #include "WM_Intern.h"
+#include "myFont16_21.h"
 
 #if GUI_WINSUPPORT
 
@@ -44,17 +45,17 @@ Purpose     : Implementation of framewindow widget
 
 /* Default for left/right/top/bottom frame size */
 #ifndef FRAMEWIN_BORDER_DEFAULT
-  #define FRAMEWIN_BORDER_DEFAULT 3
+  #define FRAMEWIN_BORDER_DEFAULT 1
 #endif
 
 /* Default for inner frame size */
 #ifndef FRAMEWIN_IBORDER_DEFAULT
-  #define FRAMEWIN_IBORDER_DEFAULT 1
+  #define FRAMEWIN_IBORDER_DEFAULT 2
 #endif
 
 /* Default font */
 #ifndef FRAMEWIN_DEFAULT_FONT
-  #define FRAMEWIN_DEFAULT_FONT &GUI_Font8_1
+  #define FRAMEWIN_DEFAULT_FONT      &GUI_Font8_1
 #endif
 
 /* Default barcolor when framewin is active */

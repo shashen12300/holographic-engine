@@ -156,7 +156,7 @@ void send_rotate_message(void) {
 			//Ðý×ª±àÂëÆ÷
 		if(rotate_flag == 1) {
 				selectEnd = 0;
-//			WM_SelectWindow(mainForm_hWin);
+			WM_SelectWindow(mainForm_hWin);
 			WM_SetFocus(mainForm_hWin);
 //			GUI_StoreKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
 			GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
