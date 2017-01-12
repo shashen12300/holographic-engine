@@ -214,6 +214,7 @@ int main(void)
 	GUI_SetFont(&GUI_FontHZ_SimSun_1515);
 	//绘制时间框
 		MainTask();
+
 	GUI_DrawBitmap(&bmshijian,0,0);
 
 //	DrawAreaBitmap(0,0,320,240,my_image,1);
@@ -242,7 +243,9 @@ printf("开始测试\r\n");
 		if(key !=0)//KEY0按下,则执行校准程序
 		{
 			if(key == 1) { //信息设定
-				dialogTask();
+				if (myMessageType == MY_MESSAGE_ID_LOGO) {
+						dialogTask();
+				}
 			}else if (key == 2) {  //进入检测
 
 			}else if (key == 3) {   //待定

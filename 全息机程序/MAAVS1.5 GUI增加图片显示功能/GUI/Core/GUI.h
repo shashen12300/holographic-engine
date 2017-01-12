@@ -220,6 +220,25 @@ Note that we have chosen the values to be close to existing
 #define MY_MESSAGE_ID_TYPE      GUI_ID_USER + 10  //体型
 #define MY_MESSAGE_ID_MODE      GUI_ID_USER + 11  //模式
 #define MY_MESSAGE_ID_ENTER     GUI_ID_USER + 12  //确认
+#define MY_MESSAGE_ID_LOGO      GUI_ID_USER + 13   //logo图标
+#define MY_MESSAGE_ID_MESSAGE_SETTING      GUI_ID_USER + 14   //信息设定
+#define MY_MESSAGE_ID_SYSTEM_SETTING       GUI_ID_USER + 15   //系统设定
+//扩展
+#define GUI_ID_TEXT10  GUI_ID_USER  +100
+#define GUI_ID_TEXT11  GUI_ID_USER  +101
+#define GUI_ID_TEXT12  GUI_ID_USER  +102
+#define GUI_ID_TEXT13  GUI_ID_USER  +103
+#define GUI_ID_TEXT14  GUI_ID_USER  +104
+#define GUI_ID_TEXT15  GUI_ID_USER  +105
+#define GUI_ID_TEXT16  GUI_ID_USER  +106
+#define GUI_ID_TEXT17  GUI_ID_USER  +107
+#define GUI_ID_TEXT18  GUI_ID_USER  +108
+#define GUI_ID_TEXT19  GUI_ID_USER  +109
+#define GUI_ID_TEXT20  GUI_ID_USER  +110
+#define GUI_ID_TEXT21  GUI_ID_USER  +111
+#define GUI_ID_TEXT22  GUI_ID_USER  +112
+
+
 /*********************************************************************
 *
 *               Constants  needed for GL

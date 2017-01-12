@@ -3,6 +3,7 @@
 
 #include "stm32f10x.h"
 #include "sys.h"
+#include "GUI.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //Mini STM32开发板
@@ -42,9 +43,13 @@ typedef struct
 	
 extern int logoCount;
 extern int selectEnd;
+extern int myMessageType;
+extern int rotateEnter_flag;
+
 void KEY_Init(void);//IO初始化
 u8 KEY_Scan(void);  //按键扫描函数		
 void E11_init(void);//旋转编码器
 void rotate(void);//选择图标
 void send_rotate_message(void);
+void send_enter_message(void);
 #endif

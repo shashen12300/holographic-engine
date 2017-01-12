@@ -21,6 +21,8 @@
  extern int rotate_flag;
  int logoCount =0;
  int selectEnd = 1;
+ int myMessageType = MY_MESSAGE_ID_LOGO;
+
 void KEY_Init(void) //IO初始化
 {
  	GPIO_InitTypeDef GPIO_InitStructure;
@@ -37,7 +39,7 @@ u8 KEY_Scan(void)
 {	 
 	static u8 key_up=1;//按键按松开标志	
  
-	if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==0||KEY4==0))
+	if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==0))
 	{
 		delay_ms(10);//去抖动 
 		key_up=0;
@@ -61,12 +63,7 @@ u8 KEY_Scan(void)
 	 
 			return 4;
 		}
-		else if(KEY4==0) //旋转编码器按下
-		{
-	 
-			return 5;
-		}
-	}else if(KEY0==1&&KEY1==1&&KEY2==1&&KEY3==1&&KEY4==1)key_up=1; 	    
+	}else if(KEY0==1&&KEY1==1&&KEY2==1&&KEY3==1)key_up=1; 	    
  
 	return 0;// 无按键按下
 }
@@ -80,13 +77,13 @@ void E11_init() {
 
 	//init GPIOA  上拉输入
  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
-	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_11|GPIO_Pin_12;//PA.11 .12
+	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_15;//PA.11 .12
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 	
 		/* EXTI line(PB0) mode config */
-	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource11); 
-  EXTI_InitStructure.EXTI_Line = EXTI_Line11;
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource11|GPIO_PinSource15); 
+  EXTI_InitStructure.EXTI_Line = EXTI_Line11|EXTI_Line15;
   EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
   EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
   EXTI_InitStructure.EXTI_LineCmd = ENABLE;
@@ -119,7 +116,7 @@ void selectLogoCount(int count) {   //32
 			}
 }
 
-void rotate(void) {
+void rotate(void) {  //logo图标选择
 	static int lastCount=0;
 			//旋转编码器
 		if(rotate_flag == 1) {
@@ -156,13 +153,44 @@ void send_rotate_message(void) {
 			//旋转编码器
 		if(rotate_flag == 1) {
 				selectEnd = 0;
-			WM_SelectWindow(mainForm_hWin);
-			WM_SetFocus(mainForm_hWin);
-//			GUI_StoreKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
-			GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
-//			WM_SetFocus(mainForm_hWin);
-//			GUI_Clear();
+			if (myMessageType == MY_MESSAGE_ID_LOGO) {
+						WM_SelectWindow(mainForm_hWin);
+						WM_SetFocus(mainForm_hWin);
+			//		GUI_StoreKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
+						GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
+			//		WM_SetFocus(mainForm_hWin);
+			//		GUI_Clear();
+			}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
+							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
+			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
+							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
+			}else if (myMessageType == MY_MESSAGE_ID_LINE) {
+				//不做任何操作
+			}else {
+				printf("逻辑出问题了");
+			}
 		}
+}
+
+//旋转编码器按下确认操作
+void send_enter_message(void) {
+			if (myMessageType == MY_MESSAGE_ID_LOGO) {
+						//设置活动窗口
+						WM_SelectWindow(mainForm_hWin);
+				//
+						WM_SetFocus(mainForm_hWin);
+						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+
+			}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
+							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
+							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+			}else if (myMessageType == MY_MESSAGE_ID_LINE) {
+				//不做任何操作
+			}else {
+				printf("逻辑出问题了");
+			}
+
 }
 
 

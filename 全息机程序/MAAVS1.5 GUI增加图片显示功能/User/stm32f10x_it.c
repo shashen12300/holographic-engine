@@ -5,9 +5,9 @@
 #include "key.h"
 #include "delay.h"
 #include "usart.h"
+#include "user_Dialog.h"
 
-
-int rotate_flag=0;  //1表示旋转
+int rotate_flag=0,rotateEnter_flag=0;  //1表示旋转
 unsigned char CAN_LCD_buffer[480];
 extern int time_flag;
 void USB_LP_CAN1_RX0_IRQHandler(void)   
@@ -106,6 +106,14 @@ void EXTI15_10_IRQHandler(void)
     {
 			EXTI_ClearITPendingBit(EXTI_Line11);     //清除中断标志位
 			rotate_flag = 1;
+			if(selectEnd == 1&&myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
+				send_rotate_message();
+			}
+
+		}else if(EXTI_GetITStatus(EXTI_Line15) != RESET) {
+			EXTI_ClearITPendingBit(EXTI_Line15);     //清除中断标志位
+			rotateEnter_flag = 1;
+			send_enter_message();
 		}
 }
 
