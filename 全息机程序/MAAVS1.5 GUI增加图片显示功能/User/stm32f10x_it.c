@@ -10,6 +10,7 @@
 int rotate_flag=0,rotateEnter_flag=0;  //1±íÊ¾Ðý×ª
 unsigned char CAN_LCD_buffer[480];
 extern int time_flag;
+void refresh_time(void) ;
 void USB_LP_CAN1_RX0_IRQHandler(void)   
 {   
 	unsigned int i;
@@ -95,6 +96,7 @@ void TIM2_IRQHandler(void)
 	{	
 		TIM_ClearITPendingBit(TIM2 , TIM_FLAG_Update);  
 		time_flag++;
+//		refresh_time();
 		
 	}		 	
 	 	

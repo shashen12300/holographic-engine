@@ -139,6 +139,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
+          <Name></Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -175,98 +176,50 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>127</LineNumber>
+          <LineNumber>478</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134239744</Address>
+          <Address>134219624</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\my_win.c</Filename>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\GUI\LCDDriver\LCDDummy.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/my_win.c\127</Expression>
+          <Expression>\\project\../GUI/LCDDriver/LCDDummy.c\478</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>326</LineNumber>
+          <LineNumber>483</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134242520</Address>
+          <Address>134219642</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\user_Dialog.c</Filename>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\GUI\LCDDriver\LCDDummy.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/user_Dialog.c\326</Expression>
+          <Expression>\\project\../GUI/LCDDriver/LCDDummy.c\483</Expression>
         </Bp>
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
-          <LineNumber>196</LineNumber>
+          <LineNumber>488</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134240022</Address>
+          <Address>134219660</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\my_win.c</Filename>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\GUI\LCDDriver\LCDDummy.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/my_win.c\196</Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>88</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134239618</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\my_win.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/my_win.c\88</Expression>
-        </Bp>
-        <Bp>
-          <Number>4</Number>
-          <Type>0</Type>
-          <LineNumber>463</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134243694</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\user_Dialog.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/user_Dialog.c\463</Expression>
-        </Bp>
-        <Bp>
-          <Number>5</Number>
-          <Type>0</Type>
-          <LineNumber>460</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134243684</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\user_Dialog.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/user_Dialog.c\460</Expression>
+          <Expression>\\project\../GUI/LCDDriver/LCDDummy.c\488</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>

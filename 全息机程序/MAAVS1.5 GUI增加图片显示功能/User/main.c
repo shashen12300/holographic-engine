@@ -179,10 +179,23 @@ void refresh_time(void) {
 		char displayTime[20];
 		Stru_Time time,getTime;
 		fnRTC_GetTime(&getTime); 
-	if (time_flag > 1000) {
-		time_flag = 0;
+	if (time_flag > 100) {
+			time_flag = 0;
+			printf("active window :%d \r\n",WM_GetActiveWindow());
 			WM_SetFocus(time_hWin);
 			GUI_SendKeyMsg(MY_MESSAGE_ID_TIME,1);
+						if (myMessageType == MY_MESSAGE_ID_LOGO) {
+						WM_SetFocus(mainForm_hWin);
+						GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
+			}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
+							WM_SetFocus(dialog_hWin);
+			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
+//						WM_SetFocus(mainForm_hWin);
+			}else if (myMessageType == MY_MESSAGE_ID_LINE) {
+				//不做任何操作
+			}else {
+				printf("逻辑出问题了");
+			}
 	}
 }
 int main(void)
@@ -242,6 +255,7 @@ printf("开始测试\r\n");
 		adcValue = Get_Adc(0);
 		if(key !=0)//KEY0按下,则执行校准程序
 		{
+			printf("按键: KEY=%d 被按下  adc = %d\r\n",key,adcValue);
 			if(key == 1) { //信息设定
 				if (myMessageType == MY_MESSAGE_ID_LOGO) {
 						dialogTask();
@@ -257,7 +271,6 @@ printf("开始测试\r\n");
 			}
 				LED0=!LED0;	
 				E17_sendString(data);
-				printf("%d-%02d-%02d %02d:%02d:%02d  按键: KEY=%d 被按下  adc = %d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second,key,adcValue);
 		}
 
 	}

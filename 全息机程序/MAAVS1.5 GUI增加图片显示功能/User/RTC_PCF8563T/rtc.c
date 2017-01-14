@@ -31,10 +31,10 @@ void fnRTC_Init(void)
     NVIC_InitStructure.NVIC_IRQChannelSubPriority = 3;	
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);	
-		/*TIM_Period--1000   TIM_Prescaler--71 -->中断周期为1ms*/
+		/*TIM_Period--10000   TIM_Prescaler--71 -->中断周期为10ms*/
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2 , ENABLE);
     TIM_DeInit(TIM2);
-    TIM_TimeBaseStructure.TIM_Period=1000;		 								/* 自动重装载寄存器周期的值(计数值) */
+    TIM_TimeBaseStructure.TIM_Period=10000;		 								/* 自动重装载寄存器周期的值(计数值) */
     /* 累计 TIM_Period个频率后产生一个更新或者中断 */
     TIM_TimeBaseStructure.TIM_Prescaler= (72 - 1);				    /* 时钟预分频数 72M/72 */
     TIM_TimeBaseStructure.TIM_ClockDivision=TIM_CKD_DIV1; 		/* 采样分频 */
@@ -44,7 +44,7 @@ void fnRTC_Init(void)
     TIM_ITConfig(TIM2,TIM_IT_Update,ENABLE);
     TIM_Cmd(TIM2, ENABLE);																		/* 开启时钟 */
     
-    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2 , ENABLE);		/*先关闭等待使用*/   
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2 , ENABLE);	
 
 }
 

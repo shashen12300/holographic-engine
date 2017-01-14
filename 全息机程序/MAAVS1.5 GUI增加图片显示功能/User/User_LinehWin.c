@@ -96,6 +96,6 @@ static void _cbLineCallback(WM_MESSAGE * pMsg)
 WM_HWIN LineTask(void) {
 	
 		WM_HWIN line_hWin;
-		line_hWin = WM_CreateWindowAsChild(0,37,320,203,hWin,WM_CF_HIDE,_cbLineCallback,0); //曲线窗口
+		line_hWin = WM_CreateWindowAsChild(0,37,320,203,root_hWin,WM_CF_HIDE,_cbLineCallback,0); //曲线窗口
 		return line_hWin;
 }

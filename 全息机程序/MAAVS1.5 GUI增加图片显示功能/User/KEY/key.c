@@ -154,13 +154,14 @@ void send_rotate_message(void) {
 		if(rotate_flag == 1) {
 				selectEnd = 0;
 			if (myMessageType == MY_MESSAGE_ID_LOGO) {
-						WM_SelectWindow(mainForm_hWin);
+//						WM_SelectWindow(mainForm_hWin);
 						WM_SetFocus(mainForm_hWin);
 			//		GUI_StoreKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
 						GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
 			//		WM_SetFocus(mainForm_hWin);
 			//		GUI_Clear();
 			}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
+							WM_SetFocus(dialog_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
@@ -176,12 +177,10 @@ void send_rotate_message(void) {
 void send_enter_message(void) {
 			if (myMessageType == MY_MESSAGE_ID_LOGO) {
 						//设置活动窗口
-						WM_SelectWindow(mainForm_hWin);
-				//
 						WM_SetFocus(mainForm_hWin);
 						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
-
 			}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
+							WM_SetFocus(dialog_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);

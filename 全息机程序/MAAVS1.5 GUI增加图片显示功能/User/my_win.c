@@ -37,7 +37,7 @@
 
 //EventsFunctionList
 //EndofEventsFunctionList
-WM_HWIN hWin;
+WM_HWIN root_hWin;
 WM_HWIN mainForm_hWin;
 WM_HWIN dialog_hWin;
 WM_HWIN time_hWin;
@@ -49,7 +49,10 @@ void _mainFormCallback(WM_MESSAGE * pMsg)
     switch (pMsg->MsgId) 
     {
         case WM_PAINT:
+						GUI_Clear();
 						GUI_DrawBitmap(&bmfengshi2,0,0);
+//						WM_SelectWindow(hWin);
+//						WM_SetFocus(mainForm_hWin);
             break;
 				case WM_CREATE:
 						WM_Exec();
@@ -86,7 +89,8 @@ void _mainFormCallback(WM_MESSAGE * pMsg)
             break;
         case WM_NOTIFY_PARENT:
             Id = WM_GetId(pMsg->hWinSrc); 
-            NCode = pMsg->Data.v;        
+            NCode = pMsg->Data.v;
+						//WM_Exec();
             switch (Id) 
             {
                 case GUI_ID_OK:
@@ -224,11 +228,11 @@ void MainTask(void)
 			WM_SetDesktopColor(GUI_BLACK);      /* Automacally update desktop window */
 			WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
 				//GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbCallback, 0, 0, 0);
-				hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,NULL,0);//根窗口
+				root_hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,NULL,0);//根窗口
 //			hWin = WM_GetDesktopWindow();
-				time_hWin = WM_CreateWindowAsChild(0,0,320,203,hWin,WM_CF_SHOW,_cbTimeCallback,0);//时间窗口
-				mainForm_hWin=WM_CreateWindowAsChild(0,37,320,203,hWin,WM_CF_SHOW,_mainFormCallback,0); //菜单窗口
-				line_hWin= LineTask(); //曲线窗口
+				time_hWin = WM_CreateWindowAsChild(0,0,320,203,root_hWin,WM_CF_SHOW,_cbTimeCallback,0);//时间窗口
+				mainForm_hWin=WM_CreateWindowAsChild(0,37,320,203,root_hWin,WM_CF_SHOW,_mainFormCallback,0); //菜单窗口
+//				line_hWin= LineTask(); //曲线窗口
 //				dialog_hWin =	Dialog_Task();//弹出窗口
 //					dialogTask();
 //			WM_SelectWindow(mainForm_hWin);

@@ -287,7 +287,8 @@ void InitDialog(WM_MESSAGE * pMsg)
 */
 
 void MessageSetting(WM_HWIN hWin) {  //信息设定
-	static int messageType =0,lastMessageType=0,isSelectType=0,maxCount = 0;
+	static int messageType =0,lastMessageType=0,isSelectType=0,maxCount = 0,count=0;
+;
 			//旋转编码器
 		if((rotate_flag == 1)&&(isSelectType==0)) {
 			if(KEY_A == 0) {
@@ -318,14 +319,19 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 		}else if((rotate_flag == 0)&&(isSelectType==0)){
 			char data[5] = {2,99,2,3,5};
 					if(rotateEnter_flag==1) {
+						if (lastMessageType == 5) {
+								WM_SelectWindow(hWin);
+								GUI_EndDialog(hWin, 0);
+								WM_SelectWindow(mainForm_hWin);
+								myMessageType = MY_MESSAGE_ID_LOGO;
+							//清除状态
+							messageType =0;lastMessageType=0;isSelectType=0;maxCount = 0;count=0;
+								return;
+						}
 						isSelectType = 1;
 						rotateEnter_flag = 0;
 						maxCount = data[lastMessageType];
 						messageType = lastMessageType + 6;	
-						if (lastMessageType == 5) {
-							GUI_EndDialog(hWin, 0);
-								return;
-						}
 						TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),0x000000);
 						TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),0xffffff);
 						TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+messageType),0xffffff);
@@ -333,9 +339,7 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 						lastMessageType = messageType;
 					}
 		}else if((rotateEnter_flag==0)&&(isSelectType == 1)) {
-			static int count=0;
 			char *data[10];
-			
 					if((KEY_A == 0)&&(rotate_flag == 1)) {
             if(KEY_B == 1)
             {
@@ -377,7 +381,7 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 						}else if (lastMessageType == 9) { 
 								data[0] = "偏瘦";
 								data[1] = "正常";
-								data[2] = "偏旁";
+								data[2] = "偏胖";
 								saveData[lastMessageType-6] = data[count];
 								TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),data[count]);
 						}
@@ -483,15 +487,16 @@ WM_HWIN Dialog_Task(void)
 { 
 	WM_HWIN dialog_hWin;
 	 GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialogCallback, 0, 0, 0);
-  dialog_hWin = WM_CreateWindowAsChild(100,0,120,160,hWin,WM_CF_HIDE,_cbDialogCallback,0); //弹窗
+  dialog_hWin = WM_CreateWindowAsChild(100,0,120,160,root_hWin,WM_CF_HIDE,_cbDialogCallback,0); //弹窗
 	
 		return dialog_hWin;
 }
 
 void dialogTask(void) {
 		myMessageType = MY_MESSAGE_ID_MESSAGE_SETTING;
-		 GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialogCallback, hWin, 1, 1);
-//	dialog_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialogCallback, 0, 0, 0);
-//	GUI_ExecCreatedDialog(dialog_hWin);
+	//	 GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialogCallback, root_hWin, 1, 1);//mainForm_hWin
+	dialog_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialogCallback, root_hWin, 0, 0);
+	printf("\r\n创建句柄: %d\r\n",dialog_hWin);
+	GUI_ExecCreatedDialog(dialog_hWin);
 }
 
