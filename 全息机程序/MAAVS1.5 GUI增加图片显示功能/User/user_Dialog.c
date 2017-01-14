@@ -320,13 +320,16 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 			char data[5] = {2,99,2,3,5};
 					if(rotateEnter_flag==1) {
 						if (lastMessageType == 5) {
+							
 								WM_SelectWindow(hWin);
 								GUI_EndDialog(hWin, 0);
 								WM_SelectWindow(mainForm_hWin);
 								myMessageType = MY_MESSAGE_ID_LOGO;
+								WM_Exec();
 							//清除状态
 							messageType =0;lastMessageType=0;isSelectType=0;maxCount = 0;count=0;
 								return;
+							
 						}
 						isSelectType = 1;
 						rotateEnter_flag = 0;

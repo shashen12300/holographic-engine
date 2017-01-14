@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Fri Jan 13 13:11:55 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sat Jan 14 15:10:54 2017
 <BR><P>
 <H3>Maximum Stack Usage =        728 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -2131,15 +2131,16 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDialogCallback
 </UL>
 
-<P><STRONG><a name="[13c]"></a>MessageSetting</STRONG> (Thumb, 1318 bytes, Stack size 72 bytes, user_dialog.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
-<LI>Call Chain = MessageSetting &rArr; TEXT_SetBkColor &rArr; WM_ClrHasTrans &rArr; WM_InvalidateWindow &rArr; WM_InvalidateRect &rArr; WM__InvalidateAreaBelow &rArr; WM_InvalidateArea &rArr; _Invalidate1Abs &rArr; GUI__IntersectRects
+<P><STRONG><a name="[13c]"></a>MessageSetting</STRONG> (Thumb, 1322 bytes, Stack size 72 bytes, user_dialog.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 440 + Unknown Stack Size
+<LI>Call Chain = MessageSetting &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetDialogItem
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEXT_SetTextColor
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEXT_SetText
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEXT_SetBkColor
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SelectWindow
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
@@ -3784,7 +3785,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec1
 </UL>
-<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_mainFormCallback
+<BR>[Called By]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageSetting
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_mainFormCallback
 <LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbTimeCallback
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbMyCallback
 <LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Exec1
@@ -5163,8 +5165,8 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> my_win.o(.text)
 </UL>
 <P><STRONG><a name="[4c]"></a>_cbDialogCallback</STRONG> (Thumb, 178 bytes, Stack size 24 bytes, user_dialog.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 368 + Unknown Stack Size
-<LI>Call Chain = _cbDialogCallback &rArr; InitDialog &rArr; FRAMEWIN_SetTitleHeight &rArr; FRAMEWIN__UpdatePositions &rArr; WM_SetSize &rArr; WM_ResizeWindow &rArr; WM__UpdateChildPositions &rArr;  WM_ResizeWindow (Cycle)
+<BR><BR>[Stack]<UL><LI>Max Depth = 464 + Unknown Stack Size
+<LI>Call Chain = _cbDialogCallback &rArr; MessageSetting &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageSetting
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitDialog
