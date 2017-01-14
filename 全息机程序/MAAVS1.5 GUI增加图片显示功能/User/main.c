@@ -221,7 +221,6 @@ int main(void)
   uart_init(9600); 
 	fnRTC_Init();
 	E17_uart_init(9600);
-	printf("¿ªÊ¼²âÊÔ\r\n");
 	GUI_Init();
 	clr_ram();
 	GUI_SetFont(&GUI_FontHZ_SimSun_1515);

@@ -191,7 +191,7 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
 										WM_SelectWindow(hWin);
 										sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
 										GUI_DispStringAt(displayTime,175,3);
-                   printf("time=%d\r\n",MY_MESSAGE_ID_TIME - GUI_ID_USER);
+                   printf("refresh time");
 								}
                     break;
             }

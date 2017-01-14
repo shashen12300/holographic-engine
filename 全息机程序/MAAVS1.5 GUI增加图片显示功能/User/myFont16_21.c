@@ -1,4 +1,4 @@
-/* SimSun_1414.c - SimSun_1414 font for UCGUI font driver */
+/* SimSun_1515.c - SimSun_1515 font for UCGUI font driver */
 /********************************************************************************************************
 *                                             UCGUI Font
 *                                       
@@ -6,15 +6,14 @@
 *                                      (c) Copyright 1994-2012
 *
 *                               	   adswads@sina.com 2012.10.16
-*                                              ??: ??
+*                                              作者: 子风
 **********************************************************************************************************/
-
 #include "myFont16_21.h"
 //#include "..\core\GUI.H" 
 //#ifndef GUI_FLASH 
 //	#define GUI_FLASH 
 //#endif 
-//extern GUI_FLASH const GUI_FONT GUI_FontHZ_SimSun_1414;
+//extern GUI_FLASH const GUI_FONT GUI_FontHZ_SimSun_1515;
 
 GUI_FLASH  const unsigned char acFontHZSimSun_1515_0020[15] = {	/*   0x2000*/
 ________,
@@ -1744,7 +1743,25 @@ ________,
 ________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_b1f0[30] = {	/* ? 0xb1f0*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_af6c[30] = {	/* 痩 0xaf6c*/
+________,X_______,
+___XXXXX,XXXXXX__,
+___X____,_X______,
+_X_X_XXX,XXXXX___,
+__XX_X__,_X__X___,
+___X_XXX,XXXXX___,
+___X_X__,_X__X___,
+__XX_XXX,XXXXX___,
+_X_X____,_X______,
+___X_XXX,XXXX____,
+___X__X_,___X____,
+__X____X,__X_____,
+__X_____,XX______,
+_X___XXX,__XXX___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b1f0[30] = {	/* 别 0xb1f0*/
 ________,_____X__,
 __XXXXXX,_____X__,
 __X____X,_____X__,
@@ -1762,7 +1779,25 @@ _X____XX,___XXX__,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_b2cb[30] = {	/* ? 0xb2cb*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b2bb[30] = {	/* 不 0xb2bb*/
+________,________,
+_XXXXXXX,XXXXXX__,
+________,X_______,
+________,X_______,
+_______X,________,
+______XX,________,
+_____X_X,__X_____,
+____X__X,___X____,
+___X___X,____X___,
+__X____X,_____X__,
+_X_____X,_____X__,
+_______X,________,
+_______X,________,
+_______X,________,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b2cb[30] = {	/* 菜 0xb2cb*/
 ____X___,__X_____,
 _XXXXXXX,XXXXXX__,
 ____X___,__X_____,
@@ -1780,7 +1815,7 @@ _______X,________,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_b2e2[30] = {	/* ? 0xb2e2*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b2e2[30] = {	/* 测 0xb2e2*/
 ________,_____X__,
 __X__XXX,XX___X__,
 ___X_X__,_X___X__,
@@ -1798,7 +1833,7 @@ ____X___,___XXX__,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_b3a3[30] = {	/* ? 0xb3a3*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b3a3[30] = {	/* 常 0xb3a3*/
 _______X,________,
 ___X___X,___X____,
 ____X__X,__X_____,
@@ -1816,7 +1851,7 @@ _______X,________,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_b5a5[30] = {	/* ? 0xb5a5*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b5a5[30] = {	/* 单 0xb5a5*/
 ____X___,__X_____,
 _____X__,_X______,
 ___XXXXX,XXXX____,
@@ -1834,7 +1869,7 @@ _______X,________,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_b6a8[30] = {	/* ? 0xb6a8*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b6a8[30] = {	/* 定 0xb6a8*/
 ______X_,________,
 _______X,________,
 _XXXXXXX,XXXXXX__,
@@ -1852,7 +1887,7 @@ _X___XXX,XXXXXX__,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_b6e0[30] = {	/* ? 0xb6e0*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b6e0[30] = {	/* 多 0xb6e0*/
 _____X__,________,
 _____X__,________,
 ____XXXX,XXX_____,
@@ -1870,7 +1905,7 @@ _XXXX___,________,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_b7f1[30] = {	/* ? 0xb7f1*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_b7f1[30] = {	/* 否 0xb7f1*/
 ________,________,
 __XXXXXX,XXXXX___,
 _______X,________,
@@ -1888,7 +1923,7 @@ ___X____,___X____,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_bbe9[30] = {	/* ? 0xbbe9*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_bbe9[30] = {	/* 婚 0xbbe9*/
 ___X____,__XXX___,
 ___X__XX,XXX_____,
 ___X__X_,__X_____,
@@ -1906,7 +1941,7 @@ _X_____X,____X___,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_bcec[30] = {	/* ? 0xbcec*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_bcec[30] = {	/* 检 0xbcec*/
 ___X____,_X______,
 ___X____,_X______,
 ___X____,X_X_____,
@@ -1924,439 +1959,25 @@ ___X_XXX,XXXXXX__,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c3f7[30] = {	/* ? 0xc3f7*/
-________,XXXXXX__,
-_XXXXX__,X____X__,
-_X___X__,X____X__,
-_X___X__,X____X__,
-_X___X__,XXXXXX__,
-_XXXXX__,X____X__,
-_X___X__,X____X__,
-_X___X__,X____X__,
-_X___X__,XXXXXX__,
-_XXXXX__,X____X__,
-_X_____X,_____X__,
-_______X,_____X__,
-______X_,_____X__,
-_____X__,___XXX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4a3[30] = {	/* ? 0xc4a3*/
-___X___X,___X____,
-___X___X,___X____,
-___X__XX,XXXXXX__,
-_XXXX__X,___X____,
-___X__XX,XXXXX___,
-___X__X_,____X___,
-__XXX_XX,XXXXX___,
-__XX_XX_,____X___,
-_X_X__XX,XXXXX___,
-___X____,_X______,
-___X_XXX,XXXXXX__,
-___X____,X_X_____,
-___X___X,___X____,
-___X_XX_,____XX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4d0[30] = {	/* ? 0xc4d0*/
-__XXXXXX,XXXXX___,
-__X____X,____X___,
-__X____X,____X___,
-__XXXXXX,XXXXX___,
-__X____X,____X___,
-__X____X,____X___,
-__XXXXXX,XXXXX___,
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_bfd5[30] = {	/* 空 0xbfd5*/
 ______X_,________,
-______X_,________,
-_XXXXXXX,XXXXX___,
-_____X__,____X___,
-____X___,____X___,
-___X____,____X___,
-_XX_____,__XX____,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c5ae[30] = {	/* ? 0xc5ae*/
-______X_,________,
-______X_,________,
-______X_,________,
-______X_,________,
-_XXXXXXX,XXXXXX__,
-_____X__,__X_____,
-_____X__,__X_____,
-____X___,_X______,
-___XX___,_X______,
-_____XX_,X_______,
-_______X,X_______,
-______X_,_XX_____,
-____XX__,___X____,
-_XXX____,____X___,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c8b7[30] = {	/* ? 0xc8b7*/
-________,X_______,
-________,XXXXX___,
-_XXXXX_X,____X___,
-___X__X_,___X____,
-___X___X,XXXXXX__,
-__X____X,__X__X__,
-__XXXX_X,__X__X__,
-_XX__X_X,XXXXXX__,
-__X__X_X,__X__X__,
-__X__X_X,__X__X__,
-__X__X_X,XXXXXX__,
-__XXXX_X,__X__X__,
-__X____X,__X__X__,
-______X_,____XX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c8cf[30] = {	/* ? 0xc8cf*/
-__X_____,_X______,
-___X____,_X______,
-___X____,_X______,
-________,_X______,
-_XXX____,_X______,
-___X____,_X______,
-___X____,_X______,
-___X____,X_X_____,
-___X____,X_X_____,
-___X_X__,X_X_____,
-___XX__X,___X____,
-___X___X,___X____,
-______X_,____X___,
-_____X__,_____X__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c9e8[30] = {	/* ? 0xc9e8*/
-__X_____,________,
-___X___X,XXXX____,
-___X___X,___X____,
-_______X,___X____,
-_______X,___X____,
-_XXX__X_,____XX__,
-___X_X__,________,
-___X__XX,XXXXX___,
-___X___X,____X___,
-___X___X,___X____,
-___X_X__,X_X_____,
-___XX___,_X______,
-___X___X,X_XX____,
-_____XX_,____XX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_cab1[30] = {	/* ? 0xcab1*/
-________,___X____,
-________,___X____,
-_XXXX___,___X____,
-_X__X_XX,XXXXXX__,
-_X__X___,___X____,
-_X__X___,___X____,
-_XXXX__X,___X____,
-_X__X___,X__X____,
-_X__X___,X__X____,
-_X__X___,___X____,
-_XXXX___,___X____,
-_X__X___,___X____,
-________,___X____,
-________,_XXX____,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_cabd[30] = {	/* ? 0xcabd*/
-________,_X_X____,
-________,_X__X___,
-________,_X______,
-_XXXXXXX,XXXXXX__,
-________,_X______,
-________,_X______,
-__XXXXX_,_X______,
-____X___,_X______,
-____X___,_X______,
-____X___,__X_____,
-____X___,__X__X__,
-____XXXX,___X_X__,
-_XXXX___,____XX__,
-________,_____X__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_cbb5[30] = {	/* ? 0xcbb5*/
-__X___X_,___X____,
-___X___X,___X____,
-___X___X,__X_____,
-______XX,XXXXX___,
-_XXX__X_,____X___,
-___X__X_,____X___,
-___X__X_,____X___,
-___X__XX,XXXXX___,
-___X___X,__X_____,
-___X_X_X,__X_____,
-___XX__X,__X_____,
-___X__X_,__X__X__,
-______X_,__X__X__,
-_____X__,___XXX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_cce5[30] = {	/* ? 0xcce5*/
-____X___,_X______,
-____X___,_X______,
-____X___,_X______,
-___X__XX,XXXXXX__,
-___X____,_X______,
-__XX____,XXX_____,
-_X_X____,XXX_____,
-___X___X,_X_X____,
-___X___X,_X_X____,
-___X__X_,_X__X___,
-___X_X_X,XXXX_X__,
-___X____,_X______,
-___X____,_X______,
-___X____,_X______,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_cdb3[30] = {	/* ? 0xcdb3*/
-___X____,X_______,
-___X____,_X______,
-__X_____,________,
-_X__X_XX,XXXXXX__,
-_XXXX___,X_______,
-___X____,X__X____,
-__X____X,____X___,
-_X____XX,XXXXX___,
-_XXXX___,X_X_X___,
-________,X_X_____,
-_______X,__X_____,
-___XX__X,__X__X__,
-_XX___X_,__X__X__,
-_____X__,___XXX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_ceb4[30] = {	/* ? 0xceb4*/
-_______X,________,
-_______X,________,
-__XXXXXX,XXXXX___,
-_______X,________,
-_______X,________,
 _______X,________,
 _XXXXXXX,XXXXXX__,
-______XX,X_______,
-_____X_X,_X______,
-____X__X,__X_____,
-___X___X,___X____,
-_XX____X,____XX__,
-_______X,________,
-_______X,________,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_cfa2[30] = {	/* ? 0xcfa2*/
-______X_,________,
-_____X__,________,
-___XXXXX,XXXX____,
+_X___X__,_X___X__,
+_X__X___,__X__X__,
 ___X____,___X____,
-___XXXXX,XXXX____,
-___X____,___X____,
-___XXXXX,XXXX____,
-___X____,___X____,
+________,________,
 ___XXXXX,XXXX____,
 _______X,________,
-____X___,X___X___,
-__X_X___,X____X__,
-__X_X___,__X__X__,
-_X___XXX,XXX_____,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_cfb5[30] = {	/* ? 0xcfb5*/
-________,XXXX____,
-__XXXXXX,________,
-______X_,________,
-_____X__,__X_____,
-____X___,_X______,
-___XXXXX,X_______,
-______X_,__X_____,
-____XX__,___X____,
-__XXXXXX,XXXXX___,
-_______X,____X___,
-____X__X,__X_____,
-___X___X,___X____,
-__X____X,____X___,
-_____XXX,________,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_cfee[30] = {	/* ? 0xcfee*/
-________,________,
-______XX,XXXXXX__,
-_XXXX___,_X______,
-___X____,X_______,
-___X__XX,XXXXX___,
-___X__X_,____X___,
-___X__X_,_X__X___,
-___X__X_,_X__X___,
-___X__X_,_X__X___,
-___XX_X_,X___X___,
-_XX_____,X_X_____,
-_______X,___X____,
-______X_,____X___,
-_____X__,____X___,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0c2[30] = {	/* ? 0xd0c2*/
-___X____,____XX__,
-____X___,_XXX____,
-_XXXXXXX,_X______,
-__X___X_,_X______,
-___X_X__,_X______,
-_XXXXXXX,_XXXXX__,
-________,_X__X___,
-____X___,_X__X___,
-_XXXXXXX,_X__X___,
-____X___,_X__X___,
-__X_X_X_,_X__X___,
-_X__X__X,_X__X___,
-____X___,X___X___,
-__XXX__X,____X___,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0c5[30] = {	/* ? 0xd0c5*/
-____X___,X_______,
-____X___,_X______,
-___X_XXX,XXXXXX__,
-___X____,________,
-__XX__XX,XXXXX___,
-_X_X____,________,
-___X__XX,XXXXX___,
-___X____,________,
-___X__XX,XXXXX___,
-___X__X_,____X___,
-___X__X_,____X___,
-___X__X_,____X___,
-___X__XX,XXXXX___,
-___X__X_,____X___,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0cd[30] = {	/* ? 0xd0cd*/
-________,____X___,
-__XXXXXX,_X__X___,
-___X__X_,_X__X___,
-___X__X_,_X__X___,
-_XXXXXXX,XX__X___,
-___X__X_,_X__X___,
-___X__X_,____X___,
-__X___X_,____X___,
-_X_____X,__XXX___,
 _______X,________,
-__XXXXXX,XXXXX___,
+_______X,________,
 _______X,________,
 _______X,________,
 _XXXXXXX,XXXXXX__,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0d4[30] = {	/* ? 0xd0d4*/
-___X____,__X_____,
-___X____,__X_____,
-___X___X,__X_____,
-___XX__X,__X_____,
-_X_X_X_X,XXXXXX__,
-_X_X___X,__X_____,
-_X_X__X_,__X_____,
-___X____,__X_____,
-___X___X,XXXXX___,
-___X____,__X_____,
-___X____,__X_____,
-___X____,__X_____,
-___X____,__X_____,
-___X__XX,XXXXXX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_d2d1[30] = {	/* ? 0xd2d1*/
-________,________,
-__XXXXXX,XXXXX___,
-________,____X___,
-________,____X___,
-__X_____,____X___,
-__X_____,____X___,
-__XXXXXX,XXXXX___,
-__X_____,________,
-__X_____,________,
-__X_____,________,
-__X_____,________,
-__X_____,_____X__,
-__X_____,_____X__,
-___XXXXX,XXXXXX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_d5fd[30] = {	/* ? 0xd5fd*/
-________,________,
-__XXXXXX,XXXXX___,
-_______X,________,
-_______X,________,
-_______X,________,
-___X___X,________,
-___X___X,________,
-___X___X,XXXX____,
-___X___X,________,
-___X___X,________,
-___X___X,________,
-___X___X,________,
-___X___X,________,
-_XXXXXXX,XXXXXX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_d6d3[30] = {	/* ? 0xd6d3*/
-___X____,__X_____,
-___X____,__X_____,
-___XXX__,__X_____,
-__X____X,XXXXXX__,
-_X_____X,__X__X__,
-__XXXX_X,__X__X__,
-___X___X,__X__X__,
-___X___X,__X__X__,
-_XXXXX_X,XXXXXX__,
-___X___X,__X__X__,
-___X____,__X_____,
-___X_X__,__X_____,
-___XX___,__X_____,
-___X____,__X_____,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_d6d8[30] = {	/* ? 0xd6d8*/
-________,XXXXX___,
-__XXXXXX,________,
-_______X,________,
-_XXXXXXX,XXXXXX__,
-_______X,________,
-___XXXXX,XXXX____,
-___X___X,___X____,
-___XXXXX,XXXX____,
-___X___X,___X____,
-___XXXXX,XXXX____,
-_______X,________,
-__XXXXXX,XXXXX___,
-_______X,________,
-_XXXXXXX,XXXXXX__,
-________,________,
-};
-
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c1e4[30] = {	/* ? 0xc1e4*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c1e4[30] = {	/* 龄 0xc1e4*/
 ____X___,__X_____,
 ____X___,__X_____,
 __X_XXX_,_X_X____,
@@ -2374,7 +1995,79 @@ ______X_,___X____,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4ea[30] = {	/* ? 0xc4ea*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c3f7[30] = {	/* 明 0xc3f7*/
+________,XXXXXX__,
+_XXXXX__,X____X__,
+_X___X__,X____X__,
+_X___X__,X____X__,
+_X___X__,XXXXXX__,
+_XXXXX__,X____X__,
+_X___X__,X____X__,
+_X___X__,X____X__,
+_X___X__,XXXXXX__,
+_XXXXX__,X____X__,
+_X_____X,_____X__,
+_______X,_____X__,
+______X_,_____X__,
+_____X__,___XXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4a3[30] = {	/* 模 0xc4a3*/
+___X___X,___X____,
+___X___X,___X____,
+___X__XX,XXXXXX__,
+_XXXX__X,___X____,
+___X__XX,XXXXX___,
+___X__X_,____X___,
+__XXX_XX,XXXXX___,
+__XX_XX_,____X___,
+_X_X__XX,XXXXX___,
+___X____,_X______,
+___X_XXX,XXXXXX__,
+___X____,X_X_____,
+___X___X,___X____,
+___X_XX_,____XX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4d0[30] = {	/* 男 0xc4d0*/
+__XXXXXX,XXXXX___,
+__X____X,____X___,
+__X____X,____X___,
+__XXXXXX,XXXXX___,
+__X____X,____X___,
+__X____X,____X___,
+__XXXXXX,XXXXX___,
+______X_,________,
+______X_,________,
+_XXXXXXX,XXXXX___,
+_____X__,____X___,
+____X___,____X___,
+___X____,____X___,
+_XX_____,__XX____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4dc[30] = {	/* 能 0xc4dc*/
+____X___,_X______,
+___X____,_X__XX__,
+__X___X_,_XXX____,
+_XXXXXXX,_X___X__,
+_______X,_X___X__,
+________,__XXXX__,
+__XXXXX_,________,
+__X___X_,_X___X__,
+__XXXXX_,_X__X___,
+__X___X_,_XXX____,
+__XXXXX_,_X______,
+__X___X_,_X___X__,
+__X___X_,_X___X__,
+__X__XX_,__XXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c4ea[30] = {	/* 年 0xc4ea*/
 ____X___,________,
 ____X___,________,
 ____XXXX,XXXXX___,
@@ -2392,61 +2085,436 @@ ________,X_______,
 ________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c5d6[32] = {	/* ? 0xc5d6*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c5ae[30] = {	/* 女 0xc5ae*/
+______X_,________,
+______X_,________,
+______X_,________,
+______X_,________,
+_XXXXXXX,XXXXXX__,
+_____X__,__X_____,
+_____X__,__X_____,
+____X___,_X______,
+___XX___,_X______,
+_____XX_,X_______,
+_______X,X_______,
+______X_,_XX_____,
+____XX__,___X____,
+_XXX____,____X___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c5d6[30] = {	/* 胖 0xc5d6*/
 ________,__X_____,
-__XXXX__,__X_____,
-__X__X_X,__X__X__,
+__XXXX_X,__X__X__,
 __X__X__,X_X__X__,
 __X__X__,X_X_X___,
+__X__X__,__X_____,
+__XXXX__,XXXXX___,
+__X__X__,__X_____,
+__X__X__,__X_____,
 __XXXX__,__X_____,
 __X__X_X,XXXXXX__,
 __X__X__,__X_____,
 __X__X__,__X_____,
-__XXXX__,__X_____,
-__X__XXX,XXXXXXX_,
 __X__X__,__X_____,
-__X__X__,__X_____,
-_X___X__,__X_____,
-_X_X_X__,__X_____,
-X___X___,__X_____,
+_X__XX__,__X_____,
+________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_c6ab[32] = {	/* ? 0xc6ab*/
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c6ab[30] = {	/* 偏 0xc6ab*/
+____X___,X_______,
+____X___,_X______,
+____X_XX,XXXXX___,
+___X__X_,____X___,
+___X__X_,____X___,
+__XX__XX,XXXXX___,
+_X_X__X_,________,
+___X__XX,XXXXX___,
+___X_XX_,X_X_X___,
+___X_XX_,X_X_X___,
+___XX_XX,XXXXX___,
+___X__X_,X_X_X___,
+___X__X_,X_X_X___,
+___X__X_,___XX___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c8b7[30] = {	/* 确 0xc8b7*/
+________,X_______,
+________,XXXXX___,
+_XXXXX_X,____X___,
+___X__X_,___X____,
+___X___X,XXXXXX__,
+__X____X,__X__X__,
+__XXXX_X,__X__X__,
+_XX__X_X,XXXXXX__,
+__X__X_X,__X__X__,
+__X__X_X,__X__X__,
+__X__X_X,XXXXXX__,
+__XXXX_X,__X__X__,
+__X____X,__X__X__,
+______X_,____XX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c8cf[30] = {	/* 认 0xc8cf*/
+__X_____,_X______,
+___X____,_X______,
+___X____,_X______,
+________,_X______,
+_XXX____,_X______,
+___X____,_X______,
+___X____,_X______,
+___X____,X_X_____,
+___X____,X_X_____,
+___X_X__,X_X_____,
+___XX__X,___X____,
+___X___X,___X____,
+______X_,____X___,
+_____X__,_____X__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_c9e8[30] = {	/* 设 0xc9e8*/
+__X_____,________,
+___X___X,XXXX____,
+___X___X,___X____,
+_______X,___X____,
+_______X,___X____,
+_XXX__X_,____XX__,
+___X_X__,________,
+___X__XX,XXXXX___,
+___X___X,____X___,
+___X___X,___X____,
+___X_X__,X_X_____,
+___XX___,_X______,
+___X___X,X_XX____,
+_____XX_,____XX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cab1[30] = {	/* 时 0xcab1*/
+________,___X____,
+________,___X____,
+_XXXX___,___X____,
+_X__X_XX,XXXXXX__,
+_X__X___,___X____,
+_X__X___,___X____,
+_XXXX__X,___X____,
+_X__X___,X__X____,
+_X__X___,X__X____,
+_X__X___,___X____,
+_XXXX___,___X____,
+_X__X___,___X____,
+________,___X____,
+________,_XXX____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cabd[30] = {	/* 式 0xcabd*/
+________,_X_X____,
+________,_X__X___,
+________,_X______,
+_XXXXXXX,XXXXXX__,
+________,_X______,
+________,_X______,
+__XXXXX_,_X______,
+____X___,_X______,
+____X___,_X______,
+____X___,__X_____,
+____X___,__X__X__,
+____XXXX,___X_X__,
+_XXXX___,____XX__,
+________,_____X__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cbb5[30] = {	/* 说 0xcbb5*/
+__X___X_,___X____,
+___X___X,___X____,
+___X___X,__X_____,
+______XX,XXXXX___,
+_XXX__X_,____X___,
+___X__X_,____X___,
+___X__X_,____X___,
+___X__XX,XXXXX___,
+___X___X,__X_____,
+___X_X_X,__X_____,
+___XX__X,__X_____,
+___X__X_,__X__X__,
+______X_,__X__X__,
+_____X__,___XXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cce5[30] = {	/* 体 0xcce5*/
+____X___,_X______,
+____X___,_X______,
+____X___,_X______,
+___X__XX,XXXXXX__,
+___X____,_X______,
+__XX____,XXX_____,
+_X_X____,XXX_____,
+___X___X,_X_X____,
+___X___X,_X_X____,
+___X__X_,_X__X___,
+___X_X_X,XXXX_X__,
+___X____,_X______,
+___X____,_X______,
+___X____,_X______,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cdb3[30] = {	/* 统 0xcdb3*/
 ___X____,X_______,
 ___X____,_X______,
-___X_XXX,XXXXXX__,
-__X__X__,_____X__,
-__X__X__,_____X__,
-_XX__XXX,XXXXXX__,
-_XX__X__,________,
-X_X__X__,________,
-__X__XXX,XXXXXX__,
-__X__XX_,X_X__X__,
-__X_X_X_,X_X__X__,
-__X_X_XX,XXXXXX__,
-__X_X_X_,X_X__X__,
-__X_X_X_,X_X__X__,
-__XX__X_,X_X__X__,
-__X___X_,____XX__,
+__X_____,________,
+_X__X_XX,XXXXXX__,
+_XXXX___,X_______,
+___X____,X__X____,
+__X____X,____X___,
+_X____XX,XXXXX___,
+_XXXX___,X_X_X___,
+________,X_X_____,
+_______X,__X_____,
+___XX__X,__X__X__,
+_XX___X_,__X__X__,
+_____X__,___XXX__,
+________,________,
 };
 
-GUI_FLASH  const unsigned char acFontHZSimSun_1515_cadd[32] = {	/* ? 0xcadd*/
-________,X_______,
-________,_X______,
-___XXXXX,XXXXXXX_,
-___X___X,_X______,
-X__X_XX_,_X_XXX__,
-_X_X_X__,_X___X__,
-_X_X_XXX,_X_XXX__,
-___X_X__,_X___X__,
-__XX_XXX,XXXXXX__,
-_X_X____,_X______,
-X__X_XXX,XXXXXX__,
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_ceaa[30] = {	/* 为 0xceaa*/
+______X_,________,
+___X__X_,________,
+____X_X_,________,
+______X_,________,
+_XXXXXXX,XXXXX___,
+______X_,____X___,
+_____X__,____X___,
+_____X__,X___X___,
+_____X__,_X__X___,
+____X___,_X__X___,
+____X___,____X___,
+___X____,____X___,
+__X_____,___X____,
+_X______,_XX_____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_ceb4[30] = {	/* 未 0xceb4*/
+_______X,________,
+_______X,________,
+__XXXXXX,XXXXX___,
+_______X,________,
+_______X,________,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+______XX,X_______,
+_____X_X,_X______,
+____X__X,__X_____,
+___X___X,___X____,
+_XX____X,____XX__,
+_______X,________,
+_______X,________,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cfa2[30] = {	/* 息 0xcfa2*/
+______X_,________,
+_____X__,________,
+___XXXXX,XXXX____,
+___X____,___X____,
+___XXXXX,XXXX____,
+___X____,___X____,
+___XXXXX,XXXX____,
+___X____,___X____,
+___XXXXX,XXXX____,
+_______X,________,
+____X___,X___X___,
+__X_X___,X____X__,
+__X_X___,__X__X__,
+_X___XXX,XXX_____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cfb5[30] = {	/* 系 0xcfb5*/
+________,XXXX____,
+__XXXXXX,________,
+______X_,________,
+_____X__,__X_____,
+____X___,_X______,
+___XXXXX,X_______,
+______X_,__X_____,
+____XX__,___X____,
+__XXXXXX,XXXXX___,
+_______X,____X___,
+____X__X,__X_____,
+___X___X,___X____,
+__X____X,____X___,
+_____XXX,________,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_cfee[30] = {	/* 项 0xcfee*/
+________,________,
+______XX,XXXXXX__,
+_XXXX___,_X______,
+___X____,X_______,
+___X__XX,XXXXX___,
 ___X__X_,____X___,
-__X____X,___X____,
-__X_____,XXX_____,
-_X____XX,___XX___,
-X___XX__,_____XX_,
+___X__X_,_X__X___,
+___X__X_,_X__X___,
+___X__X_,_X__X___,
+___XX_X_,X___X___,
+_XX_____,X_X_____,
+_______X,___X____,
+______X_,____X___,
+_____X__,____X___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0c2[30] = {	/* 新 0xd0c2*/
+___X____,____XX__,
+____X___,_XXX____,
+_XXXXXXX,_X______,
+__X___X_,_X______,
+___X_X__,_X______,
+_XXXXXXX,_XXXXX__,
+________,_X__X___,
+____X___,_X__X___,
+_XXXXXXX,_X__X___,
+____X___,_X__X___,
+__X_X_X_,_X__X___,
+_X__X__X,_X__X___,
+____X___,X___X___,
+__XXX__X,____X___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0c5[30] = {	/* 信 0xd0c5*/
+____X___,X_______,
+____X___,_X______,
+___X_XXX,XXXXXX__,
+___X____,________,
+__XX__XX,XXXXX___,
+_X_X____,________,
+___X__XX,XXXXX___,
+___X____,________,
+___X__XX,XXXXX___,
+___X__X_,____X___,
+___X__X_,____X___,
+___X__X_,____X___,
+___X__XX,XXXXX___,
+___X__X_,____X___,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0cd[30] = {	/* 型 0xd0cd*/
+________,____X___,
+__XXXXXX,_X__X___,
+___X__X_,_X__X___,
+___X__X_,_X__X___,
+_XXXXXXX,XX__X___,
+___X__X_,_X__X___,
+___X__X_,____X___,
+__X___X_,____X___,
+_X_____X,__XXX___,
+_______X,________,
+__XXXXXX,XXXXX___,
+_______X,________,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d0d4[30] = {	/* 性 0xd0d4*/
+___X____,__X_____,
+___X____,__X_____,
+___X___X,__X_____,
+___XX__X,__X_____,
+_X_X_X_X,XXXXXX__,
+_X_X___X,__X_____,
+_X_X__X_,__X_____,
+___X____,__X_____,
+___X___X,XXXXX___,
+___X____,__X_____,
+___X____,__X_____,
+___X____,__X_____,
+___X____,__X_____,
+___X__XX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d2d1[30] = {	/* 已 0xd2d1*/
+________,________,
+__XXXXXX,XXXXX___,
+________,____X___,
+________,____X___,
+__X_____,____X___,
+__X_____,____X___,
+__XXXXXX,XXXXX___,
+__X_____,________,
+__X_____,________,
+__X_____,________,
+__X_____,________,
+__X_____,_____X__,
+__X_____,_____X__,
+___XXXXX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d5fd[30] = {	/* 正 0xd5fd*/
+________,________,
+__XXXXXX,XXXXX___,
+_______X,________,
+_______X,________,
+_______X,________,
+___X___X,________,
+___X___X,________,
+___X___X,XXXX____,
+___X___X,________,
+___X___X,________,
+___X___X,________,
+___X___X,________,
+___X___X,________,
+_XXXXXXX,XXXXXX__,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d6d3[30] = {	/* 钟 0xd6d3*/
+___X____,__X_____,
+___X____,__X_____,
+___XXX__,__X_____,
+__X____X,XXXXXX__,
+_X_____X,__X__X__,
+__XXXX_X,__X__X__,
+___X___X,__X__X__,
+___X___X,__X__X__,
+_XXXXX_X,XXXXXX__,
+___X___X,__X__X__,
+___X____,__X_____,
+___X_X__,__X_____,
+___XX___,__X_____,
+___X____,__X_____,
+________,________,
+};
+
+GUI_FLASH  const unsigned char acFontHZSimSun_1515_d6d8[30] = {	/* 重 0xd6d8*/
+________,XXXXX___,
+__XXXXXX,________,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+_______X,________,
+___XXXXX,XXXX____,
+___X___X,___X____,
+___XXXXX,XXXX____,
+___X___X,___X____,
+___XXXXX,XXXX____,
+_______X,________,
+__XXXXXX,XXXXX___,
+_______X,________,
+_XXXXXXX,XXXXXX__,
+________,________,
 };
 
 
@@ -2547,332 +2615,359 @@ GUI_FLASH const GUI_CHARINFO GUI_FontHZSimSun_1515_CharInfo[] = {
 { 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_007d },  /* } 93 */
 { 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_007e },  /* ~ 94 */
 { 7, 7, 1, (void GUI_FLASH *)&acFontHZSimSun_1515_007f },  /*  95 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b1f0 },  /* 别 96 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b2cb },  /* 菜 97 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b2e2 },  /* 测 98 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b3a3 },  /* 常 99 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b5a5 },  /* 单 100 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b6a8 },  /* 定 101 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b6e0 },  /* 多 102 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b7f1 },  /* 否 103 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_bbe9 },  /* 婚 104 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_bcec },  /* 检 105 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c3f7 },  /* 明 106 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4a3 },  /* 模 107 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4d0 },  /* 男 108 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c5ae },  /* 女 109 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c8b7 },  /* 确 110 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c8cf },  /* 认 111 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c9e8 },  /* 设 112 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cab1 },  /* 时 113 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cabd },  /* 式 114 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cbb5 },  /* 说 115 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cce5 },  /* 体 116 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cdb3 },  /* 统 117 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_ceb4 },  /* 未 118 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cfa2 },  /* 息 119 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cfb5 },  /* 系 120 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cfee },  /* 项 121 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0c2 },  /* 新 122 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0c5 },  /* 信 123 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0cd },  /* 型 124 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0d4 },  /* 性 125 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d2d1 },  /* 已 126 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d5fd },  /* 正 127 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d6d3 },  /* 钟 128 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d6d8 },  /* 重 129 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c1e4 },  /* 龄 130 */
-{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4ea },  /* 年 131 */
-{ 16, 16, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c5d6 },  /* 胖 132 */
-{ 16, 16, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c6ab },  /* 偏 133 */
-{ 16, 16, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cadd },  /* 瘦 134 */
-
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_af6c },  /* 痩 96 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b1f0 },  /* 别 97 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b2bb },  /* 不 98 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b2cb },  /* 菜 99 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b2e2 },  /* 测 100 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b3a3 },  /* 常 101 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b5a5 },  /* 单 102 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b6a8 },  /* 定 103 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b6e0 },  /* 多 104 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_b7f1 },  /* 否 105 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_bbe9 },  /* 婚 106 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_bcec },  /* 检 107 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_bfd5 },  /* 空 108 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c1e4 },  /* 龄 109 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c3f7 },  /* 明 110 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4a3 },  /* 模 111 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4d0 },  /* 男 112 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4dc },  /* 能 113 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c4ea },  /* 年 114 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c5ae },  /* 女 115 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c5d6 },  /* 胖 116 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c6ab },  /* 偏 117 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c8b7 },  /* 确 118 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c8cf },  /* 认 119 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_c9e8 },  /* 设 120 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cab1 },  /* 时 121 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cabd },  /* 式 122 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cbb5 },  /* 说 123 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cce5 },  /* 体 124 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cdb3 },  /* 统 125 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_ceaa },  /* 为 126 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_ceb4 },  /* 未 127 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cfa2 },  /* 息 128 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cfb5 },  /* 系 129 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_cfee },  /* 项 130 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0c2 },  /* 新 131 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0c5 },  /* 信 132 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0cd },  /* 型 133 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d0d4 },  /* 性 134 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d2d1 },  /* 已 135 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d5fd },  /* 正 136 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d6d3 },  /* 钟 137 */
+{ 15, 15, 2, (void GUI_FLASH *)&acFontHZSimSun_1515_d6d8 },  /* 重 138 */
 };
 
-/* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcadd= {
-    0xcadd,
-    0xcadd,
-    &GUI_FontHZSimSun_1515_CharInfo[134],
-    (void *)0 
-};
-/* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc6ab= {
-    0xc6ab,
-    0xc6ab,
-    &GUI_FontHZSimSun_1515_CharInfo[133],
-    (void *)&GUI_FontHZSimSun_1515_Propcadd 
-};
-/* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc5d6= {
-    0xc5d6,
-    0xc5d6,
-    &GUI_FontHZSimSun_1515_CharInfo[132],
-    (void *)&GUI_FontHZSimSun_1515_Propc5d6 
-};
-/* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc4ea= {
-    0xc4ea,
-    0xc4ea,
-    &GUI_FontHZSimSun_1515_CharInfo[131],
-    (void *)&GUI_FontHZSimSun_1515_Propc5d6
-};
-/* ? -- ? */
-GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc1e4= {
-    0xc1e4,
-    0xc1e4,
-    &GUI_FontHZSimSun_1515_CharInfo[130],
-    (void *)&GUI_FontHZSimSun_1515_Propc4ea 
-};
-
-/* ? -- ? */
+/* 重 -- 重 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd6d8= {
     0xd6d8,
     0xd6d8,
-    &GUI_FontHZSimSun_1515_CharInfo[129],
-    (void *)&GUI_FontHZSimSun_1515_Propc1e4 
+    &GUI_FontHZSimSun_1515_CharInfo[138],
+    (void *)0 
 };
-/* ? -- ? */
+/* 钟 -- 钟 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd6d3= {
     0xd6d3,
     0xd6d3,
-    &GUI_FontHZSimSun_1515_CharInfo[128],
+    &GUI_FontHZSimSun_1515_CharInfo[137],
     (void *)&GUI_FontHZSimSun_1515_Propd6d8 
 };
-/* ? -- ? */
+/* 正 -- 正 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd5fd= {
     0xd5fd,
     0xd5fd,
-    &GUI_FontHZSimSun_1515_CharInfo[127],
+    &GUI_FontHZSimSun_1515_CharInfo[136],
     (void *)&GUI_FontHZSimSun_1515_Propd6d3 
 };
-/* ? -- ? */
+/* 已 -- 已 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd2d1= {
     0xd2d1,
     0xd2d1,
-    &GUI_FontHZSimSun_1515_CharInfo[126],
+    &GUI_FontHZSimSun_1515_CharInfo[135],
     (void *)&GUI_FontHZSimSun_1515_Propd5fd 
 };
-/* ? -- ? */
+/* 性 -- 性 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd0d4= {
     0xd0d4,
     0xd0d4,
-    &GUI_FontHZSimSun_1515_CharInfo[125],
+    &GUI_FontHZSimSun_1515_CharInfo[134],
     (void *)&GUI_FontHZSimSun_1515_Propd2d1 
 };
-/* ? -- ? */
+/* 型 -- 型 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd0cd= {
     0xd0cd,
     0xd0cd,
-    &GUI_FontHZSimSun_1515_CharInfo[124],
+    &GUI_FontHZSimSun_1515_CharInfo[133],
     (void *)&GUI_FontHZSimSun_1515_Propd0d4 
 };
-/* ? -- ? */
+/* 信 -- 信 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd0c5= {
     0xd0c5,
     0xd0c5,
-    &GUI_FontHZSimSun_1515_CharInfo[123],
+    &GUI_FontHZSimSun_1515_CharInfo[132],
     (void *)&GUI_FontHZSimSun_1515_Propd0cd 
 };
-/* ? -- ? */
+/* 新 -- 新 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propd0c2= {
     0xd0c2,
     0xd0c2,
-    &GUI_FontHZSimSun_1515_CharInfo[122],
+    &GUI_FontHZSimSun_1515_CharInfo[131],
     (void *)&GUI_FontHZSimSun_1515_Propd0c5 
 };
-/* ? -- ? */
+/* 项 -- 项 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcfee= {
     0xcfee,
     0xcfee,
-    &GUI_FontHZSimSun_1515_CharInfo[121],
+    &GUI_FontHZSimSun_1515_CharInfo[130],
     (void *)&GUI_FontHZSimSun_1515_Propd0c2 
 };
-/* ? -- ? */
+/* 系 -- 系 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcfb5= {
     0xcfb5,
     0xcfb5,
-    &GUI_FontHZSimSun_1515_CharInfo[120],
+    &GUI_FontHZSimSun_1515_CharInfo[129],
     (void *)&GUI_FontHZSimSun_1515_Propcfee 
 };
-/* ? -- ? */
+/* 息 -- 息 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcfa2= {
     0xcfa2,
     0xcfa2,
-    &GUI_FontHZSimSun_1515_CharInfo[119],
+    &GUI_FontHZSimSun_1515_CharInfo[128],
     (void *)&GUI_FontHZSimSun_1515_Propcfb5 
 };
-/* ? -- ? */
+/* 未 -- 未 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propceb4= {
     0xceb4,
     0xceb4,
-    &GUI_FontHZSimSun_1515_CharInfo[118],
+    &GUI_FontHZSimSun_1515_CharInfo[127],
     (void *)&GUI_FontHZSimSun_1515_Propcfa2 
 };
-/* ? -- ? */
+/* 为 -- 为 */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propceaa= {
+    0xceaa,
+    0xceaa,
+    &GUI_FontHZSimSun_1515_CharInfo[126],
+    (void *)&GUI_FontHZSimSun_1515_Propceb4 
+};
+/* 统 -- 统 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcdb3= {
     0xcdb3,
     0xcdb3,
-    &GUI_FontHZSimSun_1515_CharInfo[117],
-    (void *)&GUI_FontHZSimSun_1515_Propceb4 
+    &GUI_FontHZSimSun_1515_CharInfo[125],
+    (void *)&GUI_FontHZSimSun_1515_Propceaa 
 };
-/* ? -- ? */
+/* 体 -- 体 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcce5= {
     0xcce5,
     0xcce5,
-    &GUI_FontHZSimSun_1515_CharInfo[116],
+    &GUI_FontHZSimSun_1515_CharInfo[124],
     (void *)&GUI_FontHZSimSun_1515_Propcdb3 
 };
-/* ? -- ? */
+/* 说 -- 说 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcbb5= {
     0xcbb5,
     0xcbb5,
-    &GUI_FontHZSimSun_1515_CharInfo[115],
+    &GUI_FontHZSimSun_1515_CharInfo[123],
     (void *)&GUI_FontHZSimSun_1515_Propcce5 
 };
-/* ? -- ? */
+/* 式 -- 式 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcabd= {
     0xcabd,
     0xcabd,
-    &GUI_FontHZSimSun_1515_CharInfo[114],
+    &GUI_FontHZSimSun_1515_CharInfo[122],
     (void *)&GUI_FontHZSimSun_1515_Propcbb5 
 };
-/* ? -- ? */
+/* 时 -- 时 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propcab1= {
     0xcab1,
     0xcab1,
-    &GUI_FontHZSimSun_1515_CharInfo[113],
+    &GUI_FontHZSimSun_1515_CharInfo[121],
     (void *)&GUI_FontHZSimSun_1515_Propcabd 
 };
-/* ? -- ? */
+/* 设 -- 设 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc9e8= {
     0xc9e8,
     0xc9e8,
-    &GUI_FontHZSimSun_1515_CharInfo[112],
+    &GUI_FontHZSimSun_1515_CharInfo[120],
     (void *)&GUI_FontHZSimSun_1515_Propcab1 
 };
-/* ? -- ? */
+/* 认 -- 认 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc8cf= {
     0xc8cf,
     0xc8cf,
-    &GUI_FontHZSimSun_1515_CharInfo[111],
+    &GUI_FontHZSimSun_1515_CharInfo[119],
     (void *)&GUI_FontHZSimSun_1515_Propc9e8 
 };
-/* ? -- ? */
+/* 确 -- 确 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc8b7= {
     0xc8b7,
     0xc8b7,
-    &GUI_FontHZSimSun_1515_CharInfo[110],
+    &GUI_FontHZSimSun_1515_CharInfo[118],
     (void *)&GUI_FontHZSimSun_1515_Propc8cf 
 };
-/* ? -- ? */
+/* 偏 -- 偏 */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc6ab= {
+    0xc6ab,
+    0xc6ab,
+    &GUI_FontHZSimSun_1515_CharInfo[117],
+    (void *)&GUI_FontHZSimSun_1515_Propc8b7 
+};
+/* 胖 -- 胖 */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc5d6= {
+    0xc5d6,
+    0xc5d6,
+    &GUI_FontHZSimSun_1515_CharInfo[116],
+    (void *)&GUI_FontHZSimSun_1515_Propc6ab 
+};
+/* 女 -- 女 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc5ae= {
     0xc5ae,
     0xc5ae,
-    &GUI_FontHZSimSun_1515_CharInfo[109],
-    (void *)&GUI_FontHZSimSun_1515_Propc8b7 
+    &GUI_FontHZSimSun_1515_CharInfo[115],
+    (void *)&GUI_FontHZSimSun_1515_Propc5d6 
 };
-/* ? -- ? */
+/* 年 -- 年 */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc4ea= {
+    0xc4ea,
+    0xc4ea,
+    &GUI_FontHZSimSun_1515_CharInfo[114],
+    (void *)&GUI_FontHZSimSun_1515_Propc5ae 
+};
+/* 能 -- 能 */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc4dc= {
+    0xc4dc,
+    0xc4dc,
+    &GUI_FontHZSimSun_1515_CharInfo[113],
+    (void *)&GUI_FontHZSimSun_1515_Propc4ea 
+};
+/* 男 -- 男 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc4d0= {
     0xc4d0,
     0xc4d0,
-    &GUI_FontHZSimSun_1515_CharInfo[108],
-    (void *)&GUI_FontHZSimSun_1515_Propc5ae 
+    &GUI_FontHZSimSun_1515_CharInfo[112],
+    (void *)&GUI_FontHZSimSun_1515_Propc4dc 
 };
-/* ? -- ? */
+/* 模 -- 模 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc4a3= {
     0xc4a3,
     0xc4a3,
-    &GUI_FontHZSimSun_1515_CharInfo[107],
+    &GUI_FontHZSimSun_1515_CharInfo[111],
     (void *)&GUI_FontHZSimSun_1515_Propc4d0 
 };
-/* ? -- ? */
+/* 明 -- 明 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc3f7= {
     0xc3f7,
     0xc3f7,
-    &GUI_FontHZSimSun_1515_CharInfo[106],
+    &GUI_FontHZSimSun_1515_CharInfo[110],
     (void *)&GUI_FontHZSimSun_1515_Propc4a3 
 };
-/* ? -- ? */
+/* 龄 -- 龄 */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propc1e4= {
+    0xc1e4,
+    0xc1e4,
+    &GUI_FontHZSimSun_1515_CharInfo[109],
+    (void *)&GUI_FontHZSimSun_1515_Propc3f7 
+};
+/* 空 -- 空 */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propbfd5= {
+    0xbfd5,
+    0xbfd5,
+    &GUI_FontHZSimSun_1515_CharInfo[108],
+    (void *)&GUI_FontHZSimSun_1515_Propc1e4 
+};
+/* 检 -- 检 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propbcec= {
     0xbcec,
     0xbcec,
-    &GUI_FontHZSimSun_1515_CharInfo[105],
-    (void *)&GUI_FontHZSimSun_1515_Propc3f7 
+    &GUI_FontHZSimSun_1515_CharInfo[107],
+    (void *)&GUI_FontHZSimSun_1515_Propbfd5 
 };
-/* ? -- ? */
+/* 婚 -- 婚 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propbbe9= {
     0xbbe9,
     0xbbe9,
-    &GUI_FontHZSimSun_1515_CharInfo[104],
+    &GUI_FontHZSimSun_1515_CharInfo[106],
     (void *)&GUI_FontHZSimSun_1515_Propbcec 
 };
-/* ? -- ? */
+/* 否 -- 否 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb7f1= {
     0xb7f1,
     0xb7f1,
-    &GUI_FontHZSimSun_1515_CharInfo[103],
+    &GUI_FontHZSimSun_1515_CharInfo[105],
     (void *)&GUI_FontHZSimSun_1515_Propbbe9 
 };
-/* ? -- ? */
+/* 多 -- 多 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb6e0= {
     0xb6e0,
     0xb6e0,
-    &GUI_FontHZSimSun_1515_CharInfo[102],
+    &GUI_FontHZSimSun_1515_CharInfo[104],
     (void *)&GUI_FontHZSimSun_1515_Propb7f1 
 };
-/* ? -- ? */
+/* 定 -- 定 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb6a8= {
     0xb6a8,
     0xb6a8,
-    &GUI_FontHZSimSun_1515_CharInfo[101],
+    &GUI_FontHZSimSun_1515_CharInfo[103],
     (void *)&GUI_FontHZSimSun_1515_Propb6e0 
 };
-/* ? -- ? */
+/* 单 -- 单 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb5a5= {
     0xb5a5,
     0xb5a5,
-    &GUI_FontHZSimSun_1515_CharInfo[100],
+    &GUI_FontHZSimSun_1515_CharInfo[102],
     (void *)&GUI_FontHZSimSun_1515_Propb6a8 
 };
-/* ? -- ? */
+/* 常 -- 常 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb3a3= {
     0xb3a3,
     0xb3a3,
-    &GUI_FontHZSimSun_1515_CharInfo[99],
+    &GUI_FontHZSimSun_1515_CharInfo[101],
     (void *)&GUI_FontHZSimSun_1515_Propb5a5 
 };
-/* ? -- ? */
+/* 测 -- 测 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb2e2= {
     0xb2e2,
     0xb2e2,
-    &GUI_FontHZSimSun_1515_CharInfo[98],
+    &GUI_FontHZSimSun_1515_CharInfo[100],
     (void *)&GUI_FontHZSimSun_1515_Propb3a3 
 };
-/* ? -- ? */
+/* 菜 -- 菜 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb2cb= {
     0xb2cb,
     0xb2cb,
-    &GUI_FontHZSimSun_1515_CharInfo[97],
+    &GUI_FontHZSimSun_1515_CharInfo[99],
     (void *)&GUI_FontHZSimSun_1515_Propb2e2 
 };
-/* ? -- ? */
+/* 不 -- 不 */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb2bb= {
+    0xb2bb,
+    0xb2bb,
+    &GUI_FontHZSimSun_1515_CharInfo[98],
+    (void *)&GUI_FontHZSimSun_1515_Propb2cb 
+};
+/* 别 -- 别 */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propb1f0= {
     0xb1f0,
     0xb1f0,
+    &GUI_FontHZSimSun_1515_CharInfo[97],
+    (void *)&GUI_FontHZSimSun_1515_Propb2bb 
+};
+/* 痩 -- 痩 */
+GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Propaf6c= {
+    0xaf6c,
+    0xaf6c,
     &GUI_FontHZSimSun_1515_CharInfo[96],
-    (void *)&GUI_FontHZSimSun_1515_Propb2cb 
+    (void *)&GUI_FontHZSimSun_1515_Propb1f0 
 };
 /*   --  */
 GUI_FLASH  const GUI_FONT_PROP GUI_FontHZSimSun_1515_Prop0020= {
     0x0020,
     0x007f,
     &GUI_FontHZSimSun_1515_CharInfo[0],
-    (void *)&GUI_FontHZSimSun_1515_Propb1f0 
+    (void *)&GUI_FontHZSimSun_1515_Propaf6c 
 };
-/* ? -- ? */
-/* ? -- ? */
-
 GUI_FLASH const GUI_FONT GUI_FontHZ_SimSun_1515 = {
     GUI_FONTTYPE_PROP_SJIS,
     15,

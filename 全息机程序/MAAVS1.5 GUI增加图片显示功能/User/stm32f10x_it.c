@@ -104,9 +104,20 @@ void TIM2_IRQHandler(void)
 
 void EXTI15_10_IRQHandler(void)
 {	
+	//关闭中断
+	EXTI_InitTypeDef EXTI_InitStructure;
+
       if(EXTI_GetITStatus(EXTI_Line11) != RESET)
     {
 			EXTI_ClearITPendingBit(EXTI_Line11);     //清除中断标志位
+			
+				GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource11); 
+				EXTI_InitStructure.EXTI_Line = EXTI_Line11;
+				EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+				EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
+				EXTI_InitStructure.EXTI_LineCmd = DISABLE;
+				EXTI_Init(&EXTI_InitStructure); 
+			
 			rotate_flag = 1;
 			if(selectEnd == 1&&myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
 				send_rotate_message();
@@ -114,9 +125,24 @@ void EXTI15_10_IRQHandler(void)
 
 		}else if(EXTI_GetITStatus(EXTI_Line15) != RESET) {
 			EXTI_ClearITPendingBit(EXTI_Line15);     //清除中断标志位
+			
+				GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource15); 
+				EXTI_InitStructure.EXTI_Line = EXTI_Line15;
+				EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+				EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
+				EXTI_InitStructure.EXTI_LineCmd = DISABLE;
+				EXTI_Init(&EXTI_InitStructure); 
+			
 			rotateEnter_flag = 1;
 			send_enter_message();
 		}
+		//打开中断
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource11|GPIO_PinSource15); 
+  EXTI_InitStructure.EXTI_Line = EXTI_Line11|EXTI_Line15;
+  EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+  EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
+  EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+  EXTI_Init(&EXTI_InitStructure); 
 }
 
 

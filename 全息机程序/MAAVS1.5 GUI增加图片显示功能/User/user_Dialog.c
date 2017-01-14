@@ -288,10 +288,10 @@ void InitDialog(WM_MESSAGE * pMsg)
 
 void MessageSetting(WM_HWIN hWin) {  //信息设定
 	static int messageType =0,lastMessageType=0,isSelectType=0,maxCount = 0,count=0;
-;
 			//旋转编码器
 		if((rotate_flag == 1)&&(isSelectType==0)) {
 			if(KEY_A == 0) {
+						delay_us(20);
             if(KEY_B == 1)
             {
 							messageType++;
@@ -300,11 +300,9 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 							}
 							printf("messageSetting :right\r\n");
             }else {
-							if(KEY_B == 0) {
 								messageType--;
 								if(messageType < 0) {
 									messageType = 5;
-								}
 								printf(" messageSetting :left\r\n");
 							}
 
@@ -342,65 +340,62 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 						lastMessageType = messageType;
 					}
 		}else if((rotateEnter_flag==0)&&(isSelectType == 1)) {
-			char *data[10];
 					if((KEY_A == 0)&&(rotate_flag == 1)) {
+						delay_us(20);
             if(KEY_B == 1)
             {
-							count++;
-							if(count == maxCount) {
-								count = 0;
-							}
-							printf("messageSetting :right\r\n");
+							count = 1;
+//							if(count == maxCount) {
+//								count = 0;
+//							}
+							printf("dic:right\r\n");
             }else {
 							if(KEY_B == 0) {
-								count--;
-								if(count < 0) {
-									count = maxCount-1;
-								}
-							printf(" messageSetting :left\r\n");
+								count = - 1;
+//								if(count < 0) {
+//									count = maxCount-1;
+//								}
+							printf(" dic :left\r\n");
 							}
 
 						}
 					 if (lastMessageType == 6) {
-								data[0] = "男";
-								data[1] = "女";
-								saveData[lastMessageType-6] = data[count];
-								TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),data[count]);
+							static int base1 = 1;
+							char *data1[2]={"男","女"};
+							base1 +=count;
+							saveData[lastMessageType-6] = data1[base1%maxCount];
+							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),saveData[0]);
 						}else if (lastMessageType == 7) {
+							static int base2 = 35;
 							char str[20];
-							static int base = 35;
-							count +=base;
-							base = 0;
-//								itoa(count, str, 10);
-							sprintf(str,"%d",count);
-								TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),str);
-								saveData[lastMessageType-6] = str;
+							base2+=count;
+							sprintf(str,"%d",base2%maxCount);
+							saveData[lastMessageType-6] = str;
+							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),saveData[1]);
 						}else if (lastMessageType == 8) { 
-								data[0] = "未婚";
-								data[1] = "已婚";
-								saveData[lastMessageType-6] = data[count];
-								TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),data[count]);
+							static int base3 = 1;
+							char *data2[2]={"未婚","已婚"};
+							base3+=count;
+								saveData[lastMessageType-6] = data2[base3%maxCount];
+								TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),saveData[2]);
 							
 						}else if (lastMessageType == 9) { 
-								data[0] = "偏瘦";
-								data[1] = "正常";
-								data[2] = "偏胖";
-								saveData[lastMessageType-6] = data[count];
-								TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),data[count]);
+							static int base4 = 1;
+							char *data3[3]={"偏痩","正常","偏胖"};
+							base4+=count;
+							saveData[lastMessageType-6] = data3[base4%maxCount];
+							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),saveData[3]);
 						}
 						else if (lastMessageType == 10) { 
-								data[0] = "01";
-								data[1] = "02";
-								data[2] = "03";
-								data[3] = "04";
-								data[4] = "05";
-								saveData[lastMessageType-6] = data[count];
-								TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),data[count]);
+							static int base5 = 3;
+							char *data4[5] = {"01","02","03","04","05"};
+							base5+=count;
+								saveData[lastMessageType-6] = data4[base5%maxCount];
+								TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),saveData[4]);
 						}
 
 					}	
 		}else if((rotateEnter_flag==1)&&(isSelectType == 1)) {
-						delay_ms(10);
 						isSelectType = 0;
 						rotateEnter_flag = 0;
 						messageType = lastMessageType -6;

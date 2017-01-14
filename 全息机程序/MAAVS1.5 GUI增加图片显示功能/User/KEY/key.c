@@ -120,7 +120,9 @@ void rotate(void) {  //logo图标选择
 	static int lastCount=0;
 			//旋转编码器
 		if(rotate_flag == 1) {
+			
 			if(KEY_A == 0) {
+					delay_us(20);
             if(KEY_B == 1)
             {
 							logoCount++;
@@ -175,21 +177,29 @@ void send_rotate_message(void) {
 
 //旋转编码器按下确认操作
 void send_enter_message(void) {
-			if (myMessageType == MY_MESSAGE_ID_LOGO) {
-						//设置活动窗口
-						WM_SetFocus(mainForm_hWin);
-						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
-			}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
-							WM_SetFocus(dialog_hWin);
+		if(KEY4 == 0) {
+			delay_ms(10);
+			if(KEY4== 0) {
+				printf("enter\r\n");
+				if (myMessageType == MY_MESSAGE_ID_LOGO) {
+							//设置活动窗口
+							WM_SetFocus(mainForm_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
-			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
-							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
-			}else if (myMessageType == MY_MESSAGE_ID_LINE) {
-				//不做任何操作
-			}else {
-				printf("逻辑出问题了");
+				}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
+								WM_SetFocus(dialog_hWin);
+								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
+								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+				}else if (myMessageType == MY_MESSAGE_ID_LINE) {
+					//不做任何操作
+				}else {
+					printf("逻辑出问题了");
+				}
+				return;
 			}
-
+		}
+		
+		rotateEnter_flag = 0;
 }
 
 
