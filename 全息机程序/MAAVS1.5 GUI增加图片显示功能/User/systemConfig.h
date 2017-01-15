@@ -6,7 +6,7 @@ extern WM_HWIN root_hWin;
 extern WM_HWIN mainForm_hWin;
 extern WM_HWIN dialog_hWin;
 extern WM_HWIN time_hWin;
-extern WM_HWIN line_hWin;
+extern WM_HWIN draw_hWin;
 extern WM_HWIN menu_hWin;
 extern WM_HWIN explain_hWin;
 extern WM_HWIN clock_hWin;

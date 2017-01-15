@@ -721,6 +721,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\warning_dialog.c</FilePath>
             </File>
+            <File>
+              <FileName>draw_dialog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\draw_dialog.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -72,3 +72,4 @@
 .\obj\main.o: ..\User\systemExplain.h
 .\obj\main.o: ..\User\time_dialog.h
 .\obj\main.o: ..\User\warning_dialog.h
+.\obj\main.o: ..\User\draw_dialog.h

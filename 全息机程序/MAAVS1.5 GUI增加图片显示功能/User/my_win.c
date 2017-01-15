@@ -184,6 +184,8 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
 											isOrRefreshMessage = 0;
 										GUI_Clear();
 										WM_Paint(hWin);
+										sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
+										GUI_DispStringAt(displayTime,175,3);
 										sprintf(displayTime,"   性别:%s 年龄:%s 婚否:%s 体型:%s    ",saveData[0],saveData[1],saveData[2],saveData[3]);
 										GUI_DispStringAt(displayTime,2,20);
 									}else if (isOrSetClock == 1) {

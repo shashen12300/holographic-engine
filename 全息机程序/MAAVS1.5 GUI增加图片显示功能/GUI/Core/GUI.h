@@ -213,7 +213,7 @@ Note that we have chosen the values to be close to existing
 #define MY_MESSAGE_ID_KEY4      GUI_ID_USER + 3   //按键4
 #define MY_MESSAGE_ID_ENCODER0  GUI_ID_USER + 4   //编码器，选择logo
 #define MY_MESSAGE_ID_TIME      GUI_ID_USER + 5   //时间
-#define MY_MESSAGE_ID_LINE      GUI_ID_USER + 6   //曲线图
+#define MY_MESSAGE_ID_DRAW      GUI_ID_USER + 6   //曲线图
 #define MY_MESSAGE_ID_SEX       GUI_ID_USER + 7   //性别
 #define MY_MESSAGE_ID_AGE       GUI_ID_USER + 8   //年龄
 #define MY_MESSAGE_ID_MARRY     GUI_ID_USER + 9   //婚姻
@@ -225,9 +225,8 @@ Note that we have chosen the values to be close to existing
 #define MY_MESSAGE_ID_SYSTEM_SETTING       GUI_ID_USER + 15   //系统设定
 #define MY_MESSAGE_ID_SYSTEM_EXPLAIN       GUI_ID_USER + 16   //系统说明
 #define MY_MESSAGE_ID_SYSTEM_TIME          GUI_ID_USER + 17   //时钟设定
-#define MY_MESSAGE_ID_WARNING    			     GUI_ID_USER + 18   //警告弹出
-#define MY_MESSAGE_ID_LINE_POINT    			 GUI_ID_USER + 19   //画点
-
+#define MY_MESSAGE_ID_WARNING              GUI_ID_USER + 18   //弹窗警告
+#define MY_MESSAGE_ID_DRAW_POINT           GUI_ID_USER + 18   //画点
 //扩展
 #define GUI_ID_TEXT10  GUI_ID_USER  +100
 #define GUI_ID_TEXT11  GUI_ID_USER  +101

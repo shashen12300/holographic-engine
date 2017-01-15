@@ -23,7 +23,7 @@
 #include "systemExplain.h"
 #include "time_dialog.h"
 #include "warning_dialog.h"
-
+#include "draw_dialog.h"
 unsigned char status_flag=0;
 int adcValue,time_flag;
 extern int rotate_flag;
@@ -73,8 +73,8 @@ void refresh_time(void) {
 					WM_SetFocus(dialog_hWin);
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
 //						WM_SetFocus(mainForm_hWin);
-			}else if (myMessageType == MY_MESSAGE_ID_LINE) {
-						WM_SetFocus(line_hWin);
+			}else if (myMessageType == MY_MESSAGE_ID_DRAW) {
+						WM_SetFocus(draw_hWin);
 			}else {
 				printf("逻辑出问题了");
 			}
@@ -151,10 +151,11 @@ printf("开始测试\r\n");
 				}
 			}else if (key == 2) {  //进入检测
 				if(isOrSetMessage==0) {
-//					//提示个人信息不能为空
-//					warning_dialogTask();
-//				}else {
-//				}
+					//提示个人信息不能为空
+					warning_dialogTask();
+				}else {
+					Draw_dialogTask();
+				}
 			}else if (key == 3) {   //待定
 
 			}else if (key == 4) {   //系统菜单
@@ -170,6 +171,6 @@ printf("开始测试\r\n");
 }
 
 }
-}
+
 
 

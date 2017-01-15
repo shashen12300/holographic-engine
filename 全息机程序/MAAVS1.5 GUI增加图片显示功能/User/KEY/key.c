@@ -169,7 +169,7 @@ void send_rotate_message(void) {
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
 							WM_SetFocus(menu_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
-			}else if (myMessageType == MY_MESSAGE_ID_LINE) {
+			}else if (myMessageType == MY_MESSAGE_ID_DRAW) {
 				//不做任何操作
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_TIME) {
 							WM_SetFocus(clock_hWin);
@@ -199,9 +199,8 @@ void send_enter_message(void) {
 				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_EXPLAIN) {
 						WM_SetFocus(explain_hWin);
 						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
-				}else if (myMessageType == MY_MESSAGE_ID_LINE) {
-					//不做任何操作
-								WM_SetFocus(line_hWin);
+				}else if (myMessageType == MY_MESSAGE_ID_DRAW) {
+								WM_SetFocus(draw_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_TIME) {
 								WM_SetFocus(clock_hWin);

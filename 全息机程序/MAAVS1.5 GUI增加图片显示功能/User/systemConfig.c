@@ -9,7 +9,7 @@ WM_HWIN dialog_hWin;
 //时间
 WM_HWIN time_hWin;
 //检测曲线
-WM_HWIN line_hWin;
+WM_HWIN draw_hWin;
 //系统菜单
 WM_HWIN menu_hWin;
 //系统说明
