@@ -169,12 +169,13 @@ void send_rotate_message(void) {
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
 							WM_SetFocus(menu_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
-			}else if (myMessageType == MY_MESSAGE_ID_DRAW) {
-				//不做任何操作
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_TIME) {
 							WM_SetFocus(clock_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
-			}else {
+			}else if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
+								WM_SetFocus(drawLine_hWin);
+								GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
+			} else {
 				printf("逻辑出问题了");
 			}
 		}
@@ -199,16 +200,17 @@ void send_enter_message(void) {
 				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_EXPLAIN) {
 						WM_SetFocus(explain_hWin);
 						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
-				}else if (myMessageType == MY_MESSAGE_ID_DRAW) {
-								WM_SetFocus(draw_hWin);
-								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_TIME) {
 								WM_SetFocus(clock_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if (myMessageType == MY_MESSAGE_ID_WARNING) {
 								WM_SetFocus(warning_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
-				}else {
+				}else if(myMessageType==MY_MESSAGE_ID_DRAW_LINE) {
+							WM_SetFocus(drawLine_hWin);
+							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+				}
+				else {
 					printf("逻辑出问题了");
 				}
 				return;

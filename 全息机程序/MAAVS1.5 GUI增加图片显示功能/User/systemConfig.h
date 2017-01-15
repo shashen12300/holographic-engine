@@ -11,6 +11,7 @@ extern WM_HWIN menu_hWin;
 extern WM_HWIN explain_hWin;
 extern WM_HWIN clock_hWin;
 extern WM_HWIN warning_hWin;
+extern WM_HWIN drawLine_hWin;
 extern  int myMessageType;
 extern int isOrSetMessage;
 extern int rotate_flag;

@@ -726,6 +726,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\draw_dialog.c</FilePath>
             </File>
+            <File>
+              <FileName>drawLine_dialog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\drawLine_dialog.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

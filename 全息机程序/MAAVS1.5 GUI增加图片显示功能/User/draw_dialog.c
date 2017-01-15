@@ -35,7 +35,8 @@
 */
 
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
-    { FRAMEWIN_CreateIndirect,  "Caption",           0,                       0,  0,  202,38,FRAMEWIN_CF_MOVEABLE,0},
+    { FRAMEWIN_CreateIndirect,  "Caption",           0,                       0,  50,  200,150,FRAMEWIN_CF_MOVEABLE,0},
+		{ TEXT_CreateIndirect,      "TEXT1",             GUI_ID_TEXT10,            75, 23, 30, 16, 0,0},
 
 
 };
@@ -52,6 +53,12 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 void DrawPaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
+	
+	    GUI_SetColor(0xffffff);
+    GUI_DrawLine(1,1,176,1);
+	  GUI_DrawLine(176,1,176,41);
+	  GUI_DrawLine(1,41,176,41);
+    GUI_DrawLine(1,1,1,41);
 }
 
 
@@ -74,10 +81,12 @@ void DrawInitDialog(WM_MESSAGE * pMsg)
     FRAMEWIN_SetTextAlign(hWin,GUI_TA_VCENTER|GUI_TA_CENTER);
     FRAMEWIN_SetTitleVis(hWin,0);
     FRAMEWIN_SetTitleHeight(hWin,0);
-    //
+       //
     //GUI_ID_TEXT0
     //
-
+    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0x000000);
+	  TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0xffffff);
+    TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0),GUI_TA_VCENTER|GUI_TA_CENTER);
 
 }
 
@@ -104,7 +113,7 @@ void SystemDraw(WM_HWIN hWin) {  //????
 
 }
 
-static void _cbDrawDialogCallback(WM_MESSAGE * pMsg) 
+void _cbDrawDialogCallback(WM_MESSAGE * pMsg) 
 {
     int NCode, Id;
     WM_HWIN hWin = pMsg->hWin;
@@ -127,6 +136,7 @@ static void _cbDrawDialogCallback(WM_MESSAGE * pMsg)
                     break;
 								case MY_MESSAGE_ID_ENCODER0:
 								{
+										SystemDraw(hWin);
 								}
 								    break;
 								case MY_MESSAGE_ID_ENTER:

@@ -24,6 +24,8 @@
 #include "time_dialog.h"
 #include "warning_dialog.h"
 #include "draw_dialog.h"
+#include "drawLine_dialog.h"
+
 unsigned char status_flag=0;
 int adcValue,time_flag;
 extern int rotate_flag;
@@ -154,7 +156,8 @@ printf("开始测试\r\n");
 					//提示个人信息不能为空
 					warning_dialogTask();
 				}else {
-					Draw_dialogTask();
+					drawLine_dialogTask();
+//					Draw_dialogTask();
 				}
 			}else if (key == 3) {   //待定
 

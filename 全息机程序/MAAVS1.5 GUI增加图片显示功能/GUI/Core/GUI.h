@@ -226,7 +226,9 @@ Note that we have chosen the values to be close to existing
 #define MY_MESSAGE_ID_SYSTEM_EXPLAIN       GUI_ID_USER + 16   //系统说明
 #define MY_MESSAGE_ID_SYSTEM_TIME          GUI_ID_USER + 17   //时钟设定
 #define MY_MESSAGE_ID_WARNING              GUI_ID_USER + 18   //弹窗警告
-#define MY_MESSAGE_ID_DRAW_POINT           GUI_ID_USER + 18   //画点
+#define MY_MESSAGE_ID_DRAW_LINE            GUI_ID_USER + 19   //弹窗警告
+
+#define MY_MESSAGE_ID_DRAW_POINT           GUI_ID_USER + 20   //画点
 //扩展
 #define GUI_ID_TEXT10  GUI_ID_USER  +100
 #define GUI_ID_TEXT11  GUI_ID_USER  +101
