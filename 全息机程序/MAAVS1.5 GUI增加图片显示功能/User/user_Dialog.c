@@ -34,8 +34,8 @@
 #include "key.h"
 # include <stdio.h>
 # include <stdlib.h>
- extern int rotate_flag;
- char *saveData[5] = {"男","35","未婚","正常","03"};
+#include "systemConfig.h"
+
 WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText13,hText14,hText15,hText16,hText17;
 //EventsFunctionList
 //EndofEventsFunctionList
@@ -324,8 +324,14 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 								WM_SelectWindow(mainForm_hWin);
 								myMessageType = MY_MESSAGE_ID_LOGO;
 								WM_Exec();
+							isOrSetMessage = 1;
+							isOrRefreshMessage = 1;
 							//清除状态
-							messageType =0;lastMessageType=0;isSelectType=0;maxCount = 0;count=0;
+							messageType =0;
+							lastMessageType=0;
+							isSelectType=0;
+							maxCount = 0;
+							count=0;
 								return;
 							
 						}
@@ -345,16 +351,10 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
             if(KEY_B == 1)
             {
 							count = 1;
-//							if(count == maxCount) {
-//								count = 0;
-//							}
 							printf("dic:right\r\n");
             }else {
 							if(KEY_B == 0) {
 								count = - 1;
-//								if(count < 0) {
-//									count = maxCount-1;
-//								}
 							printf(" dic :left\r\n");
 							}
 
@@ -367,7 +367,7 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),saveData[0]);
 						}else if (lastMessageType == 7) {
 							static int base2 = 35;
-							char str[20];
+							static char str[20];
 							base2+=count;
 							sprintf(str,"%d",base2%maxCount);
 							saveData[lastMessageType-6] = str;
@@ -457,14 +457,6 @@ static void _cbDialogCallback(WM_MESSAGE * pMsg)
                     if(NCode==WM_NOTIFICATION_RELEASED)
                         GUI_EndDialog(hWin, 1);
                     break;
-//                case GUI_ID_TEXT10:
-//                    if(NCode==WM_NOTIFICATION_CHILD_DELETED)
-//												WM_DeleteWindow(pMsg->hWinSrc);
-//                    break;
-//								case GUI_ID_TEXT11:
-//                    if(NCode==WM_NOTIFICATION_CHILD_DELETED)
-//											WM_HideWindow(pMsg->hWinSrc);
-//                    break;
             }
             break;
         default:

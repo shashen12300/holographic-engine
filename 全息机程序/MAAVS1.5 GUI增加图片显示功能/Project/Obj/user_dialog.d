@@ -56,3 +56,4 @@
 .\obj\user_dialog.o: ..\SYSTEM\sys\sys.h
 .\obj\user_dialog.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\user_dialog.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\user_dialog.o: ..\User\systemConfig.h

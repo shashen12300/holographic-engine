@@ -30,8 +30,6 @@
 .\obj\main.o: ..\GUI\Core\LCD.h
 .\obj\main.o: ..\GUI\Core\GUIVersion.h
 .\obj\main.o: ..\User\my_win.h
-.\obj\main.o: ..\GUI\WM\WM.h
-.\obj\main.o: ..\GUI\WM\WM_GUI.h
 .\obj\main.o: ..\User\RA8835.h
 .\obj\main.o: ..\User\LED\led.h
 .\obj\main.o: ..\SYSTEM\delay\delay.h
@@ -47,6 +45,8 @@
 .\obj\main.o: ..\User\inputWindow.h
 .\obj\main.o: ..\User\user_Dialog.h
 .\obj\main.o: ..\GUI\Widget\DIALOG.h
+.\obj\main.o: ..\GUI\WM\WM.h
+.\obj\main.o: ..\GUI\WM\WM_GUI.h
 .\obj\main.o: ..\GUI\Widget\BUTTON.h
 .\obj\main.o: ..\GUI\Widget\DIALOG_Intern.h
 .\obj\main.o: ..\GUI\Widget\WIDGET.h
@@ -67,3 +67,7 @@
 .\obj\main.o: ..\GUI\Widget\RADIO.h
 .\obj\main.o: ..\GUI\Widget\SLIDER.h
 .\obj\main.o: ..\GUI\Widget\TEXT.h
+.\obj\main.o: ..\User\menu_dialog.h
+.\obj\main.o: ..\User\systemConfig.h
+.\obj\main.o: ..\User\systemExplain.h
+.\obj\main.o: ..\User\time_dialog.h

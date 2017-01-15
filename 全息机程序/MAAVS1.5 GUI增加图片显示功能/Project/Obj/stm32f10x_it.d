@@ -57,3 +57,4 @@
 .\obj\stm32f10x_it.o: ..\GUI\Widget\RADIO.h
 .\obj\stm32f10x_it.o: ..\GUI\Widget\SLIDER.h
 .\obj\stm32f10x_it.o: ..\GUI\Widget\TEXT.h
+.\obj\stm32f10x_it.o: ..\User\systemConfig.h

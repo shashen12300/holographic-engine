@@ -696,6 +696,31 @@
               <FileType>1</FileType>
               <FilePath>..\User\user_Dialog.c</FilePath>
             </File>
+            <File>
+              <FileName>menu_dialog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\menu_dialog.c</FilePath>
+            </File>
+            <File>
+              <FileName>systemConfig.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\systemConfig.c</FilePath>
+            </File>
+            <File>
+              <FileName>systemExplain.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\systemExplain.c</FilePath>
+            </File>
+            <File>
+              <FileName>SimSun_1616.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\SimSun_1616.c</FilePath>
+            </File>
+            <File>
+              <FileName>time_dialog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\time_dialog.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

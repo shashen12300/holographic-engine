@@ -6,8 +6,8 @@
 #include "delay.h"
 #include "usart.h"
 #include "user_Dialog.h"
+#include "systemConfig.h"
 
-int rotate_flag=0,rotateEnter_flag=0;  //1±íÊ¾Ðý×ª
 unsigned char CAN_LCD_buffer[480];
 extern int time_flag;
 void refresh_time(void) ;
@@ -119,7 +119,7 @@ void EXTI15_10_IRQHandler(void)
 				EXTI_Init(&EXTI_InitStructure); 
 			
 			rotate_flag = 1;
-			if(selectEnd == 1&&myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
+			if(selectEnd == 1) {
 				send_rotate_message();
 			}
 

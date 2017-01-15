@@ -3,6 +3,7 @@
 #include "User_LinehWin.h"
 #include "rtc.h"
 #include "my_win.h"
+#include "systemConfig.h"
 
 void PaintLineDialog(WM_MESSAGE * pMsg)
 {

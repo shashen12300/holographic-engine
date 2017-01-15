@@ -3,9 +3,7 @@
 #include "user_define.h"
 #include <stddef.h>
 #include "GUI.h"
-//#include "logo.h"
 #include "LCD_Driver.h"
-//#include "User_win.h"
 #include "my_win.h"
 #include "RA8835.h"
 #include "led.h"
@@ -19,9 +17,11 @@
 #include "fengshi2.h"
 #include "feegnshi1.h"
 #include "inputWindow.h"
-#include "WM.h"
 #include "user_Dialog.h"
-
+#include "menu_dialog.h"
+#include "systemConfig.h"
+#include "systemExplain.h"
+#include "time_dialog.h"
 unsigned char status_flag=0;
 int adcValue,time_flag;
 extern int rotate_flag;
@@ -197,6 +197,14 @@ void refresh_time(void) {
 				printf("逻辑出问题了");
 			}
 	}
+	
+	if(isOrShowExplain == 1) {
+		isOrShowExplain = 0;
+		explain_dialogTask();
+	}else if (isOrShowSetTime == 1) {
+		isOrShowSetTime = 0;
+		time_dialogTask();
+	}
 }
 int main(void)
 {
@@ -264,7 +272,7 @@ printf("开始测试\r\n");
 			}else if (key == 3) {   //待定
 
 			}else if (key == 4) {   //系统菜单
-			
+				menu_dialogTask();
 			}else {  //确认按键，或进入检测
 				printf("错误按键按下\r\n");
 			}

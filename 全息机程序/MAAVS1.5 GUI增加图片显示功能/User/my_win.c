@@ -26,7 +26,7 @@
 //#include "PROGBAR.h"
 //#include "SCROLLBAR.h"
 //#include "LISTVIEW.h"
-
+#include <stdlib.h> 
 #include "fengshi2.h"
 #include "my_win.h"
 #include "rtc.h"
@@ -34,14 +34,11 @@
 #include "key.h"
 #include "user_Dialog.h"
 #include "User_LinehWin.h"
+#include "systemConfig.h"
 
 //EventsFunctionList
 //EndofEventsFunctionList
-WM_HWIN root_hWin;
-WM_HWIN mainForm_hWin;
-WM_HWIN dialog_hWin;
-WM_HWIN time_hWin;
-WM_HWIN line_hWin;
+
 void _mainFormCallback(WM_MESSAGE * pMsg)
 {
 		int NCode, Id;
@@ -185,15 +182,32 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
                     break;
 								case MY_MESSAGE_ID_TIME:
 								{		
-										char displayTime[20];
+										char displayTime[50];
 										Stru_Time time,getTime;
 										fnRTC_GetTime(&getTime); 	
 										WM_SelectWindow(hWin);
 										sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
 										GUI_DispStringAt(displayTime,175,3);
                    printf("refresh time");
-								}
-                    break;
+									
+									if(isOrRefreshMessage == 1) {
+											isOrRefreshMessage = 0;
+										GUI_Clear();
+										WM_Paint(hWin);
+										sprintf(displayTime,"   性别:%s 年龄:%s 婚否:%s 体型:%s    ",saveData[0],saveData[1],saveData[2],saveData[3]);
+										GUI_DispStringAt(displayTime,2,20);
+									}else if (isOrSetClock == 1) {
+											Stru_Time time;
+											isOrSetClock = 0;
+											time.Year = atoi(timeData[0]);
+											time.Month = atoi(timeData[1]);
+											time.Day = atoi(timeData[2]);
+											time.Hour = atoi(timeData[3]);
+											time.Minutes = atoi(timeData[4]);
+											time.Second = atoi(timeData[5]);
+											fnRTC_SetTime(time);
+									}
+								}break;
             }
             break;
         case WM_NOTIFY_PARENT:
@@ -230,7 +244,7 @@ void MainTask(void)
 				//GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbCallback, 0, 0, 0);
 				root_hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,NULL,0);//根窗口
 //			hWin = WM_GetDesktopWindow();
-				time_hWin = WM_CreateWindowAsChild(0,0,320,203,root_hWin,WM_CF_SHOW,_cbTimeCallback,0);//时间窗口
+				time_hWin = WM_CreateWindowAsChild(0,0,320,37,root_hWin,WM_CF_SHOW,_cbTimeCallback,0);//时间窗口
 				mainForm_hWin=WM_CreateWindowAsChild(0,37,320,203,root_hWin,WM_CF_SHOW,_mainFormCallback,0); //菜单窗口
 //				line_hWin= LineTask(); //曲线窗口
 //				dialog_hWin =	Dialog_Task();//弹出窗口

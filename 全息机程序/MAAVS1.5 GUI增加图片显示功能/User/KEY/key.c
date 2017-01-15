@@ -6,6 +6,7 @@
 #include "WM.h"
 #include "GUI.h"
 #include "my_win.h"
+#include "systemConfig.h"
 
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
@@ -166,9 +167,13 @@ void send_rotate_message(void) {
 							WM_SetFocus(dialog_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
+							WM_SetFocus(menu_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
 			}else if (myMessageType == MY_MESSAGE_ID_LINE) {
 				//不做任何操作
+			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_TIME) {
+							WM_SetFocus(clock_hWin);
+							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
 			}else {
 				printf("逻辑出问题了");
 			}
@@ -189,9 +194,16 @@ void send_enter_message(void) {
 								WM_SetFocus(dialog_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
+								WM_SetFocus(menu_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_EXPLAIN) {
+						WM_SetFocus(explain_hWin);
+						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if (myMessageType == MY_MESSAGE_ID_LINE) {
 					//不做任何操作
+				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_TIME) {
+								WM_SetFocus(clock_hWin);
+								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else {
 					printf("逻辑出问题了");
 				}

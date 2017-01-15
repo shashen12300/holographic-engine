@@ -29,6 +29,7 @@
 .\obj\my_win.o: ..\GUI\Widget\RADIO.h
 .\obj\my_win.o: ..\GUI\Widget\SLIDER.h
 .\obj\my_win.o: ..\GUI\Widget\TEXT.h
+.\obj\my_win.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\my_win.o: ..\User\fengshi2.h
 .\obj\my_win.o: ..\User\my_win.h
 .\obj\my_win.o: ..\User\RTC_PCF8563T\rtc.h
@@ -52,3 +53,4 @@
 .\obj\my_win.o: ..\SYSTEM\sys\sys.h
 .\obj\my_win.o: ..\User\user_Dialog.h
 .\obj\my_win.o: ..\User\User_LinehWin.h
+.\obj\my_win.o: ..\User\systemConfig.h

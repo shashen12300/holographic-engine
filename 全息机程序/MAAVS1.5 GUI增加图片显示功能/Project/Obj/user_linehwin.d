@@ -46,3 +46,4 @@
 .\obj\user_linehwin.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\user_linehwin.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\user_linehwin.o: ..\User\my_win.h
+.\obj\user_linehwin.o: ..\User\systemConfig.h
