@@ -96,7 +96,13 @@ void TIM2_IRQHandler(void)
 	{	
 		TIM_ClearITPendingBit(TIM2 , TIM_FLAG_Update);  
 		time_flag++;
-//		refresh_time();
+		if((isOrSetPoint==1)&&(time_flag%10==0)){
+//				refresh_time();
+			if (myMessageType == MY_MESSAGE_ID_LINE) {
+						WM_SetFocus(line_hWin);
+						GUI_SendKeyMsg(MY_MESSAGE_ID_LINE_POINT,1);
+			}
+		}
 		
 	}		 	
 	 	

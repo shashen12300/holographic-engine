@@ -1,5 +1,5 @@
 #include "systemConfig.h"
-
+#include "GUI.h"
 //根窗口
 WM_HWIN root_hWin;
 //logo图标
@@ -16,6 +16,10 @@ WM_HWIN menu_hWin;
 WM_HWIN explain_hWin;
 //时钟设定
 WM_HWIN clock_hWin;
+//警告弹窗
+WM_HWIN warning_hWin;
+//活动窗口类型
+ int myMessageType = MY_MESSAGE_ID_LOGO;
 //是否设置个人信息
 int isOrSetMessage=0;
 //是否刷新个人信息
@@ -34,5 +38,12 @@ int rotateEnter_flag=0;
  char *timeData[6] = {"2017","01","01","08","30","00"};
  //是否设置时钟
  int isOrSetClock = 0;
- //是否刷新时钟
+ //是否单项检测
+ int isOneCheck = 0;
+ //是否重新检测
+ int isRestartCheck = 1;
+ //是否开始检测
+ int isBeginCheck = 0;
+ //是否画点
+ int isOrSetPoint = 0;
 

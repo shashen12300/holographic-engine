@@ -52,5 +52,4 @@
 .\obj\my_win.o: ..\User\KEY\key.h
 .\obj\my_win.o: ..\SYSTEM\sys\sys.h
 .\obj\my_win.o: ..\User\user_Dialog.h
-.\obj\my_win.o: ..\User\User_LinehWin.h
 .\obj\my_win.o: ..\User\systemConfig.h

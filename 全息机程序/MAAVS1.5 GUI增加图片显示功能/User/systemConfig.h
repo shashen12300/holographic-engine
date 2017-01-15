@@ -10,7 +10,8 @@ extern WM_HWIN line_hWin;
 extern WM_HWIN menu_hWin;
 extern WM_HWIN explain_hWin;
 extern WM_HWIN clock_hWin;
-
+extern WM_HWIN warning_hWin;
+extern  int myMessageType;
 extern int isOrSetMessage;
 extern int rotate_flag;
 extern int rotateEnter_flag;
@@ -20,5 +21,7 @@ extern int isOrShowExplain;
 extern int isOrShowSetTime;
 extern char *timeData[6];
 extern int isOrSetClock;
-
+extern  int isOneCheck;
+extern  int isRestartCheck;
+extern int isOrSetPoint;
 #endif

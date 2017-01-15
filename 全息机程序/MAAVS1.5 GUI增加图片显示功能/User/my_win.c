@@ -33,7 +33,6 @@
 #include <stddef.h>
 #include "key.h"
 #include "user_Dialog.h"
-#include "User_LinehWin.h"
 #include "systemConfig.h"
 
 //EventsFunctionList
@@ -68,20 +67,11 @@ void _mainFormCallback(WM_MESSAGE * pMsg)
 								case MY_MESSAGE_ID_ENCODER0:
 								{
 									rotate();
-								}
-										break;
-								case MY_MESSAGE_ID_KEY1:
-                   printf("key=%d\r\n",MY_MESSAGE_ID_KEY1 - GUI_ID_USER);
-                    break;
-								case MY_MESSAGE_ID_KEY2:
-                   printf("key=%d\r\n",MY_MESSAGE_ID_KEY2 - GUI_ID_USER);
-                    break;
-								case MY_MESSAGE_ID_KEY3:
-                   printf("key=%d\r\n",MY_MESSAGE_ID_KEY3 - GUI_ID_USER);
-                    break;
-								case MY_MESSAGE_ID_KEY4:
-                   printf("key=%d\r\n",MY_MESSAGE_ID_KEY4 - GUI_ID_USER);
-                    break;
+								}break;
+								case MY_MESSAGE_ID_ENTER:
+								{
+                   printf("key = enter\r\n");
+								}break;
             }
             break;
         case WM_NOTIFY_PARENT:
@@ -241,15 +231,10 @@ void MainTask(void)
 	
 			WM_SetDesktopColor(GUI_BLACK);      /* Automacally update desktop window */
 			WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
-				//GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbCallback, 0, 0, 0);
-				root_hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,NULL,0);//根窗口
-//			hWin = WM_GetDesktopWindow();
-				time_hWin = WM_CreateWindowAsChild(0,0,320,37,root_hWin,WM_CF_SHOW,_cbTimeCallback,0);//时间窗口
-				mainForm_hWin=WM_CreateWindowAsChild(0,37,320,203,root_hWin,WM_CF_SHOW,_mainFormCallback,0); //菜单窗口
-//				line_hWin= LineTask(); //曲线窗口
-//				dialog_hWin =	Dialog_Task();//弹出窗口
-//					dialogTask();
-//			WM_SelectWindow(mainForm_hWin);
+			root_hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,NULL,0);//根窗口
+			time_hWin = WM_CreateWindowAsChild(0,0,320,37,root_hWin,WM_CF_SHOW,_cbTimeCallback,0);//时间窗口
+			mainForm_hWin=WM_CreateWindowAsChild(0,37,320,203,root_hWin,WM_CF_SHOW,_mainFormCallback,0); //菜单窗口
+
 
 }
 

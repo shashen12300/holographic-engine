@@ -6,3 +6,5 @@
 .\obj\systemconfig.o: ..\GUI\Core\GUIType.h
 .\obj\systemconfig.o: ..\GUI\Core\LCD.h
 .\obj\systemconfig.o: ..\GUI\WM\WM_GUI.h
+.\obj\systemconfig.o: ..\GUI\Core\GUI.h
+.\obj\systemconfig.o: ..\GUI\Core\GUIVersion.h

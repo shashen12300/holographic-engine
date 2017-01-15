@@ -47,3 +47,8 @@
 .\obj\user_linehwin.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\user_linehwin.o: ..\User\my_win.h
 .\obj\user_linehwin.o: ..\User\systemConfig.h
+.\obj\user_linehwin.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\user_linehwin.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\user_linehwin.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\obj\user_linehwin.o: ..\User\KEY\key.h
+.\obj\user_linehwin.o: ..\SYSTEM\sys\sys.h

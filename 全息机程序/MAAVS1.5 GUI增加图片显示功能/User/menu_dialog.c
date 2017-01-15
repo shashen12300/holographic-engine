@@ -13,21 +13,8 @@
 #include "DIALOG.h"
 #include "delay.h"
 #include "WM.h"
-#include "BUTTON.h"
-#include "CHECKBOX.h"
-#include "DROPDOWN.h"
-#include "EDIT.h"
 #include "FRAMEWIN.h"
-#include "LISTBOX.h"
-#include "MULTIEDIT.h"
-#include "RADIO.h"
-#include "SLIDER.h"
 #include "TEXT.h"
-#include "PROGBAR.h"
-#include "SCROLLBAR.h"
-#include "LISTVIEW.h"
-#include "my_win.h"
-#include "fengshi2.h"
 #include "menu_dialog.h"
 #include "myFont16_21.h"
 #include "GUI.h"
@@ -171,7 +158,11 @@ void MenuInitDialog(WM_MESSAGE * pMsg)
 		TEXT_SetText(hText2,"系统说明");
 
 		TEXT_SetText(hText3,"时钟设定");
-		TEXT_SetText(hText4,"单项检测");
+		if(isOneCheck == 0){
+			TEXT_SetText(hText4,"多项检测");
+		}else {
+			TEXT_SetText(hText4,"单项检测");	
+		}
 		TEXT_SetText(hText5,"重新检测");
 		TEXT_SetText(hText6,"确认");
 		
@@ -227,23 +218,47 @@ void SystemMenu(WM_HWIN hWin) {  //信息设定
 									myMessageType = MY_MESSAGE_ID_LOGO;
 									WM_Exec();
 									isOrShowExplain = 1;
+									messageType =5;
+									lastMessageType=5;
 									printf("menu-1");
 								}break;
 								case 2:  //时钟设定
+								{
 									WM_SelectWindow(hWin);
 									GUI_EndDialog(hWin, 0);
 									WM_SelectWindow(mainForm_hWin);
 									myMessageType = MY_MESSAGE_ID_LOGO;
 									WM_Exec();
 									isOrShowSetTime = 1;
+									messageType =5;
+									lastMessageType=5;
 									printf("menu-2");
-												break;								
+								}break;								
 								case 3:  //单项/多项检测
+								{
+									if(isOneCheck == 1){
+										isOneCheck = 0;
+										TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT3),"多项检测");
+										WM_Exec();
+									}else {
+										isOneCheck = 1;
+										TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT3),"单项检测");
+									}
+
 									printf("menu-3");
-												break;
-								case 4:  //重新检测
+								}break;
+								case 4: 
+								{//重新检测
+									isRestartCheck = 1;
+									WM_SelectWindow(hWin);
+									GUI_EndDialog(hWin, 0);
+									WM_SelectWindow(mainForm_hWin);
+									myMessageType = MY_MESSAGE_ID_LOGO;
+									WM_Exec();
+									messageType =5;
+									lastMessageType=5;
 									printf("menu-4");
-												break;
+								}break;
 								case 5:  //确认
 								{
 									WM_SelectWindow(hWin);
@@ -251,13 +266,14 @@ void SystemMenu(WM_HWIN hWin) {  //信息设定
 									WM_SelectWindow(mainForm_hWin);
 									myMessageType = MY_MESSAGE_ID_LOGO;
 									WM_Exec();
+									messageType =5;
+									lastMessageType=5;
 									printf("menu-5");
 								}break;
 								default:
 											;
 							}
-			messageType =5;
-			lastMessageType=5;
+
 		}
 		rotate_flag = 0;
 		selectEnd = 1;

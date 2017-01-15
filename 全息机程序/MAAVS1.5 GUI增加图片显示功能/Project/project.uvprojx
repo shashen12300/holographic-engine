@@ -687,11 +687,6 @@
               <FilePath>..\User\fengshi2.h</FilePath>
             </File>
             <File>
-              <FileName>User_LinehWin.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\User_LinehWin.c</FilePath>
-            </File>
-            <File>
               <FileName>user_Dialog.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\user_Dialog.c</FilePath>
@@ -720,6 +715,11 @@
               <FileName>time_dialog.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\time_dialog.c</FilePath>
+            </File>
+            <File>
+              <FileName>warning_dialog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\warning_dialog.c</FilePath>
             </File>
           </Files>
         </Group>

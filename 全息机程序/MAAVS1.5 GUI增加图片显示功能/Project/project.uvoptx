@@ -139,6 +139,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
+          <Name></Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -177,7 +178,7 @@
           <Type>0</Type>
           <LineNumber>478</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219624</Address>
+          <Address>134219644</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -193,7 +194,7 @@
           <Type>0</Type>
           <LineNumber>483</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219642</Address>
+          <Address>134219662</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -209,7 +210,7 @@
           <Type>0</Type>
           <LineNumber>488</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219660</Address>
+          <Address>134219680</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -225,7 +226,7 @@
           <Type>0</Type>
           <LineNumber>378</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134243158</Address>
+          <Address>134244286</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -241,7 +242,7 @@
           <Type>0</Type>
           <LineNumber>380</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134243206</Address>
+          <Address>134244334</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -257,7 +258,7 @@
           <Type>0</Type>
           <LineNumber>229</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134244912</Address>
+          <Address>134246098</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -271,41 +272,185 @@
         <Bp>
           <Number>6</Number>
           <Type>0</Type>
-          <LineNumber>127</LineNumber>
+          <LineNumber>366</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134231146</Address>
+          <Address>134250272</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\stm32f10x_it.c</Filename>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\time_dialog.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/stm32f10x_it.c\127</Expression>
+          <Expression>\\project\../User/time_dialog.c\366</Expression>
         </Bp>
         <Bp>
           <Number>7</Number>
           <Type>0</Type>
-          <LineNumber>136</LineNumber>
+          <LineNumber>370</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134231154</Address>
+          <Address>134250294</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\stm32f10x_it.c</Filename>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\time_dialog.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/stm32f10x_it.c\136</Expression>
+          <Expression>\\project\../User/time_dialog.c\370</Expression>
         </Bp>
         <Bp>
           <Number>8</Number>
           <Type>0</Type>
-          <LineNumber>110</LineNumber>
+          <LineNumber>371</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134231098</Address>
+          <Address>134250306</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\time_dialog.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/time_dialog.c\371</Expression>
+        </Bp>
+        <Bp>
+          <Number>9</Number>
+          <Type>0</Type>
+          <LineNumber>373</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134250324</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\time_dialog.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/time_dialog.c\373</Expression>
+        </Bp>
+        <Bp>
+          <Number>10</Number>
+          <Type>0</Type>
+          <LineNumber>37</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134241092</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\User_LinehWin.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/User_LinehWin.c\37</Expression>
+        </Bp>
+        <Bp>
+          <Number>11</Number>
+          <Type>0</Type>
+          <LineNumber>94</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134241400</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\User_LinehWin.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/User_LinehWin.c\94</Expression>
+        </Bp>
+        <Bp>
+          <Number>12</Number>
+          <Type>0</Type>
+          <LineNumber>137</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134241502</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\User_LinehWin.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/User_LinehWin.c\137</Expression>
+        </Bp>
+        <Bp>
+          <Number>13</Number>
+          <Type>0</Type>
+          <LineNumber>85</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134241334</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\User_LinehWin.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/User_LinehWin.c\85</Expression>
+        </Bp>
+        <Bp>
+          <Number>14</Number>
+          <Type>0</Type>
+          <LineNumber>141</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134241510</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\User_LinehWin.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/User_LinehWin.c\141</Expression>
+        </Bp>
+        <Bp>
+          <Number>15</Number>
+          <Type>0</Type>
+          <LineNumber>204</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134237750</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\KEY\key.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/KEY/key.c\204</Expression>
+        </Bp>
+        <Bp>
+          <Number>16</Number>
+          <Type>0</Type>
+          <LineNumber>157</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134237400</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\KEY\key.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/KEY/key.c\157</Expression>
+        </Bp>
+        <Bp>
+          <Number>17</Number>
+          <Type>0</Type>
+          <LineNumber>125</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134231224</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -314,7 +459,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\stm32f10x_it.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/stm32f10x_it.c\110</Expression>
+          <Expression>\\project\../User/stm32f10x_it.c\125</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -358,6 +503,11 @@
           <WinNumber>1</WinNumber>
           <ItemText>data2[2]</ItemText>
         </Ww>
+        <Ww>
+          <count>8</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>y</ItemText>
+        </Ww>
       </WatchWindow1>
       <Tracepoint>
         <THDelay>0</THDelay>
@@ -365,7 +515,7 @@
       <DebugFlag>
         <trace>0</trace>
         <periodic>1</periodic>
-        <aLwin>0</aLwin>
+        <aLwin>1</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
@@ -1043,18 +1193,6 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\User\User_LinehWin.c</PathWithFileName>
-      <FilenameWithoutPath>User_LinehWin.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>4</GroupNumber>
-      <FileNumber>53</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
       <PathWithFileName>..\User\user_Dialog.c</PathWithFileName>
       <FilenameWithoutPath>user_Dialog.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -1062,7 +1200,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>54</FileNumber>
+      <FileNumber>53</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1074,7 +1212,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>55</FileNumber>
+      <FileNumber>54</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1086,7 +1224,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>56</FileNumber>
+      <FileNumber>55</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1098,7 +1236,7 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>57</FileNumber>
+      <FileNumber>56</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -1110,13 +1248,25 @@
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
-      <FileNumber>58</FileNumber>
+      <FileNumber>57</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>..\User\time_dialog.c</PathWithFileName>
       <FilenameWithoutPath>time_dialog.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>58</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\warning_dialog.c</PathWithFileName>
+      <FilenameWithoutPath>warning_dialog.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

@@ -45,11 +45,6 @@
 .\obj\menu_dialog.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 .\obj\menu_dialog.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\menu_dialog.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\obj\menu_dialog.o: ..\GUI\Widget\PROGBAR.h
-.\obj\menu_dialog.o: ..\GUI\Widget\LISTVIEW.h
-.\obj\menu_dialog.o: ..\GUI\Widget\HEADER.h
-.\obj\menu_dialog.o: ..\User\my_win.h
-.\obj\menu_dialog.o: ..\User\fengshi2.h
 .\obj\menu_dialog.o: ..\User\menu_dialog.h
 .\obj\menu_dialog.o: ..\User\myFont16_21.h
 .\obj\menu_dialog.o: ..\User\KEY\key.h

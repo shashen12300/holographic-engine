@@ -26,17 +26,6 @@
 #include "systemConfig.h"
 #include "SimSun_1616.h"
 
-//EventsFunctionList
-//EndofEventsFunctionList
-/********************************************************************
-*
-*       static data
-*
-**********************************************************************
-*/
-
-
-
 /*********************************************************************
 *
 *       Dialog resource
@@ -69,13 +58,6 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 void ExplainPaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
-//    GUI_SetColor(0xffffff);
-//    GUI_DrawLine(1,1,108,1);
-//	  GUI_DrawLine(108,1,108,156);
-//    GUI_DrawLine(1,18,108,18);
-//    GUI_DrawLine(1,156,108,156);
-//	  GUI_DrawLine(1,139,108,139);
-//    GUI_DrawLine(1,1,1,156);
 }
 
 
@@ -89,7 +71,6 @@ void ExplainPaintDialog(WM_MESSAGE * pMsg)
 
 void ExplainInitDialog(WM_MESSAGE * pMsg)
 {
-		EXTI_InitTypeDef EXTI_InitStructure;
 		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7;
     WM_HWIN hWin = pMsg->hWin;
     //
@@ -171,14 +152,6 @@ void ExplainInitDialog(WM_MESSAGE * pMsg)
 		TEXT_SetText(hText5,"2.本仪器涉及的单位均为(微安/欧姆)");
 		TEXT_SetText(hText6,"3.本仪器所出所有报告仅供参考!");
 		TEXT_SetText(hText7,"美国健康管理量子医学研究院   荣誉出品");
-
-//			//打开中断
-//		GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource11|GPIO_PinSource15); 
-//		EXTI_InitStructure.EXTI_Line = EXTI_Line11|EXTI_Line15;
-//		EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
-//		EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
-//		EXTI_InitStructure.EXTI_LineCmd = ENABLE;
-//		EXTI_Init(&EXTI_InitStructure); 
 
 }
 

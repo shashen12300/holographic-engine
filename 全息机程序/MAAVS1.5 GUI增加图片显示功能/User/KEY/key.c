@@ -22,7 +22,7 @@
  extern int rotate_flag;
  int logoCount =0;
  int selectEnd = 1;
- int myMessageType = MY_MESSAGE_ID_LOGO;
+
 
 void KEY_Init(void) //IO初始化
 {
@@ -201,8 +201,13 @@ void send_enter_message(void) {
 						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if (myMessageType == MY_MESSAGE_ID_LINE) {
 					//不做任何操作
+								WM_SetFocus(line_hWin);
+								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_TIME) {
 								WM_SetFocus(clock_hWin);
+								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+				}else if (myMessageType == MY_MESSAGE_ID_WARNING) {
+								WM_SetFocus(warning_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else {
 					printf("逻辑出问题了");

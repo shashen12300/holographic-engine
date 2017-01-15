@@ -126,8 +126,8 @@ void ClockInitDialog(WM_MESSAGE * pMsg)
     //
     //GUI_ID_TEXT1
     //
-    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10),0x000000);
-    TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10),0xffffff);
+    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10),0xffffff);
+    TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10),0x000000);
 		TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT10),GUI_TA_VCENTER|GUI_TA_CENTER);
 		//
     //GUI_ID_TEXT2
@@ -367,50 +367,77 @@ void TimeSetting(WM_HWIN hWin) {  //信息设定
 							static int base1 = 2017;
 							static char str[20];
 							base1 +=count;
-							sprintf(str,"%02d",base1%maxCount);
-							saveData[lastMessageType-7] = str;
+						 if(base1>2100) {
+							 base1 = 2100;
+						 }else if(base1<2017) {
+							base1 = 2017;
+						 }
+							sprintf(str,"%04d",base1);
+							timeData[lastMessageType-7] = str;
 							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),timeData[0]);
 						}else if (lastMessageType == 8) {
 							static int base2 = 1;
 							static char str[20];
 							base2+=count;
-							sprintf(str,"%02d",base2%maxCount);
-							saveData[lastMessageType-7] = str;
+							if(base2>12) {
+								base2 = 12;
+						 }else if (base2<1) {
+								base2 = 1;
+						 }
+							sprintf(str,"%02d",base2);
+							timeData[lastMessageType-7] = str;
 							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),timeData[1]);
 						}else if (lastMessageType == 9) { 
 							static int base3 = 1;
 							static char str[20];
 							base3+=count;
-							sprintf(str,"%02d",base3%maxCount);
-							saveData[lastMessageType-7] = str;
+							if(base3>31) {
+								base3=31;
+						 }else if(base3<1) {
+							base3 = 1;
+						 }
+							sprintf(str,"%02d",base3);
+							timeData[lastMessageType-7] = str;
 							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),timeData[2]);
-							
 						}else if (lastMessageType == 10) { 
 							static int base4 = 8;
 							static char str[20];
 							base4+=count;
-							sprintf(str,"%02d",base4%maxCount);
-							saveData[lastMessageType-7] = str;
+							if(base4>23) {
+								base4 = 23;
+						 }else if(base4<0) { 
+							base4 = 0;
+						 }
+							sprintf(str,"%02d",base4);
+							timeData[lastMessageType-7] = str;
 							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),timeData[3]);
 						}
 						else if (lastMessageType == 11) { 
 							static int base5 = 30;
 							static char str[20];
 							base5+=count;
-							sprintf(str,"%02d",base5%maxCount);
-							saveData[lastMessageType-7] = str;
+							if(base5>59) {
+								base5 = 59;
+						 }else if(base5 <0){
+							base5 = 0;
+						 }
+							sprintf(str,"%02d",base5);
+							timeData[lastMessageType-7] = str;
 							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),timeData[4]);
 						}else if (lastMessageType == 12) { 
 							static int base6 = 0;
 							static char str[20];
 							base6+=count;
-							sprintf(str,"%02d",base6%maxCount);
-							saveData[lastMessageType-7] = str;
+							if(base6>59) {
+								base6 = 59;
+						 }else if(base6 <0){
+							base6 = 0;
+						 }
+							sprintf(str,"%02d",base6);
+							timeData[lastMessageType-7] = str;
 							TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),timeData[5]);
-						}
-						
-
-					}	
+						}	
+					}						
 		}else if((rotateEnter_flag==1)&&(isSelectType == 1)) {
 						isSelectType = 0;
 						rotateEnter_flag = 0;
