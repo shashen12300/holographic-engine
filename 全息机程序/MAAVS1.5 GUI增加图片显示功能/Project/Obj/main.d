@@ -74,3 +74,4 @@
 .\obj\main.o: ..\User\warning_dialog.h
 .\obj\main.o: ..\User\draw_dialog.h
 .\obj\main.o: ..\User\drawLine_dialog.h
+.\obj\main.o: ..\User\report_dialog.h

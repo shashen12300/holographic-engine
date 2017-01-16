@@ -29,3 +29,5 @@
 .\obj\key.o: ..\GUI\WM\WM_GUI.h
 .\obj\key.o: ..\User\my_win.h
 .\obj\key.o: ..\User\systemConfig.h
+.\obj\key.o: ..\User\warning_dialog.h
+.\obj\key.o: ..\User\drawLine_dialog.h

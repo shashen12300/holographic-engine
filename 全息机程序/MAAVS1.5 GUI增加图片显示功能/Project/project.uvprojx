@@ -726,6 +726,21 @@
               <FileType>1</FileType>
               <FilePath>..\User\drawLine_dialog.c</FilePath>
             </File>
+            <File>
+              <FileName>report_dialog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\report_dialog.c</FilePath>
+            </File>
+            <File>
+              <FileName>reportFont.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\reportFont.c</FilePath>
+            </File>
+            <File>
+              <FileName>healthDataReport.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\healthDataReport.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

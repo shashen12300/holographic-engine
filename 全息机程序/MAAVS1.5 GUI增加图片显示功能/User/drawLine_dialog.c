@@ -118,6 +118,8 @@ void DrawLineWindow(WM_HWIN hWin) {
 			printf("warning");
 			rotate_flag = 0;
 			selectEnd = 1;
+			isOrShowReport= 1;
+			rotateEnter_flag = 0;
 		}
 	
 }

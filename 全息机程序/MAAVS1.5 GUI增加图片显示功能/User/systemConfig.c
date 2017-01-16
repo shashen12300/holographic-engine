@@ -19,6 +19,8 @@ WM_HWIN explain_hWin;
 WM_HWIN clock_hWin;
 //警告弹窗
 WM_HWIN warning_hWin;
+//报告列表
+WM_HWIN report_hWin;
 //活动窗口类型
  int myMessageType = MY_MESSAGE_ID_LOGO;
 //是否设置个人信息
@@ -47,4 +49,6 @@ int rotateEnter_flag=0;
  int isBeginCheck = 0;
  //是否画点
  int isOrSetPoint = 0;
+ //是否展示报表
+ int isOrShowReport = 0;
 

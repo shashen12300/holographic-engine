@@ -25,6 +25,7 @@
 #include "warning_dialog.h"
 #include "draw_dialog.h"
 #include "drawLine_dialog.h"
+#include "report_dialog.h"
 
 unsigned char status_flag=0;
 int adcValue,time_flag;
@@ -88,6 +89,17 @@ void refresh_time(void) {
 	}else if (isOrShowSetTime == 1) {
 		isOrShowSetTime = 0;
 		time_dialogTask();
+	}else if(isBeginCheck == 1){
+		  isBeginCheck = 0;
+	  	if(isOrSetMessage==0) {
+	    //提示个人信息不能为空
+	  	warning_dialogTask();
+	  	}else {
+			drawLine_dialogTask();
+		  }
+	}else if(isOrShowReport==1) {
+		 isOrShowReport =0;
+		report_dialogTask();
 	}
 }
 int main(void)

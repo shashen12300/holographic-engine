@@ -7,6 +7,8 @@
 #include "GUI.h"
 #include "my_win.h"
 #include "systemConfig.h"
+#include "warning_dialog.h"
+#include "drawLine_dialog.h"
 
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
@@ -175,7 +177,10 @@ void send_rotate_message(void) {
 			}else if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
 								WM_SetFocus(drawLine_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
-			} else {
+			}else if(myMessageType==MY_MESSAGE_ID_CHECK_REPORT) {
+							WM_SetFocus(report_hWin);
+							GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
+				} else {
 				printf("逻辑出问题了");
 			}
 		}
@@ -187,10 +192,8 @@ void send_enter_message(void) {
 			delay_ms(10);
 			if(KEY4== 0) {
 				printf("enter\r\n");
-				if (myMessageType == MY_MESSAGE_ID_LOGO) {
-							//设置活动窗口
-							WM_SetFocus(mainForm_hWin);
-							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+				if (myMessageType == MY_MESSAGE_ID_LOGO) {	
+					isBeginCheck = 1;
 				}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
 								WM_SetFocus(dialog_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
@@ -208,6 +211,9 @@ void send_enter_message(void) {
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if(myMessageType==MY_MESSAGE_ID_DRAW_LINE) {
 //							WM_SetFocus(drawLine_hWin);
+							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+				}else if(myMessageType==MY_MESSAGE_ID_CHECK_REPORT) {
+//							WM_SetFocus(report_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}
 				else {
