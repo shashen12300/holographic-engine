@@ -207,7 +207,7 @@ void send_enter_message(void) {
 								WM_SetFocus(warning_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if(myMessageType==MY_MESSAGE_ID_DRAW_LINE) {
-							WM_SetFocus(drawLine_hWin);
+//							WM_SetFocus(drawLine_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}
 				else {

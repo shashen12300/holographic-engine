@@ -184,7 +184,7 @@ static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg)
 
 
 void drawLine_dialogTask(void) {
-		myMessageType = MY_MESSAGE_ID_WARNING;
+		myMessageType = MY_MESSAGE_ID_DRAW_LINE;
 		drawLine_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDrawLineDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",drawLine_hWin);
 		GUI_ExecCreatedDialog(drawLine_hWin);
