@@ -28,6 +28,38 @@ Project File Date:  01/16/2017
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling LCDDummy.c...
+compiling main.c...
+..\User\feegnshi1.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\inputWindow.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\user_Dialog.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\menu_dialog.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\systemConfig.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\systemExplain.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\warning_dialog.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\draw_dialog.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\drawLine_dialog.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\main.c(63): warning:  #177-D: variable "displayTime" was declared but never referenced
+  		char displayTime[20];
+..\User\main.c(64): warning:  #177-D: variable "time" was declared but never referenced
+  		Stru_Time time,getTime;
+..\User\main.c(99): warning:  #177-D: variable "rect" was declared but never referenced
+  	GUI_RECT rect;
+..\User\main.c(101): warning:  #177-D: variable "value" was declared but never referenced
+  	unsigned short int value;
+..\User\main.c(102): warning:  #550-D: variable "time" was set but never used
+  	Stru_Time time,getTime;
+..\User\main.c(102): warning:  #177-D: variable "getTime" was declared but never referenced
+  	Stru_Time time,getTime;
+..\User\main.c: 15 warnings, 0 errors
 compiling drawLine_dialog.c...
 ..\User\drawLine_dialog.h(6): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -35,15 +67,35 @@ compiling drawLine_dialog.c...
   #endif
 ..\User\systemExplain.h(6): warning:  #1-D: last line of file ends without a newline
   #endif
-..\User\drawLine_dialog.c(44): warning:  #177-D: variable "hWin" was declared but never referenced
+..\User\drawLine_dialog.c(46): warning:  #177-D: variable "hWin" was declared but never referenced
       WM_HWIN hWin = pMsg->hWin;
-..\User\drawLine_dialog.c: 4 warnings, 0 errors
+..\User\drawLine_dialog.c(65): warning:  #177-D: variable "hText1" was declared but never referenced
+  		WM_HWIN hText1,hText2;
+..\User\drawLine_dialog.c(65): warning:  #177-D: variable "hText2" was declared but never referenced
+  		WM_HWIN hText1,hText2;
+..\User\drawLine_dialog.c(113): warning:  #177-D: variable "lastY" was declared but never referenced
+  		static int lastY=20,x=0;
+..\User\drawLine_dialog.c(113): warning:  #177-D: variable "x" was declared but never referenced
+  		static int lastY=20,x=0;
+..\User\drawLine_dialog.c(114): warning:  #177-D: variable "y" was declared but never referenced
+  		int y=0,minY,maxY,random,i;
+..\User\drawLine_dialog.c(114): warning:  #177-D: variable "minY" was declared but never referenced
+  		int y=0,minY,maxY,random,i;
+..\User\drawLine_dialog.c(114): warning:  #177-D: variable "maxY" was declared but never referenced
+  		int y=0,minY,maxY,random,i;
+..\User\drawLine_dialog.c(114): warning:  #177-D: variable "random" was declared but never referenced
+  		int y=0,minY,maxY,random,i;
+..\User\drawLine_dialog.c(114): warning:  #177-D: variable "i" was declared but never referenced
+  		int y=0,minY,maxY,random,i;
+..\User\drawLine_dialog.c(115): warning:  #177-D: variable "t" was declared but never referenced
+  		double t;
+..\User\drawLine_dialog.c: 14 warnings, 0 errors
 linking...
 .\Obj\project.axf: Warning: L6304W: Duplicate input file .\obj\lcddummy_1.o ignored.
-Program Size: Code=61448 RO-data=33620 RW-data=504 ZI-data=28064  
+Program Size: Code=61260 RO-data=33572 RW-data=504 ZI-data=28064  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-".\Obj\project.axf" - 0 Error(s), 5 Warning(s).
+".\Obj\project.axf" - 0 Error(s), 30 Warning(s).
 
 <h2>Software Packages used:</h2>
 

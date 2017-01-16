@@ -63,9 +63,9 @@ void refresh_time(void) {
 		char displayTime[20];
 		Stru_Time time,getTime;
 		fnRTC_GetTime(&getTime); 
-	if (time_flag > 100) {
+	if (time_flag > 10) {
 			time_flag = 0;
-			printf("active window :%d \r\n",WM_GetActiveWindow());
+//			printf("active window :%d \r\n",WM_GetActiveWindow());
 			WM_SetFocus(time_hWin);
 			GUI_SendKeyMsg(MY_MESSAGE_ID_TIME,1);
 			if (myMessageType == MY_MESSAGE_ID_LOGO) {
@@ -75,11 +75,15 @@ void refresh_time(void) {
 					WM_SetFocus(dialog_hWin);
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
 //						WM_SetFocus(mainForm_hWin);
-			}else if (myMessageType == MY_MESSAGE_ID_DRAW) {
-						WM_SetFocus(draw_hWin);
+			}else if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
+						WM_SetFocus(drawLine_hWin);
+						GUI_SendKeyMsg(MY_MESSAGE_ID_DRAW_LINE,1);
+
 			}else {
 				printf("逻辑出问题了");
 			}
+				printf("active window :%d \r\n",WM_GetActiveWindow());
+
 	}
 	
 	if(isOrShowExplain == 1) {

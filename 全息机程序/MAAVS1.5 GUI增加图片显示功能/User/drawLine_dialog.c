@@ -13,7 +13,9 @@
 #include <stdlib.h>
 #include "systemConfig.h"
 #include "systemExplain.h"
+#include <math.h>
 
+#define PI 3.1415926 
 /*********************************************************************
 *
 *       Dialog resource
@@ -24,9 +26,9 @@
 
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
     { FRAMEWIN_CreateIndirect,  "Caption",           0,                       0,  39,  320,201,FRAMEWIN_CF_MOVEABLE,0},
-    { TEXT_CreateIndirect,      "TEXT0",             GUI_ID_TEXT0,            5, 5, 170, 16, 0,0},
-		
-		{ TEXT_CreateIndirect,      "TEXT1",             GUI_ID_TEXT1,            75, 23, 30, 16, 0,0},
+//    { TEXT_CreateIndirect,      "TEXT0",             GUI_ID_TEXT0,            5, 5, 170, 16, 0,0},
+//		
+//		{ TEXT_CreateIndirect,      "TEXT1",             GUI_ID_TEXT1,            75, 23, 30, 16, 0,0},
 
 };
 
@@ -42,11 +44,11 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 void DrawLinePaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
-    GUI_SetColor(0xffffff);
-    GUI_DrawLine(1,1,176,1);
-	  GUI_DrawLine(176,1,176,41);
-	  GUI_DrawLine(1,41,176,41);
-    GUI_DrawLine(1,1,1,41);
+//    GUI_SetColor(0xffffff);
+//    GUI_DrawLine(1,1,176,1);
+//	  GUI_DrawLine(176,1,176,41);
+//	  GUI_DrawLine(1,41,176,41);
+//    GUI_DrawLine(1,1,1,41);
 }
 
 
@@ -73,30 +75,30 @@ void DrawLineInitDialog(WM_MESSAGE * pMsg)
     //
     //GUI_ID_TEXT0
     //
-    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0x000000);
-	  TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0xffffff);
-    TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0),GUI_TA_VCENTER|GUI_TA_CENTER);
-	   //
+//    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0x000000);
+//	  TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0xffffff);
+//    TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0),GUI_TA_VCENTER|GUI_TA_CENTER);
+//	   //
 
-    //
-    //GUI_ID_TEXT1
-    //
-    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0xffffff);
-    TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0x000000);
-		TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT1),GUI_TA_VCENTER|GUI_TA_CENTER);
+//    //
+//    //GUI_ID_TEXT1
+//    //
+//    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0xffffff);
+//    TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0x000000);
+//		TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT1),GUI_TA_VCENTER|GUI_TA_CENTER);
 
-	/*获得所有窗口的句柄*/
-		 hText1 = WM_GetDialogItem(hWin,GUI_ID_TEXT0);
-		 hText2 = WM_GetDialogItem(hWin,GUI_ID_TEXT1);	
+//	/*获得所有窗口的句柄*/
+//		 hText1 = WM_GetDialogItem(hWin,GUI_ID_TEXT0);
+//		 hText2 = WM_GetDialogItem(hWin,GUI_ID_TEXT1);	
 
-		/*初始化所有控件*/		
-		TEXT_SetFont(hText1,&GUI_FontHZ_SimSun_1515);
-		TEXT_SetFont(hText2,&GUI_FontHZ_SimSun_1515);
+//		/*初始化所有控件*/		
+//		TEXT_SetFont(hText1,&GUI_FontHZ_SimSun_1515);
+//		TEXT_SetFont(hText2,&GUI_FontHZ_SimSun_1515);
 
-		TEXT_SetText(hText1,"信息不能为空!");
-		TEXT_SetText(hText2,"确认");
+//		TEXT_SetText(hText1,"信息不能为空!");
+//		TEXT_SetText(hText2,"确认");
 		
-
+		isOrSetPoint = 1;
 }
 
 
@@ -108,7 +110,9 @@ void DrawLineInitDialog(WM_MESSAGE * pMsg)
 */
 
 void DrawLineWindow(WM_HWIN hWin) {  
-	
+		static int lastY=20,x=0;
+		int y=0,minY,maxY,random,i;
+		double t;
 		if(rotateEnter_flag==1){
 			WM_SelectWindow(hWin);
 			GUI_EndDialog(hWin, 0);
@@ -118,8 +122,26 @@ void DrawLineWindow(WM_HWIN hWin) {
 			printf("warning");
 			rotate_flag = 0;
 			selectEnd = 1;
+			isOrSetPoint = 0;
 		}
-	
+//			for (i=0;i<5;i++) {
+//				x++;
+//				if(x>318){
+//					x=0;
+//				}	
+//					t = 2*PI*x/80.0;
+//					y = (int)(sin(t)*80 +80+70);
+//				GUI_SetColor(0xffffff);
+//				if(lastY>y){
+//					minY = y;maxY = lastY;
+//				}else {
+//					minY = lastY;
+//					maxY = y;
+//				}
+//				LCD_L0_DrawVLine(x,minY,maxY);
+//				lastY=y;
+//		}
+			
 }
 
 static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg) 
@@ -148,7 +170,9 @@ static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg)
 								case MY_MESSAGE_ID_ENTER:
 								{
 										DrawLineWindow(hWin);
-								}
+								}break;
+								case MY_MESSAGE_ID_DRAW_LINE:
+									DrawLineWindow(hWin);
 								    break;
             }
             break;
@@ -184,7 +208,7 @@ static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg)
 
 
 void drawLine_dialogTask(void) {
-		myMessageType = MY_MESSAGE_ID_WARNING;
+		myMessageType = MY_MESSAGE_ID_DRAW_LINE;
 		drawLine_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDrawLineDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",drawLine_hWin);
 		GUI_ExecCreatedDialog(drawLine_hWin);

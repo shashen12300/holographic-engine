@@ -53,7 +53,6 @@
 ".\obj\simsun_1616.o"
 ".\obj\time_dialog.o"
 ".\obj\warning_dialog.o"
-".\obj\draw_dialog.o"
 ".\obj\drawline_dialog.o"
 ".\obj\user_common.o"
 ".\obj\lcdp0.o"

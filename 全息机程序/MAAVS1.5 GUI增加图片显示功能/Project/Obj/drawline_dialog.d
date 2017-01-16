@@ -53,3 +53,4 @@
 .\obj\drawline_dialog.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\drawline_dialog.o: ..\User\systemConfig.h
 .\obj\drawline_dialog.o: ..\User\systemExplain.h
+.\obj\drawline_dialog.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
