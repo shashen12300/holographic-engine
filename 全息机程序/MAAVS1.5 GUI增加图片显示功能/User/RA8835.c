@@ -26,23 +26,23 @@ void delay_n_ms(unsigned int ms)
 //..........测忙..........
 void chk_lcm_busy(void)
 {
-	CS_0;
-	A0_0;
-	WR_1;
-	/*input*/
-	DATA_PORT_IN;
-	RD_0;
-	//delay_n_ms(1);
-	while(READ_BUSY);
-	RD_1;
-	CS_0;
-	/*output*/
-	DATA_PORT_OUT;
+//	CS_0;
+//	A0_0;
+//	WR_1;
+//	/*input*/
+//	DATA_PORT_IN;
+//	RD_0;
+//	//delay_n_ms(1);
+//	while(READ_BUSY);
+//	RD_1;
+//	CS_0;
+//	/*output*/
+//	DATA_PORT_OUT;
 }
 //..........写命令到LCM..........
 void send_cmd_to_lcm(unsigned char lcm_cmd)
 {
-	//chk_lcm_busy();
+	chk_lcm_busy();
 	CS_0;
 	A0_1;
 	RD_1;
@@ -56,7 +56,7 @@ void send_cmd_to_lcm(unsigned char lcm_cmd)
 //..........写数据到LCM..........
 void send_data_to_lcm(unsigned char lcm_data)
 {
-	//chk_lcm_busy();
+	chk_lcm_busy();
 	CS_0;
 	A0_0;
 	RD_1;
@@ -83,7 +83,7 @@ void send_two_data_to_lcm(unsigned short int lcm_data)
 unsigned char read_data_from_lcm(void)
 {
 	unsigned char lcm_data;
-	//chk_lcm_busy();
+	chk_lcm_busy();
 	CS_0;
 	A0_1;
 	WR_1;

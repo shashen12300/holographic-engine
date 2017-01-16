@@ -28,5 +28,5 @@ extern  int isRestartCheck;
 extern int isOrSetPoint;
 extern int isBeginCheck;
 extern int isOrShowReport;
-
+extern int logoCount;
 #endif

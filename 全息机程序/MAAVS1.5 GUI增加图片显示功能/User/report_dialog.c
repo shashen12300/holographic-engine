@@ -103,7 +103,6 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 			TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+i),0xffffff);
 			TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT10+i),GUI_TA_VCENTER|GUI_TA_LEFT);  
 		}
-		reportType = 0;
 		//赋值
 		switch(reportType){
 			case 0:
@@ -239,7 +238,7 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 				WM_Exec();
 				messageType =0;
 				lastMessageType=0;
-		}else	if(rotate_flag == 1) {
+		}else	if((rotate_flag == 1)&&(selectEnd==0)) {
 			if(KEY_A == 0) {
 						delay_us(20);
             if(KEY_B == 1)
@@ -257,7 +256,7 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 										}else {
 											TEXT_SetText(hText ,"");
 										}
-		}
+									}
 									
 								}
 							}else {
@@ -286,12 +285,12 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 					TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+messageType),0xffffff);
 					TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+messageType),0x000000);
 					lastMessageType = messageType;
-					rotate_flag = 0;
-					selectEnd = 1;
+						delay_ms(10);
 					}
-		}
 		rotate_flag = 0;
 		selectEnd = 1;
+		}
+
 }
 
 static void _cbExplainDialogCallback(WM_MESSAGE * pMsg) 

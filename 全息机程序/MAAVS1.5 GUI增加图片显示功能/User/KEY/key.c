@@ -22,7 +22,6 @@
 //All rights reserved
 //********************************************************************************
  extern int rotate_flag;
- int logoCount =0;
  int selectEnd = 1;
 
 

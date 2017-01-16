@@ -99,6 +99,7 @@ void refresh_time(void) {
 		  }
 	}else if(isOrShowReport==1) {
 		 isOrShowReport =0;
+		reportType = logoCount;
 		report_dialogTask();
 	}
 }
@@ -172,14 +173,14 @@ printf("开始测试\r\n");
 //					Draw_dialogTask();
 				}
 			}else if (key == 3) {   //待定
-
+				
 			}else if (key == 4) {   //系统菜单
 				menu_dialogTask();
 			}else {  //确认按键，或进入检测
 				printf("错误按键按下\r\n");
 			}
-				LED0=!LED0;	
 				E17_sendString(data);
+				LED0=!LED0;	
 		}
 
 	}
