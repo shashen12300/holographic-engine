@@ -179,7 +179,7 @@ void _cbDrawDialogCallback(WM_MESSAGE * pMsg)
 
 void Draw_dialogTask(void) {
 	
-		myMessageType = MY_MESSAGE_ID_DRAW;
+		myMessageType = MY_MESSAGE_ID_DRAW_LINE;
 		draw_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDrawDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",draw_hWin);
 		GUI_ExecCreatedDialog(draw_hWin);

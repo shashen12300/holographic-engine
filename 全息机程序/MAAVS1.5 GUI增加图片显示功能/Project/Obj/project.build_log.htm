@@ -37,13 +37,17 @@ compiling drawLine_dialog.c...
   #endif
 ..\User\drawLine_dialog.c(44): warning:  #177-D: variable "hWin" was declared but never referenced
       WM_HWIN hWin = pMsg->hWin;
-..\User\drawLine_dialog.c: 4 warnings, 0 errors
+..\User\drawLine_dialog.c(63): warning:  #177-D: variable "hText1" was declared but never referenced
+  		WM_HWIN hText1,hText2;
+..\User\drawLine_dialog.c(63): warning:  #177-D: variable "hText2" was declared but never referenced
+  		WM_HWIN hText1,hText2;
+..\User\drawLine_dialog.c: 6 warnings, 0 errors
 linking...
 .\Obj\project.axf: Warning: L6304W: Duplicate input file .\obj\lcddummy_1.o ignored.
-Program Size: Code=61448 RO-data=33620 RW-data=504 ZI-data=28064  
+Program Size: Code=61260 RO-data=33572 RW-data=504 ZI-data=28064  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-".\Obj\project.axf" - 0 Error(s), 5 Warning(s).
+".\Obj\project.axf" - 0 Error(s), 7 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -61,7 +65,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:06
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

@@ -24,9 +24,9 @@
 
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
     { FRAMEWIN_CreateIndirect,  "Caption",           0,                       0,  39,  320,201,FRAMEWIN_CF_MOVEABLE,0},
-    { TEXT_CreateIndirect,      "TEXT0",             GUI_ID_TEXT0,            5, 5, 170, 16, 0,0},
-		
-		{ TEXT_CreateIndirect,      "TEXT1",             GUI_ID_TEXT1,            75, 23, 30, 16, 0,0},
+//    { TEXT_CreateIndirect,      "TEXT0",             GUI_ID_TEXT0,            5, 5, 170, 16, 0,0},
+//		
+//		{ TEXT_CreateIndirect,      "TEXT1",             GUI_ID_TEXT1,            75, 23, 30, 16, 0,0},
 
 };
 
@@ -43,10 +43,10 @@ void DrawLinePaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
     GUI_SetColor(0xffffff);
-    GUI_DrawLine(1,1,176,1);
-	  GUI_DrawLine(176,1,176,41);
-	  GUI_DrawLine(1,41,176,41);
-    GUI_DrawLine(1,1,1,41);
+//    GUI_DrawLine(1,1,176,1);
+//	  GUI_DrawLine(176,1,176,41);
+//	  GUI_DrawLine(1,41,176,41);
+//    GUI_DrawLine(1,1,1,41);
 }
 
 
@@ -73,28 +73,28 @@ void DrawLineInitDialog(WM_MESSAGE * pMsg)
     //
     //GUI_ID_TEXT0
     //
-    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0x000000);
-	  TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0xffffff);
-    TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0),GUI_TA_VCENTER|GUI_TA_CENTER);
-	   //
+//    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0x000000);
+//	  TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0xffffff);
+//    TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0),GUI_TA_VCENTER|GUI_TA_CENTER);
+//	   //
 
-    //
-    //GUI_ID_TEXT1
-    //
-    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0xffffff);
-    TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0x000000);
-		TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT1),GUI_TA_VCENTER|GUI_TA_CENTER);
+//    //
+//    //GUI_ID_TEXT1
+//    //
+//    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0xffffff);
+//    TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0x000000);
+//		TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT1),GUI_TA_VCENTER|GUI_TA_CENTER);
 
-	/*获得所有窗口的句柄*/
-		 hText1 = WM_GetDialogItem(hWin,GUI_ID_TEXT0);
-		 hText2 = WM_GetDialogItem(hWin,GUI_ID_TEXT1);	
+//	/*获得所有窗口的句柄*/
+//		 hText1 = WM_GetDialogItem(hWin,GUI_ID_TEXT0);
+//		 hText2 = WM_GetDialogItem(hWin,GUI_ID_TEXT1);	
 
-		/*初始化所有控件*/		
-		TEXT_SetFont(hText1,&GUI_FontHZ_SimSun_1515);
-		TEXT_SetFont(hText2,&GUI_FontHZ_SimSun_1515);
+//		/*初始化所有控件*/		
+//		TEXT_SetFont(hText1,&GUI_FontHZ_SimSun_1515);
+//		TEXT_SetFont(hText2,&GUI_FontHZ_SimSun_1515);
 
-		TEXT_SetText(hText1,"信息不能为空!");
-		TEXT_SetText(hText2,"确认");
+//		TEXT_SetText(hText1,"信息不能为空!");
+//		TEXT_SetText(hText2,"确认");
 		
 
 }

@@ -75,7 +75,7 @@ void refresh_time(void) {
 					WM_SetFocus(dialog_hWin);
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
 //						WM_SetFocus(mainForm_hWin);
-			}else if (myMessageType == MY_MESSAGE_ID_DRAW) {
+			}else if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
 						WM_SetFocus(draw_hWin);
 			}else {
 				printf("逻辑出问题了");
