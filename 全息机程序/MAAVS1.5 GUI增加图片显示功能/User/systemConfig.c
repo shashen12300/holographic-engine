@@ -53,5 +53,8 @@ int rotateEnter_flag=0;
  int isOrShowReport = 0;
  //Ñ¡ÔñµÄlogoÍ¼±êÎ»Ö
 int logoCount =0;
+ //ÊÇ·ñ¿ÉÒÔ´òÓ¡±¨¸æ
+ int isOrPrintReport=0;
+ 
 
 

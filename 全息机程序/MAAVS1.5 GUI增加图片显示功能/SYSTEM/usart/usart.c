@@ -1,6 +1,8 @@
 #include "sys.h"
 #include "usart.h"
 #include "stdio.h"
+#include <string.h>
+
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK Mini STM32开发板
@@ -159,7 +161,7 @@ void E17_uart_init(u32 bound){
    
     //USART3_RX	  PB.11
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
     GPIO_Init(GPIOB, &GPIO_InitStructure);  
  //USART 初始化设置 
 	USART_InitStructure.USART_BaudRate = bound;//一般设置为9600;
@@ -175,13 +177,23 @@ void E17_uart_init(u32 bound){
 
 
 void E17_sendString(char *data) {
-	char temp[50],i;
+	char temp[500],i;
 	unsigned int size;
 	sprintf(temp,"%s",data);
 	size = strlen(temp);
 	for(i=0;i<size;i++) {
-			fnUSART3_SendByte(temp[i]);
+		if((i>=19)&&(i<26))continue;
+		fnUSART3_SendByte(temp[i]);
 	}	 
+}
+
+void E17_sendData(char *data,int length) {
+	int i;
+	for(i=0;i<length;i++){
+		if((i>19)&&(i<26))continue;
+		fnUSART3_SendByte(data[i]);
+	}
+		
 }
 /*******************************************************************
 ??:USART1????8???

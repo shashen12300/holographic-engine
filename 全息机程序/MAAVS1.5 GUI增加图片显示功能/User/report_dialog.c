@@ -25,6 +25,7 @@
 #include "systemConfig.h"
 #include "reportFont.h"
 #include "healthDataReport.h"
+#include <string.h>
 
 int reportCount = 0;
 int reportType = 0;
@@ -207,6 +208,21 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 				}break;
 		}
 		reportCount = reportLength[reportType];
+//		for(i=0;i<reportCount;i++) {
+//			int length;
+//			char data[4] = "1.23";int length;char *p;
+//			p = &healthData[i][0];
+//			length = strlen(healthData[i]);
+//			for(i=0;i<4;i++){
+//				p[length-18+i]=data[i];
+//			}
+//			healthData[i][19] = '1';
+//			healthData[i][20] = '.';
+//			healthData[i][21] = '2';
+//			healthData[i][22] = '3';
+
+			
+//		}
 		for(i=0;i<reportCount;i++){
 			WM_HWIN	 hText;
 			if(i>=12)break;
@@ -238,6 +254,9 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 				WM_Exec();
 				messageType =0;
 				lastMessageType=0;
+				isOrPrintReport =1;
+				currentPageLength=0;
+				currentPage=0;
 		}else	if((rotate_flag == 1)&&(selectEnd==0)) {
 			if(KEY_A == 0) {
 						delay_us(20);

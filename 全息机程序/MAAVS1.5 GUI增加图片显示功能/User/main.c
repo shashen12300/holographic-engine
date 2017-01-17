@@ -26,6 +26,7 @@
 #include "draw_dialog.h"
 #include "drawLine_dialog.h"
 #include "report_dialog.h"
+#include "healthDataReport.h"
 
 unsigned char status_flag=0;
 int adcValue,time_flag;
@@ -77,7 +78,9 @@ void refresh_time(void) {
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
 //						WM_SetFocus(mainForm_hWin);
 			}else if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
-						WM_SetFocus(draw_hWin);
+						WM_SetFocus(drawLine_hWin);
+						GUI_SendKeyMsg(MY_MESSAGE_ID_DRAW_POINT,1);
+
 			}else {
 				printf("逻辑出问题了");
 			}
@@ -95,6 +98,7 @@ void refresh_time(void) {
 	    //提示个人信息不能为空
 	  	warning_dialogTask();
 	  	}else {
+				isOrSetPoint = 1;
 			drawLine_dialogTask();
 		  }
 	}else if(isOrShowReport==1) {
@@ -106,7 +110,7 @@ void refresh_time(void) {
 int main(void)
 {
 	GUI_RECT rect;
-	u8 key;
+	u8 key,i,length;
 	unsigned short int value;
 	Stru_Time time,getTime;
 	char data[300]="串口测试数据\r\n";
@@ -172,14 +176,33 @@ printf("开始测试\r\n");
 					drawLine_dialogTask();
 //					Draw_dialogTask();
 				}
-			}else if (key == 3) {   //待定
-				
+			}else if (key == 3) {   //打印
+				if(isOrPrintReport==1) {
+					char displayTime[50],length;
+					Stru_Time getTime;
+					fnRTC_GetTime(&getTime); 	
+					length = reportLength[reportType];
+					length =20;
+					for(i=1;i<=length;i++) {
+						E17_sendString(healthData1[length-i]);
+//						E17_sendString("\r\n");
+						delay_ms(100);
+					}
+					sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
+					E17_sendString(data);
+					sprintf(data,"性别:%s 年龄:%s 婚否:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);
+					E17_sendString(data);
+					sprintf(data,"健康评估打印报告单\r\n");
+					E17_sendString(data);
+					
+					isOrPrintReport =0;
+				}
 			}else if (key == 4) {   //系统菜单
 				menu_dialogTask();
 			}else {  //确认按键，或进入检测
 				printf("错误按键按下\r\n");
 			}
-				E17_sendString(data);
+//				E17_sendString(data);
 				LED0=!LED0;	
 		}
 

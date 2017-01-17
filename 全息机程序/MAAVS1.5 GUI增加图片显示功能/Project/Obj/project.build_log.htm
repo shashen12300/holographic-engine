@@ -28,12 +28,44 @@ Project File Date:  01/16/2017
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling LCDDummy.c...
+compiling drawLine_dialog.c...
+..\User\drawLine_dialog.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\systemConfig.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\systemExplain.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\drawLine_dialog.c(46): warning:  #177-D: variable "hWin" was declared but never referenced
+      WM_HWIN hWin = pMsg->hWin;
+..\User\drawLine_dialog.c(65): warning:  #177-D: variable "x" was declared but never referenced
+  		static int x=0,lastY=50,lastX=0;
+..\User\drawLine_dialog.c(65): warning:  #177-D: variable "lastY" was declared but never referenced
+  		static int x=0,lastY=50,lastX=0;
+..\User\drawLine_dialog.c(65): warning:  #177-D: variable "lastX" was declared but never referenced
+  		static int x=0,lastY=50,lastX=0;
+..\User\drawLine_dialog.c(66): warning:  #177-D: variable "y" was declared but never referenced
+  				int y,minY,maxY,i;
+..\User\drawLine_dialog.c(66): warning:  #177-D: variable "minY" was declared but never referenced
+  				int y,minY,maxY,i;
+..\User\drawLine_dialog.c(66): warning:  #177-D: variable "maxY" was declared but never referenced
+  				int y,minY,maxY,i;
+..\User\drawLine_dialog.c(66): warning:  #177-D: variable "i" was declared but never referenced
+  				int y,minY,maxY,i;
+..\User\drawLine_dialog.c(67): warning:  #177-D: variable "t" was declared but never referenced
+  			double t;
+..\User\drawLine_dialog.c(68): warning:  #177-D: variable "hText1" was declared but never referenced
+  		WM_HWIN hText1,hText2;
+..\User\drawLine_dialog.c(68): warning:  #177-D: variable "hText2" was declared but never referenced
+  		WM_HWIN hText1,hText2;
+..\User\drawLine_dialog.c(115): warning:  #550-D: variable "lastX" was set but never used
+  		static int x=0,lastY=50,lastX=0;
+..\User\drawLine_dialog.c: 15 warnings, 0 errors
 linking...
 .\Obj\project.axf: Warning: L6304W: Duplicate input file .\obj\lcddummy_1.o ignored.
-Program Size: Code=63404 RO-data=67044 RW-data=1736 ZI-data=28168  
+Program Size: Code=68268 RO-data=67332 RW-data=1764 ZI-data=28164  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-".\Obj\project.axf" - 0 Error(s), 1 Warning(s).
+".\Obj\project.axf" - 0 Error(s), 16 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -51,7 +83,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:05
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

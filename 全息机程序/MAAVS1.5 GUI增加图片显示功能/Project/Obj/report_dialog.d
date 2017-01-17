@@ -55,3 +55,4 @@
 .\obj\report_dialog.o: ..\User\systemConfig.h
 .\obj\report_dialog.o: ..\User\reportFont.h
 .\obj\report_dialog.o: ..\User\healthDataReport.h
+.\obj\report_dialog.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

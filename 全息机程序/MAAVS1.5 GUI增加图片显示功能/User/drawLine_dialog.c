@@ -13,7 +13,9 @@
 #include <stdlib.h>
 #include "systemConfig.h"
 #include "systemExplain.h"
+#include <math.h>
 
+#define PI 3.1415926
 /*********************************************************************
 *
 *       Dialog resource
@@ -60,6 +62,9 @@ void DrawLinePaintDialog(WM_MESSAGE * pMsg)
 
 void DrawLineInitDialog(WM_MESSAGE * pMsg)
 {
+		static int x=0,lastY=50,lastX=0;
+				int y,minY,maxY,i;
+			double t;
 		WM_HWIN hText1,hText2;
     WM_HWIN hWin = pMsg->hWin;
     //
@@ -96,7 +101,6 @@ void DrawLineInitDialog(WM_MESSAGE * pMsg)
 //		TEXT_SetText(hText1,"信息不能为空!");
 //		TEXT_SetText(hText2,"确认");
 		
-
 }
 
 
@@ -108,7 +112,7 @@ void DrawLineInitDialog(WM_MESSAGE * pMsg)
 */
 
 void DrawLineWindow(WM_HWIN hWin) {  
-	
+		static int x=0,lastY=50,lastX=0;
 		if(rotateEnter_flag==1){
 			WM_SelectWindow(hWin);
 			GUI_EndDialog(hWin, 0);
@@ -120,8 +124,33 @@ void DrawLineWindow(WM_HWIN hWin) {
 			selectEnd = 1;
 			isOrShowReport= 1;
 			rotateEnter_flag = 0;
+//			x=0;lastY=50;lastX=0;
 		}
-	
+		else if(isOrSetPoint ==1){
+			int y,minY,maxY,i;
+			double t;
+				isOrSetPoint =0;
+				for(i=0;i<320;i++){
+				x++;
+				if(x>318){
+					x=0;
+				}
+				t = 3*PI*i/80;
+				y=(int)(sin(t)*1.0*50.0+50+50);
+				
+				if(lastY<y){
+					minY = lastY;
+					maxY = y;
+				}else {
+					minY = y;
+					maxY = lastY;
+				}
+				LCD_L0_DrawVLine(x,minY,maxY);
+				lastX =x;lastY=y;
+				delay_ms(20);
+		}
+
+	}
 }
 
 static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg) 
@@ -145,7 +174,10 @@ static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg)
                 case GUI_KEY_ENTER:
                     GUI_EndDialog(hWin, 0);
                     break;
-								case MY_MESSAGE_ID_ENCODER0:
+								case MY_MESSAGE_ID_DRAW_POINT:
+								{
+										DrawLineWindow(hWin);
+								}
 								    break;
 								case MY_MESSAGE_ID_ENTER:
 								{
