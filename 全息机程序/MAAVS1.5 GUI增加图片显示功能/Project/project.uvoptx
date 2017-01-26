@@ -77,7 +77,7 @@
         <tvExpOptDlg>0</tvExpOptDlg>
         <IsCurrentTarget>1</IsCurrentTarget>
       </OPTFL>
-      <CpuCode>255</CpuCode>
+      <CpuCode>18</CpuCode>
       <Books>
         <Book>
           <Number>0</Number>
@@ -139,6 +139,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
+          <Name></Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -225,7 +226,7 @@
           <Type>0</Type>
           <LineNumber>378</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134244046</Address>
+          <Address>134244118</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -241,7 +242,7 @@
           <Type>0</Type>
           <LineNumber>380</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134244094</Address>
+          <Address>134244166</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -255,9 +256,9 @@
         <Bp>
           <Number>5</Number>
           <Type>0</Type>
-          <LineNumber>366</LineNumber>
+          <LineNumber>332</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134250032</Address>
+          <Address>134249846</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -266,55 +267,87 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\time_dialog.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/time_dialog.c\366</Expression>
+          <Expression>\\project\../User/time_dialog.c\332</Expression>
         </Bp>
         <Bp>
           <Number>6</Number>
           <Type>0</Type>
-          <LineNumber>370</LineNumber>
+          <LineNumber>175</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134250054</Address>
+          <Address>134247356</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\time_dialog.c</Filename>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\systemExplain.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/time_dialog.c\370</Expression>
+          <Expression>\\project\../User/systemExplain.c\175</Expression>
         </Bp>
         <Bp>
           <Number>7</Number>
           <Type>0</Type>
-          <LineNumber>371</LineNumber>
+          <LineNumber>219</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134250066</Address>
+          <Address>134245888</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\time_dialog.c</Filename>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\menu_dialog.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/time_dialog.c\371</Expression>
+          <Expression>\\project\../User/menu_dialog.c\219</Expression>
         </Bp>
         <Bp>
           <Number>8</Number>
           <Type>0</Type>
-          <LineNumber>373</LineNumber>
+          <LineNumber>231</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134250084</Address>
+          <Address>134245948</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\time_dialog.c</Filename>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\menu_dialog.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/time_dialog.c\373</Expression>
+          <Expression>\\project\../User/menu_dialog.c\231</Expression>
+        </Bp>
+        <Bp>
+          <Number>9</Number>
+          <Type>0</Type>
+          <LineNumber>242</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134246008</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\menu_dialog.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/menu_dialog.c\242</Expression>
+        </Bp>
+        <Bp>
+          <Number>10</Number>
+          <Type>0</Type>
+          <LineNumber>257</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134246084</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\menu_dialog.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/menu_dialog.c\257</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>

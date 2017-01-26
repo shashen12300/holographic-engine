@@ -410,7 +410,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
 F (..\Libraries\CMSIS\CM3\system_stm32f10x.h)(0x4D783CAA)()
-F (..\User\stm32f10x_it.c)(0x587D9317)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\stm32f10x_it.o --omf_browse .\obj\stm32f10x_it.crf --depend .\obj\stm32f10x_it.d)
+F (..\User\stm32f10x_it.c)(0x588767A3)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\stm32f10x_it.o --omf_browse .\obj\stm32f10x_it.crf --depend .\obj\stm32f10x_it.d)
 I (..\User\stm32f10x_it.h)(0x4D99A426)
 I (..\Libraries\CMSIS\CM3\stm32f10x.h)(0x4D783CB4)
 I (..\Libraries\CMSIS\CM3\core_cm3.h)(0x4D523B58)
@@ -466,7 +466,7 @@ I (..\GUI\Widget\MULTIEDIT.h)(0x4123EF62)
 I (..\GUI\Widget\RADIO.h)(0x4123EF62)
 I (..\GUI\Widget\SLIDER.h)(0x4123EF62)
 I (..\GUI\Widget\TEXT.h)(0x4123EF62)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 F (..\User\EXT_function.c)(0x55D36CCF)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\ext_function.o --omf_browse .\obj\ext_function.crf --depend .\obj\ext_function.d)
 I (..\Libraries\CMSIS\CM3\stm32f10x.h)(0x4D783CB4)
 I (..\Libraries\CMSIS\CM3\core_cm3.h)(0x4D523B58)
@@ -532,7 +532,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
 I (..\User\LED_function.h)(0x55D3D77D)
-F (..\User\main.c)(0x587D9AE5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+F (..\User\main.c)(0x5889BE21)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
 I (..\Common\user_include.h)(0x55DDD5ED)
 I (..\User\stm32f10x_it.h)(0x4D99A426)
 I (..\Libraries\CMSIS\CM3\stm32f10x.h)(0x4D783CB4)
@@ -599,7 +599,7 @@ I (..\GUI\Widget\RADIO.h)(0x4123EF62)
 I (..\GUI\Widget\SLIDER.h)(0x4123EF62)
 I (..\GUI\Widget\TEXT.h)(0x4123EF62)
 I (..\User\menu_dialog.h)(0x587A02BB)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 I (..\User\systemExplain.h)(0x587A315B)
 I (..\User\time_dialog.h)(0x587A65D5)
 I (..\User\warning_dialog.h)(0x587B937D)
@@ -607,7 +607,7 @@ I (..\User\draw_dialog.h)(0x587B9832)
 I (..\User\drawLine_dialog.h)(0x587BA8CC)
 I (..\User\report_dialog.h)(0x587CE4CE)
 I (..\User\healthDataReport.h)(0x587CAA71)
-F (..\User\RA8835.c)(0x587CC153)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\ra8835.o --omf_browse .\obj\ra8835.crf --depend .\obj\ra8835.d)
+F (..\User\RA8835.c)(0x5889A993)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\ra8835.o --omf_browse .\obj\ra8835.crf --depend .\obj\ra8835.d)
 I (..\User\RA8835.h)(0x58758EF9)
 I (..\Libraries\CMSIS\CM3\stm32f10x.h)(0x4D783CB4)
 I (..\Libraries\CMSIS\CM3\core_cm3.h)(0x4D523B58)
@@ -698,7 +698,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
-F (..\User\KEY\key.c)(0x587CC02C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\key.o --omf_browse .\obj\key.crf --depend .\obj\key.d)
+F (..\User\KEY\key.c)(0x5889ABD9)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\key.o --omf_browse .\obj\key.crf --depend .\obj\key.d)
 I (..\Libraries\CMSIS\CM3\stm32f10x.h)(0x4D783CB4)
 I (..\Libraries\CMSIS\CM3\core_cm3.h)(0x4D523B58)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
@@ -727,7 +727,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
 I (..\GUI\WM\WM.h)(0x58727118)
 I (..\GUI\WM\WM_GUI.h)(0x4123EF62)
 I (..\User\my_win.h)(0x587A1655)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 I (..\User\warning_dialog.h)(0x587B937D)
 I (..\User\drawLine_dialog.h)(0x587BA8CC)
 F (..\User\LED\led.c)(0x586A2508)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\led.o --omf_browse .\obj\led.crf --depend .\obj\led.d)
@@ -872,7 +872,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB2B7E)
 I (..\User\KEY\key.h)(0x58774D1C)
 I (..\SYSTEM\sys\sys.h)(0x4F54E8D2)
 I (..\User\user_Dialog.h)(0x587A5FEC)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 F (..\User\fengshi2.h)(0x58722FE0)()
 F (..\User\user_Dialog.c)(0x587A2362)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\user_dialog.o --omf_browse .\obj\user_dialog.crf --depend .\obj\user_dialog.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB2B7E)
@@ -929,7 +929,7 @@ I (..\User\KEY\key.h)(0x58774D1C)
 I (..\SYSTEM\sys\sys.h)(0x4F54E8D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 F (..\User\menu_dialog.c)(0x587B937D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\menu_dialog.o --omf_browse .\obj\menu_dialog.crf --depend .\obj\menu_dialog.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB2B7E)
 I (..\GUI\Core\GUI.h)(0x587C6A61)
@@ -980,10 +980,10 @@ I (..\User\KEY\key.h)(0x58774D1C)
 I (..\SYSTEM\sys\sys.h)(0x4F54E8D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 I (..\User\systemExplain.h)(0x587A315B)
 F (..\User\systemConfig.c)(0x587CEB9E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\systemconfig.o --omf_browse .\obj\systemconfig.crf --depend .\obj\systemconfig.d)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 I (..\GUI\WM\WM.h)(0x58727118)
 I (..\GUI\Core\GUI_ConfDefaults.h)(0x4123EF60)
 I (..\GUI\Config\GUIConf.h)(0x5869E6BD)
@@ -1043,7 +1043,7 @@ I (..\User\KEY\key.h)(0x58774D1C)
 I (..\SYSTEM\sys\sys.h)(0x4F54E8D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 I (..\User\SimSun_1616.h)(0x587A2DC1)
 F (..\User\SimSun_1616.c)(0x587A5848)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\simsun_1616.o --omf_browse .\obj\simsun_1616.crf --depend .\obj\simsun_1616.d)
 I (..\User\SimSun_1616.h)(0x587A2DC1)
@@ -1104,7 +1104,7 @@ I (..\User\KEY\key.h)(0x58774D1C)
 I (..\SYSTEM\sys\sys.h)(0x4F54E8D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 F (..\User\warning_dialog.c)(0x587B937D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\warning_dialog.o --omf_browse .\obj\warning_dialog.crf --depend .\obj\warning_dialog.d)
 I (..\User\warning_dialog.h)(0x587B937D)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB2B7E)
@@ -1155,9 +1155,9 @@ I (..\User\KEY\key.h)(0x58774D1C)
 I (..\SYSTEM\sys\sys.h)(0x4F54E8D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 I (..\User\systemExplain.h)(0x587A315B)
-F (..\User\drawLine_dialog.c)(0x587D9C6B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\drawline_dialog.o --omf_browse .\obj\drawline_dialog.crf --depend .\obj\drawline_dialog.d)
+F (..\User\drawLine_dialog.c)(0x58899A60)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\drawline_dialog.o --omf_browse .\obj\drawline_dialog.crf --depend .\obj\drawline_dialog.d)
 I (..\User\drawLine_dialog.h)(0x587BA8CC)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB2B7E)
 I (..\GUI\Core\GUI.h)(0x587C6A61)
@@ -1207,10 +1207,10 @@ I (..\User\KEY\key.h)(0x58774D1C)
 I (..\SYSTEM\sys\sys.h)(0x4F54E8D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 I (..\User\systemExplain.h)(0x587A315B)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x55DB2B7E)
-F (..\User\report_dialog.c)(0x587D9B71)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\report_dialog.o --omf_browse .\obj\report_dialog.crf --depend .\obj\report_dialog.d)
+F (..\User\report_dialog.c)(0x5889BE21)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\Libraries\CMSIS\CM3\startup -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Libraries\CMSIS\CM3 -I..\User -I..\Common -I..\GUI\Config -I..\GUI\ConvertColor -I..\GUI\ConvertMono -I..\GUI\Core -I..\GUI\Font -I..\GUI\LCDDriver -I..\GUI\WM -I..\GUI\Widget -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\User\ADC -I..\User\KEY -I..\User\LED -I..\User\RTC_PCF8563T-I "C:\Users\SCC\Desktop\holographic-engine\全息机程序\MAAVS1.5 GUI增加图片显示功能\Project\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\obj\report_dialog.o --omf_browse .\obj\report_dialog.crf --depend .\obj\report_dialog.d)
 I (..\User\report_dialog.h)(0x587CE4CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DB2B7E)
 I (..\GUI\Core\GUI.h)(0x587C6A61)
@@ -1261,7 +1261,7 @@ I (..\User\KEY\key.h)(0x58774D1C)
 I (..\SYSTEM\sys\sys.h)(0x4F54E8D2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
-I (..\User\systemConfig.h)(0x587CEB9E)
+I (..\User\systemConfig.h)(0x5889A46F)
 I (..\User\reportFont.h)(0x587C775F)
 I (..\User\healthDataReport.h)(0x587CAA71)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB2B78)

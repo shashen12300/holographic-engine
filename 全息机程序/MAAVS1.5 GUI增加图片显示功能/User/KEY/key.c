@@ -191,8 +191,10 @@ void send_enter_message(void) {
 			delay_ms(10);
 			if(KEY4== 0) {
 				printf("enter\r\n");
-				if (myMessageType == MY_MESSAGE_ID_LOGO) {	
-					isBeginCheck = 1;
+				if (myMessageType == MY_MESSAGE_ID_LOGO) {
+					if(isOrAllowCheck==1){
+							isBeginCheck = 1;
+					}
 				}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
 								WM_SetFocus(dialog_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
@@ -209,10 +211,10 @@ void send_enter_message(void) {
 								WM_SetFocus(warning_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if(myMessageType==MY_MESSAGE_ID_DRAW_LINE) {
-//							WM_SetFocus(drawLine_hWin);
+//						WM_SetFocus(drawLine_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if(myMessageType==MY_MESSAGE_ID_CHECK_REPORT) {
-//							WM_SetFocus(report_hWin);
+							WM_SetFocus(report_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}
 				else {

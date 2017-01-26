@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sun Jan 22 15:05:26 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Jan 26 17:15:18 2017
 <BR><P>
 <H3>Maximum Stack Usage =        992 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -134,9 +134,10 @@ Function Pointers
  <LI><a href="#[4f]">_cbClockDialogCallback</a> from time_dialog.o(.text) referenced from time_dialog.o(.text)
  <LI><a href="#[4c]">_cbDialogCallback</a> from user_dialog.o(.text) referenced from user_dialog.o(.text)
  <LI><a href="#[51]">_cbDrawLineDialogCallback</a> from drawline_dialog.o(.text) referenced from drawline_dialog.o(.text)
- <LI><a href="#[4e]">_cbExplainDialogCallback</a> from systemexplain.o(.text) referenced 2 times from systemexplain.o(.text)
+ <LI><a href="#[4e]">_cbExplainDialogCallback</a> from systemexplain.o(.text) referenced from systemexplain.o(.text)
  <LI><a href="#[54]">_cbInvalidateOne</a> from wm_bringtotop.o(.text) referenced from wm_bringtotop.o(.text)
  <LI><a href="#[4d]">_cbMenuDialogCallback</a> from menu_dialog.o(.text) referenced from menu_dialog.o(.text)
+ <LI><a href="#[52]">_cbReportDialogCallback</a> from report_dialog.o(.text) referenced from report_dialog.o(.text)
  <LI><a href="#[4b]">_cbTimeCallback</a> from my_win.o(.text) referenced from my_win.o(.text)
  <LI><a href="#[50]">_cbWarningDialogCallback</a> from warning_dialog.o(.text) referenced from warning_dialog.o(.text)
  <LI><a href="#[5b]">_get_lc_ctype</a> from lc_ctype_c.o(locale$$code) referenced from rt_ctype_table.o(.text)
@@ -566,16 +567,16 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[117]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
 </UL>
 
 <P><STRONG><a name="[100]"></a>NVIC_Init</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, misc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NVIC_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
 </UL>
 
 <P><STRONG><a name="[308]"></a>NVIC_SetVectorTable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, misc.o(.text), UNUSED)
@@ -583,7 +584,7 @@ Global Symbols
 <P><STRONG><a name="[309]"></a>NVIC_SystemLPConfig</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, misc.o(.text), UNUSED)
 
 <P><STRONG><a name="[ff]"></a>SysTick_CLKSourceConfig</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, misc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
+<BR><BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
 </UL>
 
 <P><STRONG><a name="[9a]"></a>ADC_DeInit</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, stm32f10x_adc.o(.text))
@@ -591,19 +592,19 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[10d]"></a>ADC_Init</STRONG> (Thumb, 70 bytes, Stack size 12 bytes, stm32f10x_adc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = ADC_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[30a]"></a>ADC_StructInit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text), UNUSED)
 
 <P><STRONG><a name="[10e]"></a>ADC_Cmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[30b]"></a>ADC_DMACmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text), UNUSED)
@@ -611,24 +612,24 @@ Global Symbols
 <P><STRONG><a name="[30c]"></a>ADC_ITConfig</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, stm32f10x_adc.o(.text), UNUSED)
 
 <P><STRONG><a name="[10f]"></a>ADC_ResetCalibration</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[110]"></a>ADC_GetResetCalibrationStatus</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[111]"></a>ADC_StartCalibration</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[112]"></a>ADC_GetCalibrationStatus</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[113]"></a>ADC_SoftwareStartConvCmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[30d]"></a>ADC_GetSoftwareStartConvStatus</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text), UNUSED)
@@ -640,13 +641,13 @@ Global Symbols
 <P><STRONG><a name="[114]"></a>ADC_RegularChannelConfig</STRONG> (Thumb, 184 bytes, Stack size 20 bytes, stm32f10x_adc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ADC_RegularChannelConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
+<BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
 </UL>
 
 <P><STRONG><a name="[310]"></a>ADC_ExternalTrigConvCmd</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text), UNUSED)
 
 <P><STRONG><a name="[116]"></a>ADC_GetConversionValue</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
 </UL>
 
 <P><STRONG><a name="[311]"></a>ADC_GetDualModeConversionValue</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text), UNUSED)
@@ -680,7 +681,7 @@ Global Symbols
 <P><STRONG><a name="[31f]"></a>ADC_TempSensorVrefintCmd</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text), UNUSED)
 
 <P><STRONG><a name="[115]"></a>ADC_GetFlagStatus</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
 </UL>
 
 <P><STRONG><a name="[320]"></a>ADC_ClearFlag</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_adc.o(.text), UNUSED)
@@ -748,7 +749,7 @@ Global Symbols
 <P><STRONG><a name="[338]"></a>EXTI_DeInit</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text), UNUSED)
 
 <P><STRONG><a name="[c1]"></a>EXTI_Init</STRONG> (Thumb, 142 bytes, Stack size 0 bytes, stm32f10x_exti.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
+<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
 <LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 </UL>
 
@@ -794,13 +795,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_IIC_SDA_Mode_IN_IPU
 <LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_IIC_SDA_Mode_Out_OD
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Init
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[33d]"></a>GPIO_StructInit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
@@ -819,7 +820,7 @@ Global Symbols
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_data_from_lcm
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_to_lcm
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd_to_lcm
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
 </UL>
 
 <P><STRONG><a name="[e5]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text))
@@ -844,7 +845,7 @@ Global Symbols
 <P><STRONG><a name="[c0]"></a>GPIO_EXTILineConfig</STRONG> (Thumb, 66 bytes, Stack size 12 bytes, stm32f10x_gpio.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIO_EXTILineConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
 <LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 </UL>
 
@@ -885,7 +886,7 @@ Global Symbols
 <P><STRONG><a name="[355]"></a>RCC_USBCLKConfig</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text), UNUSED)
 
 <P><STRONG><a name="[10c]"></a>RCC_ADCCLKConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[356]"></a>RCC_LSEConfig</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text), UNUSED)
@@ -906,18 +907,18 @@ Global Symbols
 
 <P><STRONG><a name="[ed]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Init
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 </UL>
 
 <P><STRONG><a name="[105]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
 </UL>
 
 <P><STRONG><a name="[9b]"></a>RCC_APB2PeriphResetCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
@@ -952,11 +953,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
 </UL>
 
 <P><STRONG><a name="[11b]"></a>TIM_TimeBaseInit</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
 </UL>
 
 <P><STRONG><a name="[361]"></a>TIM_OC1Init</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, stm32f10x_tim.o(.text), UNUSED)
@@ -1014,13 +1015,13 @@ Global Symbols
 <P><STRONG><a name="[369]"></a>TIM_BDTRStructInit</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text), UNUSED)
 
 <P><STRONG><a name="[11e]"></a>TIM_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
 </UL>
 
 <P><STRONG><a name="[36a]"></a>TIM_CtrlPWMOutputs</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text), UNUSED)
 
 <P><STRONG><a name="[11d]"></a>TIM_ITConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
 </UL>
 
 <P><STRONG><a name="[36b]"></a>TIM_GenerateEvent</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text), UNUSED)
@@ -1168,7 +1169,7 @@ Global Symbols
 <P><STRONG><a name="[3a4]"></a>TIM_GetFlagStatus</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text), UNUSED)
 
 <P><STRONG><a name="[11c]"></a>TIM_ClearFlag</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
 </UL>
 
 <P><STRONG><a name="[bd]"></a>TIM_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32f10x_tim.o(.text))
@@ -1191,8 +1192,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
 </UL>
 
 <P><STRONG><a name="[3a5]"></a>USART_StructInit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -1202,14 +1203,14 @@ Global Symbols
 <P><STRONG><a name="[3a7]"></a>USART_ClockStructInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
 
 <P><STRONG><a name="[102]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
 </UL>
 
 <P><STRONG><a name="[101]"></a>USART_ITConfig</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, stm32f10x_usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = USART_ITConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 </UL>
 
 <P><STRONG><a name="[3a8]"></a>USART_DMACmd</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -1333,8 +1334,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[29]"></a>TIM2_IRQHandler</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 440 + Unknown Stack Size
+<P><STRONG><a name="[29]"></a>TIM2_IRQHandler</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, stm32f10x_it.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 432 + Unknown Stack Size
 <LI>Call Chain = TIM2_IRQHandler &rArr; refresh_time &rArr; warning_dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
@@ -1385,20 +1386,19 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[3bb]"></a>User_delay</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, main.o(.text), UNUSED)
 
-<P><STRONG><a name="[bf]"></a>refresh_time</STRONG> (Thumb, 260 bytes, Stack size 16 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 432 + Unknown Stack Size
+<P><STRONG><a name="[bf]"></a>refresh_time</STRONG> (Thumb, 306 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 424 + Unknown Stack Size
 <LI>Call Chain = refresh_time &rArr; warning_dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_dialogTask
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;report_dialogTask
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_GetTime
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;explain_dialogTask
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetActiveWindow
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_dialogTask
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;report_dialogTask
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;explain_dialogTask
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetActiveWindow
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
@@ -1409,33 +1409,33 @@ Global Symbols
 <LI>Call Chain = main &rArr; E17_sendString &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;menu_dialogTask
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_GetTime
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dialogTask
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_Init
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_GetTime
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dialogTask
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_ram
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Scan
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetFont
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_ram
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Scan
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetFont
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_uart_init
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E11_init
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Adc_Init
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_rotate_message
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
@@ -1494,7 +1494,7 @@ Global Symbols
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeData
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_two_data_to_lcm
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_cmd_and_data_to_lcm
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_ram
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_ram
 </UL>
 
 <P><STRONG><a name="[e9]"></a>send_cmd_and_data_to_lcm</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, ra8835.o(.text))
@@ -1598,7 +1598,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawVLine
 <LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawAreaBitmap
 <LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawBitmap
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_ram
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_ram
 </UL>
 
 <P><STRONG><a name="[f6]"></a>writeDataByAddress</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, ra8835.o(.text))
@@ -1650,7 +1650,7 @@ Global Symbols
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawVLine
 </UL>
 
-<P><STRONG><a name="[d8]"></a>clr_ram</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, ra8835.o(.text))
+<P><STRONG><a name="[d7]"></a>clr_ram</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, ra8835.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = clr_ram &rArr; prepareWriteData &rArr; send_two_data_to_lcm &rArr; send_data_to_lcm
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prepareWriteData
@@ -1710,7 +1710,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = FillRect &rArr; DrawHLine &rArr; writeDataByAddress &rArr; send_two_data_to_lcm &rArr; send_data_to_lcm
 </UL>
 <BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawHLine
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_ram
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clr_ram
 </UL>
 <BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_L0_FillRect
 </UL>
@@ -1731,7 +1731,7 @@ Global Symbols
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_to_lcm
 </UL>
 
-<P><STRONG><a name="[cf]"></a>delay_init</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, delay.o(.text))
+<P><STRONG><a name="[ce]"></a>delay_init</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, delay.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = delay_init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_CLKSourceConfig
@@ -1740,10 +1740,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[e0]"></a>delay_ms</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, delay.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Scan
+<BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Scan
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_enter_message
-<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemReport
 <LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawLineWindow
 </UL>
 
@@ -1762,7 +1761,7 @@ Global Symbols
 <P><STRONG><a name="[5a]"></a>fputc</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, usart.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> _printf_char_file.o(.text)
 </UL>
-<P><STRONG><a name="[d5]"></a>uart_init</STRONG> (Thumb, 152 bytes, Stack size 32 bytes, usart.o(.text))
+<P><STRONG><a name="[d4]"></a>uart_init</STRONG> (Thumb, 152 bytes, Stack size 32 bytes, usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = uart_init &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
@@ -1783,7 +1782,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[d6]"></a>E17_uart_init</STRONG> (Thumb, 118 bytes, Stack size 32 bytes, usart.o(.text))
+<P><STRONG><a name="[d5]"></a>E17_uart_init</STRONG> (Thumb, 118 bytes, Stack size 32 bytes, usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = E17_uart_init &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
@@ -1824,7 +1823,7 @@ Global Symbols
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
 </UL>
 
-<P><STRONG><a name="[d4]"></a>Adc_Init</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, adc.o(.text))
+<P><STRONG><a name="[d3]"></a>Adc_Init</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, adc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = Adc_Init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
@@ -1842,7 +1841,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[dd]"></a>Get_Adc</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, adc.o(.text))
+<P><STRONG><a name="[dc]"></a>Get_Adc</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, adc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = Get_Adc &rArr; ADC_RegularChannelConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetFlagStatus
@@ -1853,7 +1852,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[d1]"></a>KEY_Init</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, key.o(.text))
+<P><STRONG><a name="[d0]"></a>KEY_Init</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, key.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = KEY_Init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
@@ -1862,7 +1861,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[dc]"></a>KEY_Scan</STRONG> (Thumb, 142 bytes, Stack size 8 bytes, key.o(.text))
+<P><STRONG><a name="[db]"></a>KEY_Scan</STRONG> (Thumb, 142 bytes, Stack size 8 bytes, key.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = KEY_Scan
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
@@ -1870,7 +1869,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[d2]"></a>E11_init</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, key.o(.text))
+<P><STRONG><a name="[d1]"></a>E11_init</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, key.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = E11_init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
@@ -1897,7 +1896,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;selectLogoCount
 <LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_mainFormCallback
 </UL>
@@ -1906,27 +1905,27 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
 <LI>Call Chain = send_rotate_message &rArr; GUI_SendKeyMsg &rArr; WM_OnKey &rArr; WM__SendMessage &rArr; WM_DefaultProc &rArr; WM_InvalidateWindow &rArr; WM_InvalidateRect &rArr; WM__InvalidateAreaBelow &rArr; WM_InvalidateArea &rArr; _Invalidate1Abs &rArr; GUI__IntersectRects
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 </UL>
 
-<P><STRONG><a name="[c3]"></a>send_enter_message</STRONG> (Thumb, 398 bytes, Stack size 8 bytes, key.o(.text))
+<P><STRONG><a name="[c3]"></a>send_enter_message</STRONG> (Thumb, 410 bytes, Stack size 8 bytes, key.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
 <LI>Call Chain = send_enter_message &rArr; GUI_SendKeyMsg &rArr; WM_OnKey &rArr; WM__SendMessage &rArr; WM_DefaultProc &rArr; WM_InvalidateWindow &rArr; WM_InvalidateRect &rArr; WM__InvalidateAreaBelow &rArr; WM_InvalidateArea &rArr; _Invalidate1Abs &rArr; GUI__IntersectRects
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 </UL>
 
-<P><STRONG><a name="[d0]"></a>LED_Init</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, led.o(.text))
+<P><STRONG><a name="[cf]"></a>LED_Init</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, led.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LED_Init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
@@ -1936,7 +1935,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[d3]"></a>fnRTC_Init</STRONG> (Thumb, 202 bytes, Stack size 24 bytes, rtc.o(.text))
+<P><STRONG><a name="[d2]"></a>fnRTC_Init</STRONG> (Thumb, 202 bytes, Stack size 24 bytes, rtc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = fnRTC_Init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
@@ -2069,16 +2068,15 @@ Global Symbols
 <LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_IIC_Read_Byte
 <LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_IIC_Stop
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_GetTime
+<BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_GetTime
 </UL>
 
-<P><STRONG><a name="[c4]"></a>fnRTC_GetTime</STRONG> (Thumb, 342 bytes, Stack size 16 bytes, rtc.o(.text))
+<P><STRONG><a name="[de]"></a>fnRTC_GetTime</STRONG> (Thumb, 342 bytes, Stack size 16 bytes, rtc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = fnRTC_GetTime &rArr; RTC_IIC_ReadBytes &rArr; RTC_IIC_Read_Byte &rArr; RTC_IIC_Ack &rArr; RTC_IIC_SDA_Mode_Out_OD &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_IIC_ReadBytes
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
 <LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbTimeCallback
 </UL>
 
@@ -2143,17 +2141,17 @@ Global Symbols
 <LI>Call Chain = _mainFormCallback &rArr; GUI_DrawBitmap &rArr; GL_DrawBitmap &rArr; LCD_DrawBitmap &rArr; LCD_L0_DrawBitmap &rArr; _DrawBitLine4BPP &rArr; LCD_L0_SetPixelIndex &rArr; setPoint &rArr; writeDataByAddress &rArr; send_two_data_to_lcm &rArr; send_data_to_lcm
 </UL>
 <BR>[Calls]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rotate
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetId
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_DefaultProc
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Clear
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> my_win.o(.text)
 </UL>
-<P><STRONG><a name="[da]"></a>MainTask</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, my_win.o(.text))
+<P><STRONG><a name="[d9]"></a>MainTask</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, my_win.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = MainTask &rArr; WM_CreateWindow &rArr; WM_CreateWindowAsChild &rArr; WM_InvalidateWindow &rArr; WM_InvalidateRect &rArr; WM__InvalidateAreaBelow &rArr; WM_InvalidateArea &rArr; _Invalidate1Abs &rArr; GUI__IntersectRects
 </UL>
 <BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetDesktopColor
@@ -2203,9 +2201,9 @@ Global Symbols
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SelectWindow
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDialogCallback
 </UL>
@@ -2215,13 +2213,13 @@ Global Symbols
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_CreateWindowAsChild
 </UL>
 
-<P><STRONG><a name="[de]"></a>dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, user_dialog.o(.text))
+<P><STRONG><a name="[dd]"></a>dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, user_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
 <LI>Call Chain = dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ExecCreatedDialog
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_CreateDialogBox
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2265,7 +2263,7 @@ Global Symbols
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SelectWindow
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbMenuDialogCallback
 </UL>
@@ -2276,7 +2274,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ExecCreatedDialog
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_CreateDialogBox
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -2313,13 +2311,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbExplainDialogCallback
 </UL>
 
-<P><STRONG><a name="[c9]"></a>explain_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, systemexplain.o(.text))
+<P><STRONG><a name="[c8]"></a>explain_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, systemexplain.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
 <LI>Call Chain = explain_dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ExecCreatedDialog
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_CreateDialogBox
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
 </UL>
@@ -2363,20 +2361,20 @@ Global Symbols
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SelectWindow
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbClockDialogCallback
 </UL>
 
-<P><STRONG><a name="[ca]"></a>time_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, time_dialog.o(.text))
+<P><STRONG><a name="[c9]"></a>time_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, time_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
 <LI>Call Chain = time_dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ExecCreatedDialog
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_CreateDialogBox
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
 </UL>
@@ -2415,18 +2413,18 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SelectWindow
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbWarningDialogCallback
 </UL>
 
-<P><STRONG><a name="[cb]"></a>warning_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, warning_dialog.o(.text))
+<P><STRONG><a name="[ca]"></a>warning_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, warning_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
 <LI>Call Chain = warning_dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ExecCreatedDialog
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_CreateDialogBox
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
@@ -2452,7 +2450,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDrawLineDialogCallback
 </UL>
 
-<P><STRONG><a name="[162]"></a>DrawLineWindow</STRONG> (Thumb, 292 bytes, Stack size 72 bytes, drawline_dialog.o(.text))
+<P><STRONG><a name="[162]"></a>DrawLineWindow</STRONG> (Thumb, 308 bytes, Stack size 72 bytes, drawline_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 440 + Unknown Stack Size
 <LI>Call Chain = DrawLineWindow &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
@@ -2467,25 +2465,25 @@ Global Symbols
 <LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[165]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[167]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDrawLineDialogCallback
 </UL>
 
-<P><STRONG><a name="[cc]"></a>drawLine_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, drawline_dialog.o(.text))
+<P><STRONG><a name="[cb]"></a>drawLine_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, drawline_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
 <LI>Call Chain = drawLine_dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ExecCreatedDialog
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_CreateDialogBox
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
 </UL>
 
 <P><STRONG><a name="[16b]"></a>ReportPaintDialog</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, report_dialog.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbExplainDialogCallback
+<BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 </UL>
 
 <P><STRONG><a name="[169]"></a>ReportInitDialog</STRONG> (Thumb, 1106 bytes, Stack size 24 bytes, report_dialog.o(.text))
@@ -2503,15 +2501,14 @@ Global Symbols
 <LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FRAMEWIN_SetClientColor
 <LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FRAMEWIN_SetBarColor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbExplainDialogCallback
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 </UL>
 
-<P><STRONG><a name="[16a]"></a>SystemReport</STRONG> (Thumb, 666 bytes, Stack size 16 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[16a]"></a>SystemReport</STRONG> (Thumb, 662 bytes, Stack size 16 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 384 + Unknown Stack Size
 <LI>Call Chain = SystemReport &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetDialogItem
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEXT_SetTextColor
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEXT_SetText
@@ -2519,18 +2516,18 @@ Global Symbols
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SelectWindow
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbExplainDialogCallback
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 </UL>
 
-<P><STRONG><a name="[cd]"></a>report_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[cc]"></a>report_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
 <LI>Call Chain = report_dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ExecCreatedDialog
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_CreateDialogBox
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
 </UL>
@@ -2699,10 +2696,10 @@ Global Symbols
 <LI><a href="#[18a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetDrawMode
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawBitmap
 </UL>
-<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
 </UL>
 
-<P><STRONG><a name="[db]"></a>GUI_DrawBitmap</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, gui_drawbitmap.o(.text))
+<P><STRONG><a name="[da]"></a>GUI_DrawBitmap</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, gui_drawbitmap.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = GUI_DrawBitmap &rArr; GL_DrawBitmap &rArr; LCD_DrawBitmap &rArr; LCD_L0_DrawBitmap &rArr; _DrawBitLine4BPP &rArr; LCD_L0_SetPixelIndex &rArr; setPoint &rArr; writeDataByAddress &rArr; send_two_data_to_lcm &rArr; send_data_to_lcm
 </UL>
 <BR>[Calls]<UL><LI><a href="#[189]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_DrawBitmap
@@ -2905,7 +2902,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[1b8]"></a>GUI_StoreKeyMsg</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gui_onkey.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
+<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
 </UL>
 
 <P><STRONG><a name="[1b5]"></a>GUI_PollKeyMsg</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, gui_onkey.o(.text))
@@ -2917,7 +2914,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[23d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec1
 </UL>
 
-<P><STRONG><a name="[c8]"></a>GUI_SendKeyMsg</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, gui_onkey.o(.text))
+<P><STRONG><a name="[c7]"></a>GUI_SendKeyMsg</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, gui_onkey.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = GUI_SendKeyMsg &rArr; WM_OnKey &rArr; WM__SendMessage &rArr; WM_DefaultProc &rArr; WM_InvalidateWindow &rArr; WM_InvalidateRect &rArr; WM__InvalidateAreaBelow &rArr; WM_InvalidateArea &rArr; _Invalidate1Abs &rArr; GUI__IntersectRects
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_OnKey
@@ -2952,7 +2949,7 @@ Global Symbols
 <P><STRONG><a name="[1b9]"></a>GUI_SaveContext_W</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, gui_savecontext.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GUI_SaveContext_W &rArr; __aeabi_memcpy4
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Paint
 <LI><a href="#[23c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DrawNext
@@ -2961,7 +2958,7 @@ Global Symbols
 <P><STRONG><a name="[1ba]"></a>GUI_RestoreContext</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, gui_savecontext.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GUI_RestoreContext &rArr; __aeabi_memcpy4
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Paint
 <LI><a href="#[23c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DrawNext
@@ -2993,7 +2990,7 @@ Global Symbols
 <P><STRONG><a name="[1be]"></a>GL_SetDefault</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, gui_setdefault.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = GL_SetDefault &rArr; GUI_SetColor &rArr; LCD_SetColor &rArr; LCD_Color2Index &rArr; LCD_L0_Color2Index &rArr; LCD_Color2Index_1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetFont
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetFont
 <LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetColor
 <LI><a href="#[18a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetDrawMode
 <LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetTextAlign
@@ -3019,7 +3016,7 @@ Global Symbols
 <LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetDefault
 </UL>
 
-<P><STRONG><a name="[d9]"></a>GUI_SetFont</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, gui_setfont.o(.text))
+<P><STRONG><a name="[d8]"></a>GUI_SetFont</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, gui_setfont.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetDefault
 <LI><a href="#[284]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_Paint
@@ -3554,7 +3551,7 @@ Global Symbols
 <LI><a href="#[294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_Paint
 </UL>
 
-<P><STRONG><a name="[d7]"></a>GUI_Init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, guicore.o(.text))
+<P><STRONG><a name="[d6]"></a>GUI_Init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, guicore.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = GUI_Init &rArr; WM_Init &rArr; WM_CreateWindow &rArr; WM_CreateWindowAsChild &rArr; WM_InvalidateWindow &rArr; WM_InvalidateRect &rArr; WM__InvalidateAreaBelow &rArr; WM_InvalidateArea &rArr; _Invalidate1Abs &rArr; GUI__IntersectRects
 </UL>
 <BR>[Calls]<UL><LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Init
@@ -3661,7 +3658,7 @@ Global Symbols
 <LI><a href="#[1a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_FillRect
 <LI><a href="#[206]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetClipRectMax
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
 </UL>
 
 <P><STRONG><a name="[209]"></a>LCD_Color2Index</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, lcd.o(.text))
@@ -3809,7 +3806,7 @@ Global Symbols
 <P><STRONG><a name="[3c7]"></a>GUI_X_Delay</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gui_x.o(.text), UNUSED)
 
 <P><STRONG><a name="[1ff]"></a>GUI_X_Init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gui_x.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
+<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
 </UL>
 
 <P><STRONG><a name="[27e]"></a>GUI_X_ExecIdle</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gui_x.o(.text))
@@ -3937,7 +3934,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_h2p
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetId
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SendToParent
 <LI><a href="#[224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__SendMsgNoData
@@ -4067,7 +4064,7 @@ Global Symbols
 <LI><a href="#[21e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__InsertWindowIntoList
 <LI><a href="#[22c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_AddToLinList
 </UL>
-<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
 <LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dialog_Task
 <LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_CreateWindow
 <LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FRAMEWIN_CreateEx
@@ -4079,11 +4076,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_CreateWindowAsChild
 </UL>
-<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
 <LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Init
 </UL>
 
-<P><STRONG><a name="[c5]"></a>WM_GetActiveWindow</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, wm.o(.text))
+<P><STRONG><a name="[c4]"></a>WM_GetActiveWindow</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, wm.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
 <LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GetDefaultWin
 <LI><a href="#[284]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_Paint
@@ -4095,7 +4092,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[21d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__ActivateClipRect
 <LI><a href="#[233]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FindNext_IVR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawLine
 <LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawFocusRect
 <LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI__DispLine
@@ -4129,7 +4126,7 @@ Global Symbols
 <LI><a href="#[216]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__Client2Screen
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__GetInvalidRectAbs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawLine
 <LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawFocusRect
 <LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI__DispLine
@@ -4186,6 +4183,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[23d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemReport
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 <LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawLineWindow
 <LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WarningWindow
 <LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimeSetting
@@ -4206,7 +4204,7 @@ Global Symbols
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SendToParent
 <LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__GetClientRectWin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbExplainDialogCallback
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDrawLineDialogCallback
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbWarningDialogCallback
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbClockDialogCallback
@@ -4240,7 +4238,7 @@ Global Symbols
 <LI><a href="#[241]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__AddCriticalHandle
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Activate
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
 </UL>
 
 <P><STRONG><a name="[243]"></a>WM__ForEachDesc</STRONG> (Thumb, 60 bytes, Stack size 32 bytes, wm__foreachdesc.o(.text))
@@ -4440,7 +4438,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[223]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SendMessage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbExplainDialogCallback
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDrawLineDialogCallback
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbWarningDialogCallback
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbClockDialogCallback
@@ -4458,7 +4456,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_h2p
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__GetFirstSibling
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SendToParent
 <LI><a href="#[232]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_BringToBottom
@@ -4540,7 +4538,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[225]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__IsWindow
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FRAMEWIN_Callback
 </UL>
 
@@ -4603,7 +4601,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__SendMessage
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SendKeyMsg
 <LI><a href="#[1b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_PollKeyMsg
 </UL>
 
@@ -4683,7 +4681,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[13d]"></a>WM_SetCreateFlags</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, wm_setcreateflags.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
+<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
 </UL>
 
 <P><STRONG><a name="[26f]"></a>WM_SetDesktopColorEx</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, wm_setdesktopcolor.o(.text))
@@ -4700,14 +4698,14 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetDesktopColorEx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MainTask
 </UL>
 
 <P><STRONG><a name="[270]"></a>WM_SetDesktopColors</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, wm_setdesktopcolor.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetDesktopColorEx
 </UL>
 
-<P><STRONG><a name="[c7]"></a>WM_SetFocus</STRONG> (Thumb, 164 bytes, Stack size 32 bytes, wm_setfocus.o(.text))
+<P><STRONG><a name="[c6]"></a>WM_SetFocus</STRONG> (Thumb, 164 bytes, Stack size 32 bytes, wm_setfocus.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = WM_SetFocus &rArr; WM_IsWindow &rArr; WM__IsWindow
 </UL>
 <BR>[Calls]<UL><LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetParent
@@ -4853,13 +4851,13 @@ Global Symbols
 <LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetClientWindow
 <LI><a href="#[27d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WIDGET_OrState
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_dialogTask
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;report_dialogTask
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_dialogTask
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;report_dialogTask
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;menu_dialogTask
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;explain_dialogTask
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dialogTask
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;explain_dialogTask
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dialogTask
 <LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ExecDialogBox
 </UL>
 
@@ -4870,7 +4868,7 @@ Global Symbols
 <LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_GetDialogStatusPtr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemReport
-<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbExplainDialogCallback
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 <LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawLineWindow
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDrawLineDialogCallback
 <LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WarningWindow
@@ -4895,13 +4893,13 @@ Global Symbols
 <LI><a href="#[27e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_X_ExecIdle
 <LI><a href="#[27b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetDialogStatusPtr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_dialogTask
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;report_dialogTask
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_dialogTask
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;report_dialogTask
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;menu_dialogTask
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;explain_dialogTask
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dialogTask
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;explain_dialogTask
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dialogTask
 <LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ExecDialogBox
 </UL>
 
@@ -4975,7 +4973,7 @@ Global Symbols
 <LI><a href="#[28d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_DisableMemdev
 <LI><a href="#[28a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FRAMEWIN_SetText
 <LI><a href="#[283]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FRAMEWIN__CalcPositions
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FRAMEWIN_CreateIndirect
 </UL>
@@ -5289,7 +5287,7 @@ Global Symbols
 <P><STRONG><a name="[288]"></a>WIDGET_HandleActive</STRONG> (Thumb, 254 bytes, Stack size 32 bytes, widget.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = WIDGET_HandleActive &rArr; _UpdateChildPostions &rArr; WM__UpdateChildPositions &rArr;  WM_ResizeWindow (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
 <LI><a href="#[231]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_InvalidateWindow
 <LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_h2p
 <LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_BringToTop
@@ -5377,20 +5375,20 @@ Global Symbols
 
 <P><STRONG><a name="[3d4]"></a>__use_no_semihosting</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi_2.o(.text), UNUSED)
 
-<P><STRONG><a name="[c6]"></a>__2printf</STRONG> (Thumb, 20 bytes, Stack size 24 bytes, noretval__2printf.o(.text))
+<P><STRONG><a name="[c5]"></a>__2printf</STRONG> (Thumb, 20 bytes, Stack size 24 bytes, noretval__2printf.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144 + Unknown Stack Size
 <LI>Call Chain = __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
 </UL>
 <BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rotate
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_dialogTask
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;report_dialogTask
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;warning_dialogTask
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;time_dialogTask
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;report_dialogTask
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;menu_dialogTask
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;explain_dialogTask
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dialogTask
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;explain_dialogTask
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drawLine_dialogTask
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dialogTask
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_rotate_message
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_enter_message
@@ -5488,7 +5486,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[2b6]"></a>__rt_memcpy</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<BR><BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 
 <P><STRONG><a name="[3d5]"></a>_memcpy_lastbytes</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memcpy_v6.o(.text), UNUSED)
@@ -5504,7 +5502,7 @@ Global Symbols
 
 <P><STRONG><a name="[3d6]"></a>__memmove_lastfew</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memmove_v6.o(.text), UNUSED)
 
-<P><STRONG><a name="[ce]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text))
+<P><STRONG><a name="[cd]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -5609,7 +5607,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[2be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ferror
 <LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 
 <P><STRONG><a name="[2b5]"></a>strtol</STRONG> (Thumb, 112 bytes, Stack size 32 bytes, strtol.o(.text))
@@ -5627,7 +5625,7 @@ Global Symbols
 <P><STRONG><a name="[3e2]"></a>__aeabi_memmove8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memmove_w.o(.text), UNUSED)
 
 <P><STRONG><a name="[2c1]"></a>__rt_memmove_w</STRONG> (Thumb, 122 bytes, Stack size 8 bytes, rt_memmove_w.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<BR><BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 
 <P><STRONG><a name="[2b9]"></a>__memmove_aligned</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memmove_w.o(.text), UNUSED)
@@ -6008,7 +6006,7 @@ Local Symbols
 </UL>
 
 <P><STRONG><a name="[137]"></a>_cbMyCallback</STRONG> (Thumb, 162 bytes, Stack size 24 bytes, my_win.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
+<BR><BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetId
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
@@ -6020,8 +6018,8 @@ Local Symbols
 <LI>Call Chain = _cbTimeCallback &rArr; GUI_DrawBitmap &rArr; GL_DrawBitmap &rArr; LCD_DrawBitmap &rArr; LCD_L0_DrawBitmap &rArr; _DrawBitLine4BPP &rArr; LCD_L0_SetPixelIndex &rArr; setPoint &rArr; writeDataByAddress &rArr; send_two_data_to_lcm &rArr; send_data_to_lcm
 </UL>
 <BR>[Calls]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_SetTime
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_GetTime
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_GetTime
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DrawBitmap
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Paint
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetId
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
@@ -6032,7 +6030,7 @@ Local Symbols
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Clear
 <LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> my_win.o(.text)
 </UL>
@@ -6113,14 +6111,15 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> drawline_dialog.o(.text)
 </UL>
-<P><STRONG><a name="[52]"></a>_cbExplainDialogCallback</STRONG> (Thumb, 178 bytes, Stack size 24 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[52]"></a>_cbReportDialogCallback</STRONG> (Thumb, 192 bytes, Stack size 24 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 408 + Unknown Stack Size
-<LI>Call Chain = _cbExplainDialogCallback &rArr; SystemReport &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
+<LI>Call Chain = _cbReportDialogCallback &rArr; SystemReport &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemReport
 <LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportInitDialog
 <LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportPaintDialog
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetId
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_DefaultProc
 </UL>
@@ -6348,7 +6347,7 @@ Local Symbols
 <LI><a href="#[1fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetDesktopWindow
 <LI><a href="#[1fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_L0_GetRect
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Init
 </UL>
 
 <P><STRONG><a name="[202]"></a>DB2SJIS</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, guiencjs.o(.text))
@@ -6615,7 +6614,7 @@ Local Symbols
 <P><STRONG><a name="[25b]"></a>_GetDefaultWin</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, wm_getwindowsize.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _GetDefaultWin
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetActiveWindow
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetActiveWindow
 </UL>
 <BR>[Called By]<UL><LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetWindowSizeY
 <LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetWindowSizeX
@@ -6654,7 +6653,7 @@ Local Symbols
 <P><STRONG><a name="[272]"></a>_SetFocusOnNextChild</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, wm_setfocusonnextchild.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = _SetFocusOnNextChild &rArr; WM_SetFocus &rArr; WM_IsWindow &rArr; WM__IsWindow
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
 <LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__GetFocussedChild
 <LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GetNextChild
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_IsFocussable
@@ -6675,7 +6674,7 @@ Local Symbols
 <P><STRONG><a name="[280]"></a>_OnTouch</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, framewin.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = _OnTouch &rArr; WM_BringToTop &rArr; _BringToTop &rArr; _InvalidateWindowAndDescs &rArr; WM_InvalidateWindow &rArr; WM_InvalidateRect &rArr; WM__InvalidateAreaBelow &rArr; WM_InvalidateArea &rArr; _Invalidate1Abs &rArr; GUI__IntersectRects
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
 <LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_BringToTop
 <LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetCaptureMove
 </UL>
@@ -6685,8 +6684,8 @@ Local Symbols
 <P><STRONG><a name="[284]"></a>_Paint</STRONG> (Thumb, 326 bytes, Stack size 72 bytes, framewin.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 312<LI>Call Chain = _Paint &rArr; WIDGET__FillStringInRect &rArr; GUI_ClearRectEx &rArr; GUI_ClearRect &rArr; LCD_FillRect &rArr; LCD_L0_FillRect &rArr; FillRect &rArr; DrawHLine &rArr; writeDataByAddress &rArr; send_two_data_to_lcm &rArr; send_data_to_lcm
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetActiveWindow
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetFont
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_GetActiveWindow
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetFont
 <LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_h2p
 <LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI__CalcTextRect
 <LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM__InitIVRSearch
@@ -6716,7 +6715,7 @@ Local Symbols
 <P><STRONG><a name="[55]"></a>_FRAMEWIN_Callback</STRONG> (Thumb, 364 bytes, Stack size 64 bytes, framewin.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 376<LI>Call Chain = _FRAMEWIN_Callback &rArr; _Paint &rArr; WIDGET__FillStringInRect &rArr; GUI_ClearRectEx &rArr; GUI_ClearRect &rArr; LCD_FillRect &rArr; LCD_L0_FillRect &rArr; FillRect &rArr; DrawHLine &rArr; writeDataByAddress &rArr; send_two_data_to_lcm &rArr; send_data_to_lcm
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_DefaultProc
 <LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_h2p
 <LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_FreePtr
@@ -6735,7 +6734,7 @@ Local Symbols
 <P><STRONG><a name="[56]"></a>FRAMEWIN__cbClient</STRONG> (Thumb, 246 bytes, Stack size 40 bytes, framewin.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = FRAMEWIN__cbClient &rArr; WIDGET_HandleActive &rArr; _UpdateChildPostions &rArr; WM__UpdateChildPositions &rArr;  WM_ResizeWindow (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SetFocus
 <LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_DefaultProc
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Clear
 <LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_h2p
@@ -6767,7 +6766,7 @@ Local Symbols
 <P><STRONG><a name="[294]"></a>_Paint</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, text.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 296<LI>Call Chain = _Paint &rArr; GUI_DispStringInRect &rArr; GUI_DispStringInRectMax &rArr; GUI__DispStringInRect &rArr; GUI__DispLine &rArr; WM__InitIVRSearch &rArr; WM__GetNextIVR &rArr; _FindNext_IVR &rArr; _Findx0 &rArr;  _Findx0 (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetFont
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetFont
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Clear
 <LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_h2p
 <LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DispStringInRect

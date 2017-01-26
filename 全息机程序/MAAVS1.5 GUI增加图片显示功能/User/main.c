@@ -62,9 +62,6 @@ const unsigned char logo2[12]={
 
 //刷新时间
 void refresh_time(void) {
-		char displayTime[20];
-		Stru_Time time,getTime;
-		fnRTC_GetTime(&getTime); 
 	if (time_flag > 100) {
 			time_flag = 0;
 			printf("active window :%d \r\n",WM_GetActiveWindow());
@@ -76,11 +73,14 @@ void refresh_time(void) {
 			}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
 					WM_SetFocus(dialog_hWin);
 			}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_SETTING) {
-//						WM_SetFocus(mainForm_hWin);
+						WM_SetFocus(mainForm_hWin);
 			}else if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
 						WM_SetFocus(drawLine_hWin);
+				if(isOrSetPoint==1) {
 						GUI_SendKeyMsg(MY_MESSAGE_ID_DRAW_POINT,1);
-
+				}
+			}else if(myMessageType == MY_MESSAGE_ID_CHECK_REPORT) {
+						WM_SetFocus(report_hWin);
 			}else {
 				printf("逻辑出问题了");
 			}
@@ -92,12 +92,13 @@ void refresh_time(void) {
 	}else if (isOrShowSetTime == 1) {
 		isOrShowSetTime = 0;
 		time_dialogTask();
-	}else if(isBeginCheck == 1){
+	}else if(isBeginCheck == 1){ 
 		  isBeginCheck = 0;
 	  	if(isOrSetMessage==0) {
 	    //提示个人信息不能为空
 	  	warning_dialogTask();
 	  	}else {
+				rotateEnter_flag = 0;
 				isOrSetPoint = 1;
 			drawLine_dialogTask();
 		  }
@@ -173,8 +174,9 @@ printf("开始测试\r\n");
 					//提示个人信息不能为空
 					warning_dialogTask();
 				}else {
-					drawLine_dialogTask();
-//					Draw_dialogTask();
+					if(isRestartCheck==1||isBeginCheck==1) {
+						drawLine_dialogTask();
+					}
 				}
 			}else if (key == 3) {   //打印
 				if(isOrPrintReport==1) {

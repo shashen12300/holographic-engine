@@ -62,10 +62,6 @@ void DrawLinePaintDialog(WM_MESSAGE * pMsg)
 
 void DrawLineInitDialog(WM_MESSAGE * pMsg)
 {
-		static int x=0,lastY=50,lastX=0;
-				int y,minY,maxY,i;
-			double t;
-		WM_HWIN hText1,hText2;
     WM_HWIN hWin = pMsg->hWin;
     //
     //FRAMEWIN
@@ -124,7 +120,8 @@ void DrawLineWindow(WM_HWIN hWin) {
 			selectEnd = 1;
 			isOrShowReport= 1;
 			rotateEnter_flag = 0;
-//			x=0;lastY=50;lastX=0;
+			x=0;lastY=50;lastX=0;
+			isBeginCheck = 0;
 		}
 		else if(isOrSetPoint ==1){
 			int y,minY,maxY,i;
@@ -149,6 +146,7 @@ void DrawLineWindow(WM_HWIN hWin) {
 				lastX =x;lastY=y;
 				delay_ms(20);
 		}
+
 
 	}
 }
@@ -218,6 +216,7 @@ static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg)
 
 
 void drawLine_dialogTask(void) {
+	
 		myMessageType = MY_MESSAGE_ID_DRAW_LINE;
 		drawLine_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDrawLineDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",drawLine_hWin);

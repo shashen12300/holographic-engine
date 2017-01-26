@@ -55,6 +55,7 @@ int rotateEnter_flag=0;
 int logoCount =0;
  //是否可以打印报告
  int isOrPrintReport=0;
- 
+ //是否允许检测
+ int isOrAllowCheck=1;
 
 

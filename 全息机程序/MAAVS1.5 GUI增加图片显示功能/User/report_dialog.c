@@ -26,7 +26,7 @@
 #include "reportFont.h"
 #include "healthDataReport.h"
 #include <string.h>
-
+#include "WM.h"
 int reportCount = 0;
 int reportType = 0;
 int currentPage=0;
@@ -263,7 +263,7 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
             if(KEY_B == 1)
             {
 							messageType++;
-							if(messageType+currentPage*12<reportCount-1) {
+							if(messageType+currentPage*12<reportCount) {
 								if(messageType==12){
 									currentPage++;
 									messageType = 0;
@@ -297,14 +297,14 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 									}
 								printf(" report :left\r\n");
 							}
-
+						
 						}
 					TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),0x000000);
 					TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+lastMessageType),0xffffff);
 					TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+messageType),0xffffff);
 					TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+messageType),0x000000);
 					lastMessageType = messageType;
-						delay_ms(10);
+					WM_Exec();
 					}
 		rotate_flag = 0;
 		selectEnd = 1;
@@ -312,12 +312,15 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 
 }
 
-static void _cbExplainDialogCallback(WM_MESSAGE * pMsg) 
+static void _cbReportDialogCallback(WM_MESSAGE * pMsg) 
 {
     int NCode, Id;
     WM_HWIN hWin = pMsg->hWin;
     switch (pMsg->MsgId) 
     {
+				case WM_CREATE:
+						WM_Exec();
+            break;
         case WM_PAINT:
 					ReportPaintDialog(pMsg);
             break;
@@ -377,7 +380,8 @@ static void _cbExplainDialogCallback(WM_MESSAGE * pMsg)
 void report_dialogTask(void) {
 	
 		myMessageType = MY_MESSAGE_ID_CHECK_REPORT;
-		report_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbExplainDialogCallback, root_hWin, 0, 0);
+		//	关闭定时器
+		report_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbReportDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",report_hWin);
 		GUI_ExecCreatedDialog(report_hWin);
 }
