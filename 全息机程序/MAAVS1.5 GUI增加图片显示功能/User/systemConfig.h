@@ -33,5 +33,5 @@ extern int isBeginCheck;
 extern int isOrShowReport;
 extern int logoCount;
 extern  int isOrPrintReport;
-
+extern  int isOrAllowCheck;
 #endif

@@ -174,9 +174,7 @@ printf("开始测试\r\n");
 					//提示个人信息不能为空
 					warning_dialogTask();
 				}else {
-					if(isRestartCheck==1||isBeginCheck==1) {
 						drawLine_dialogTask();
-					}
 				}
 			}else if (key == 3) {   //打印
 				if(isOrPrintReport==1) {
@@ -198,6 +196,7 @@ printf("开始测试\r\n");
 					E17_sendString(data);
 					
 					isOrPrintReport =0;
+					isOrAllowCheck =0;
 				}
 			}else if (key == 4) {   //系统菜单
 				menu_dialogTask();

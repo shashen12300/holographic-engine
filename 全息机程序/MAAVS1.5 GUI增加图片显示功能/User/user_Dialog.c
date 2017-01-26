@@ -326,6 +326,7 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 								WM_Exec();
 							isOrSetMessage = 1;
 							isOrRefreshMessage = 1;
+							isOrAllowCheck = 1;
 							//清除状态
 							messageType =0;
 							lastMessageType=0;

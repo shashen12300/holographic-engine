@@ -250,6 +250,7 @@ void SystemMenu(WM_HWIN hWin) {  //信息设定
 								case 4: 
 								{//重新检测
 									isRestartCheck = 1;
+									isOrAllowCheck = 1;
 									WM_SelectWindow(hWin);
 									GUI_EndDialog(hWin, 0);
 									WM_SelectWindow(mainForm_hWin);

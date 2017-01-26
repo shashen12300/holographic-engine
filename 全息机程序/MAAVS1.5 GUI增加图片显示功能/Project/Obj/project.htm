@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Jan 26 17:15:18 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Fri Jan 27 00:26:09 2017
 <BR><P>
 <H3>Maximum Stack Usage =        992 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1404,7 +1404,7 @@ Global Symbols
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
 
-<P><STRONG><a name="[82]"></a>main</STRONG> (Thumb, 424 bytes, Stack size 336 bytes, main.o(.text))
+<P><STRONG><a name="[82]"></a>main</STRONG> (Thumb, 428 bytes, Stack size 336 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 992 + Unknown Stack Size
 <LI>Call Chain = main &rArr; E17_sendString &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -1850,6 +1850,7 @@ Global Symbols
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_SoftwareStartConvCmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawLineWindow
 </UL>
 
 <P><STRONG><a name="[d0]"></a>KEY_Init</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, key.o(.text))
@@ -1913,7 +1914,7 @@ Global Symbols
 <LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 </UL>
 
-<P><STRONG><a name="[c3]"></a>send_enter_message</STRONG> (Thumb, 410 bytes, Stack size 8 bytes, key.o(.text))
+<P><STRONG><a name="[c3]"></a>send_enter_message</STRONG> (Thumb, 418 bytes, Stack size 8 bytes, key.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
 <LI>Call Chain = send_enter_message &rArr; GUI_SendKeyMsg &rArr; WM_OnKey &rArr; WM__SendMessage &rArr; WM_DefaultProc &rArr; WM_InvalidateWindow &rArr; WM_InvalidateRect &rArr; WM__InvalidateAreaBelow &rArr; WM_InvalidateArea &rArr; _Invalidate1Abs &rArr; GUI__IntersectRects
 </UL>
@@ -2189,7 +2190,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDialogCallback
 </UL>
 
-<P><STRONG><a name="[14f]"></a>MessageSetting</STRONG> (Thumb, 1410 bytes, Stack size 32 bytes, user_dialog.o(.text))
+<P><STRONG><a name="[14f]"></a>MessageSetting</STRONG> (Thumb, 1408 bytes, Stack size 32 bytes, user_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 400 + Unknown Stack Size
 <LI>Call Chain = MessageSetting &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
@@ -2251,7 +2252,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbMenuDialogCallback
 </UL>
 
-<P><STRONG><a name="[156]"></a>SystemMenu</STRONG> (Thumb, 576 bytes, Stack size 16 bytes, menu_dialog.o(.text))
+<P><STRONG><a name="[156]"></a>SystemMenu</STRONG> (Thumb, 580 bytes, Stack size 16 bytes, menu_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 384 + Unknown Stack Size
 <LI>Call Chain = SystemMenu &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
@@ -2450,12 +2451,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDrawLineDialogCallback
 </UL>
 
-<P><STRONG><a name="[162]"></a>DrawLineWindow</STRONG> (Thumb, 308 bytes, Stack size 72 bytes, drawline_dialog.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 440 + Unknown Stack Size
+<P><STRONG><a name="[162]"></a>DrawLineWindow</STRONG> (Thumb, 340 bytes, Stack size 80 bytes, drawline_dialog.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 448 + Unknown Stack Size
 <LI>Call Chain = DrawLineWindow &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_L0_DrawVLine
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SelectWindow
@@ -2470,7 +2472,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDrawLineDialogCallback
 </UL>
 
-<P><STRONG><a name="[cb]"></a>drawLine_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, drawline_dialog.o(.text))
+<P><STRONG><a name="[cb]"></a>drawLine_dialogTask</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, drawline_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
 <LI>Call Chain = drawLine_dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
@@ -2504,7 +2506,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 </UL>
 
-<P><STRONG><a name="[16a]"></a>SystemReport</STRONG> (Thumb, 662 bytes, Stack size 16 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[16a]"></a>SystemReport</STRONG> (Thumb, 670 bytes, Stack size 16 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 384 + Unknown Stack Size
 <LI>Call Chain = SystemReport &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
@@ -6099,7 +6101,7 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> warning_dialog.o(.text)
 </UL>
 <P><STRONG><a name="[51]"></a>_cbDrawLineDialogCallback</STRONG> (Thumb, 178 bytes, Stack size 24 bytes, drawline_dialog.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 464 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 472 + Unknown Stack Size
 <LI>Call Chain = _cbDrawLineDialogCallback &rArr; DrawLineWindow &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawLineWindow

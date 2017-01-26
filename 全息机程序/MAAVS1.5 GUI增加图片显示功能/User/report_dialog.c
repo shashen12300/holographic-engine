@@ -257,6 +257,7 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 				isOrPrintReport =1;
 				currentPageLength=0;
 				currentPage=0;
+				isOrAllowCheck = 0;
 		}else	if((rotate_flag == 1)&&(selectEnd==0)) {
 			if(KEY_A == 0) {
 						delay_us(20);

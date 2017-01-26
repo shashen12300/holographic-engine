@@ -124,27 +124,31 @@ void DrawLineWindow(WM_HWIN hWin) {
 			isBeginCheck = 0;
 		}
 		else if(isOrSetPoint ==1){
-			int y,minY,maxY,i;
+			int y,minY,maxY,i,adcValue;
 			double t;
-				isOrSetPoint =0;
-				for(i=0;i<320;i++){
-				x++;
-				if(x>318){
-					x=0;
-				}
-				t = 3*PI*i/80;
-				y=(int)(sin(t)*1.0*50.0+50+50);
-				
-				if(lastY<y){
-					minY = lastY;
-					maxY = y;
-				}else {
-					minY = y;
-					maxY = lastY;
-				}
-				LCD_L0_DrawVLine(x,minY,maxY);
-				lastX =x;lastY=y;
-				delay_ms(20);
+			isOrSetPoint =0;
+			for(i=0;i<320;i++){
+			x++;
+			if(x>318){
+				x=0;
+			}
+			t = 3*PI*i/80;
+			y=(int)(sin(t)*1.0*50.0+50+50);
+			
+			if(lastY<y){
+				minY = lastY;
+				maxY = y;
+			}else {
+				minY = y;
+				maxY = lastY;
+			}
+			adcValue = Get_Adc(0);
+			while(adcValue>3800){
+				adcValue = Get_Adc(0);
+			}
+			LCD_L0_DrawVLine(x,minY,maxY);
+			lastX =x;lastY=y;
+			delay_ms(20);			
 		}
 
 
@@ -217,8 +221,11 @@ static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg)
 
 void drawLine_dialogTask(void) {
 	
-		myMessageType = MY_MESSAGE_ID_DRAW_LINE;
+	if(isOrAllowCheck ==1 ){
+			myMessageType = MY_MESSAGE_ID_DRAW_LINE;
 		drawLine_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDrawLineDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",drawLine_hWin);
 		GUI_ExecCreatedDialog(drawLine_hWin);
+	}
+
 }

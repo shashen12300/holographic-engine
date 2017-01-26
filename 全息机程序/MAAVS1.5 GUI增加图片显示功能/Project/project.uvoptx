@@ -226,7 +226,7 @@
           <Type>0</Type>
           <LineNumber>378</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134244118</Address>
+          <Address>134244116</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -242,7 +242,7 @@
           <Type>0</Type>
           <LineNumber>380</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134244166</Address>
+          <Address>134244140</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -258,7 +258,7 @@
           <Type>0</Type>
           <LineNumber>332</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134249846</Address>
+          <Address>134249882</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -274,7 +274,7 @@
           <Type>0</Type>
           <LineNumber>175</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134247356</Address>
+          <Address>134247392</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -290,7 +290,7 @@
           <Type>0</Type>
           <LineNumber>219</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134245888</Address>
+          <Address>134245916</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -306,7 +306,7 @@
           <Type>0</Type>
           <LineNumber>231</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134245948</Address>
+          <Address>134245976</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -322,7 +322,7 @@
           <Type>0</Type>
           <LineNumber>242</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134246008</Address>
+          <Address>134246036</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -332,22 +332,6 @@
           <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\menu_dialog.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\project\../User/menu_dialog.c\242</Expression>
-        </Bp>
-        <Bp>
-          <Number>10</Number>
-          <Type>0</Type>
-          <LineNumber>257</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134246084</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\menu_dialog.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\project\../User/menu_dialog.c\257</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
