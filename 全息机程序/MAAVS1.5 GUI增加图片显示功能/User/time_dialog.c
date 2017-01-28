@@ -448,7 +448,7 @@ void TimeSetting(WM_HWIN hWin) {  //信息设定
 						TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+messageType),0x000000);
 						lastMessageType = messageType;
 		}
-		
+		WM_Exec();
 		rotate_flag = 0;
 		selectEnd = 1;
 }

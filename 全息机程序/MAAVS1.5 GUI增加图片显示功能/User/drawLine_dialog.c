@@ -14,6 +14,8 @@
 #include "systemConfig.h"
 #include "systemExplain.h"
 #include <math.h>
+#include "adc.h"
+#include "fengshi2.h"
 
 #define PI 3.1415926
 /*********************************************************************
@@ -45,10 +47,8 @@ void DrawLinePaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
     GUI_SetColor(0xffffff);
-//    GUI_DrawLine(1,1,176,1);
-//	  GUI_DrawLine(176,1,176,41);
-//	  GUI_DrawLine(1,41,176,41);
-//    GUI_DrawLine(1,1,1,41);
+	  GUI_DrawBitmap(&bmtablePicture,-1,-1);
+
 }
 
 
@@ -108,7 +108,8 @@ void DrawLineInitDialog(WM_MESSAGE * pMsg)
 */
 
 void DrawLineWindow(WM_HWIN hWin) {  
-		static int x=0,lastY=50,lastX=0;
+		static int x=0,lastY=140,lastX=0;
+		float range=70.0;
 		if(rotateEnter_flag==1){
 			WM_SelectWindow(hWin);
 			GUI_EndDialog(hWin, 0);
@@ -120,7 +121,7 @@ void DrawLineWindow(WM_HWIN hWin) {
 			selectEnd = 1;
 			isOrShowReport= 1;
 			rotateEnter_flag = 0;
-			x=0;lastY=50;lastX=0;
+			x=0;lastY=140;lastX=0;
 			isBeginCheck = 0;
 		}
 		else if(isOrSetPoint ==1){
@@ -132,9 +133,14 @@ void DrawLineWindow(WM_HWIN hWin) {
 			if(x>318){
 				x=0;
 			}
-			t = 3*PI*i/80;
-			y=(int)(sin(t)*1.0*50.0+50+50);
-			
+			t = 2*PI*i/20;
+			if(x/20%2==1){
+				range=70;
+			}else {
+				range=20;
+
+			}
+			y=(int)(sin(t)*1.0*range+50+90);
 			if(lastY<y){
 				minY = lastY;
 				maxY = y;
@@ -150,8 +156,7 @@ void DrawLineWindow(WM_HWIN hWin) {
 			lastX =x;lastY=y;
 			delay_ms(20);			
 		}
-
-
+			
 	}
 }
 
