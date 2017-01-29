@@ -108,7 +108,7 @@ void DrawLineInitDialog(WM_MESSAGE * pMsg)
 */
 
 void DrawLineWindow(WM_HWIN hWin) {  
-		static int x=0,lastY=140,lastX=0;
+		static int lastY=140,lastX=0;
 		float range=70.0;
 		if(rotateEnter_flag==1){
 			WM_SelectWindow(hWin);
@@ -121,7 +121,7 @@ void DrawLineWindow(WM_HWIN hWin) {
 			selectEnd = 1;
 			isOrShowReport= 1;
 			rotateEnter_flag = 0;
-			x=0;lastY=140;lastX=0;
+			lastY=140;lastX=0;
 			isBeginCheck = 0;
 		}
 		else if(isOrSetPoint ==1){
@@ -129,16 +129,14 @@ void DrawLineWindow(WM_HWIN hWin) {
 			double t;
 			isOrSetPoint =0;
 			for(i=0;i<320;i++){
-			x++;
-			if(x>318){
-				x=0;
-			}
+//			if(x>318){
+//				x=0;
+//			}
 			t = 2*PI*i/20;
-			if(x/20%2==1){
+			if(i/20%2==1){
 				range=70;
 			}else {
 				range=20;
-
 			}
 			y=(int)(sin(t)*1.0*range+50+90);
 			if(lastY<y){
@@ -152,11 +150,12 @@ void DrawLineWindow(WM_HWIN hWin) {
 			while(adcValue>3800){
 				adcValue = Get_Adc(0);
 			}
-			LCD_L0_DrawVLine(x,minY,maxY);
-			lastX =x;lastY=y;
+			LCD_L0_DrawVLine(i,minY,maxY);
+			lastX =i;lastY=y;
 			delay_ms(20);			
 		}
-			
+		WM_Exec();
+		isOrExitDrawLine = 1;			
 	}
 }
 
@@ -227,7 +226,7 @@ static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg)
 void drawLine_dialogTask(void) {
 	
 	if(isOrAllowCheck ==1 ){
-			myMessageType = MY_MESSAGE_ID_DRAW_LINE;
+		myMessageType = MY_MESSAGE_ID_DRAW_LINE;
 		drawLine_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDrawLineDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",drawLine_hWin);
 		GUI_ExecCreatedDialog(drawLine_hWin);

@@ -47,8 +47,11 @@ void _mainFormCallback(WM_MESSAGE * pMsg)
         case WM_PAINT:
 						GUI_Clear();
 						GUI_DrawBitmap(&bmfengshi2,0,0);
-//						WM_SelectWindow(hWin);
-//						WM_SetFocus(mainForm_hWin);
+						WM_SelectWindow(hWin);
+						WM_SetFocus(mainForm_hWin);
+						selectLogoCount(0);
+						selectLogoCount(logoCount);
+						lastCount = logoCount;
             break;
 				case WM_CREATE:
 						WM_Exec();
@@ -82,7 +85,7 @@ void _mainFormCallback(WM_MESSAGE * pMsg)
             {
                 case GUI_ID_OK:
                     if(NCode==WM_NOTIFICATION_RELEASED)
-                        GUI_EndDialog(hWin, 0);
+
                     break;
                 case GUI_ID_CANCEL:
                     if(NCode==WM_NOTIFICATION_RELEASED)
@@ -154,7 +157,10 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
     switch (pMsg->MsgId) 
     {
         case WM_PAINT:
-					     GUI_DrawBitmap(&bmshijian,0,0);
+				{
+					   GUI_DrawBitmap(&bmshijian,0,0);
+
+				}
             break;
 				case WM_CREATE:
 						WM_Exec();

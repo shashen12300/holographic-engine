@@ -244,6 +244,7 @@ static void _cbExplainDialogCallback(WM_MESSAGE * pMsg)
 void explain_dialogTask(void) {
 	
 		myMessageType = MY_MESSAGE_ID_SYSTEM_EXPLAIN;
+		lastCount =0;
 		explain_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbExplainDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",explain_hWin);
 		GUI_ExecCreatedDialog(explain_hWin);

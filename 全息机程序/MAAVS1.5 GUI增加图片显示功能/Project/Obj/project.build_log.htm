@@ -28,24 +28,22 @@ Project File Date:  01/27/2017
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling LCDDummy.c...
-compiling drawLine_dialog.c...
-..\User\drawLine_dialog.h(6): warning:  #1-D: last line of file ends without a newline
+compiling my_win.c...
+..\User\user_Dialog.h(8): warning:  #1-D: last line of file ends without a newline
   #endif
-..\User\systemConfig.h(37): warning:  #1-D: last line of file ends without a newline
+..\User\systemConfig.h(39): warning:  #1-D: last line of file ends without a newline
   #endif
-..\User\systemExplain.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\User\drawLine_dialog.c(48): warning:  #177-D: variable "hWin" was declared but never referenced
-      WM_HWIN hWin = pMsg->hWin;
-..\User\drawLine_dialog.c(111): warning:  #550-D: variable "lastX" was set but never used
-  		static int x=0,lastY=140,lastX=0;
-..\User\drawLine_dialog.c: 5 warnings, 0 errors
+..\User\my_win.c(182): warning:  #177-D: variable "time" was declared but never referenced
+  										Stru_Time time,getTime;
+..\User\my_win.c(106): warning:  #177-D: function "_cbMyCallback" was declared but never referenced
+  static void _cbMyCallback(WM_MESSAGE * pMsg) 
+..\User\my_win.c: 4 warnings, 0 errors
 linking...
 .\Obj\project.axf: Warning: L6304W: Duplicate input file .\obj\lcddummy_1.o ignored.
-Program Size: Code=68764 RO-data=75396 RW-data=1756 ZI-data=28164  
+Program Size: Code=68832 RO-data=75392 RW-data=1756 ZI-data=28164  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-".\Obj\project.axf" - 0 Error(s), 6 Warning(s).
+".\Obj\project.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -63,7 +61,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:08
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

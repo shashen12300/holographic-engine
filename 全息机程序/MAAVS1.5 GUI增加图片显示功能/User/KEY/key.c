@@ -119,7 +119,7 @@ void selectLogoCount(int count) {   //32
 }
 
 void rotate(void) {  //logoÍ¼±êÑ¡Ôñ
-	static int lastCount=0;
+//	static int lastCount=0;
 			//Ğı×ª±àÂëÆ÷
 		if(rotate_flag == 1) {
 			

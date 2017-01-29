@@ -78,34 +78,39 @@ void refresh_time(void) {
 						WM_SetFocus(drawLine_hWin);
 				if(isOrSetPoint==1) {
 						GUI_SendKeyMsg(MY_MESSAGE_ID_DRAW_POINT,1);
+				}else if(isOrExitDrawLine==1) {
+						isOrExitDrawLine = 0;
+						rotateEnter_flag = 1;
+						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}
 			}else if(myMessageType == MY_MESSAGE_ID_CHECK_REPORT) {
 						WM_SetFocus(report_hWin);
 			}else {
 				printf("逻辑出问题了");
 			}
-	}
+	}else {
 	
-	if(isOrShowExplain == 1) {
-		isOrShowExplain = 0;
-		explain_dialogTask();
-	}else if (isOrShowSetTime == 1) {
-		isOrShowSetTime = 0;
-		time_dialogTask();
-	}else if(isBeginCheck == 1){ 
-		  isBeginCheck = 0;
-	  	if(isOrSetMessage==0) {
-	    //提示个人信息不能为空
-	  	warning_dialogTask();
-	  	}else {
-				rotateEnter_flag = 0;
-				isOrSetPoint = 1;
-			drawLine_dialogTask();
-		  }
-	}else if(isOrShowReport==1) {
-		 isOrShowReport =0;
-		reportType = logoCount;
-		report_dialogTask();
+		if(isOrShowExplain == 1) {
+			isOrShowExplain = 0;
+			explain_dialogTask();
+		}else if (isOrShowSetTime == 1) {
+			isOrShowSetTime = 0;
+			time_dialogTask();
+		}else if(isBeginCheck == 1){ 
+				isBeginCheck = 0;
+				if(isOrSetMessage==0) {
+				//提示个人信息不能为空
+				warning_dialogTask();
+				}else {
+					rotateEnter_flag = 0;
+					isOrSetPoint = 1;
+				drawLine_dialogTask();
+				}
+		}else if(isOrShowReport==1) {
+			 isOrShowReport =0;
+			reportType = logoCount;
+			report_dialogTask();
+		}
 	}
 }
 int main(void)
@@ -185,12 +190,11 @@ printf("开始测试\r\n");
 					length =20;
 					for(i=1;i<=length;i++) {
 						E17_sendString(healthData1[length-i]);
-//						E17_sendString("\r\n");
 						delay_ms(100);
 					}
 					sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
 					E17_sendString(data);
-					sprintf(data,"性别:%s 年龄:%s 婚否:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);
+					sprintf(data,"性别:%s 年龄:%s hunfou:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);
 					E17_sendString(data);
 					sprintf(data,"健康评估打印报告单\r\n");
 					E17_sendString(data);

@@ -52,4 +52,5 @@ void E11_init(void);//Ğı×ª±àÂëÆ÷
 void rotate(void);//Ñ¡ÔñÍ¼±ê
 void send_rotate_message(void);
 void send_enter_message(void);
+void selectLogoCount(int count);
 #endif

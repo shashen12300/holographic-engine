@@ -53,9 +53,13 @@ int rotateEnter_flag=0;
  int isOrShowReport = 0;
  //Ñ¡ÔñµÄlogoÍ¼±êÎ»Ö
 int logoCount =0;
+ //ÉÏÒ»¸ö±»Ñ¡ÔñµÄlogoÍ¼±ê
+int lastCount=0;
  //ÊÇ·ñ¿ÉÒÔ´òÓ¡±¨¸æ
  int isOrPrintReport=0;
  //ÊÇ·ñÔÊĞí¼ì²â
  int isOrAllowCheck=1;
+ //ÊÇ·ñÍË³öÇúÏßÒ³Ãæ
+ int isOrExitDrawLine=0;
 
 

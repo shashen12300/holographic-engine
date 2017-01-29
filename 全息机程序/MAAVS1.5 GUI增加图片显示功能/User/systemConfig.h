@@ -34,4 +34,6 @@ extern int isOrShowReport;
 extern int logoCount;
 extern  int isOrPrintReport;
 extern  int isOrAllowCheck;
+extern int isOrExitDrawLine;
+extern int lastCount;
 #endif

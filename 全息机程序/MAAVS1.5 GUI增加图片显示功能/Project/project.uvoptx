@@ -225,7 +225,7 @@
           <Type>0</Type>
           <LineNumber>378</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134244116</Address>
+          <Address>134244200</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -241,7 +241,7 @@
           <Type>0</Type>
           <LineNumber>380</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134244140</Address>
+          <Address>134244224</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -257,7 +257,7 @@
           <Type>0</Type>
           <LineNumber>332</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134249882</Address>
+          <Address>134249974</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -273,7 +273,7 @@
           <Type>0</Type>
           <LineNumber>175</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134247392</Address>
+          <Address>134247476</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -289,7 +289,7 @@
           <Type>0</Type>
           <LineNumber>219</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134245916</Address>
+          <Address>134246000</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -305,7 +305,7 @@
           <Type>0</Type>
           <LineNumber>231</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134245976</Address>
+          <Address>134246060</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -321,7 +321,7 @@
           <Type>0</Type>
           <LineNumber>242</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134246036</Address>
+          <Address>134246120</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -331,6 +331,86 @@
           <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\menu_dialog.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\project\../User/menu_dialog.c\242</Expression>
+        </Bp>
+        <Bp>
+          <Number>10</Number>
+          <Type>0</Type>
+          <LineNumber>54</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134240620</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\my_win.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/my_win.c\54</Expression>
+        </Bp>
+        <Bp>
+          <Number>11</Number>
+          <Type>0</Type>
+          <LineNumber>52</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134240604</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\my_win.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/my_win.c\52</Expression>
+        </Bp>
+        <Bp>
+          <Number>12</Number>
+          <Type>0</Type>
+          <LineNumber>53</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134240612</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\SCC\Desktop\holographic-engine\鍏ㄦ伅鏈虹▼搴?MAAVS1.5 GUI澧炲姞鍥剧墖鏄剧ず鍔熻兘\User\my_win.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\project\../User/my_win.c\53</Expression>
+        </Bp>
+        <Bp>
+          <Number>13</Number>
+          <Type>0</Type>
+          <LineNumber>49</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\User\my_win.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>14</Number>
+          <Type>0</Type>
+          <LineNumber>50</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\User\my_win.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -389,12 +469,27 @@
           <WinNumber>1</WinNumber>
           <ItemText>healthData[i]</ItemText>
         </Ww>
+        <Ww>
+          <count>11</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>saveData[0]</ItemText>
+        </Ww>
+        <Ww>
+          <count>12</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>saveData[0]</ItemText>
+        </Ww>
       </WatchWindow1>
       <WatchWindow2>
         <Ww>
           <count>0</count>
           <WinNumber>2</WinNumber>
           <ItemText>healthData[25]</ItemText>
+        </Ww>
+        <Ww>
+          <count>1</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>saveData[0]</ItemText>
         </Ww>
       </WatchWindow2>
       <Tracepoint>
