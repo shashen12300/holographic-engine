@@ -49,8 +49,8 @@ void _mainFormCallback(WM_MESSAGE * pMsg)
 						GUI_DrawBitmap(&bmfengshi2,0,0);
 						WM_SelectWindow(hWin);
 						WM_SetFocus(mainForm_hWin);
-						selectLogoCount(0);
-						selectLogoCount(logoCount);
+						setOrLogoCount(lastCount,0);
+						setOrLogoCount(logoCount,1);
 						lastCount = logoCount;
             break;
 				case WM_CREATE:

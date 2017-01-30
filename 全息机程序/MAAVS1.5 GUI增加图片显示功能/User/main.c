@@ -119,7 +119,7 @@ int main(void)
 	u8 key,i,length;
 	unsigned short int value;
 	Stru_Time time,getTime;
-	char data[300]="串口测试数据\r\n";
+	char data[400]="串口测试数据\r\n";
 	time.Year = 16;
 	time.Month = 12;
 	time.Day = 31;
@@ -141,13 +141,7 @@ int main(void)
 	GUI_SetFont(&GUI_FontHZ_SimSun_1515);
 	//绘制时间框
 		MainTask();
-
 	GUI_DrawBitmap(&bmshijian,0,0);
-
-//	DrawAreaBitmap(0,0,320,240,my_image,1);
-//		GUI_DrawBitmap(&bmfengshi2,50,100);
-//		GUI_InvertRect(10,100,10,10);
-//	GUI_ClearRect(10,100,30,30);
 
 while(1)
 {
@@ -193,11 +187,13 @@ printf("开始测试\r\n");
 						delay_ms(100);
 					}
 					sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
-					E17_sendString(data);
-					sprintf(data,"性别:%s 年龄:%s hunfou:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);
-					E17_sendString(data);
-					sprintf(data,"健康评估打印报告单\r\n");
-					E17_sendString(data);
+					E17_sendString2(data);
+					delay_ms(100);
+					sprintf(data,"性别:%s 年龄:%s 婚否:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);//saveData[0],saveData[1],saveData[2],saveData[3]
+					E17_sendString2(data);
+					delay_ms(100);
+					sprintf(data,"健康评估打印报告单\r\n\r\n");
+					E17_sendString2(data);
 					
 					isOrPrintReport =0;
 					isOrAllowCheck =0;

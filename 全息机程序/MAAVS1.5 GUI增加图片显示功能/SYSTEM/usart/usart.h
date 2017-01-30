@@ -30,4 +30,5 @@ void E17_sendString(char *data);
 void fnUSART3_SendByte(u8 Data);
 void UART1_Tx(unsigned char *TxBuf,unsigned int length);
 void E17_sendData(char *data,int length);
+void E17_sendString2(char *data);
 #endif

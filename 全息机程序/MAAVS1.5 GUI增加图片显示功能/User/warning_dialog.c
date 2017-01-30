@@ -184,6 +184,7 @@ static void _cbWarningDialogCallback(WM_MESSAGE * pMsg)
 
 void warning_dialogTask(void) {
 		myMessageType = MY_MESSAGE_ID_WARNING;
+		setOrLogoCount(logoCount,0);
 		warning_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbWarningDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",warning_hWin);
 		GUI_ExecCreatedDialog(warning_hWin);

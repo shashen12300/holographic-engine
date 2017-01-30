@@ -53,4 +53,5 @@ void rotate(void);//Ñ¡ÔñÍ¼±ê
 void send_rotate_message(void);
 void send_enter_message(void);
 void selectLogoCount(int count);
+void setOrLogoCount(int count,int flag);
 #endif

@@ -485,6 +485,7 @@ WM_HWIN Dialog_Task(void)
 
 void dialogTask(void) {
 		myMessageType = MY_MESSAGE_ID_MESSAGE_SETTING;
+	setOrLogoCount(logoCount,0);
 	//	 GUI_ExecDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialogCallback, root_hWin, 1, 1);//mainForm_hWin
 	dialog_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialogCallback, root_hWin, 0, 0);
 	printf("\r\n´´½¨¾ä±ú: %d\r\n",dialog_hWin);

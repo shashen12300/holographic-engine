@@ -307,6 +307,7 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 					lastMessageType = messageType;
 					WM_Exec();
 					}
+		rotateEnter_flag=0;
 		rotate_flag = 0;
 		selectEnd = 1;
 		}

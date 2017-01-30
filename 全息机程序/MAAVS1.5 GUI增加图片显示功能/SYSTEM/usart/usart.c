@@ -187,6 +187,16 @@ void E17_sendString(char *data) {
 	}	 
 }
 
+void E17_sendString2(char *data) {
+	char temp[500],i;
+	unsigned int size;
+	sprintf(temp,"%s",data);
+	size = strlen(temp);
+	for(i=0;i<size;i++) {
+		fnUSART3_SendByte(temp[i]);
+	}	 
+}
+
 void E17_sendData(char *data,int length) {
 	int i;
 	for(i=0;i<length;i++){

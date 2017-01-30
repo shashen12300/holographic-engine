@@ -276,6 +276,7 @@ void SystemMenu(WM_HWIN hWin) {  //信息设定
 							}
 
 		}
+		rotateEnter_flag=0;
 		rotate_flag = 0;
 		selectEnd = 1;
 
@@ -347,6 +348,8 @@ static void _cbMenuDialogCallback(WM_MESSAGE * pMsg)
 
 void menu_dialogTask(void) {
 		myMessageType = MY_MESSAGE_ID_SYSTEM_SETTING;//系统菜单
+		setOrLogoCount(logoCount,0);
+
 		menu_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbMenuDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",menu_hWin);
 		GUI_ExecCreatedDialog(menu_hWin);

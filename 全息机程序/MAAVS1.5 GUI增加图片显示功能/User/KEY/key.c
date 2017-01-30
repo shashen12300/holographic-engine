@@ -118,6 +118,34 @@ void selectLogoCount(int count) {   //32
 			}
 }
 
+void setOrLogoCount(int count,int flag) { 
+	int i=43,j=40;
+	int row= count/5, rank = count%5;
+	int bgColor=0;
+	bgColor =	LCD_L0_GetPixelIndex(8+rank*64,43+row*39);
+			if(flag==1) {
+				if(bgColor==0x01){
+					return;
+				}
+			}else {
+				if(bgColor==0x00){
+					return;
+				}
+			}
+				for (i=43+row*39;i<75+row*39;i++)
+			{
+				for (j=8+rank*64;j<40+rank*64;j++) {
+
+					if(count == 9) 
+						LCD_L0_XorPixel(j,i-1);
+					else
+						LCD_L0_XorPixel(j,i);
+
+					
+				}
+			}
+}
+
 void rotate(void) {  //logoÍ¼±êÑ¡Ôñ
 //	static int lastCount=0;
 			//Ðý×ª±àÂëÆ÷
