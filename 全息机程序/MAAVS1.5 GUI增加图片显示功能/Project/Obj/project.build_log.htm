@@ -28,46 +28,52 @@ Project File Date:  01/27/2017
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling LCDDummy.c...
-compiling main.c...
-..\User\feegnshi1.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\User\inputWindow.h(5): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\User\menu_dialog.h(6): warning:  #1-D: last line of file ends without a newline
+compiling report_dialog.c...
+..\User\report_dialog.h(12): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\User\systemConfig.h(39): warning:  #1-D: last line of file ends without a newline
   #endif
-..\User\systemExplain.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\User\warning_dialog.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\User\draw_dialog.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\User\drawLine_dialog.h(6): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\User\report_dialog.h(9): warning:  #1-D: last line of file ends without a newline
+..\User\reportFont.h(12): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\User\healthDataReport.h(34): warning:  #1-D: last line of file ends without a newline
   #endif
-..\User\main.c(180): warning:  #177-D: variable "displayTime" was declared but never referenced
-  					char displayTime[50],length;
-..\User\main.c(118): warning:  #177-D: variable "rect" was declared but never referenced
-  	GUI_RECT rect;
-..\User\main.c(119): warning:  #177-D: variable "length" was declared but never referenced
-  	u8 key,i,length;
-..\User\main.c(120): warning:  #177-D: variable "value" was declared but never referenced
-  	unsigned short int value;
-..\User\main.c(121): warning:  #550-D: variable "time" was set but never used
-  	Stru_Time time,getTime;
-..\User\main.c(121): warning:  #177-D: variable "getTime" was declared but never referenced
-  	Stru_Time time,getTime;
-..\User\main.c: 17 warnings, 0 errors
+..\User\report_dialog.c(73): warning:  #177-D: variable "hWin" was declared but never referenced
+      WM_HWIN hWin = pMsg->hWin;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText1" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText2" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText3" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText4" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText5" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText6" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText7" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText8" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText9" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText10" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText11" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(87): warning:  #177-D: variable "hText12" was declared but never referenced
+  		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
+..\User\report_dialog.c(89): warning:  #177-D: variable "p" was declared but never referenced
+  	char *p;	
+..\User\report_dialog.c(271): warning:  #550-D: variable "currentPageLength" was set but never used
+  	static int messageType =0,lastMessageType=0,currentPageLength=0;
+..\User\report_dialog.c: 19 warnings, 0 errors
 linking...
 .\Obj\project.axf: Warning: L6304W: Duplicate input file .\obj\lcddummy_1.o ignored.
-Program Size: Code=69104 RO-data=75496 RW-data=1756 ZI-data=28164  
+Program Size: Code=76788 RO-data=75676 RW-data=1756 ZI-data=28596  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-".\Obj\project.axf" - 0 Error(s), 17 Warning(s).
+".\Obj\project.axf" - 0 Error(s), 20 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -85,7 +91,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:13
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

@@ -27,10 +27,13 @@
 #include "healthDataReport.h"
 #include <string.h>
 #include "WM.h"
+#include "rtc.h"
+
 int reportCount = 0;
 int reportType = 0;
 int currentPage=0;
 char *healthData[25]={0};
+double healthValue[25];
 /*********************************************************************
 *
 *       Dialog resource
@@ -82,8 +85,13 @@ void ReportPaintDialog(WM_MESSAGE * pMsg)
 void ReportInitDialog(WM_MESSAGE * pMsg)
 {
 		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
-    WM_HWIN hWin = pMsg->hWin;
-		int i;
+	char valueData1[6],valueData2[6];
+	char *p;	
+	Stru_Time getTime;
+  double d1, d2,distance,minValue,maxValue,resultValue;
+		int i,sstrlen,j;
+	   WM_HWIN hWin = pMsg->hWin;
+
     //
     //FRAMEWIN
     //
@@ -206,22 +214,40 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 				for(i=0;i<reportLength[reportType];i++){
 						healthData[i] = healthData25[i]; 
 				}break;
-		}
-		reportCount = reportLength[reportType];
-//		for(i=0;i<reportCount;i++) {
-//			int length;
-//			char data[4] = "1.23";int length;char *p;
-//			p = &healthData[i][0];
-//			length = strlen(healthData[i]);
-//			for(i=0;i<4;i++){
-//				p[length-18+i]=data[i];
-//			}
-//			healthData[i][19] = '1';
-//			healthData[i][20] = '.';
-//			healthData[i][21] = '2';
-//			healthData[i][22] = '3';
+		} 
+			reportCount = reportLength[reportType];
+			for(i=0;i<reportLength[reportType];i++){
+					sstrlen = strlen(healthData[i]);
+					for(j=0;j<5;j++){
+						valueData1[j]=healthData[i][sstrlen-12+j];
+						valueData2[j]=healthData[i][sstrlen-6+j];
 
-			
+					}
+					d1=atof(valueData1);
+					d2=atof(valueData2);
+					minValue=d1-(d2-d1)*0.1;
+					maxValue=d2+(d2-d1)*0.1;
+					distance= maxValue-minValue;
+					printf("d1=%f d2=%f\r\n",d1,d2);
+					fnRTC_GetTime(&getTime); 
+					srand(getTime.Second);
+					resultValue = d1+rand()%((int)(distance*1000))/1000.0;
+					healthValue[i]=resultValue;
+				}
+
+//		for(i=0;i<reportCount;i++) {
+//			p = &healthData[i][0];
+//			sstrlen = strlen(healthData[i]);
+//			for(j=0;j<4;j++){
+//				p[sstrlen-18+j]='1';
+//			}
+			healthData[0][17] = '5';
+			healthData[0][18] = '5';
+			healthData[0][19] = '5';
+			healthData[0][20] = '.';
+			healthData[0][21] = '6';
+			healthData[0][22] = '7';
+
 //		}
 		for(i=0;i<reportCount;i++){
 			WM_HWIN	 hText;

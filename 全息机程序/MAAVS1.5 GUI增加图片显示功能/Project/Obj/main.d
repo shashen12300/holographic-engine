@@ -76,3 +76,4 @@
 .\obj\main.o: ..\User\drawLine_dialog.h
 .\obj\main.o: ..\User\report_dialog.h
 .\obj\main.o: ..\User\healthDataReport.h
+.\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

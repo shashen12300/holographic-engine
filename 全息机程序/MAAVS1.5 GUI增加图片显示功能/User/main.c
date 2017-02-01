@@ -27,7 +27,7 @@
 #include "drawLine_dialog.h"
 #include "report_dialog.h"
 #include "healthDataReport.h"
-
+#include <stdlib.h>
 unsigned char status_flag=0;
 int adcValue,time_flag;
 extern int rotate_flag;
@@ -145,6 +145,8 @@ int main(void)
 
 while(1)
 {
+
+		
 printf("¿ªÊ¼²âÊÔ\r\n");
 //	changeDir(0);
 //	readDataByAddress(0x0000,0x2800,mydata); 
