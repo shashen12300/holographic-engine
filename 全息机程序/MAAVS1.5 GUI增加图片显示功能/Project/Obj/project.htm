@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Tue Jan 31 23:34:31 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Wed Feb 01 20:24:31 2017
 <BR><P>
 <H3>Maximum Stack Usage =       1088 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -171,9 +171,9 @@ Global Symbols
 
 <P><STRONG><a name="[31d]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[31e]"></a>__decompress</STRONG> (Thumb, 90 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+<P><STRONG><a name="[31e]"></a>__decompress</STRONG> (Thumb, 100 bytes, Stack size unknown bytes, __dclz77c.o(!!dclz77c), UNUSED)
 
-<P><STRONG><a name="[31f]"></a>__decompress1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+<P><STRONG><a name="[31f]"></a>__decompress2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dclz77c.o(!!dclz77c), UNUSED)
 
 <P><STRONG><a name="[320]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
@@ -1434,7 +1434,7 @@ Global Symbols
 <LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
 
-<P><STRONG><a name="[8c]"></a>main</STRONG> (Thumb, 440 bytes, Stack size 432 bytes, main.o(.text))
+<P><STRONG><a name="[8c]"></a>main</STRONG> (Thumb, 438 bytes, Stack size 432 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1088 + Unknown Stack Size
 <LI>Call Chain = main &rArr; E17_sendString2 &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -2552,7 +2552,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 </UL>
 
-<P><STRONG><a name="[176]"></a>ReportInitDialog</STRONG> (Thumb, 1590 bytes, Stack size 136 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[176]"></a>ReportInitDialog</STRONG> (Thumb, 1716 bytes, Stack size 136 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 584 + Unknown Stack Size
 <LI>Call Chain = ReportInitDialog &rArr; atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
@@ -2579,6 +2579,7 @@ Global Symbols
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[17a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
@@ -2601,7 +2602,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 </UL>
 
-<P><STRONG><a name="[d6]"></a>report_dialogTask</STRONG> (Thumb, 214 bytes, Stack size 16 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[d6]"></a>report_dialogTask</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 416 + Unknown Stack Size
 <LI>Call Chain = report_dialogTask &rArr; GUI_ExecCreatedDialog &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
@@ -5497,6 +5498,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString2
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportInitDialog
 <LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimeSetting
 <LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageSetting
 <LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbTimeCallback
@@ -6602,7 +6604,7 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> drawline_dialog.o(.text)
 </UL>
-<P><STRONG><a name="[53]"></a>_cbReportDialogCallback</STRONG> (Thumb, 192 bytes, Stack size 24 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[53]"></a>_cbReportDialogCallback</STRONG> (Thumb, 336 bytes, Stack size 24 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 608 + Unknown Stack Size
 <LI>Call Chain = _cbReportDialogCallback &rArr; ReportInitDialog &rArr; atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>

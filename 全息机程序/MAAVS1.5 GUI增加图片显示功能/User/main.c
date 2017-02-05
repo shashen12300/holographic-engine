@@ -183,9 +183,8 @@ printf("开始测试\r\n");
 					Stru_Time getTime;
 					fnRTC_GetTime(&getTime); 	
 					length = reportLength[reportType];
-					length =20;
 					for(i=1;i<=length;i++) {
-						E17_sendString(healthData1[length-i]);
+						E17_sendString(healthData[length-i]);
 						delay_ms(100);
 					}
 					sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);

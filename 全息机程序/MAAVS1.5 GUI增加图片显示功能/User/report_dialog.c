@@ -235,20 +235,20 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 					healthValue[i]=resultValue;
 				}
 
-//		for(i=0;i<reportCount;i++) {
+		for(i=0;i<reportCount;i++) {
+			char data[10];
 //			p = &healthData[i][0];
 //			sstrlen = strlen(healthData[i]);
 //			for(j=0;j<4;j++){
 //				p[sstrlen-18+j]='1';
 //			}
-			healthData[0][17] = '5';
-			healthData[0][18] = '5';
-			healthData[0][19] = '5';
-			healthData[0][20] = '.';
-			healthData[0][21] = '6';
-			healthData[0][22] = '7';
+			sprintf(data,"%.2f",healthValue[i]);
+			sstrlen = strlen(data);
+			for(j=0;j<sstrlen;j++) {
+				healthData[i][26-sstrlen+j] = data[j];
+			}
 
-//		}
+		}
 		for(i=0;i<reportCount;i++){
 			WM_HWIN	 hText;
 			if(i>=12)break;
