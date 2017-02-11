@@ -245,7 +245,7 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 			sprintf(data,"%.2f",healthValue[i]);
 			sstrlen = strlen(data);
 			for(j=0;j<sstrlen;j++) {
-				healthData[i][26-sstrlen+j] = data[j];
+				healthData[i][25-sstrlen+j] = data[j];
 			}
 
 		}

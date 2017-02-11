@@ -173,8 +173,16 @@ void E17_uart_init(u32 bound){
 
   USART_Init(USART3, &USART_InitStructure);
   USART_Cmd(USART3, ENABLE);                    //Ê¹ÄÜ´®¿Ú 
+
 }
 
+void E17_FontConfig(void) {
+	char data[3]={0x1b,0x4d,0x01};
+	int i;
+	for(i=0;i<3;i++){
+	fnUSART3_SendByte(data[i]);
+}
+}
 
 void E17_sendString(char *data) {
 	char temp[500],i;
@@ -182,7 +190,7 @@ void E17_sendString(char *data) {
 	sprintf(temp,"%s",data);
 	size = strlen(temp);
 	for(i=0;i<size;i++) {
-		if((i>=19)&&(i<26))continue;
+//		if((i>=19)&&(i<26))continue;
 		fnUSART3_SendByte(temp[i]);
 	}	 
 }
