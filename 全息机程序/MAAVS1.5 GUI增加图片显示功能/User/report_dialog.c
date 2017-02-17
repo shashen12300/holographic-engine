@@ -232,6 +232,9 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 					fnRTC_GetTime(&getTime); 
 					srand(getTime.Second);
 					resultValue = d1+rand()%((int)(distance*1000))/1000.0;
+					if(resultValue>d2||resultValue<d1){
+					healthData[i][25] = '*';
+					}
 					healthValue[i]=resultValue;
 				}
 
@@ -257,6 +260,14 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 			TEXT_SetText(hText ,healthData[i]);
 		}
 		
+		isOrPrintReport =1;
+				if(isOneCheck==1){
+				isOrAllowCheck =1;
+			}else {
+				isOrAllowCheck = 0;
+			}
+
+		
 }
 
 
@@ -280,10 +291,9 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 				WM_Exec();
 				messageType =0;
 				lastMessageType=0;
-				isOrPrintReport =1;
 				currentPageLength=0;
 				currentPage=0;
-				isOrAllowCheck = 0;
+				isOrPrintReport=0;
 		}else	if((rotate_flag == 1)&&(selectEnd==0)) {
 			if(KEY_A == 0) {
 						delay_us(20);
@@ -407,6 +417,9 @@ static void _cbReportDialogCallback(WM_MESSAGE * pMsg)
 */
 void report_dialogTask(void) {
 	
+		 if (strcmp(saveData[0],"男") == 0&&logoCount==5){
+			return;
+	 }
 		myMessageType = MY_MESSAGE_ID_CHECK_REPORT;
 		//	关闭定时器
 		report_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbReportDialogCallback, root_hWin, 0, 0);

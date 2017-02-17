@@ -185,7 +185,8 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
 										sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
 										GUI_DispStringAt(displayTime,175,3);
                    printf("refresh time");
-									
+									printf("active window :%d \r\n",WM_GetActiveWindow());
+
 									if(isOrRefreshMessage == 1) {
 											isOrRefreshMessage = 0;
 										GUI_Clear();

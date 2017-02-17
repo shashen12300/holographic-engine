@@ -28,11 +28,37 @@
 void KEY_Init(void) //IO初始化
 {
  	GPIO_InitTypeDef GPIO_InitStructure;
+	EXTI_InitTypeDef EXTI_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
 	//init GPIOA  上拉输入
  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
 	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4;//PA.1 .2 .3 .4
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	
+	//init GPIOA  上拉输入
+ 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
+	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_3;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	
+		/* EXTI line(PB0) mode config */
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource3); 
+  EXTI_InitStructure.EXTI_Line = EXTI_Line3;
+  EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+  EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
+  EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+  EXTI_Init(&EXTI_InitStructure); 
+	
+  /* Configure one bit for preemption priority */
+  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+  
+  /* 配置P[A|B|C|D|E]0为中断源 */
+  NVIC_InitStructure.NVIC_IRQChannel = EXTI3_IRQn;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  NVIC_Init(&NVIC_InitStructure);
 		
 }
 
@@ -221,7 +247,10 @@ void send_enter_message(void) {
 				printf("enter\r\n");
 				if (myMessageType == MY_MESSAGE_ID_LOGO) {
 					if(isOrAllowCheck==1){
-							isBeginCheck = 1;
+						isOrShowReport=0;
+						isBeginCheck=1;
+					}else {
+						isOrShowReport=1;
 					}
 				}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
 								WM_SetFocus(dialog_hWin);

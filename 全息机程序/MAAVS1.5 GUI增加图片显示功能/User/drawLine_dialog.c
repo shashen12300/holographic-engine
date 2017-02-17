@@ -16,6 +16,7 @@
 #include <math.h>
 #include "adc.h"
 #include "fengshi2.h"
+#include <string.h>
 
 #define PI 3.1415926
 /*********************************************************************
@@ -125,13 +126,12 @@ void DrawLineWindow(WM_HWIN hWin) {
 			isBeginCheck = 0;
 		}
 		else if(isOrSetPoint ==1){
-			int y,minY,maxY,i,adcValue;
+			int y,minY,maxY,i,adcValue,j;
 			double t;
 			isOrSetPoint =0;
+			WM_SelectWindow(hWin);
+//			for(j=0;j<3;j++){
 			for(i=0;i<320;i++){
-//			if(x>318){
-//				x=0;
-//			}
 			t = 2*PI*i/20;
 			if(i/20%2==1){
 				range=70;
@@ -152,8 +152,14 @@ void DrawLineWindow(WM_HWIN hWin) {
 			}
 			LCD_L0_DrawVLine(i,minY,maxY);
 			lastX =i;lastY=y;
-			delay_ms(20);			
+			delay_ms(20);	
 		}
+//		GUI_Clear();
+//		LCD_L0_FillRect(0,0,320,201);
+//		GUI_DrawBitmap(&bmtablePicture,-1,-1);
+//		WM_Exec1();
+//		WM_Paint(hWin);
+//	}
 		WM_Exec();
 		isOrExitDrawLine = 1;			
 	}
@@ -224,6 +230,10 @@ static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg)
 
 
 void drawLine_dialogTask(void) {
+
+	 if (strcmp(saveData[0],"ÄÐ") == 0&&logoCount==5){
+			return;
+	 }
 	
 	if(isOrAllowCheck ==1 ){
 		myMessageType = MY_MESSAGE_ID_DRAW_LINE;

@@ -28,12 +28,34 @@ Project File Date:  01/27/2017
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling LCDDummy.c...
+compiling menu_dialog.c...
+..\User\menu_dialog.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\systemConfig.h(39): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\systemExplain.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\menu_dialog.c(70): warning:  #177-D: variable "hWin" was declared but never referenced
+      WM_HWIN hWin = pMsg->hWin;
+..\User\menu_dialog.c(91): warning:  #177-D: variable "hText7" was declared but never referenced
+  	WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText13,hText14,hText15,hText16,hText17;
+..\User\menu_dialog.c(91): warning:  #177-D: variable "hText13" was declared but never referenced
+  	WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText13,hText14,hText15,hText16,hText17;
+..\User\menu_dialog.c(91): warning:  #177-D: variable "hText14" was declared but never referenced
+  	WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText13,hText14,hText15,hText16,hText17;
+..\User\menu_dialog.c(91): warning:  #177-D: variable "hText15" was declared but never referenced
+  	WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText13,hText14,hText15,hText16,hText17;
+..\User\menu_dialog.c(91): warning:  #177-D: variable "hText16" was declared but never referenced
+  	WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText13,hText14,hText15,hText16,hText17;
+..\User\menu_dialog.c(91): warning:  #177-D: variable "hText17" was declared but never referenced
+  	WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText13,hText14,hText15,hText16,hText17;
+..\User\menu_dialog.c: 10 warnings, 0 errors
 linking...
 .\Obj\project.axf: Warning: L6304W: Duplicate input file .\obj\lcddummy_1.o ignored.
-Program Size: Code=76964 RO-data=63956 RW-data=12304 ZI-data=28600  
+Program Size: Code=77436 RO-data=64356 RW-data=12304 ZI-data=28600  
 Finished: 0 information, 1 warning and 0 error messages.
 FromELF: creating hex file...
-".\Obj\project.axf" - 0 Error(s), 1 Warning(s).
+".\Obj\project.axf" - 0 Error(s), 11 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -51,7 +73,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:04
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

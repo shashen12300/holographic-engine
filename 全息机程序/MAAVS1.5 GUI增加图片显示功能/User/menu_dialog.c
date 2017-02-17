@@ -242,6 +242,7 @@ void SystemMenu(WM_HWIN hWin) {  //信息设定
 										WM_Exec();
 									}else {
 										isOneCheck = 1;
+										isOrAllowCheck = 1;
 										TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT3),"单项检测");
 									}
 

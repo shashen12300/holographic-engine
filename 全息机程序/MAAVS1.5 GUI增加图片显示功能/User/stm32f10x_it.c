@@ -7,10 +7,13 @@
 #include "usart.h"
 #include "user_Dialog.h"
 #include "systemConfig.h"
+#include "rtc.h"
 
 unsigned char CAN_LCD_buffer[480];
 extern int time_flag;
 void refresh_time(void) ;
+
+extern void printReport(void);
 void USB_LP_CAN1_RX0_IRQHandler(void)   
 {   
 	unsigned int i;
@@ -59,14 +62,14 @@ void EXTI2_IRQHandler(void)
 	  
 	} 
 }
-void EXTI3_IRQHandler(void)  
-{
-  if(EXTI_GetITStatus(EXTI_Line3) != RESET) //确保是否产生了EXTI Line中断
-	{
-		EXTI_ClearITPendingBit(EXTI_Line3);     //清除中断标志位
-	  
-	} 
-}
+//void EXTI3_IRQHandler(void)  
+//{
+//  if(EXTI_GetITStatus(EXTI_Line3) != RESET) //确保是否产生了EXTI Line中断
+//	{
+//		EXTI_ClearITPendingBit(EXTI_Line3);     //清除中断标志位
+//	  
+//	} 
+//}
 void EXTI4_IRQHandler(void)  
 {
 	if(EXTI_GetITStatus(EXTI_Line4) != RESET) //确保是否产生了EXTI Line中断
@@ -106,6 +109,31 @@ void TIM2_IRQHandler(void)
 	 	
 }
 
+void EXTI3_IRQHandler(void){
+	
+	EXTI_InitTypeDef EXTI_InitStructure;
+	if(EXTI_GetITStatus(EXTI_Line3) != RESET) {
+				Stru_Time time,getTime;
+
+			EXTI_ClearITPendingBit(EXTI_Line3);     //清除中断标志位
+			
+			GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource3); 
+			EXTI_InitStructure.EXTI_Line = EXTI_Line3;
+			EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+			EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
+			EXTI_InitStructure.EXTI_LineCmd = DISABLE;
+			EXTI_Init(&EXTI_InitStructure); 
+			//打印
+			printReport();
+		}
+			//打开中断
+	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource3); 
+  EXTI_InitStructure.EXTI_Line = EXTI_Line3;
+  EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+  EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
+  EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+  EXTI_Init(&EXTI_InitStructure); 
+}
 void EXTI15_10_IRQHandler(void)
 {	
 	//关闭中断
@@ -140,6 +168,7 @@ void EXTI15_10_IRQHandler(void)
 			rotateEnter_flag = 1;
 			send_enter_message();
 		}
+		
 		//打开中断
 	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource11|GPIO_PinSource15); 
   EXTI_InitStructure.EXTI_Line = EXTI_Line11|EXTI_Line15;

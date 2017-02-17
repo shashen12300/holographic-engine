@@ -56,3 +56,4 @@
 .\obj\drawline_dialog.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\obj\drawline_dialog.o: ..\User\ADC\adc.h
 .\obj\drawline_dialog.o: ..\User\fengshi2.h
+.\obj\drawline_dialog.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

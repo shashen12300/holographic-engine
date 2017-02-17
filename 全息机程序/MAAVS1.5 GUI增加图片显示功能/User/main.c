@@ -52,7 +52,7 @@ const unsigned char logo2[12]={
 0xff,0xff,0xff,0xff
 };
 
-
+void printReport(void);
  void User_delay(unsigned int j)  //1ms delay volatile
 {
     volatile unsigned int i;	
@@ -174,33 +174,37 @@ printf("开始测试\r\n");
 				if(isOrSetMessage==0) {
 					//提示个人信息不能为空
 					warning_dialogTask();
-				}else {
-						drawLine_dialogTask();
+				}else{
+					 if(isOrAllowCheck==1){
+						isBeginCheck=1;
+					}else {
+						isOrShowReport=1;
 				}
+			}
 			}else if (key == 3) {   //打印
-				if(isOrPrintReport==1) {
-					char displayTime[50],length;
-					Stru_Time getTime;
-					fnRTC_GetTime(&getTime); 	
-					length = reportLength[reportType];
-					E17_FontConfig();
-					for(i=1;i<=length;i++) {
-						E17_sendString(healthData[length-i]);
-						E17_sendString("\r\n");
-						delay_ms(100);
-					}
-					sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
-					E17_sendString2(data);
-					delay_ms(100);
-					sprintf(data,"性别:%s 年龄:%s 婚否:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);//saveData[0],saveData[1],saveData[2],saveData[3]
-					E17_sendString2(data);
-					delay_ms(100);
-					sprintf(data,"        健康评估打印报告单\r\n\r\n");
-					E17_sendString2(data);
-					
-					isOrPrintReport =0;
-					isOrAllowCheck =0;
-				}
+//				if(isOrPrintReport==1) {
+//					char displayTime[50],length;
+//					Stru_Time getTime;
+//					fnRTC_GetTime(&getTime); 	
+//					length = reportLength[reportType];
+//					E17_FontConfig();
+//					for(i=1;i<=length;i++) {
+//						E17_sendString(healthData[length-i]);
+//						E17_sendString("\r\n");
+//						delay_ms(100);
+//					}
+//					sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
+//					E17_sendString2(data);
+//					delay_ms(100);
+//					sprintf(data,"性别:%s 年龄:%s 婚否:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);//saveData[0],saveData[1],saveData[2],saveData[3]
+//					E17_sendString2(data);
+//					delay_ms(100);
+//					sprintf(data,"        健康评估打印报告单\r\n\r\n");
+//					E17_sendString2(data);
+//					
+//					isOrPrintReport =0;
+//					isOrAllowCheck =0;
+//				}
 			}else if (key == 4) {   //系统菜单
 				menu_dialogTask();
 			}else {  //确认按键，或进入检测
@@ -213,6 +217,40 @@ printf("开始测试\r\n");
 	}
 }
 
+}
+
+void printReport(void) {
+		int i=0;
+		char data[400]="串口测试数据\r\n";
+		Stru_Time time,getTime;
+				if(isOrPrintReport==1&&myMessageType == MY_MESSAGE_ID_CHECK_REPORT) {
+			char displayTime[50],length;
+			Stru_Time getTime;
+			fnRTC_GetTime(&getTime); 	
+			length = reportLength[reportType];
+			E17_FontConfig();
+			for(i=1;i<=length;i++) {
+				E17_sendString(healthData[length-i]);
+				E17_sendString("\r\n");
+				delay_ms(100);
+			}
+			sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
+			E17_sendString2(data);
+			delay_ms(100);
+			sprintf(data,"性别:%s 年龄:%s 婚否:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);
+			E17_sendString2(data);
+			delay_ms(100);
+			sprintf(data,"        健康评估打印报告单\r\n\r\n");
+			E17_sendString2(data);
+			
+			if(isOneCheck==1){
+				isOrPrintReport =0;
+				isOrAllowCheck =1;
+			}else {
+				isOrPrintReport =1;
+				isOrAllowCheck = 0;
+			}
+		}
 }
 
 
