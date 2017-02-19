@@ -33,7 +33,9 @@ int reportCount = 0;
 int reportType = 0;
 int currentPage=0;
 char *healthData[25]={0};
-double healthValue[25];
+double healthValue[25],d1,d2;
+
+extern void printReport(void);
 /*********************************************************************
 *
 *       Dialog resource
@@ -85,10 +87,10 @@ void ReportPaintDialog(WM_MESSAGE * pMsg)
 void ReportInitDialog(WM_MESSAGE * pMsg)
 {
 		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
-	char valueData1[6],valueData2[6];
+	char valueData1[7]={0},valueData2[7]={0};
 	char *p;	
 	Stru_Time getTime;
-  double d1, d2,distance,minValue,maxValue,resultValue;
+  double distance,minValue,maxValue,resultValue;
 		int i,sstrlen,j;
 	   WM_HWIN hWin = pMsg->hWin;
 
@@ -225,6 +227,7 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 					}
 					d1=atof(valueData1);
 					d2=atof(valueData2);
+
 					minValue=d1-(d2-d1)*0.1;
 					maxValue=d2+(d2-d1)*0.1;
 					distance= maxValue-minValue;
@@ -232,26 +235,33 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 					fnRTC_GetTime(&getTime); 
 					srand(getTime.Second);
 					resultValue = d1+rand()%((int)(distance*1000))/1000.0;
+					if (resultValue>1000) {
+						resultValue=1000;
+					}
 					if(resultValue>d2||resultValue<d1){
 					healthData[i][25] = '*';
 					}
 					healthValue[i]=resultValue;
 				}
 
-		for(i=0;i<reportCount;i++) {
-			char data[10];
-//			p = &healthData[i][0];
-//			sstrlen = strlen(healthData[i]);
-//			for(j=0;j<4;j++){
-//				p[sstrlen-18+j]='1';
-//			}
-			sprintf(data,"%.2f",healthValue[i]);
-			sstrlen = strlen(data);
-			for(j=0;j<sstrlen;j++) {
-				healthData[i][25-sstrlen+j] = data[j];
-			}
-
+		if(isOrCheckLogo[logoCount]==0) {
+			for(i=0;i<reportCount;i++) {
+				char data[10];
+				sprintf(data,"%.2f",healthValue[i]);
+				sstrlen = strlen(data);
+					for(j=0;j<sstrlen;j++) {
+						healthData[i][25-sstrlen+j] = data[j];
+					}
+				}
+				isOrCheckLogo[logoCount]=1;
 		}
+//		if(isOneCheck==1) {
+//			isOrCheckLogo[logoCount]=1;
+//		}else {
+//			for(i=0;i<25;i++) {
+//				isOrCheckLogo[i]=1;
+//			}
+//		}
 		for(i=0;i<reportCount;i++){
 			WM_HWIN	 hText;
 			if(i>=12)break;
@@ -266,6 +276,7 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 			}else {
 				isOrAllowCheck = 0;
 			}
+				rotateEnter_flag = 0;
 
 		
 }
@@ -288,12 +299,13 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 				GUI_EndDialog(hWin, 0);
 				WM_SelectWindow(mainForm_hWin);
 				myMessageType = MY_MESSAGE_ID_LOGO;
-				WM_Exec();
 				messageType =0;
 				lastMessageType=0;
 				currentPageLength=0;
 				currentPage=0;
 				isOrPrintReport=0;
+				selectEnd = 1;
+				WM_Exec();
 		}else	if((rotate_flag == 1)&&(selectEnd==0)) {
 			if(KEY_A == 0) {
 						delay_us(20);
@@ -384,6 +396,11 @@ static void _cbReportDialogCallback(WM_MESSAGE * pMsg)
 										SystemReport(hWin);
 								}
 								    break;
+//								case MY_MESSAGE_ID_KEY3:
+//								{
+//										printReport();
+//								}
+//										break;
             }
             break;
         case WM_NOTIFY_PARENT:

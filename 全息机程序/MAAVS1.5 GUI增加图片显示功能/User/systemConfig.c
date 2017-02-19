@@ -61,5 +61,9 @@ int lastCount=0;
  int isOrAllowCheck=1;
  //是否退出曲线页面
  int isOrExitDrawLine=0;
+ //判断每一项是否已经检测
+ char isOrCheckLogo[25]={0};
+ //是否正在刷新时间
+ int isOrRefreshrTime=0;
 
 

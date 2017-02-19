@@ -119,6 +119,7 @@ void PaintDialog(WM_MESSAGE * pMsg)
 void InitDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
+	int i;
     //
     //FRAMEWIN
     //
@@ -275,7 +276,10 @@ void InitDialog(WM_MESSAGE * pMsg)
 		TEXT_SetText(hText15,saveData[2]);
 		TEXT_SetText(hText16,saveData[3]);
 		TEXT_SetText(hText17,saveData[4]);
-
+		//Çå³þ¼ì²â½á¹û
+		for(i=0;i<25;i++) {
+			isOrCheckLogo[i]=0;
+		}
 }
 
 

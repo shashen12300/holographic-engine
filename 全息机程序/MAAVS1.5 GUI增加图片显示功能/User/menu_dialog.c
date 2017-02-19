@@ -236,22 +236,32 @@ void SystemMenu(WM_HWIN hWin) {  //信息设定
 								}break;								
 								case 3:  //单项/多项检测
 								{
+									int i;
 									if(isOneCheck == 1){
 										isOneCheck = 0;
 										TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT3),"多项检测");
 										WM_Exec();
 									}else {
 										isOneCheck = 1;
-										isOrAllowCheck = 1;
 										TEXT_SetText(WM_GetDialogItem(hWin,GUI_ID_TEXT3),"单项检测");
 									}
-
+									isRestartCheck = 1;
+									isOrAllowCheck = 1;
+									isOrSetMessage = 0;
+									for(i=0;i<25;i++) {
+										isOrCheckLogo[i]=0;
+									}
 									printf("menu-3");
 								}break;
 								case 4: 
 								{//重新检测
+									int i;
 									isRestartCheck = 1;
 									isOrAllowCheck = 1;
+									isOrSetMessage = 0;
+									for(i=0;i<25;i++) {
+										isOrCheckLogo[i]=0;
+									}
 									WM_SelectWindow(hWin);
 									GUI_EndDialog(hWin, 0);
 									WM_SelectWindow(mainForm_hWin);

@@ -209,7 +209,7 @@ Note that we have chosen the values to be close to existing
 #define GUI_ID_USER     	0x800
 #define MY_MESSAGE_ID_KEY1      GUI_ID_USER + 0   //按键1
 #define MY_MESSAGE_ID_KEY2      GUI_ID_USER + 1   //按键2
-#define MY_MESSAGE_ID_KEY3      GUI_ID_USER + 2   //按键3(打印)
+#define MY_MESSAGE_ID_KEY3      GUI_ID_USER + 2   //按键3
 #define MY_MESSAGE_ID_KEY4      GUI_ID_USER + 3   //按键4
 #define MY_MESSAGE_ID_ENCODER0  GUI_ID_USER + 4   //编码器，选择logo
 #define MY_MESSAGE_ID_TIME      GUI_ID_USER + 5   //时间

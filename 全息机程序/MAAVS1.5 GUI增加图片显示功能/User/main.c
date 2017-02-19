@@ -64,7 +64,8 @@ void printReport(void);
 void refresh_time(void) {
 	if (time_flag > 100) {
 			time_flag = 0;
-			printf("active window :%d \r\n",WM_GetActiveWindow());
+//			printf("active window :%d \r\n",WM_GetActiveWindow());
+		 isOrRefreshrTime = 1;
 			WM_SetFocus(time_hWin);
 			GUI_SendKeyMsg(MY_MESSAGE_ID_TIME,1);
 			if (myMessageType == MY_MESSAGE_ID_LOGO) {
@@ -160,7 +161,7 @@ printf("开始测试\r\n");
 		
 		if(selectEnd == 1) {
 			refresh_time();
-			send_rotate_message();
+//			send_rotate_message();
 		}
 		adcValue = Get_Adc(0);
 		if(key !=0)//KEY0按下,则执行校准程序
@@ -171,16 +172,29 @@ printf("开始测试\r\n");
 						dialogTask();
 				}
 			}else if (key == 2) {  //进入检测
-				if(isOrSetMessage==0) {
-					//提示个人信息不能为空
-					warning_dialogTask();
-				}else{
-					 if(isOrAllowCheck==1){
-						isBeginCheck=1;
+//				if(isOrSetMessage==0) {
+//					//提示个人信息不能为空
+//					warning_dialogTask();
+//				}else{
+//					 if(isOrAllowCheck==1){
+//						isBeginCheck=1;
+//					}else {
+//						isOrShowReport=1;
+//				}
+//			}
+				if (myMessageType == MY_MESSAGE_ID_LOGO) {
+					if(isOrAllowCheck==1){
+						if(isOrCheckLogo[logoCount]==0) {
+								isOrShowReport=0;
+								isBeginCheck=1;
+						}else {
+								isOrShowReport=1;
+						}
+
 					}else {
 						isOrShowReport=1;
+					}
 				}
-			}
 			}else if (key == 3) {   //打印
 //				if(isOrPrintReport==1) {
 //					char displayTime[50],length;
@@ -229,27 +243,20 @@ void printReport(void) {
 			fnRTC_GetTime(&getTime); 	
 			length = reportLength[reportType];
 			E17_FontConfig();
+			E17_sendString2("\r\n");
 			for(i=1;i<=length;i++) {
 				E17_sendString(healthData[length-i]);
-				E17_sendString("\r\n");
-				delay_ms(100);
+				E17_sendString2("\r\n");
+//				delay_ms(100);
 			}
 			sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
 			E17_sendString2(data);
-			delay_ms(100);
+//			delay_ms(100);
 			sprintf(data,"性别:%s 年龄:%s 婚否:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);
 			E17_sendString2(data);
-			delay_ms(100);
+//			delay_ms(100);
 			sprintf(data,"        健康评估打印报告单\r\n\r\n");
 			E17_sendString2(data);
-			
-			if(isOneCheck==1){
-				isOrPrintReport =0;
-				isOrAllowCheck =1;
-			}else {
-				isOrPrintReport =1;
-				isOrAllowCheck = 0;
-			}
 		}
 }
 

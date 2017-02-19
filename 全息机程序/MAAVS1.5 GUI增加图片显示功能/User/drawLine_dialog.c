@@ -49,7 +49,7 @@ void DrawLinePaintDialog(WM_MESSAGE * pMsg)
     WM_HWIN hWin = pMsg->hWin;
     GUI_SetColor(0xffffff);
 	  GUI_DrawBitmap(&bmtablePicture,-1,-1);
-
+		delay_ms(20);
 }
 
 
@@ -133,10 +133,12 @@ void DrawLineWindow(WM_HWIN hWin) {
 //			for(j=0;j<3;j++){
 			for(i=0;i<320;i++){
 			t = 2*PI*i/20;
-			if(i/20%2==1){
+			if(i/20%3==1){
 				range=70;
-			}else {
+			}else if(i/20%3==2){
 				range=20;
+			}else {
+				range=10;
 			}
 			y=(int)(sin(t)*1.0*range+50+90);
 			if(lastY<y){
@@ -152,7 +154,7 @@ void DrawLineWindow(WM_HWIN hWin) {
 			}
 			LCD_L0_DrawVLine(i,minY,maxY);
 			lastX =i;lastY=y;
-			delay_ms(20);	
+			delay_ms(50);	
 		}
 //		GUI_Clear();
 //		LCD_L0_FillRect(0,0,320,201);
@@ -161,7 +163,8 @@ void DrawLineWindow(WM_HWIN hWin) {
 //		WM_Paint(hWin);
 //	}
 		WM_Exec();
-		isOrExitDrawLine = 1;			
+		isOrExitDrawLine = 1;	
+
 	}
 }
 

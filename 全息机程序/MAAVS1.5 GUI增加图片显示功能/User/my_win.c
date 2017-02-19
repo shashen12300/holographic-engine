@@ -228,6 +228,7 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
         default:
             WM_DefaultProc(pMsg);
     }
+		isOrRefreshrTime = 0;
 }
 /*********************************************************************
 *

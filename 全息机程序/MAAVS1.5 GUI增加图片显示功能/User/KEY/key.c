@@ -247,8 +247,13 @@ void send_enter_message(void) {
 				printf("enter\r\n");
 				if (myMessageType == MY_MESSAGE_ID_LOGO) {
 					if(isOrAllowCheck==1){
-						isOrShowReport=0;
-						isBeginCheck=1;
+						if(isOrCheckLogo[logoCount]==0) {
+								isOrShowReport=0;
+								isBeginCheck=1;
+						}else {
+								isOrShowReport=1;
+						}
+
 					}else {
 						isOrShowReport=1;
 					}

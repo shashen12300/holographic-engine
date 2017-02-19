@@ -185,18 +185,18 @@ void E17_FontConfig(void) {
 }
 
 void E17_sendString(char *data) {
-	char temp[500],i;
+	char i,temp[100];
 	unsigned int size;
 	sprintf(temp,"%s",data);
-	size = strlen(temp);
-	for(i=0;i<size;i++) {
-//		if((i>=19)&&(i<26))continue;
+	size = strlen(data);
+	for(i=0;i<40;i++) {
 		fnUSART3_SendByte(temp[i]);
+//		data++;
 	}	 
 }
 
 void E17_sendString2(char *data) {
-	char temp[500],i;
+	char i,temp[100];
 	unsigned int size;
 	sprintf(temp,"%s",data);
 	size = strlen(temp);

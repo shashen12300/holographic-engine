@@ -518,6 +518,7 @@ static void _cbClockDialogCallback(WM_MESSAGE * pMsg)
 
 void time_dialogTask(void) {
 		myMessageType = MY_MESSAGE_ID_SYSTEM_TIME;
+		setOrLogoCount(logoCount,0);
 	clock_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbClockDialogCallback, root_hWin, 0, 0);
 	printf("\r\n´´½¨¾ä±ú: %d\r\n",clock_hWin);
 	GUI_ExecCreatedDialog(clock_hWin);

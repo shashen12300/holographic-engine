@@ -36,4 +36,6 @@ extern  int isOrPrintReport;
 extern  int isOrAllowCheck;
 extern int isOrExitDrawLine;
 extern int lastCount;
+extern  char isOrCheckLogo[25];
+extern  int isOrRefreshrTime;
 #endif

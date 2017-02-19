@@ -112,6 +112,7 @@ void TIM2_IRQHandler(void)
 void EXTI3_IRQHandler(void){
 	
 	EXTI_InitTypeDef EXTI_InitStructure;
+		if(isOrRefreshrTime==1)return;
 	if(EXTI_GetITStatus(EXTI_Line3) != RESET) {
 				Stru_Time time,getTime;
 
@@ -125,6 +126,10 @@ void EXTI3_IRQHandler(void){
 			EXTI_Init(&EXTI_InitStructure); 
 			//打印
 			printReport();
+//		if(myMessageType==MY_MESSAGE_ID_CHECK_REPORT) {
+//							WM_SetFocus(report_hWin);
+//							GUI_SendKeyMsg(MY_MESSAGE_ID_KEY3,1);
+//				}
 		}
 			//打开中断
 	GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource3); 
@@ -138,6 +143,8 @@ void EXTI15_10_IRQHandler(void)
 {	
 	//关闭中断
 	EXTI_InitTypeDef EXTI_InitStructure;
+	
+	if(isOrRefreshrTime==1)return;
 
       if(EXTI_GetITStatus(EXTI_Line11) != RESET)
     {
