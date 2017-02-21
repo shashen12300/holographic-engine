@@ -62,14 +62,13 @@ void printReport(void);
 
 //Ë¢ÐÂÊ±¼ä
 void refresh_time(void) {
-	if (time_flag > 100) {
+	if (time_flag > 50) {
 			time_flag = 0;
-//			printf("active window :%d \r\n",WM_GetActiveWindow());
-		 isOrRefreshrTime = 1;
-			WM_SetFocus(time_hWin);
-			GUI_SendKeyMsg(MY_MESSAGE_ID_TIME,1);
+						isOrRefreshrTime = 1;
+						WM_SetFocus(time_hWin);
+						GUI_SendKeyMsg(MY_MESSAGE_ID_TIME,1);
 			if (myMessageType == MY_MESSAGE_ID_LOGO) {
-					WM_SetFocus(mainForm_hWin);
+						WM_SetFocus(mainForm_hWin);
 //					GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
 			}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
 					WM_SetFocus(dialog_hWin);
@@ -78,6 +77,8 @@ void refresh_time(void) {
 			}else if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
 						WM_SetFocus(drawLine_hWin);
 				if(isOrSetPoint==1) {
+								printf("active window :%d \r\n",WM_GetActiveWindow());
+
 						GUI_SendKeyMsg(MY_MESSAGE_ID_DRAW_POINT,1);
 				}else if(isOrExitDrawLine==1) {
 						isOrExitDrawLine = 0;

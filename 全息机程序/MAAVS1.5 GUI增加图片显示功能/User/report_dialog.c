@@ -87,10 +87,10 @@ void ReportPaintDialog(WM_MESSAGE * pMsg)
 void ReportInitDialog(WM_MESSAGE * pMsg)
 {
 		WM_HWIN hText1,hText2,hText3,hText4,hText5,hText6,hText7,hText8,hText9,hText10,hText11,hText12;
-	char valueData1[7]={0},valueData2[7]={0};
+	static char valueData1[7]={0},valueData2[7]={0};
 	char *p;	
 	Stru_Time getTime;
-  double distance,minValue,maxValue,resultValue;
+  static double distance,minValue,maxValue,resultValue;
 		int i,sstrlen,j;
 	   WM_HWIN hWin = pMsg->hWin;
 

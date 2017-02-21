@@ -99,11 +99,11 @@ void TIM2_IRQHandler(void)
 	{	
 		TIM_ClearITPendingBit(TIM2 , TIM_FLAG_Update);  
 		time_flag++;
-		if(time_flag%10==5){
+//		if(time_flag%10==5){
 			if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
-								refresh_time();
+					refresh_time();
 			}
-		}
+//		}
 		
 		}	 	
 	 	
@@ -157,8 +157,8 @@ void EXTI15_10_IRQHandler(void)
 				EXTI_InitStructure.EXTI_LineCmd = DISABLE;
 				EXTI_Init(&EXTI_InitStructure); 
 			
-			rotate_flag = 1;
 			if(selectEnd == 1) {
+				rotate_flag = 1;
 				send_rotate_message();
 			}
 
