@@ -227,11 +227,13 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 					}
 					d1=atof(valueData1);
 					d2=atof(valueData2);
-
+					if(d1==0||d2==0){
+						printf("Êý¾ÝÒì³£");
+					}
 					minValue=d1-(d2-d1)*0.1;
 					maxValue=d2+(d2-d1)*0.1;
 					distance= maxValue-minValue;
-					printf("d1=%f d2=%f\r\n",d1,d2);
+					printf("valueData1=%s valueData2=%s d1=%f d2=%f\r\n",valueData1,valueData2,d1,d2);
 					fnRTC_GetTime(&getTime); 
 					srand(getTime.Second);
 					resultValue = d1+rand()%((int)(distance*1000))/1000.0;
@@ -442,5 +444,7 @@ void report_dialogTask(void) {
 		report_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbReportDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",report_hWin);
 		GUI_ExecCreatedDialog(report_hWin);
+	 	printf("\r\nhandle: %d  end\r\n",report_hWin);
+
 }
 

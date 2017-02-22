@@ -116,14 +116,16 @@ void DrawLineWindow(WM_HWIN hWin) {
 			GUI_EndDialog(hWin, 0);
 			WM_SelectWindow(mainForm_hWin);
 			myMessageType = MY_MESSAGE_ID_LOGO;
+			CLI();
 			WM_Exec();
 			printf("warning");
 			rotate_flag = 0;
-			selectEnd = 1;
 			isOrShowReport= 1;
 			rotateEnter_flag = 0;
 			lastY=140;lastX=0;
 			isBeginCheck = 0;
+			selectEnd = 1;
+
 		}
 		else if(isOrSetPoint ==1){
 			int y,minY,maxY,i,adcValue,j;
@@ -243,6 +245,8 @@ void drawLine_dialogTask(void) {
 		drawLine_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDrawLineDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",drawLine_hWin);
 		GUI_ExecCreatedDialog(drawLine_hWin);
+		printf("\r\nhandle: %d  end\r\n",drawLine_hWin);
+
 	}
 
 }

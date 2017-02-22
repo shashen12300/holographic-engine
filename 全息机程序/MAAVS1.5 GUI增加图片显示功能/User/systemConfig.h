@@ -5,6 +5,9 @@
 #define START_TIME RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2 , ENABLE);TIM_Cmd(TIM2, ENABLE)
 #define STOP_TIME  TIM_Cmd(TIM2, DISABLE);RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2 , DISABLE)
 
+#define CLI()      __set_PRIMASK(1)  
+#define SEI()      __set_PRIMASK(0)  
+
 extern WM_HWIN root_hWin;
 extern WM_HWIN mainForm_hWin;
 extern WM_HWIN dialog_hWin;

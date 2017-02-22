@@ -8,6 +8,8 @@
 #include "user_Dialog.h"
 #include "systemConfig.h"
 #include "rtc.h"
+#include "misc.h"
+
 
 unsigned char CAN_LCD_buffer[480];
 extern int time_flag;
@@ -99,12 +101,16 @@ void TIM2_IRQHandler(void)
 	{	
 		TIM_ClearITPendingBit(TIM2 , TIM_FLAG_Update);  
 		time_flag++;
-//		if(time_flag%10==5){
+		if(time_flag%20==0){
 			if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
+						CLI();
 					refresh_time();
+						SEI();
 			}
-//		}
-		
+		}
+
+//		NVIC_SETFAULTMASK();      //?????  
+//		NVIC_RESETFAULTMASK();    //????? 
 		}	 	
 	 	
 }
@@ -113,11 +119,11 @@ void EXTI3_IRQHandler(void){
 	
 	EXTI_InitTypeDef EXTI_InitStructure;
 		if(isOrRefreshrTime==1)return;
+		CLI();
 	if(EXTI_GetITStatus(EXTI_Line3) != RESET) {
 				Stru_Time time,getTime;
 
 			EXTI_ClearITPendingBit(EXTI_Line3);     //清除中断标志位
-			
 			GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource3); 
 			EXTI_InitStructure.EXTI_Line = EXTI_Line3;
 			EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
@@ -138,6 +144,9 @@ void EXTI3_IRQHandler(void){
   EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
   EXTI_InitStructure.EXTI_LineCmd = ENABLE;
   EXTI_Init(&EXTI_InitStructure); 
+		
+	SEI();
+
 }
 void EXTI15_10_IRQHandler(void)
 {	
@@ -145,7 +154,7 @@ void EXTI15_10_IRQHandler(void)
 	EXTI_InitTypeDef EXTI_InitStructure;
 	
 	if(isOrRefreshrTime==1)return;
-
+CLI();
       if(EXTI_GetITStatus(EXTI_Line11) != RESET)
     {
 			EXTI_ClearITPendingBit(EXTI_Line11);     //清除中断标志位
@@ -183,6 +192,8 @@ void EXTI15_10_IRQHandler(void)
   EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿中断
   EXTI_InitStructure.EXTI_LineCmd = ENABLE;
   EXTI_Init(&EXTI_InitStructure); 
+	SEI();
+		
 }
 
 

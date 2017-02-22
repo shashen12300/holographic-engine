@@ -65,5 +65,6 @@ int lastCount=0;
  char isOrCheckLogo[25]={0};
  //是否正在刷新时间
  int isOrRefreshrTime=0;
+ //是否进入
 
 

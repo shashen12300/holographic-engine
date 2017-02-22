@@ -77,7 +77,7 @@ void refresh_time(void) {
 			}else if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
 						WM_SetFocus(drawLine_hWin);
 				if(isOrSetPoint==1) {
-								printf("active window :%d \r\n",WM_GetActiveWindow());
+//								printf("active window :%d \r\n",WM_GetActiveWindow());
 
 						GUI_SendKeyMsg(MY_MESSAGE_ID_DRAW_POINT,1);
 				}else if(isOrExitDrawLine==1) {
@@ -162,6 +162,7 @@ printf("¿ªÊ¼²âÊÔ\r\n");
 		
 		if(selectEnd == 1) {
 			refresh_time();
+			SEI();
 //			send_rotate_message();
 		}
 		adcValue = Get_Adc(0);
