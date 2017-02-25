@@ -183,8 +183,18 @@ static void _cbCallback(WM_MESSAGE * pMsg)
 **********************************************************************
 */
 void MainTask(void) 
-{ 
+{ 	
+	unsigned char mydata[76800];
     GUI_Init();
+//	readDataByAddress(0x0000,0x2800,mydata); 
+//	UART1_Tx(mydata,0x2800);
+//	readDataByAddress(0x2800,0x2800,mydata); 
+//	UART1_Tx(mydata,0x2800);
+//	readDataByAddress(0x5000,0x2800,mydata); 
+//	UART1_Tx(mydata,0x2800);
+	
+	
+	
     WM_SetDesktopColor(GUI_WHITE);      /* Automacally update desktop window */
     WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
     //PROGBAR_SetDefaultSkin(PROGBAR_SKIN_FLEX);

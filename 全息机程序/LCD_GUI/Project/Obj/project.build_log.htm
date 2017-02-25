@@ -27,7 +27,16 @@ Project File Date:  01/02/2017
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\Obj\project.axf" - 0 Error(s), 0 Warning(s).
+compiling User_win.c...
+..\User\User_win.c(74): warning:  #177-D: variable "hWin" was declared but never referenced
+      WM_HWIN hWin = pMsg->hWin;
+..\User\User_win.c(187): warning:  #177-D: variable "mydata" was declared but never referenced
+  	unsigned char mydata[76800];
+..\User\User_win.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=53464 RO-data=10200 RW-data=316 ZI-data=8724  
+FromELF: creating hex file...
+".\Obj\project.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -45,7 +54,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:04
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

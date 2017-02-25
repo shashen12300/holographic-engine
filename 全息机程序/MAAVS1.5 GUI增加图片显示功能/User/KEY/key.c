@@ -148,7 +148,11 @@ void setOrLogoCount(int count,int flag) {
 	int i=43,j=40;
 	int row= count/5, rank = count%5;
 	int bgColor=0;
-	bgColor =	LCD_L0_GetPixelIndex(8+rank*64,43+row*39);
+	if(count == 9){
+		bgColor =	LCD_L0_GetPixelIndex(8+rank*64,43+row*39-1);
+	}else{
+		bgColor =	LCD_L0_GetPixelIndex(8+rank*64,43+row*39);
+	}
 			if(flag==1) {
 				if(bgColor==0x01){
 					return;
@@ -250,11 +254,15 @@ void send_enter_message(void) {
 						if(isOrCheckLogo[logoCount]==0) {
 								isOrShowReport=0;
 								isBeginCheck=1;
+								isOrCloseEnter=1;
+
 						}else {
+								isOrCloseEnter=1;
 								isOrShowReport=1;
 						}
 
 					}else {
+						isOrCloseEnter=1;
 						isOrShowReport=1;
 					}
 				}else if (myMessageType == MY_MESSAGE_ID_MESSAGE_SETTING) {
@@ -264,6 +272,7 @@ void send_enter_message(void) {
 								WM_SetFocus(menu_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_EXPLAIN) {
+											isOrCloseEnter=1;
 						WM_SetFocus(explain_hWin);
 						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if (myMessageType == MY_MESSAGE_ID_SYSTEM_TIME) {
@@ -273,19 +282,20 @@ void send_enter_message(void) {
 								WM_SetFocus(warning_hWin);
 								GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if(myMessageType==MY_MESSAGE_ID_DRAW_LINE) {
+											isOrCloseEnter=1;
 //						WM_SetFocus(drawLine_hWin);
-							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+//							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}else if(myMessageType==MY_MESSAGE_ID_CHECK_REPORT) {
+							isOrCloseEnter=1;
 							WM_SetFocus(report_hWin);
 							GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}
 				else {
 					printf("逻辑出问题了");
 				}
-				return;
 			}
 		}
-		
+		printf("enter11  \r\n");
 		rotateEnter_flag = 0;
 }
 

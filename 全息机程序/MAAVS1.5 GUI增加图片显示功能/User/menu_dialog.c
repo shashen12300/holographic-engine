@@ -204,6 +204,7 @@ void SystemMenu(WM_HWIN hWin) {  //信息设定
 					TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0+messageType),0xffffff);
 					TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0+messageType),0x000000);
 					lastMessageType = messageType;
+					WM_Exec();
 					rotate_flag = 0;
 					selectEnd = 1;
 					}
@@ -287,6 +288,7 @@ void SystemMenu(WM_HWIN hWin) {  //信息设定
 							}
 
 		}
+		WM_Exec();
 		rotateEnter_flag=0;
 		rotate_flag = 0;
 		selectEnd = 1;
@@ -364,5 +366,7 @@ void menu_dialogTask(void) {
 		menu_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbMenuDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",menu_hWin);
 		GUI_ExecCreatedDialog(menu_hWin);
+		isOrCloseEnter = 0;
+
 }
 

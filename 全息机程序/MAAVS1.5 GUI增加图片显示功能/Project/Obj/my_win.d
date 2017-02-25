@@ -29,10 +29,7 @@
 .\obj\my_win.o: ..\GUI\Widget\RADIO.h
 .\obj\my_win.o: ..\GUI\Widget\SLIDER.h
 .\obj\my_win.o: ..\GUI\Widget\TEXT.h
-.\obj\my_win.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\obj\my_win.o: ..\User\fengshi2.h
-.\obj\my_win.o: ..\User\my_win.h
-.\obj\my_win.o: ..\User\RTC_PCF8563T\rtc.h
+.\obj\my_win.o: ..\SYSTEM\delay\delay.h
 .\obj\my_win.o: ..\Libraries\CMSIS\CM3\stm32f10x.h
 .\obj\my_win.o: ..\Libraries\CMSIS\CM3\core_cm3.h
 .\obj\my_win.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -48,6 +45,10 @@
 .\obj\my_win.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 .\obj\my_win.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\my_win.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\obj\my_win.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\my_win.o: ..\User\fengshi2.h
+.\obj\my_win.o: ..\User\my_win.h
+.\obj\my_win.o: ..\User\RTC_PCF8563T\rtc.h
 .\obj\my_win.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\obj\my_win.o: ..\User\KEY\key.h
 .\obj\my_win.o: ..\SYSTEM\sys\sys.h

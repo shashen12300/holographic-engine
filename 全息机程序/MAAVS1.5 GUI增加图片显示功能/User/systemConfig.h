@@ -41,4 +41,5 @@ extern int isOrExitDrawLine;
 extern int lastCount;
 extern  char isOrCheckLogo[25];
 extern  int isOrRefreshrTime;
+extern  int isOrCloseEnter;
 #endif

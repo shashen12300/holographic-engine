@@ -62,8 +62,8 @@ void printReport(void);
 
 //刷新时间
 void refresh_time(void) {
-	if (time_flag > 50) {
-			time_flag = 0;
+	if (time_flag > 9) {
+						time_flag = 0;
 						isOrRefreshrTime = 1;
 						WM_SetFocus(time_hWin);
 						GUI_SendKeyMsg(MY_MESSAGE_ID_TIME,1);
@@ -77,11 +77,10 @@ void refresh_time(void) {
 			}else if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
 						WM_SetFocus(drawLine_hWin);
 				if(isOrSetPoint==1) {
-//								printf("active window :%d \r\n",WM_GetActiveWindow());
-
+					WM_SelectWindow(drawLine_hWin);
+						isOrExitDrawLine = 0;
 						GUI_SendKeyMsg(MY_MESSAGE_ID_DRAW_POINT,1);
 				}else if(isOrExitDrawLine==1) {
-						isOrExitDrawLine = 0;
 						rotateEnter_flag = 1;
 						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
 				}
@@ -91,7 +90,7 @@ void refresh_time(void) {
 				printf("逻辑出问题了");
 			}
 	}else {
-	
+		
 		if(isOrShowExplain == 1) {
 			isOrShowExplain = 0;
 			explain_dialogTask();
@@ -114,7 +113,9 @@ void refresh_time(void) {
 			report_dialogTask();
 		}
 	}
+	
 }
+
 int main(void)
 {
 	GUI_RECT rect;
@@ -141,15 +142,15 @@ int main(void)
 	GUI_Init();
 	clr_ram();
 	GUI_SetFont(&GUI_FontHZ_SimSun_1515);
+//	GUI_DrawBitmap(&bmqidongtu,0,100);
 	//绘制时间框
 		MainTask();
 	GUI_DrawBitmap(&bmshijian,0,0);
 
 while(1)
 {
-
-		
 printf("开始测试\r\n");
+	
 //	changeDir(0);
 //	readDataByAddress(0x0000,0x2800,mydata); 
 //	UART1_Tx(mydata,0x2800);
@@ -157,7 +158,7 @@ printf("开始测试\r\n");
 //	UART1_Tx(mydata,0x2800);
 //	readDataByAddress(0x5000,0x2800,mydata); 
 //	UART1_Tx(mydata,0x2800);
-	while(1) {
+	while(1){
 	 	key=KEY_Scan();
 		
 		if(selectEnd == 1) {

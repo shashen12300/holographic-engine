@@ -73,6 +73,8 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 void ReportPaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
+		delay_ms(200);
+		isOrCloseEnter = 0;
 }
 
 
@@ -93,7 +95,6 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
   static double distance,minValue,maxValue,resultValue;
 		int i,sstrlen,j;
 	   WM_HWIN hWin = pMsg->hWin;
-
     //
     //FRAMEWIN
     //
@@ -218,7 +219,177 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 				}break;
 		} 
 			reportCount = reportLength[reportType];
-			for(i=0;i<reportLength[reportType];i++){
+		
+			if(isOrCheckLogo[logoCount]==0) {
+				for(i=0;i<reportCount;i++){
+					char data[10];			
+					WM_HWIN	 hText;
+					sstrlen = strlen(healthData[i]);
+					for(j=0;j<5;j++){
+						valueData1[j]=healthData[i][sstrlen-12+j];
+						valueData2[j]=healthData[i][sstrlen-6+j];
+
+					}
+					d1=atof(valueData1);
+					d2=atof(valueData2);
+					if(d1==0||d2==0){
+						printf("数据异常");
+					}
+					minValue=d1-(d2-d1)*0.1;
+					maxValue=d2+(d2-d1)*0.1;
+					distance= maxValue-minValue;
+//					printf("valueData1=%s valueData2=%s d1=%f d2=%f\r\n",valueData1,valueData2,d1,d2);
+					fnRTC_GetTime(&getTime); 
+					srand(getTime.Second);
+					resultValue = d1+rand()%((int)(distance*1000))/1000.0;
+					if (resultValue>1000) {
+						resultValue=1000;
+					}
+					if(resultValue>d2||resultValue<d1){
+					healthData[i][25] = '*';
+					}
+				sprintf(data,"%.2f",resultValue);
+				sstrlen = strlen(data);
+					for(j=0;j<sstrlen;j++) {
+						healthData[i][25-sstrlen+j] = data[j];
+					}
+				isOrCheckLogo[logoCount]=1;	
+					
+				}      
+		}
+
+//		healthInitData(reportType);
+		for(i=0;i<reportLength[reportType];i++){
+			WM_HWIN	 hText;
+			if(i>=12)break;
+			hText = WM_GetDialogItem(hWin,GUI_ID_TEXT10+i);
+			TEXT_SetFont(hText,&GUI_FontHZ_reportFont);
+			TEXT_SetText(hText ,healthData[i]);
+		}
+		
+		isOrPrintReport =1;
+			if(isOneCheck==1){
+				isOrAllowCheck =1;
+			}else {
+				isOrAllowCheck = 0;
+			}
+				rotateEnter_flag = 0;
+}
+
+
+void healthInitData(int reportType) {
+		static char valueData1[7]={0},valueData2[7]={0};
+		static double distance,minValue,maxValue,resultValue;
+		Stru_Time getTime;
+		int i,sstrlen,j;
+		int	reportCount = reportLength[reportType];
+			switch(reportType){
+			case 0:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData1[i]; 
+				}break;
+			case 1:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData2[i]; 
+				}break;
+			case 2:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData3[i]; 
+				}break;	
+			case 3:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData4[i]; 
+				}break;
+			case 4:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData5[i]; 
+				}break;
+			case 5:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData6[i]; 
+				}break;
+			case 6:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData7[i]; 
+				}break;
+			case 7:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData8[i]; 
+				}break;	
+			case 8:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData9[i]; 
+				}break;
+			case 9:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData10[i]; 
+				}break;
+			case 10:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData11[i]; 
+				}break;
+			case 11:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData12[i]; 
+				}break;
+			case 12:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData13[i]; 
+				}break;	
+			case 13:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData14[i]; 
+				}break;
+			case 14:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData15[i]; 
+				}break;
+			case 15:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData16[i]; 
+				}break;
+			case 16:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData17[i]; 
+				}break;
+			case 17:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData18[i]; 
+				}break;	
+			case 18:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData19[i]; 
+				}break;
+			case 19:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData20[i]; 
+				}break;
+			case 20:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData21[i]; 
+				}break;
+			case 21:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData22[i]; 
+				}break;
+			case 22:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData23[i]; 
+				}break;	
+			case 23:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData24[i]; 
+				}break;
+			case 24:
+				for(i=0;i<reportLength[reportType];i++){
+						healthData[i] = healthData25[i]; 
+				}break;
+		}
+
+			if(isOrCheckLogo[reportType]==0) {
+				for(i=0;i<reportCount;i++){
+					char data[10];			
+					WM_HWIN	 hText;
 					sstrlen = strlen(healthData[i]);
 					for(j=0;j<5;j++){
 						valueData1[j]=healthData[i][sstrlen-12+j];
@@ -243,44 +414,16 @@ void ReportInitDialog(WM_MESSAGE * pMsg)
 					if(resultValue>d2||resultValue<d1){
 					healthData[i][25] = '*';
 					}
-					healthValue[i]=resultValue;
-				}
-
-		if(isOrCheckLogo[logoCount]==0) {
-			for(i=0;i<reportCount;i++) {
-				char data[10];
-				sprintf(data,"%.2f",healthValue[i]);
+//					healthValue[i]=resultValue;
+				sprintf(data,"%.2f",resultValue);
 				sstrlen = strlen(data);
 					for(j=0;j<sstrlen;j++) {
 						healthData[i][25-sstrlen+j] = data[j];
 					}
-				}
-				isOrCheckLogo[logoCount]=1;
-		}
-//		if(isOneCheck==1) {
-//			isOrCheckLogo[logoCount]=1;
-//		}else {
-//			for(i=0;i<25;i++) {
-//				isOrCheckLogo[i]=1;
-//			}
-//		}
-		for(i=0;i<reportCount;i++){
-			WM_HWIN	 hText;
-			if(i>=12)break;
-			hText = WM_GetDialogItem(hWin,GUI_ID_TEXT10+i);
-			TEXT_SetFont(hText,&GUI_FontHZ_reportFont);
-			TEXT_SetText(hText ,healthData[i]);
-		}
-		
-		isOrPrintReport =1;
-				if(isOneCheck==1){
-				isOrAllowCheck =1;
-			}else {
-				isOrAllowCheck = 0;
-			}
-				rotateEnter_flag = 0;
+				}  
+				isOrCheckLogo[reportType]=1;										
+			}				
 
-		
 }
 
 
@@ -361,6 +504,7 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 		rotate_flag = 0;
 		selectEnd = 1;
 		}
+		isOrCloseEnter = 0;
 
 }
 
@@ -437,6 +581,7 @@ static void _cbReportDialogCallback(WM_MESSAGE * pMsg)
 void report_dialogTask(void) {
 	
 		 if (strcmp(saveData[0],"男") == 0&&logoCount==5){
+			isOrCloseEnter = 0;
 			return;
 	 }
 		myMessageType = MY_MESSAGE_ID_CHECK_REPORT;
@@ -445,6 +590,8 @@ void report_dialogTask(void) {
 		printf("\r\nhandle: %d\r\n",report_hWin);
 		GUI_ExecCreatedDialog(report_hWin);
 	 	printf("\r\nhandle: %d  end\r\n",report_hWin);
+	 	isOrCloseEnter = 0;
+
 
 }
 

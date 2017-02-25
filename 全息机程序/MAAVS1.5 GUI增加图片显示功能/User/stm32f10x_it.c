@@ -99,19 +99,33 @@ void TIM2_IRQHandler(void)
 {
 	if ( TIM_GetITStatus(TIM2 , TIM_IT_Update) != RESET ) 
 	{	
+		static int time=0,draw_flag=1;
 		TIM_ClearITPendingBit(TIM2 , TIM_FLAG_Update);  
 		time_flag++;
-		if(time_flag%20==0){
 			if (myMessageType == MY_MESSAGE_ID_DRAW_LINE) {
+					time++;
+				if(time==10&&draw_flag==1){
+					time=0;
+					if(isOrCloseEnter==1){
+						draw_flag=0;
 						CLI();
-					refresh_time();
+						refresh_time();
 						SEI();
+					}else{
+						isOrCloseEnter=1;
+					}
+				}else if(isOrExitDrawLine==1){
+						rotateEnter_flag = 1;
+						GUI_SendKeyMsg(MY_MESSAGE_ID_ENTER,1);
+				}
+			}else {
+				draw_flag=1;
 			}
 		}
 
 //		NVIC_SETFAULTMASK();      //?????  
 //		NVIC_RESETFAULTMASK();    //????? 
-		}	 	
+			 	
 	 	
 }
 
@@ -167,8 +181,10 @@ CLI();
 				EXTI_Init(&EXTI_InitStructure); 
 			
 			if(selectEnd == 1) {
+				CLI();
 				rotate_flag = 1;
 				send_rotate_message();
+				SEI();
 			}
 
 		}else if(EXTI_GetITStatus(EXTI_Line15) != RESET) {
@@ -181,8 +197,13 @@ CLI();
 				EXTI_InitStructure.EXTI_LineCmd = DISABLE;
 				EXTI_Init(&EXTI_InitStructure); 
 			
-			rotateEnter_flag = 1;
-			send_enter_message();
+			if(isOrCloseEnter==0){
+				CLI();
+				rotateEnter_flag = 1;
+				send_enter_message();
+				SEI();
+
+			}
 		}
 		
 		//´ò¿ªÖÐ¶Ï

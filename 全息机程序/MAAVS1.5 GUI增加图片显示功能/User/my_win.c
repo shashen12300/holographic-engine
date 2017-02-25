@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include "GUI.h"
 #include "DIALOG.h"
-
+#include "delay.h"
 
 //#include "BUTTON.h"
 //#include "CHECKBOX.h"
@@ -47,11 +47,13 @@ void _mainFormCallback(WM_MESSAGE * pMsg)
         case WM_PAINT:
 						GUI_Clear();
 						GUI_DrawBitmap(&bmfengshi2,0,0);
+//						GUI_DrawBitmap(&bmqidongtu,0,0);
 						WM_SelectWindow(hWin);
 						WM_SetFocus(mainForm_hWin);
 						setOrLogoCount(lastCount,0);
 						setOrLogoCount(logoCount,1);
 						lastCount = logoCount;
+						isOrCloseEnter=0;
             break;
 				case WM_CREATE:
 						WM_Exec();
@@ -180,11 +182,14 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
 								{		
 										char displayTime[50];
 										Stru_Time time,getTime;
-										fnRTC_GetTime(&getTime); 	
 										WM_SelectWindow(hWin);
-										sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
-										GUI_DispStringAt(displayTime,175,3);
-                   printf("refresh time");
+										WM_SetFocus(hWin);
+									  printf("refresh time %d\r\n",WM_GetActiveWindow());
+										if(myMessageType == MY_MESSAGE_ID_LOGO){
+											fnRTC_GetTime(&getTime); 	
+											sprintf(displayTime,"%d/%02d/%02d %02d:%02d:%02d",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
+											GUI_DispStringAt(displayTime,175,3);
+										}
 									printf("active window :%d \r\n",WM_GetActiveWindow());
 
 									if(isOrRefreshMessage == 1) {
@@ -195,6 +200,8 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
 										GUI_DispStringAt(displayTime,175,3);
 										sprintf(displayTime,"   性别:%s 年龄:%s 婚否:%s 体型:%s    ",saveData[0],saveData[1],saveData[2],saveData[3]);
 										GUI_DispStringAt(displayTime,2,20);
+										WM_Exec();
+
 									}else if (isOrSetClock == 1) {
 											Stru_Time time;
 											isOrSetClock = 0;
@@ -205,8 +212,61 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
 											time.Minutes = atoi(timeData[4]);
 											time.Second = atoi(timeData[5]);
 											fnRTC_SetTime(time);
+									}else {
+									
 									}
 								}break;
+            }
+            break;
+        case WM_NOTIFY_PARENT:
+            Id = WM_GetId(pMsg->hWinSrc); 
+            NCode = pMsg->Data.v;        
+            switch (Id) 
+            {
+                case GUI_ID_OK:
+                    if(NCode==WM_NOTIFICATION_RELEASED)
+                        GUI_EndDialog(hWin, 0);
+                    break;
+                case GUI_ID_CANCEL:
+                    if(NCode==WM_NOTIFICATION_RELEASED)
+                        GUI_EndDialog(hWin, 0);
+                    break;
+
+            }
+            break;
+        default:
+            WM_DefaultProc(pMsg);
+    }
+		isOrRefreshrTime = 0;
+}
+
+//启动窗口回调函数
+static void _cbStartCallback(WM_MESSAGE * pMsg) 
+{
+    int NCode, Id;
+    WM_HWIN hWin = pMsg->hWin;
+    switch (pMsg->MsgId) 
+    {
+        case WM_PAINT:
+				{
+					   GUI_DrawBitmap(&bmqidongtu,0,100);
+
+				}
+            break;
+				case WM_CREATE:
+						WM_Exec();
+            break;
+        case WM_INIT_DIALOG:
+            break;
+        case WM_KEY:
+            switch (((WM_KEY_INFO*)(pMsg->Data.p))->Key) 
+            {
+                case GUI_KEY_ESCAPE:
+                    GUI_EndDialog(hWin, 1);
+                    break;
+                case GUI_KEY_ENTER:
+                    GUI_EndDialog(hWin, 0);
+                    break;
             }
             break;
         case WM_NOTIFY_PARENT:
@@ -238,10 +298,11 @@ static void _cbTimeCallback(WM_MESSAGE * pMsg)
 */
 void MainTask(void) 
 { 
-	
+			GUI_Clear();
 			WM_SetDesktopColor(GUI_BLACK);      /* Automacally update desktop window */
 			WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
-			root_hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,NULL,0);//根窗口
+			root_hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,_cbStartCallback,0);//根窗口
+		delay_ms(1000);
 			time_hWin = WM_CreateWindowAsChild(0,0,320,37,root_hWin,WM_CF_SHOW,_cbTimeCallback,0);//时间窗口
 			mainForm_hWin=WM_CreateWindowAsChild(0,37,320,203,root_hWin,WM_CF_SHOW,_mainFormCallback,0); //菜单窗口
 

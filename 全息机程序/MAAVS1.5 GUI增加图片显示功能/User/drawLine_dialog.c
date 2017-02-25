@@ -72,31 +72,6 @@ void DrawLineInitDialog(WM_MESSAGE * pMsg)
     FRAMEWIN_SetTextAlign(hWin,GUI_TA_VCENTER|GUI_TA_CENTER);
     FRAMEWIN_SetTitleVis(hWin,0);
     FRAMEWIN_SetTitleHeight(hWin,0);
-    //
-    //GUI_ID_TEXT0
-    //
-//    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0x000000);
-//	  TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT0),0xffffff);
-//    TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT0),GUI_TA_VCENTER|GUI_TA_CENTER);
-//	   //
-
-//    //
-//    //GUI_ID_TEXT1
-//    //
-//    TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0xffffff);
-//    TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT1),0x000000);
-//		TEXT_SetTextAlign(WM_GetDialogItem(hWin,GUI_ID_TEXT1),GUI_TA_VCENTER|GUI_TA_CENTER);
-
-//	/*获得所有窗口的句柄*/
-//		 hText1 = WM_GetDialogItem(hWin,GUI_ID_TEXT0);
-//		 hText2 = WM_GetDialogItem(hWin,GUI_ID_TEXT1);	
-
-//		/*初始化所有控件*/		
-//		TEXT_SetFont(hText1,&GUI_FontHZ_SimSun_1515);
-//		TEXT_SetFont(hText2,&GUI_FontHZ_SimSun_1515);
-
-//		TEXT_SetText(hText1,"信息不能为空!");
-//		TEXT_SetText(hText2,"确认");
 		
 }
 
@@ -125,6 +100,7 @@ void DrawLineWindow(WM_HWIN hWin) {
 			lastY=140;lastX=0;
 			isBeginCheck = 0;
 			selectEnd = 1;
+			isOrCloseEnter=0;
 
 		}
 		else if(isOrSetPoint ==1){
@@ -157,6 +133,18 @@ void DrawLineWindow(WM_HWIN hWin) {
 			LCD_L0_DrawVLine(i,minY,maxY);
 			lastX =i;lastY=y;
 			delay_ms(50);	
+//			if(isOneCheck==0){
+//				if(i%10==0&&i<250){
+//					healthInitData(i/10);
+//				}else {
+//					delay_ms(50);	
+//				}
+//			}else {
+//				if(i==0){
+//					healthInitData(logoCount);
+//				}
+//			}
+		
 		}
 //		GUI_Clear();
 //		LCD_L0_FillRect(0,0,320,201);
@@ -237,15 +225,19 @@ static void _cbDrawLineDialogCallback(WM_MESSAGE * pMsg)
 void drawLine_dialogTask(void) {
 
 	 if (strcmp(saveData[0],"男") == 0&&logoCount==5){
+		 	isOrCloseEnter = 0;
 			return;
 	 }
 	
 	if(isOrAllowCheck ==1 ){
+		isOrCloseEnter = 1;
 		myMessageType = MY_MESSAGE_ID_DRAW_LINE;
 		drawLine_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDrawLineDialogCallback, root_hWin, 0, 0);
 		printf("\r\nhandle: %d\r\n",drawLine_hWin);
 		GUI_ExecCreatedDialog(drawLine_hWin);
 		printf("\r\nhandle: %d  end\r\n",drawLine_hWin);
+		isOrExitDrawLine = 0;
+
 
 	}
 

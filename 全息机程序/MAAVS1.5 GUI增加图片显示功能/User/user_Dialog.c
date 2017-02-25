@@ -410,7 +410,8 @@ void MessageSetting(WM_HWIN hWin) {  //信息设定
 						TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+messageType),0x000000);
 						lastMessageType = messageType;
 		}
-		
+		WM_Exec();
+		WM_Paint(hWin);
 		rotate_flag = 0;
 		selectEnd = 1;
 }
@@ -494,5 +495,6 @@ void dialogTask(void) {
 	dialog_hWin	= GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), &_cbDialogCallback, root_hWin, 0, 0);
 	printf("\r\n创建句柄: %d\r\n",dialog_hWin);
 	GUI_ExecCreatedDialog(dialog_hWin);
+	isOrCloseEnter = 0;
 }
 
