@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sat Feb 25 20:45:26 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sun Feb 26 09:02:39 2017
 <BR><P>
 <H3>Maximum Stack Usage =        832 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1665,7 +1665,7 @@ Global Symbols
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawHLine
 </UL>
 
-<P><STRONG><a name="[10a]"></a>writeDataOfScreen</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, ra8835.o(.text), UNUSED)
+<P><STRONG><a name="[10a]"></a>writeDataOfScreen</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, ra8835.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawAreaBitmap
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawBitmap
 </UL>
@@ -1768,12 +1768,16 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_L0_FillRect
 </UL>
 
-<P><STRONG><a name="[109]"></a>DrawBitmap</STRONG> (Thumb, 906 bytes, Stack size 64 bytes, ra8835.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAddress
+<P><STRONG><a name="[109]"></a>DrawBitmap</STRONG> (Thumb, 906 bytes, Stack size 64 bytes, ra8835.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = DrawBitmap &rArr; prepareWriteData &rArr; send_two_data_to_lcm &rArr; send_data_to_lcm
+</UL>
+<BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getAddress
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readDataOfScreen
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeDataOfScreen
 <LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prepareWriteData
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_to_lcm
+</UL>
+<BR>[Called By]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawLineWindow
 </UL>
 
 <P><STRONG><a name="[10b]"></a>DrawAreaBitmap</STRONG> (Thumb, 898 bytes, Stack size 64 bytes, ra8835.o(.text), UNUSED)
@@ -2556,12 +2560,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDrawLineDialogCallback
 </UL>
 
-<P><STRONG><a name="[172]"></a>DrawLineWindow</STRONG> (Thumb, 414 bytes, Stack size 88 bytes, drawline_dialog.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 456 + Unknown Stack Size
+<P><STRONG><a name="[172]"></a>DrawLineWindow</STRONG> (Thumb, 448 bytes, Stack size 96 bytes, drawline_dialog.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 464 + Unknown Stack Size
 <LI>Call Chain = DrawLineWindow &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_L0_DrawVLine
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawBitmap
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_SelectWindow
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_Adc
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
@@ -2590,7 +2595,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refresh_time
 </UL>
 
-<P><STRONG><a name="[17b]"></a>ReportPaintDialog</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[17b]"></a>ReportPaintDialog</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ReportPaintDialog
 </UL>
 <BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
@@ -2598,7 +2603,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
 </UL>
 
-<P><STRONG><a name="[17c]"></a>ReportInitDialog</STRONG> (Thumb, 1788 bytes, Stack size 80 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[17c]"></a>ReportInitDialog</STRONG> (Thumb, 1790 bytes, Stack size 80 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 528 + Unknown Stack Size
 <LI>Call Chain = ReportInitDialog &rArr; atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
@@ -6046,8 +6051,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[2fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_e2e
 <LI><a href="#[2fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__btod_div_common
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
-<LI><a href="#[2d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<BR>[Called By]<UL><LI><a href="#[2d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[2d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
 </UL>
 
 <P><STRONG><a name="[2ee]"></a>_btod_edivd</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, btod.o(CL$$btod_edivd))
@@ -6065,8 +6070,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[2fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__btod_mult_common
 <LI><a href="#[2fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_e2e
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
-<LI><a href="#[2d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<BR>[Called By]<UL><LI><a href="#[2d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<LI><a href="#[2d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
 </UL>
 
 <P><STRONG><a name="[2ed]"></a>_btod_emuld</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, btod.o(CL$$btod_emuld))
@@ -6715,7 +6720,7 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> warning_dialog.o(.text)
 </UL>
 <P><STRONG><a name="[53]"></a>_cbDrawLineDialogCallback</STRONG> (Thumb, 178 bytes, Stack size 24 bytes, drawline_dialog.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 480 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 488 + Unknown Stack Size
 <LI>Call Chain = _cbDrawLineDialogCallback &rArr; DrawLineWindow &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawLineWindow
@@ -7482,11 +7487,11 @@ Local Symbols
 <P><STRONG><a name="[2d7]"></a>_fp_digits</STRONG> (Thumb, 428 bytes, Stack size 96 bytes, _printf_fp_dec.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = _fp_digits &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
-<LI><a href="#[2dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ll_udiv10
+<BR>[Calls]<UL><LI><a href="#[2dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ll_udiv10
 <LI><a href="#[2db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emul
 <LI><a href="#[2da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_ediv
 <LI><a href="#[2d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_d2e
+<LI><a href="#[2d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
 </UL>
@@ -7505,10 +7510,10 @@ Local Symbols
 <P><STRONG><a name="[2ec]"></a>_fp_value</STRONG> (Thumb, 508 bytes, Stack size 88 bytes, scanf_fp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
-<LI><a href="#[2cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
+<BR>[Calls]<UL><LI><a href="#[2cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
 <LI><a href="#[2ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emuld
 <LI><a href="#[2ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_edivd
+<LI><a href="#[2d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_scanf_really_real
 </UL>

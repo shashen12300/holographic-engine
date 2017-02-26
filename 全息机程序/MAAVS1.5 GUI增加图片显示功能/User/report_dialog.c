@@ -73,7 +73,7 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 void ReportPaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
-		delay_ms(200);
+		delay_ms(300);
 		isOrCloseEnter = 0;
 }
 

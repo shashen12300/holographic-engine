@@ -28,6 +28,8 @@
 #include "report_dialog.h"
 #include "healthDataReport.h"
 #include <stdlib.h>
+#include "fengshi2.h"
+
 unsigned char status_flag=0;
 int adcValue,time_flag;
 extern int rotate_flag;
@@ -142,7 +144,6 @@ int main(void)
 	GUI_Init();
 	clr_ram();
 	GUI_SetFont(&GUI_FontHZ_SimSun_1515);
-//	GUI_DrawBitmap(&bmqidongtu,0,100);
 	//»æÖÆÊ±¼ä¿ò
 		MainTask();
 	GUI_DrawBitmap(&bmshijian,0,0);
