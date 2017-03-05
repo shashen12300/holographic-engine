@@ -27,8 +27,27 @@ Project File Date:  01/02/2017
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\TOUCH.axf" - 0 Error(s), 0 Warning(s).
-Build Time Elapsed:  00:00:01
+compiling stm32f10x_it.c...
+..\HARDWARE\KEY\key.h(45): warning:  #1295-D: Deprecated declaration E11_init - give arg types
+  void E11_init();//??ת??????
+stm32f10x_it.c: 1 warning, 0 errors
+compiling key.c...
+..\HARDWARE\KEY\key.h(45): warning:  #1295-D: Deprecated declaration E11_init - give arg types
+  void E11_init();//??ת??????
+..\HARDWARE\KEY\key.c: 1 warning, 0 errors
+compiling main.c...
+..\HARDWARE\KEY\key.h(45): warning:  #1295-D: Deprecated declaration E11_init - give arg types
+  void E11_init();//??ת??????
+main.c(23): warning:  #177-D: variable "i" was declared but never referenced
+  	u8 i=0;	
+main.c(24): warning:  #550-D: variable "time" was set but never used
+  	Stru_Time time,getTime;
+main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=14630 RO-data=286 RW-data=368 ZI-data=1696  
+FromELF: creating hex file...
+".\TOUCH.axf" - 0 Error(s), 5 Warning(s).
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

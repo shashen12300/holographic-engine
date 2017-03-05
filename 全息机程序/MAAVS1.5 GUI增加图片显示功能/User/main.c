@@ -144,6 +144,7 @@ int main(void)
 	GUI_Init();
 	clr_ram();
 	GUI_SetFont(&GUI_FontHZ_SimSun_1515);
+	GUI_DrawBitmap(&bmqidongtu,0,100);
 	//»æÖÆÊ±¼ä¿ò
 		MainTask();
 	GUI_DrawBitmap(&bmshijian,0,0);

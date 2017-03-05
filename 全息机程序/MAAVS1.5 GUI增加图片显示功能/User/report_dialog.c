@@ -73,7 +73,6 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 void ReportPaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
-		delay_ms(300);
 		isOrCloseEnter = 0;
 }
 
@@ -439,6 +438,7 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 			//旋转编码器
 		if(rotateEnter_flag==1) {
 				rotateEnter_flag = 0;
+					delay_ms(200);
 				WM_SelectWindow(hWin);
 				GUI_EndDialog(hWin, 0);
 				WM_SelectWindow(mainForm_hWin);
@@ -446,9 +446,9 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 				messageType =0;
 				lastMessageType=0;
 				currentPageLength=0;
-				currentPage=0;
 				isOrPrintReport=0;
 				selectEnd = 1;
+				currentPage =0;
 				WM_Exec();
 		}else	if((rotate_flag == 1)&&(selectEnd==0)) {
 			if(KEY_A == 0) {
@@ -497,6 +497,7 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 					TEXT_SetBkColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+messageType),0xffffff);
 					TEXT_SetTextColor(WM_GetDialogItem(hWin,GUI_ID_TEXT10+messageType),0x000000);
 					lastMessageType = messageType;
+					WM_Paint(hWin);
 					WM_Exec();
 					}
 		rotateEnter_flag=0;
@@ -513,9 +514,9 @@ static void _cbReportDialogCallback(WM_MESSAGE * pMsg)
     WM_HWIN hWin = pMsg->hWin;
     switch (pMsg->MsgId) 
     {
-				case WM_CREATE:
-						WM_Exec();
-            break;
+//				case WM_CREATE:
+//						WM_Exec();
+//            break;
         case WM_PAINT:
 					ReportPaintDialog(pMsg);
             break;

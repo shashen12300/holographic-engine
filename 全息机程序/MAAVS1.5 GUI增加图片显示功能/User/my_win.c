@@ -301,7 +301,7 @@ void MainTask(void)
 			GUI_Clear();
 			WM_SetDesktopColor(GUI_BLACK);      /* Automacally update desktop window */
 			WM_SetCreateFlags(WM_CF_MEMDEV);  /* Use memory devices on all windows to avoid flicker */
-			root_hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,_cbStartCallback,0);//根窗口
+			root_hWin=WM_CreateWindow(0,0,320,240,WM_CF_SHOW,NULL,0);//根窗口_cbStartCallback
 		delay_ms(1000);
 			time_hWin = WM_CreateWindowAsChild(0,0,320,37,root_hWin,WM_CF_SHOW,_cbTimeCallback,0);//时间窗口
 			mainForm_hWin=WM_CreateWindowAsChild(0,37,320,203,root_hWin,WM_CF_SHOW,_mainFormCallback,0); //菜单窗口
