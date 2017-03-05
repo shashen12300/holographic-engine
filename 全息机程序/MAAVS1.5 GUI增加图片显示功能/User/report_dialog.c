@@ -404,7 +404,6 @@ void healthInitData(int reportType) {
 					minValue=d1-(d2-d1)*0.1;
 					maxValue=d2+(d2-d1)*0.1;
 					distance= maxValue-minValue;
-					printf("valueData1=%s valueData2=%s d1=%f d2=%f\r\n",valueData1,valueData2,d1,d2);
 					fnRTC_GetTime(&getTime); 
 					srand(getTime.Second);
 					resultValue = d1+rand()%((int)(distance*1000))/1000.0;
