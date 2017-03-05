@@ -1,0 +1,11 @@
+.\obj\guidemo_speed.o: ..\GUI\GUIDemo\GUIDEMO_Speed.c
+.\obj\guidemo_speed.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\obj\guidemo_speed.o: ..\GUI\Core\GUI.h
+.\obj\guidemo_speed.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\guidemo_speed.o: ..\GUI\Config\GUIConf.h
+.\obj\guidemo_speed.o: ..\GUI\Core\GUIType.h
+.\obj\guidemo_speed.o: ..\GUI\Core\LCD.h
+.\obj\guidemo_speed.o: ..\GUI\Core\GUIVersion.h
+.\obj\guidemo_speed.o: ..\GUI\GUIDemo\GUIDEMO.h
+.\obj\guidemo_speed.o: ..\GUI\Core\LCD_ConfDefaults.h
+.\obj\guidemo_speed.o: ..\GUI\Config\LCDConf.h

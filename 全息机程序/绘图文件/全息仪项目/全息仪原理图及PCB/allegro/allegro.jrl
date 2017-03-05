@@ -1,0 +1,61 @@
+\t (00:00:04) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:04)     Journal start - Thu Mar 02 23:30:20 2017
+\t (00:00:04)         Host=SONGCC User=SCC Pid=3344 CPUs=4
+\t (00:00:04) 
+\t (00:00:06) Opening existing design...
+\d (00:00:07) Database opened: C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/ANALYSIS_0218_2.brd
+\i (00:00:08) trapsize 100711
+\i (00:00:08) trapsize 97032
+\i (00:00:08) trapsize 101070
+\i (00:00:08) trapsize 97143
+\i (00:00:08) trapsize 85061
+\i (00:00:08) trapsize 97143
+\i (00:00:09) generaledit 
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in 1869.429 1765.286
+\i (00:00:26) trapsize 48571
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in -27.143 1765.286
+\i (00:00:26) trapsize 24286
+\i (00:00:30) zoom in 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom in 2620.000 2183.001
+\i (00:00:30) trapsize 12143
+\i (00:00:31) zoom out 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom out 2386.857 2059.144
+\i (00:00:31) trapsize 24286
+\i (00:00:33) roam y 96 
+\i (00:00:33) roam y 96
+\i (00:00:57) roam y 96 
+\i (00:00:57) roam y 96
+\i (00:00:57) roam y 96 
+\i (00:00:57) roam y 96
+\i (00:01:03) zoom in 1 
+\i (00:01:03) setwindow pcb
+\i (00:01:03) zoom in 3372.858 1187.286
+\i (00:01:03) trapsize 12143
+\i (00:01:04) zoom out 1 
+\i (00:01:04) setwindow pcb
+\i (00:01:04) zoom out 3372.858 1187.286
+\i (00:01:04) trapsize 24286
+\i (00:01:09) zoom in 1 
+\i (00:01:09) setwindow pcb
+\i (00:01:09) zoom in 60.287 1231.000
+\i (00:01:09) trapsize 12143
+\i (00:01:10) zoom in 1 
+\i (00:01:10) setwindow pcb
+\i (00:01:10) zoom in 65.145 1233.429
+\i (00:01:10) trapsize 6071
+\i (00:01:15) zoom out 1 
+\i (00:01:15) setwindow pcb
+\i (00:01:15) zoom out 78.502 1228.572
+\i (00:01:15) trapsize 12143
+\i (00:01:15) zoom out 1 
+\i (00:01:15) setwindow pcb
+\i (00:01:15) zoom out 78.503 1228.571
+\i (00:01:15) trapsize 24286
+\i (00:02:22) exit 
+\t (00:02:23)     Journal end - Thu Mar 02 23:32:38 2017

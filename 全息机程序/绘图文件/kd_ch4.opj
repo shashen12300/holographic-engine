@@ -1,0 +1,47 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\kd_ch4.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\kd_ch4.dsn")
+      (Path "Design Resources" ".\kd_ch4.dsn" "SCHEMATIC1")
+      (Select "Design Resources" ".\kd_ch4.dsn" "SCHEMATIC1" "1 power"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -9 -38 0 200 0 641"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -9 -38 64 2053 64 756")
+        (Scroll "-285 96")
+        (Zoom "117")
+        (Occurrence "/"))
+      (Path "C:\USERS\SCC\DESKTOP\绘图文件\KD_CH4.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "2 CPU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -9 -38 256 1877 256 795")
+        (Scroll "0 42")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "C:\USERS\SCC\DESKTOP\绘图文件\KD_CH4.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "1 power")))
+  (MPSSessionName "SCC")
+  (ISPCBBASICLICENSE "false"))

@@ -1,0 +1,9 @@
+.\obj\myfont_11.o: ..\User\myFont_11.c
+.\obj\myfont_11.o: ..\User\myFont_11.h
+.\obj\myfont_11.o: ..\GUI\Config\..\core\GUI.H
+.\obj\myfont_11.o: ..\GUI\Config\..\core\GUI_ConfDefaults.h
+.\obj\myfont_11.o: ..\GUI\Config\GUIConf.h
+.\obj\myfont_11.o: ..\GUI\Config\..\core\GUIType.h
+.\obj\myfont_11.o: ..\GUI\Config\..\core\LCD.h
+.\obj\myfont_11.o: ..\GUI\Config\..\core\GUIVersion.h
+.\obj\myfont_11.o: ..\User\myFont_11.h

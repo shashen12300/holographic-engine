@@ -1,0 +1,11 @@
+.\obj\dropdown_createindirect.o: ..\GUI\Widget\DROPDOWN_CreateIndirect.c
+.\obj\dropdown_createindirect.o: ..\GUI\Core\GUI.h
+.\obj\dropdown_createindirect.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\dropdown_createindirect.o: ..\GUI\Config\GUIConf.h
+.\obj\dropdown_createindirect.o: ..\GUI\Core\GUIType.h
+.\obj\dropdown_createindirect.o: ..\GUI\Core\LCD.h
+.\obj\dropdown_createindirect.o: ..\GUI\Core\GUIVersion.h
+.\obj\dropdown_createindirect.o: ..\GUI\Widget\DROPDOWN.h
+.\obj\dropdown_createindirect.o: ..\GUI\WM\WM.h
+.\obj\dropdown_createindirect.o: ..\GUI\WM\WM_GUI.h
+.\obj\dropdown_createindirect.o: ..\GUI\Widget\DIALOG_Intern.h

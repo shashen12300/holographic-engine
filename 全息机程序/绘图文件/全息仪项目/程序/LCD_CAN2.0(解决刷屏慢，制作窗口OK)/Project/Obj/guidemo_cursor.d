@@ -1,0 +1,10 @@
+.\obj\guidemo_cursor.o: ..\GUI\GUIDemo\GUIDEMO_Cursor.c
+.\obj\guidemo_cursor.o: ..\GUI\Core\GUI.h
+.\obj\guidemo_cursor.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\guidemo_cursor.o: ..\GUI\Config\GUIConf.h
+.\obj\guidemo_cursor.o: ..\GUI\Core\GUIType.h
+.\obj\guidemo_cursor.o: ..\GUI\Core\LCD.h
+.\obj\guidemo_cursor.o: ..\GUI\Core\GUIVersion.h
+.\obj\guidemo_cursor.o: ..\GUI\GUIDemo\GUIDEMO.h
+.\obj\guidemo_cursor.o: ..\GUI\Core\LCD_ConfDefaults.h
+.\obj\guidemo_cursor.o: ..\GUI\Config\LCDConf.h

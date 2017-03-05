@@ -1,0 +1,31 @@
+我:
+报警点两个  一个甲烷 1.0 温度26---OK
+
+我:
+报警时常去掉。---OK
+
+我:
+校正后是0.01---OK
+
+我:
+采样设置，改成校正设置。---OK
+
+
+
+我:
+无线设置，增加设置设备编号的设置。----OK
+我:
+显示设置和数据查看不需要密码，其它的都需要密码。
+最大值不超过4.0----OK
+
+取消温度报警
+
+
+RF 
+nRF24L01_TxMode
+	nRF24L01_WriteReg(NRF_WRITE_REG+EN_AA, 0x00);     /* ê1?üí¨μà0μ?×??ˉó|′e */    	
+	nRF24L01_WriteReg(NRF_WRITE_REG+EN_RXADDR, 0x00); /* ê1?üí¨μà0μ??óê?μ??· */  	
+	nRF24L01_WriteReg(NRF_WRITE_REG+SETUP_RETR, 0x00);/
+
+nRF24L01_RxMode
+	nRF24L01_WriteReg(NRF_WRITE_REG+EN_AA, 0x00);  

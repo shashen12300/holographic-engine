@@ -1,0 +1,11 @@
+.\obj\guidemo_dialog.o: ..\GUI\GUIDemo\GUIDEMO_Dialog.c
+.\obj\guidemo_dialog.o: C:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+.\obj\guidemo_dialog.o: ..\GUI\Core\GUI.h
+.\obj\guidemo_dialog.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\guidemo_dialog.o: ..\GUI\Config\GUIConf.h
+.\obj\guidemo_dialog.o: ..\GUI\Core\GUIType.h
+.\obj\guidemo_dialog.o: ..\GUI\Core\LCD.h
+.\obj\guidemo_dialog.o: ..\GUI\Core\GUIVersion.h
+.\obj\guidemo_dialog.o: ..\GUI\GUIDemo\GUIDEMO.h
+.\obj\guidemo_dialog.o: ..\GUI\Core\LCD_ConfDefaults.h
+.\obj\guidemo_dialog.o: ..\GUI\Config\LCDConf.h

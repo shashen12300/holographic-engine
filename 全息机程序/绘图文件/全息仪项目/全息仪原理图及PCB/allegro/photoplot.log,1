@@ -1,0 +1,444 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : ANALYSIS_0210_1.brd                           )
+(    Software Version : 16.6P004                                      )
+(    Date/Time        : Sat Feb 11 10:27:16 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+ ---- Photoplot outline rectangle not found ... using drawing extents
+
+
+
+
+ Can't open parameter file ... using default values:
+     DEVICE-TYPE        GERBER6X00
+     G-CODES            NO
+     STATIONS-PER-WHEEL 24
+     FILM-SIZE          24000 16000
+     COORDINATES        ABSOLUTE
+     OUTPUT-UNITS       INCHES
+     FORMAT             5.3
+     ABORT-ON-ERROR     abort film & continue
+     SUPPRESS-LEAD-ZEROES     YES
+     SUPPRESS-TRAIL-ZEROES    NO
+     OPTIMIZE           YES
+     SUPPRESS-EQUAL     YES
+     SCALE              1.0
+
+
+
+
+================================================================
+     PROCESSING FILM < TOP >
+     TO FILE < C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.000
+  Offset y:                           0.000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.01000                                  DARK 
+  CIRCLE     0.01500                                  DARK 
+  CIRCLE     0.01600                                  DARK 
+  CIRCLE     0.02000                                  DARK 
+  CIRCLE     0.02500                                  DARK 
+  CIRCLE     0.02800                                  DARK 
+  CIRCLE     0.03000                                  DARK 
+  CIRCLE     0.03500                                  DARK 
+  CIRCLE     0.04000                                  DARK 
+  CIRCLE     0.04300                                  DARK 
+  CIRCLE     0.05000                                  DARK 
+  CIRCLE     0.05400                                  DARK 
+  CIRCLE     0.05500                                  DARK 
+  CIRCLE     0.06000                                  DARK 
+  CIRCLE     0.08000                                  DARK 
+  CIRCLE     0.27559                                  DARK 
+  SQUARE     0.05400                     0.000 NO     DARK 
+  SQUARE     0.06000                     0.000 NO     DARK 
+  RECTANGLE  0.02500     x 0.04000      90.000 NO     DARK 
+  RECTANGLE  0.02500     x 0.06000       0.000 NO     DARK 
+  RECTANGLE  0.02500     x 0.06000      90.000 NO     DARK 
+  RECTANGLE  0.03000     x 0.03800       0.000 NO     DARK 
+  RECTANGLE  0.03000     x 0.03800      90.000 NO     DARK 
+  RECTANGLE  0.04000     x 0.05500      90.000 NO     DARK 
+  RECTANGLE  0.04000     x 0.06000      90.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.04300      90.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.05500      90.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.07700      90.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.02500      90.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.15000       0.000 NO     DARK 
+  RECTANGLE  0.05600     x 0.05500       0.000 NO     DARK 
+  RECTANGLE  0.05600     x 0.05500      90.000 NO     DARK 
+  RECTANGLE  0.07000     x 0.01000       0.000 NO     DARK 
+  RECTANGLE  0.07000     x 0.01000      90.000 NO     DARK 
+  RECTANGLE  0.08000     x 0.10000       0.000 NO     DARK 
+  RECTANGLE  0.09000     x 0.10000       0.000 NO     DARK 
+  RECTANGLE  0.09000     x 0.10000      90.000 NO     DARK 
+  RECTANGLE  0.09400     x 0.08600       0.000 NO     DARK 
+  RECTANGLE  0.09400     x 0.08600      90.000 NO     DARK 
+  RECTANGLE  0.12000     x 0.14000      90.000 NO     DARK 
+  RECTANGLE  0.12600     x 0.08600       0.000 NO     DARK 
+  RECTANGLE  0.20800     x 0.07500      90.000 NO     DARK 
+  OBLONG     0.11024     x 0.04724       0.000 NO     DARK 
+
+     TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < BOTTOM >
+     TO FILE < C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.000
+  Offset y:                           0.000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00600                                  DARK 
+  CIRCLE     0.01000                                  DARK 
+  CIRCLE     0.01600                                  DARK 
+  CIRCLE     0.02000                                  DARK 
+  CIRCLE     0.02800                                  DARK 
+  CIRCLE     0.03000                                  DARK 
+  CIRCLE     0.04000                                  DARK 
+  CIRCLE     0.04300                                  DARK 
+  CIRCLE     0.05400                                  DARK 
+  CIRCLE     0.05500                                  DARK 
+  CIRCLE     0.06000                                  DARK 
+  CIRCLE     0.08000                                  DARK 
+  CIRCLE     0.27559                                  DARK 
+  SQUARE     0.05400                     0.000 NO     DARK 
+  SQUARE     0.06000                     0.000 NO     DARK 
+  OBLONG     0.11024     x 0.04724       0.000 NO     DARK 
+
+     BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < SILK_TOP >
+     TO FILE < C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/SILK_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.000
+  Offset y:                           0.000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: text composed 0 width line found at (193.000 -429.334)
+           ... using undefined line width of 5.000
+
+    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 5.000
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00400                                  DARK 
+  CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00591                                  DARK 
+  CIRCLE     0.00591                                  DARK 
+  CIRCLE     0.00600                                  DARK 
+  CIRCLE     0.00787                                  DARK 
+  CIRCLE     0.00790                                  DARK 
+  CIRCLE     0.00800                                  DARK 
+  CIRCLE     0.01100                                  DARK 
+  CIRCLE     0.01180                                  DARK 
+  CIRCLE     0.02000                                  DARK 
+  CIRCLE     0.02200                                  DARK 
+  CIRCLE     0.04000                                  DARK 
+
+     SILK_TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < SILK_BOTTOM >
+     TO FILE < C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/SILK_BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.000
+  Offset y:                           0.000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00591                                  DARK 
+  CIRCLE     0.00600                                  DARK 
+  CIRCLE     0.00800                                  DARK 
+
+     SILK_BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < SOLD_TOP >
+     TO FILE < C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/SOLD_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.000
+  Offset y:                           0.000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.05300                                  DARK 
+  CIRCLE     0.06400                                  DARK 
+  CIRCLE     0.06500                                  DARK 
+  CIRCLE     0.07000                                  DARK 
+  CIRCLE     0.09000                                  DARK 
+  CIRCLE     0.27559                                  DARK 
+  SQUARE     0.06400                     0.000 NO     DARK 
+  SQUARE     0.07000                     0.000 NO     DARK 
+  RECTANGLE  0.03100     x 0.04600      90.000 NO     DARK 
+  RECTANGLE  0.03500     x 0.07000       0.000 NO     DARK 
+  RECTANGLE  0.03500     x 0.07000      90.000 NO     DARK 
+  RECTANGLE  0.04000     x 0.04800       0.000 NO     DARK 
+  RECTANGLE  0.04000     x 0.04800      90.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.06500      90.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.07000      90.000 NO     DARK 
+  RECTANGLE  0.05700     x 0.05300      90.000 NO     DARK 
+  RECTANGLE  0.05700     x 0.06500      90.000 NO     DARK 
+  RECTANGLE  0.05700     x 0.08700      90.000 NO     DARK 
+  RECTANGLE  0.06000     x 0.03500      90.000 NO     DARK 
+  RECTANGLE  0.06000     x 0.16000       0.000 NO     DARK 
+  RECTANGLE  0.06600     x 0.06500       0.000 NO     DARK 
+  RECTANGLE  0.06600     x 0.06500      90.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.01600       0.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.01600      90.000 NO     DARK 
+  RECTANGLE  0.09000     x 0.11000       0.000 NO     DARK 
+  RECTANGLE  0.10000     x 0.11000       0.000 NO     DARK 
+  RECTANGLE  0.10000     x 0.11000      90.000 NO     DARK 
+  RECTANGLE  0.10400     x 0.09600       0.000 NO     DARK 
+  RECTANGLE  0.10400     x 0.09600      90.000 NO     DARK 
+  RECTANGLE  0.13000     x 0.15000      90.000 NO     DARK 
+  RECTANGLE  0.13600     x 0.09600       0.000 NO     DARK 
+  RECTANGLE  0.21800     x 0.08500      90.000 NO     DARK 
+  OBLONG     0.11417     x 0.05118       0.000 NO     DARK 
+
+     SOLD_TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < SOLD_BOTTOM >
+     TO FILE < C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/SOLD_BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.000
+  Offset y:                           0.000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.05300                                  DARK 
+  CIRCLE     0.06000                                  DARK 
+  CIRCLE     0.06400                                  DARK 
+  CIRCLE     0.06500                                  DARK 
+  CIRCLE     0.07000                                  DARK 
+  CIRCLE     0.09000                                  DARK 
+  CIRCLE     0.27559                                  DARK 
+  SQUARE     0.06400                     0.000 NO     DARK 
+  SQUARE     0.07000                     0.000 NO     DARK 
+  OBLONG     0.11417     x 0.05118       0.000 NO     DARK 
+
+     SOLD_BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < PAST_TOP >
+     TO FILE < C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/PAST_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.000
+  Offset y:                           0.000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+  RECTANGLE  0.02500     x 0.04000      90.000 NO     DARK 
+  RECTANGLE  0.02500     x 0.06000       0.000 NO     DARK 
+  RECTANGLE  0.02500     x 0.06000      90.000 NO     DARK 
+  RECTANGLE  0.03000     x 0.03800       0.000 NO     DARK 
+  RECTANGLE  0.03000     x 0.03800      90.000 NO     DARK 
+  RECTANGLE  0.04000     x 0.05500      90.000 NO     DARK 
+  RECTANGLE  0.04000     x 0.06000      90.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.04300      90.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.05500      90.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.07700      90.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.02500      90.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.15000       0.000 NO     DARK 
+  RECTANGLE  0.05600     x 0.05500       0.000 NO     DARK 
+  RECTANGLE  0.05600     x 0.05500      90.000 NO     DARK 
+  RECTANGLE  0.07000     x 0.01000       0.000 NO     DARK 
+  RECTANGLE  0.07000     x 0.01000      90.000 NO     DARK 
+  RECTANGLE  0.08000     x 0.10000       0.000 NO     DARK 
+  RECTANGLE  0.09000     x 0.10000       0.000 NO     DARK 
+  RECTANGLE  0.09000     x 0.10000      90.000 NO     DARK 
+  RECTANGLE  0.09400     x 0.08600       0.000 NO     DARK 
+  RECTANGLE  0.09400     x 0.08600      90.000 NO     DARK 
+  RECTANGLE  0.12000     x 0.14000      90.000 NO     DARK 
+  RECTANGLE  0.12600     x 0.08600       0.000 NO     DARK 
+  RECTANGLE  0.20800     x 0.07500      90.000 NO     DARK 
+
+     PAST_TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < PAST_BOTTOM >
+     TO FILE < C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/PAST_BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.000
+  Offset y:                           0.000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.05500                                  DARK 
+
+     PAST_BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < DRILL >
+     TO FILE < C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/DRILL.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.000
+  Offset y:                           0.000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: 0 width line found at (5195.000 -575.865)
+           ... using undefined line width of 5.000
+
+    WARNING: Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 5.000
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+
+     DRILL created with warnings
+
+
+------------------------------------------------------
+ SUMMARY:
+        TOP created with warnings
+        BOTTOM created with warnings
+        SILK_TOP created with warnings
+        SILK_BOTTOM created with warnings
+        SOLD_TOP created with warnings
+        SOLD_BOTTOM created with warnings
+        PAST_TOP created with warnings
+        PAST_BOTTOM created with warnings
+        DRILL created with warnings
+
+ ARTWORK had warnings

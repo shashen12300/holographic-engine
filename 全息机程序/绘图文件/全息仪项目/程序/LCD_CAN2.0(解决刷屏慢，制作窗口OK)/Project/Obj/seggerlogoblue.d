@@ -1,0 +1,11 @@
+.\obj\seggerlogoblue.o: ..\GUI\GUIDemo\SeggerLogoBlue.c
+.\obj\seggerlogoblue.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\obj\seggerlogoblue.o: ..\GUI\Core\GUI.h
+.\obj\seggerlogoblue.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\seggerlogoblue.o: ..\GUI\Config\GUIConf.h
+.\obj\seggerlogoblue.o: ..\GUI\Core\GUIType.h
+.\obj\seggerlogoblue.o: ..\GUI\Core\LCD.h
+.\obj\seggerlogoblue.o: ..\GUI\Core\GUIVersion.h
+.\obj\seggerlogoblue.o: ..\GUI\GUIDemo\GUIDEMO.h
+.\obj\seggerlogoblue.o: ..\GUI\Core\LCD_ConfDefaults.h
+.\obj\seggerlogoblue.o: ..\GUI\Config\LCDConf.h

@@ -1,0 +1,15 @@
+.\obj\wm__sendmessage.o: ..\GUI\WM\WM__SendMessage.c
+.\obj\wm__sendmessage.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\obj\wm__sendmessage.o: ..\GUI\WM\WM_Intern.h
+.\obj\wm__sendmessage.o: ..\GUI\WM\WM.h
+.\obj\wm__sendmessage.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\wm__sendmessage.o: ..\GUI\Config\GUIConf.h
+.\obj\wm__sendmessage.o: ..\GUI\Core\GUIType.h
+.\obj\wm__sendmessage.o: ..\GUI\Core\LCD.h
+.\obj\wm__sendmessage.o: ..\GUI\WM\WM_GUI.h
+.\obj\wm__sendmessage.o: ..\GUI\Core\GUI_Protected.h
+.\obj\wm__sendmessage.o: ..\GUI\Core\GUI.h
+.\obj\wm__sendmessage.o: ..\GUI\Core\GUIVersion.h
+.\obj\wm__sendmessage.o: ..\GUI\Core\LCD_Protected.h
+.\obj\wm__sendmessage.o: ..\GUI\Core\GUIDebug.h
+.\obj\wm__sendmessage.o: ..\GUI\Core\GUI_X.h

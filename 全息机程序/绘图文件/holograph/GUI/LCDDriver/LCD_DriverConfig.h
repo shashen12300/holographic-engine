@@ -1,0 +1,42 @@
+#ifndef __LCD_DRIVERCONFIG_H__
+#define __LCD_DRIVERCONFIG_H__
+void clearsnow(void);
+void noclearsnow(void);
+void LCD_GotoXY(unsigned char xx,unsigned char yy);
+void LCD_Graphic(void);
+void LCD_Text(void);
+void Only_Show_Page1(void);
+void Only_Show_Page2(void);
+void Show_Two_Layer(void);
+void OR_Two_Layer(void);
+void Access_Page1(void);
+void Access_Page2(void);
+void displays(unsigned char x,unsigned char y,unsigned char *m);
+void lcd_inital(void);
+void clear(void);
+void display_all(void);
+void display_snows(unsigned char dat1,unsigned char dat2);
+void display_kuang(void);
+void display_biao(void);
+void display_ziku(void);
+void display_word(unsigned char *cha, int count );
+void LCD_ShowStr(unsigned char *text);
+void reverse_data(void);
+void normal_data(void);
+void LCD_Inv(void);
+void LCD_NoInv(void);
+void bold_word(void);
+void no_bold_word(void);
+void enlarge(unsigned char i);
+void display_test(unsigned char com1,unsigned char com2);
+void disp_Graphic2(void);
+void Print_Hex(unsigned char buf);
+ void tp_test_auto(void);
+void delay_nms(unsigned int n);
+void displays(unsigned char x,unsigned char y,unsigned char *m);
+unsigned char LCD_CmdRead(unsigned char Addr);
+void LCD_CmdWrite(unsigned char cmdaddr);
+void LCD_DataWrite(unsigned char wrdata);
+void softrst(void);
+ void lcd_test(void);
+#endif

@@ -1,0 +1,9 @@
+.\obj\feegnshi1.o: ..\User\feegnshi1.c
+.\obj\feegnshi1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\feegnshi1.o: ..\User\feegnshi1.h
+.\obj\feegnshi1.o: ..\GUI\Core\GUI.h
+.\obj\feegnshi1.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\feegnshi1.o: ..\GUI\Config\GUIConf.h
+.\obj\feegnshi1.o: ..\GUI\Core\GUIType.h
+.\obj\feegnshi1.o: ..\GUI\Core\LCD.h
+.\obj\feegnshi1.o: ..\GUI\Core\GUIVersion.h

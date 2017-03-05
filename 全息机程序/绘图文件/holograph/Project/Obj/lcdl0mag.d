@@ -1,0 +1,17 @@
+.\obj\lcdl0mag.o: ..\GUI\Core\LCDL0Mag.c
+.\obj\lcdl0mag.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\obj\lcdl0mag.o: ..\GUI\Core\GUI_Private.h
+.\obj\lcdl0mag.o: ..\GUI\Core\GUI_Protected.h
+.\obj\lcdl0mag.o: ..\GUI\Core\GUI.h
+.\obj\lcdl0mag.o: ..\GUI\Core\GUI_ConfDefaults.h
+.\obj\lcdl0mag.o: ..\GUI\Config\GUIConf.h
+.\obj\lcdl0mag.o: ..\GUI\Core\GUIType.h
+.\obj\lcdl0mag.o: ..\GUI\Core\LCD.h
+.\obj\lcdl0mag.o: ..\GUI\Core\GUIVersion.h
+.\obj\lcdl0mag.o: ..\GUI\Core\LCD_Protected.h
+.\obj\lcdl0mag.o: ..\GUI\Core\GUIDebug.h
+.\obj\lcdl0mag.o: ..\GUI\Core\GUI_X.h
+.\obj\lcdl0mag.o: ..\GUI\WM\WM_GUI.h
+.\obj\lcdl0mag.o: ..\GUI\Core\LCD_Private.h
+.\obj\lcdl0mag.o: ..\GUI\Core\LCD_ConfDefaults.h
+.\obj\lcdl0mag.o: ..\GUI\Config\LCDConf.h
