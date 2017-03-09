@@ -38,28 +38,28 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -9 -38 0 200 0 629"))
+        (Placement "44 2 3 -1 -1 -9 -38 0 200 0 629"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -9 -38 64 2292 64 744")
-        (Scroll "-393 26")
-        (Zoom "143")
+        (Scroll "-79 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\SCC\DESKTOP\绘图文件\全息仪项目\全息仪原理图及PCB\ANALYSIS_0211.DSN")
+         "C:\USERS\SCC\DESKTOP\HOLOGRAPHIC-ENGINE\全息机程序\绘图文件\全息仪项目\全息仪原理图及PCB\ANALYSIS_0211.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "KEY"))
+      (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -9 -38 96 2324 96 776")
-        (Scroll "1596 1017")
-        (Zoom "204")
+        (Placement "44 0 1 -1 -1 -9 -38 96 2292 96 850")
+        (Scroll "-364 0")
+        (Zoom "146")
         (Occurrence "/"))
       (Path
-         "C:\USERS\SCC\DESKTOP\绘图文件\全息仪项目\全息仪原理图及PCB\ANALYSIS_0211.DSN")
+         "C:\USERS\SCC\DESKTOP\HOLOGRAPHIC-ENGINE\全息机程序\绘图文件\全息仪项目\全息仪原理图及PCB\ANALYSIS_0211.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1")))
+      (Page "KEY")))
   (MPSSessionName "SCC"))

@@ -134,6 +134,7 @@ int main(void)
 	SystemInit();
 	delay_init(72);	     //延时初始化
 	LED_Init();
+	
 	KEY_Init();
 	E11_init();
 	fnRTC_Init();
@@ -146,9 +147,9 @@ int main(void)
 	GUI_SetFont(&GUI_FontHZ_SimSun_1515);
 	GUI_DrawBitmap(&bmqidongtu,0,100);
 	//绘制时间框
-		MainTask();
+	MainTask();
 	GUI_DrawBitmap(&bmshijian,0,0);
-
+	
 while(1)
 {
 printf("开始测试\r\n");
@@ -249,16 +250,19 @@ void printReport(void) {
 			length = reportLength[reportType];
 			E17_FontConfig();
 			E17_sendString2("\r\n");
-			for(i=1;i<=length;i++) {
-				E17_sendString(healthData[length-i]);
-				E17_sendString2("\r\n");
-			}
-			sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
+			sprintf(data,"        健康评估打印报告单\r\n");
 			E17_sendString2(data);
 			sprintf(data,"性别:%s 年龄:%s 婚否:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);
 			E17_sendString2(data);
-			sprintf(data,"        健康评估打印报告单\r\n\r\n\r\n\r\n");
+			sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
 			E17_sendString2(data);
+			for(i=0;i<length;i++) {
+				E17_sendString(healthData[i]);
+				E17_sendString2("\r\n");
+			}
+			E17_sendString2("    \r\n");
+			E17_sendString2("    \r\n");
+
 		}
 }
 

@@ -1,61 +1,204 @@
-\t (00:00:04) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:04)     Journal start - Thu Mar 02 23:30:20 2017
-\t (00:00:04)         Host=SONGCC User=SCC Pid=3344 CPUs=4
-\t (00:00:04) 
-\t (00:00:06) Opening existing design...
-\d (00:00:07) Database opened: C:/Users/SCC/Desktop/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/ANALYSIS_0218_2.brd
-\i (00:00:08) trapsize 100711
-\i (00:00:08) trapsize 97032
-\i (00:00:08) trapsize 101070
-\i (00:00:08) trapsize 97143
-\i (00:00:08) trapsize 85061
-\i (00:00:08) trapsize 97143
-\i (00:00:09) generaledit 
-\i (00:00:26) zoom in 1 
-\i (00:00:26) setwindow pcb
-\i (00:00:26) zoom in 1869.429 1765.286
-\i (00:00:26) trapsize 48571
-\i (00:00:26) zoom in 1 
-\i (00:00:26) setwindow pcb
-\i (00:00:26) zoom in -27.143 1765.286
-\i (00:00:26) trapsize 24286
-\i (00:00:30) zoom in 1 
-\i (00:00:30) setwindow pcb
-\i (00:00:30) zoom in 2620.000 2183.001
-\i (00:00:30) trapsize 12143
-\i (00:00:31) zoom out 1 
-\i (00:00:31) setwindow pcb
-\i (00:00:31) zoom out 2386.857 2059.144
-\i (00:00:31) trapsize 24286
-\i (00:00:33) roam y 96 
-\i (00:00:33) roam y 96
-\i (00:00:57) roam y 96 
-\i (00:00:57) roam y 96
-\i (00:00:57) roam y 96 
-\i (00:00:57) roam y 96
-\i (00:01:03) zoom in 1 
+\t (00:00:00) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:00)     Journal start - Mon Mar 06 20:48:39 2017
+\t (00:00:00)         Host=SONGCC User=SCC Pid=1928 CPUs=4
+\t (00:00:00) 
+\t (00:00:02) Opening existing design...
+\d (00:00:03) Database opened: C:/Users/SCC/Desktop/holographic-engine/全息机程序/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/ANALYSIS_0218_2.brd
+\i (00:00:03) trapsize 100711
+\i (00:00:03) trapsize 97032
+\i (00:00:03) trapsize 101070
+\i (00:00:03) trapsize 97143
+\i (00:00:03) trapsize 85061
+\i (00:00:03) trapsize 97143
+\i (00:00:04) generaledit 
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -73.429 405.286
+\i (00:00:09) trapsize 48571
+\i (00:00:09) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in 3431.143 1483.572
+\i (00:00:10) trapsize 24286
+\i (00:00:11) roam y 96 
+\i (00:00:11) roam y 96
+\i (00:00:13) roam x -96 
+\i (00:00:13) roam x -96
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in 3846.286 973.572
+\i (00:00:14) trapsize 12143
+\i (00:00:16) zoom out 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom out 3846.286 973.572
+\i (00:00:16) trapsize 24286
+\i (00:00:17) roam y -96 
+\i (00:00:17) roam y -96
+\i (00:00:18) roam y 96 
+\i (00:00:18) roam y 96
+\i (00:00:19) roam y 96 
+\i (00:00:19) roam y 96
+\i (00:00:21) zoom in 1 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) zoom in 490.000 1294.143
+\i (00:00:21) trapsize 12143
+\i (00:00:21) zoom in 1 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) zoom in 521.572 1218.858
+\i (00:00:21) trapsize 6071
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in 527.644 1392.501
+\i (00:00:23) trapsize 3036
+\i (00:00:25) delete 
+\i (00:00:26) delete 
+\i (00:00:27) pick grid 545.251 1305.680
+\t (00:00:27) last pick:  545.000  1306.000
+\t (00:00:27) Connect Line "Not On A Net, Etch/Bottom"
+\i (00:00:27) pick grid dbl 545.251 1305.680
+\t (00:00:27) last pick:  545.000  1306.000
+\t (00:00:27) Connect Line "Not On A Net, Etch/Top"
+\i (00:00:28) pick grid 542.822 1285.644
+\t (00:00:28) last pick:  543.000  1286.000
+\i (00:00:28) pick grid dbl 542.822 1285.644
+\t (00:00:28) last pick:  543.000  1286.000
+\i (00:00:29) pick grid 491.822 1107.144
+\t (00:00:29) last pick:  492.000  1107.000
+\i (00:00:29) pick grid dbl 491.822 1107.144
+\t (00:00:29) last pick:  492.000  1107.000
+\i (00:00:30) pick grid 488.787 1106.537
+\t (00:00:30) last pick:  489.000  1107.000
+\i (00:00:31) delete 
+\i (00:00:34) setwindow form.find
+\i (00:00:34) FORM find nets YES 
+\i (00:00:38) FORM find vias YES 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) pick grid 481.501 1101.073
+\t (00:00:39) last pick:  482.000  1101.000
+\t (00:00:39) Via "Not On A Net, 28C14d, (482.000 1106.000)"
+\i (00:00:39) pick grid dbl 481.501 1101.073
+\t (00:00:39) last pick:  482.000  1101.000
+\i (00:00:40) zoom out 1 
+\i (00:00:40) setwindow pcb
+\i (00:00:40) zoom out 635.715 1155.715
+\i (00:00:40) trapsize 6071
+\i (00:00:40) zoom out 1 
+\i (00:00:40) setwindow pcb
+\i (00:00:40) zoom out 636.930 1154.502
+\i (00:00:40) trapsize 12143
+\i (00:00:41) zoom out 1 
+\i (00:00:41) setwindow pcb
+\i (00:00:41) zoom out 636.929 1152.073
+\i (00:00:41) trapsize 24286
+\i (00:00:42) roam y 96 
+\i (00:00:42) roam y 96
+\i (00:00:42) roam y 96 
+\i (00:00:42) roam y 96
+\i (00:00:43) roam y 96 
+\i (00:00:43) roam y 96
+\i (00:00:49) save_as 
+\i (00:00:58) fillin "ANALYSIS_0218_3.brd"
+\i (00:00:58) generaledit 
+\i (00:01:01) zoom in 1 
+\i (00:01:01) setwindow pcb
+\i (00:01:01) zoom in 1074.073 1080.432
+\i (00:01:01) trapsize 12143
+\i (00:01:03) zoom out 1 
 \i (00:01:03) setwindow pcb
-\i (00:01:03) zoom in 3372.858 1187.286
-\i (00:01:03) trapsize 12143
-\i (00:01:04) zoom out 1 
-\i (00:01:04) setwindow pcb
-\i (00:01:04) zoom out 3372.858 1187.286
-\i (00:01:04) trapsize 24286
-\i (00:01:09) zoom in 1 
-\i (00:01:09) setwindow pcb
-\i (00:01:09) zoom in 60.287 1231.000
-\i (00:01:09) trapsize 12143
-\i (00:01:10) zoom in 1 
-\i (00:01:10) setwindow pcb
-\i (00:01:10) zoom in 65.145 1233.429
-\i (00:01:10) trapsize 6071
-\i (00:01:15) zoom out 1 
-\i (00:01:15) setwindow pcb
-\i (00:01:15) zoom out 78.502 1228.572
-\i (00:01:15) trapsize 12143
-\i (00:01:15) zoom out 1 
-\i (00:01:15) setwindow pcb
-\i (00:01:15) zoom out 78.503 1228.571
-\i (00:01:15) trapsize 24286
-\i (00:02:22) exit 
-\t (00:02:23)     Journal end - Thu Mar 02 23:32:38 2017
+\i (00:01:03) zoom out 1074.073 1080.432
+\i (00:01:03) trapsize 24286
+\t (00:01:06) Cannot edit Symbol "H5". It has the FIXED property.
+\t (00:01:06) Cannot edit Symbol "H5". It has the FIXED property.
+\i (00:01:06) prepopup 214.358 1109.575
+\i (00:01:09) pick grid -363.642 798.717
+\t (00:01:09) last pick:  -364.000  799.000
+\t (00:01:09) Cannot edit Symbol "H5". It has the FIXED property.
+\t (00:01:09) Cannot edit Symbol "H5". It has the FIXED property.
+\i (00:01:09) prepopup 248.358 1099.860
+\t (00:01:11) Cannot edit Symbol "H4". It has the FIXED property.
+\t (00:01:11) Cannot edit Symbol "H4". It has the FIXED property.
+\i (00:01:11) prepopup 4202.075 1488.432
+\i (00:01:12) pick grid 4182.646 1595.289
+\t (00:01:12) last pick:  4183.000  1595.000
+\t (00:01:13) Cannot edit Symbol "H4". It has the FIXED property.
+\t (00:01:13) Cannot edit Symbol "H4". It has the FIXED property.
+\i (00:01:13) prepopup 4240.932 1537.003
+\i (00:01:14) pick grid 2069.788 628.717
+\t (00:01:14) last pick:  2070.000  629.000
+\i (00:01:15) pick grid 2642.931 891.003
+\t (00:01:15) last pick:  2643.000  891.000
+\i (00:01:16) zoom in 1 
+\i (00:01:16) setwindow pcb
+\i (00:01:16) zoom in 2652.645 657.860
+\i (00:01:16) trapsize 12143
+\i (00:01:17) zoom out 1 
+\i (00:01:17) setwindow pcb
+\i (00:01:17) zoom out 2652.645 657.860
+\i (00:01:17) trapsize 24286
+\i (00:01:18) roam y -96 
+\i (00:01:18) roam y -96
+\i (00:01:18) roam y -96 
+\i (00:01:18) roam y -96
+\i (00:01:25) property edit 
+\t (00:01:26) Adjust find filter then select an element or group of elements.
+\i (00:01:33) pick grid 301.787 1051.289
+\t (00:01:33) last pick:  302.000  1051.000
+\i (00:01:35) setwindow form.editprop2
+\i (00:01:35) FORM editprop2 fixed prop_state YES 
+\i (00:01:37) FORM editprop2 apply  
+\i (00:01:42) setwindow pcb
+\i (00:01:42) pick grid 3721.217 1080.432
+\t (00:01:42) last pick:  3721.000  1080.000
+\i (00:01:44) setwindow form.editprop2
+\i (00:01:44) FORM editprop2 fixed prop_state YES 
+\i (00:01:45) FORM editprop2 apply  
+\i (00:01:47) setwindow pcb
+\i (00:01:47) zoom out 1 
+\i (00:01:47) setwindow pcb
+\i (00:01:47) zoom out 1054.644 400.432
+\i (00:01:47) trapsize 48571
+\i (00:01:48) pick grid 277.501 -600.141
+\t (00:01:48) last pick:  278.000  -600.000
+\i (00:01:51) setwindow form.editprop2
+\i (00:01:51) FORM editprop2 fixed prop_state YES 
+\i (00:01:52) FORM editprop2 apply  
+\i (00:01:53) FORM editprop2 apply  
+\i (00:02:12) setwindow pcb
+\i (00:02:12) pick grid 3745.503 -600.141
+\t (00:02:12) last pick:  3746.000  -600.000
+\i (00:02:14) setwindow form.editprop2
+\i (00:02:14) FORM editprop2 fixed prop_state YES 
+\i (00:02:15) FORM editprop2 apply  
+\i (00:02:21) setwindow pcb
+\i (00:02:21) pick grid 258.072 -541.855
+\t (00:02:21) last pick:  258.000  -542.000
+\i (00:02:24) pick grid 190.072 1090.146
+\t (00:02:24) last pick:  190.000  1090.000
+\i (00:02:26) pick grid 3774.646 1051.289
+\t (00:02:26) last pick:  3775.000  1051.000
+\i (00:02:29) pick grid 4143.789 1430.146
+\t (00:02:29) last pick:  4144.000  1430.000
+\i (00:02:30) setwindow form.editprop2
+\i (00:02:30) FORM editprop2 fixed prop_state YES 
+\i (00:02:33) FORM editprop2 apply  
+\i (00:02:35) setwindow pcb
+\i (00:02:35) pick grid 4240.932 3499.290
+\t (00:02:35) last pick:  4241.000  3499.000
+\i (00:02:37) setwindow form.editprop2
+\i (00:02:37) FORM editprop2 apply  
+\i (00:02:39) setwindow pcb
+\i (00:02:39) pick grid 277.501 3470.147
+\t (00:02:39) last pick:  278.000  3470.000
+\i (00:02:41) setwindow form.editprop2
+\i (00:02:41) FORM editprop2 fixed prop_state YES 
+\i (00:02:42) FORM editprop2 apply  
+\i (00:02:45) setwindow pcb
+\i (00:02:45) zoom in 1 
+\i (00:02:45) setwindow pcb
+\i (00:02:45) zoom in 1472.359 1449.575
+\i (00:02:45) trapsize 24286
+\i (00:02:47) roam y 96 
+\i (00:02:47) roam y 96
+\i (00:02:50) exit 
+\e (00:02:50) Do you want to save the changes you made to C:/Users/SCC/Desktop/holographic-engine/全息机程序/绘图文件/全息仪项目/全息仪原理图及PCB/allegro/ANALYSIS_0218_3.brd?
+\i (00:02:51) fillin yes 
+\t (00:02:52)     Journal end - Mon Mar 06 20:51:30 2017

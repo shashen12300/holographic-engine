@@ -73,7 +73,8 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 void ReportPaintDialog(WM_MESSAGE * pMsg)
 {
     WM_HWIN hWin = pMsg->hWin;
-		isOrCloseEnter = 0;
+					isOrCloseEnter = 0;
+
 }
 
 
@@ -438,7 +439,8 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 			//旋转编码器
 		if(rotateEnter_flag==1) {
 				rotateEnter_flag = 0;
-					delay_ms(200);
+				delay_ms(200);
+				isOrCloseEnter = 1;
 				WM_SelectWindow(hWin);
 				GUI_EndDialog(hWin, 0);
 				WM_SelectWindow(mainForm_hWin);

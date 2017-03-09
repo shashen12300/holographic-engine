@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sun Mar 05 15:37:34 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Mar 09 22:04:24 2017
 <BR><P>
 <H3>Maximum Stack Usage =        832 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1478,16 +1478,16 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[ce]"></a>printReport</STRONG> (Thumb, 188 bytes, Stack size 440 bytes, main.o(.text))
+<P><STRONG><a name="[ce]"></a>printReport</STRONG> (Thumb, 198 bytes, Stack size 440 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 696 + Unknown Stack Size
 <LI>Call Chain = printReport &rArr; E17_sendString2 &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnRTC_GetTime
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString2
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_FontConfig
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_IRQHandler
 </UL>
@@ -1859,7 +1859,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendData
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString2
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_FontConfig
 </UL>
 
@@ -1871,13 +1871,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printReport
 </UL>
 
-<P><STRONG><a name="[ee]"></a>E17_sendString</STRONG> (Thumb, 48 bytes, Stack size 120 bytes, usart.o(.text))
+<P><STRONG><a name="[ef]"></a>E17_sendString</STRONG> (Thumb, 48 bytes, Stack size 120 bytes, usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 256 + Unknown Stack Size
 <LI>Call Chain = E17_sendString &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnUSART3_SendByte
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printReport
 </UL>
@@ -1888,7 +1888,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fnUSART3_SendByte
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printReport
 </UL>
@@ -2306,7 +2306,7 @@ Global Symbols
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbDialogCallback
@@ -2468,7 +2468,7 @@ Global Symbols
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_Exec
 <LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_EndDialog
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbClockDialogCallback
@@ -2628,7 +2628,7 @@ Global Symbols
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
 <LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbReportDialogCallback
@@ -2650,11 +2650,11 @@ Global Symbols
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
 <LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 
-<P><STRONG><a name="[185]"></a>SystemReport</STRONG> (Thumb, 536 bytes, Stack size 16 bytes, report_dialog.o(.text))
+<P><STRONG><a name="[185]"></a>SystemReport</STRONG> (Thumb, 542 bytes, Stack size 16 bytes, report_dialog.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 384 + Unknown Stack Size
 <LI>Call Chain = SystemReport &rArr; WM_Exec &rArr; WM_Exec1 &rArr; _DrawNext &rArr; _Paint &rArr; WM__PaintWinAndOverlays &rArr; _PaintTransTopSiblings &rArr; _PaintTransChildren &rArr;  _PaintTransChildren (Cycle)
 </UL>
@@ -5571,7 +5571,7 @@ Global Symbols
 <LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_cbTimeCallback
 </UL>
 
-<P><STRONG><a name="[ef]"></a>__2sprintf</STRONG> (Thumb, 34 bytes, Stack size 32 bytes, noretval__2sprintf.o(.text))
+<P><STRONG><a name="[ee]"></a>__2sprintf</STRONG> (Thumb, 34 bytes, Stack size 32 bytes, noretval__2sprintf.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136 + Unknown Stack Size
 <LI>Call Chain = __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -5579,7 +5579,7 @@ Global Symbols
 <LI><a href="#[2c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString2
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printReport
 <LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;healthInitData
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportInitDialog
@@ -5669,7 +5669,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strlen
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString2
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E17_sendString
 <LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;healthInitData
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportInitDialog
 <LI><a href="#[2b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEXT_CreateEx
@@ -5796,11 +5796,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[2cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 
 <P><STRONG><a name="[59]"></a>_sputc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, _sputc.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> noretval__2sprintf.o(.text)
 </UL>
@@ -6636,7 +6636,7 @@ Local Symbols
 <LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WM_DefaultProc
 <LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_Clear
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> my_win.o(.text)
