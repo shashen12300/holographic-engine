@@ -65,10 +65,12 @@ void printReport(void);
 //刷新时间
 void refresh_time(void) {
 	if (time_flag > 9) {
-						time_flag = 0;
-						isOrRefreshrTime = 1;
-						WM_SetFocus(time_hWin);
-						GUI_SendKeyMsg(MY_MESSAGE_ID_TIME,1);
+					CLI();
+					time_flag = 0;
+					isOrRefreshrTime = 1;
+					WM_SetFocus(time_hWin);
+					GUI_SendKeyMsg(MY_MESSAGE_ID_TIME,1);
+					SEI();
 			if (myMessageType == MY_MESSAGE_ID_LOGO) {
 						WM_SetFocus(mainForm_hWin);
 //					GUI_SendKeyMsg(MY_MESSAGE_ID_ENCODER0,1);
@@ -115,7 +117,7 @@ void refresh_time(void) {
 			report_dialogTask();
 		}
 	}
-	
+
 }
 
 int main(void)
@@ -202,35 +204,12 @@ printf("开始测试\r\n");
 					}
 				}
 			}else if (key == 3) {   //打印
-//				if(isOrPrintReport==1) {
-//					char displayTime[50],length;
-//					Stru_Time getTime;
-//					fnRTC_GetTime(&getTime); 	
-//					length = reportLength[reportType];
-//					E17_FontConfig();
-//					for(i=1;i<=length;i++) {
-//						E17_sendString(healthData[length-i]);
-//						E17_sendString("\r\n");
-//						delay_ms(100);
-//					}
-//					sprintf(data,"检测时间:%02d/%02d/%02d %02d:%02d:%02d\r\n",getTime.Year,getTime.Month,getTime.Day,getTime.Hour,getTime.Minutes,getTime.Second);
-//					E17_sendString2(data);
-//					delay_ms(100);
-//					sprintf(data,"性别:%s 年龄:%s 婚否:%s 体型:%s\r\n",saveData[0],saveData[1],saveData[2],saveData[3]);//saveData[0],saveData[1],saveData[2],saveData[3]
-//					E17_sendString2(data);
-//					delay_ms(100);
-//					sprintf(data,"        健康评估打印报告单\r\n\r\n");
-//					E17_sendString2(data);
-//					
-//					isOrPrintReport =0;
-//					isOrAllowCheck =0;
-//				}
+
 			}else if (key == 4) {   //系统菜单
 				menu_dialogTask();
 			}else {  //确认按键，或进入检测
 				printf("错误按键按下\r\n");
 			}
-//				E17_sendString(data);
 				LED0=!LED0;	
 		}
 

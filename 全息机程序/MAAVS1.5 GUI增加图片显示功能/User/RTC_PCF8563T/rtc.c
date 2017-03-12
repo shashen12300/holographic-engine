@@ -28,7 +28,7 @@ void fnRTC_Init(void)
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);  													
     NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;	  
     NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 3;	
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;	
     NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&NVIC_InitStructure);	
 		/*TIM_Period--10000   TIM_Prescaler--71 -->中断周期为10ms*/

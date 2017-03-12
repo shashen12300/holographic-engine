@@ -452,6 +452,7 @@ void SystemReport(WM_HWIN hWin) {  //信息设定
 				selectEnd = 1;
 				currentPage =0;
 				WM_Exec();
+				CLI();
 		}else	if((rotate_flag == 1)&&(selectEnd==0)) {
 			if(KEY_A == 0) {
 						delay_us(20);
@@ -593,6 +594,8 @@ void report_dialogTask(void) {
 		GUI_ExecCreatedDialog(report_hWin);
 	 	printf("\r\nhandle: %d  end\r\n",report_hWin);
 	 	isOrCloseEnter = 0;
+		SEI();
+
 
 
 }
